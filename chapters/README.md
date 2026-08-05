@@ -35,6 +35,7 @@ Not every draft currently has all supporting files. A chapter is not considered 
 | 9 | Polymer Fundamentals for Industrial Plastic Piping | Research-based draft uploaded; references and review files included |
 | 10 | Engineering Methodology for Material Selection | Research-based full draft uploaded; references and review files included |
 | 11 | Engineering Characteristics of Common Plastic Piping Materials | Research-based full draft uploaded; references and review files included |
+| 12 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Research-based full draft uploaded; references and review files included |
 
 ## Status Meaning
 
