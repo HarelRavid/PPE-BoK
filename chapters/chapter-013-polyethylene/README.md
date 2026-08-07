@@ -316,18 +316,167 @@ Use the PE material designation to establish the material-classification branch 
 
 # Investigation 4 — Why Does Long-Term Behaviour Govern PE Pressure Design?
 
-*Engineering redevelopment pending.*
+A pressure pipe does not experience material properties at one instant in time. It experiences a history of stress, temperature, environment, installation condition and operating events. For polyethylene, that history is not a secondary correction to the design problem; it is part of the design problem itself.
 
-Required content:
+The engineer therefore needs two distinct questions in mind:
 
-- sustained stress and creep;
-- ductile and brittle long-term behaviour;
-- slow crack growth;
-- why time-to-failure data matter;
-- distinction between nominal stress and local crack-driving conditions;
-- practical failure indicators and misinterpretations.
+1. **Can the pipe resist the present load?**
+2. **Can the qualified material and product continue to resist the relevant load history for the required life?**
 
-**[VISUAL 13-02 — PLACEHOLDER]** Slow crack growth concept.
+The first question is largely instantaneous. The second is time-dependent. PE pressure design is governed primarily by the second.
+
+## 4.1 Sustained stress changes the response with time
+
+Under a sustained load, PE exhibits creep: strain continues to develop even when the applied stress is approximately constant. At the same time, stress may redistribute locally as the polymer deforms. The result is that a geometry which appears acceptable in a short-duration test cannot be assumed to behave identically over years of service.
+
+For a pressure pipe, internal pressure produces circumferential stress in the wall. A simple thin-wall representation is useful for intuition:
+
+\[
+\sigma_\theta \approx \frac{pD_m}{2e}
+\]
+
+**Eq. 13-01 — Thin-wall hoop-stress approximation**
+
+where:
+
+- \(\sigma_\theta\) = circumferential or hoop stress;
+- \(p\) = internal pressure;
+- \(D_m\) = representative mean diameter;
+- \(e\) = wall thickness.
+
+This equation is not the pressure-rating equation used later in the chapter. It is included here only to expose the mechanical relationship: increasing pressure or diameter increases nominal hoop stress, while increasing wall thickness reduces it.
+
+**Validity note:** the expression is a thin-wall approximation and does not replace the geometry and stress relationships required by the governing product or design standard.
+
+**Common misuse:** using a nominal hoop-stress calculation as proof of long-term life. The equation estimates nominal membrane stress; it says nothing by itself about time-to-failure, temperature, notches, local defects, material qualification or crack-growth resistance.
+
+## 4.2 Creep, rupture and crack growth are different engineering questions
+
+Three phenomena are often mixed together in casual discussion:
+
+- **creep deformation** — time-dependent strain under sustained stress;
+- **long-term rupture** — loss of pressure-boundary integrity after a period under load;
+- **slow crack growth (SCG)** — progressive crack extension from a local stress concentration over time.
+
+They are related through time-dependent polymer behaviour, but they are not interchangeable.
+
+A pipe may creep without failing. A pipe may remain dimensionally acceptable while a local crack grows from a notch. A short-term burst test may show high immediate strength while providing limited information about the slow damage mechanism that governs a long service period.
+
+The practical consequence is that engineers should not use one test result to answer a different failure question.
+
+## 4.3 Long-term failure behaviour is not represented by one mechanism
+
+At comparatively high stress or severe conditions, deformation and rupture may be dominated by ductile behaviour. At lower stress and longer times, local crack processes can become increasingly important. Temperature strongly affects the rate at which these mechanisms develop.
+
+The exact transition behaviour is material- and condition-dependent and is treated through qualified test and regression procedures rather than a universal hand calculation.
+
+For design purposes, the important point is this:
+
+> **A lower nominal stress does not make time irrelevant. It changes which time-dependent mechanism may govern.**
+
+This is one reason long-duration evidence is central to PE pressure-piping classification.
+
+## 4.4 Nominal stress is not local crack-driving stress
+
+Pressure design calculations normally work with nominal geometry and nominal stress. Failures, however, often initiate locally.
+
+Potential local stress raisers include:
+
+- scratches and gouges;
+- notches;
+- sharp geometric transitions;
+- local wall-thickness reduction;
+- manufacturing defects;
+- joint discontinuities;
+- embedded damage or foreign-body effects;
+- installation-induced deformation.
+
+The local condition at such a feature can be much more severe than the nominal pipe-wall stress suggests.
+
+This distinction is essential when reviewing a damaged pipe. A statement such as “the line pressure was below nominal rating” does not eliminate the possibility of a locally driven long-term crack mechanism.
+
+## 4.5 Slow crack growth is a system concern, not only a resin property
+
+Slow crack growth resistance is strongly influenced by material behaviour, but the engineering risk is created by the combination of:
+
+`material resistance × local defect severity × stress history × temperature × environment × time`
+
+This is why a high-performing resin cannot compensate for every installation defect, and why an observed crack cannot automatically be blamed on resin quality.
+
+When SCG is credible, the engineer should ask:
+
+- Where did the crack initiate?
+- What local feature created the stress concentration?
+- What was the pressure and temperature history?
+- Was installation damage present before service?
+- Did the crack grow through base pipe, joint region or another local feature?
+- Is the observed morphology consistent with a slow process, a rapid overload, or a combination?
+
+The detailed forensic methodology belongs to the failure-analysis chapters, but these questions belong in material selection because the failure mechanism begins with the Design Basis and installation reality.
+
+## 4.6 Why time-to-failure data matter
+
+If a material is intended for decades of pressure service, the engineer needs evidence that connects applied stress and temperature to the time at which failure occurs.
+
+A single burst pressure does not provide that relationship.
+
+A meaningful long-term dataset contains multiple specimens tested at controlled stress and temperature conditions, producing a population of failure times. Those data can then be evaluated through a defined regression and extrapolation methodology.
+
+Conceptually:
+
+`controlled stress + controlled temperature → observed time to failure → regression model → long-term strength evidence`
+
+Investigation 5 explains how this evidence can be generated without waiting for the full intended design life, and Investigation 6 explains what the regression output means to the practicing engineer.
+
+## 4.7 Engineering use: a long-term behaviour screening check
+
+Before treating a nominal PE pressure designation as sufficient, the engineer should screen the Design Basis for conditions that can change the long-term damage process.
+
+| Design Basis question | Why it matters to long-term behaviour | Engineering response |
+|---|---|---|
+| Is temperature above the reference condition used for nominal classification? | Time-dependent deformation and failure processes accelerate with temperature | Apply the governing temperature treatment and re-check pressure capability |
+| Are significant pressure cycles or transients credible? | Repeated loading adds a damage mechanism not represented by steady nominal pressure alone | Perform cyclic/transient assessment as required by the project basis |
+| Is installation damage credible? | Local notches can control crack initiation even when nominal stress is acceptable | Define damage acceptance, inspection and repair criteria |
+| Is the fluid/environment known to affect PE behaviour? | Environment can influence deformation, cracking or chemical resistance | Perform compatibility and application-specific verification |
+| Is the line buried, restrained or subject to imposed displacement? | Secondary loads can alter the local stress state | Evaluate system loads, not internal pressure alone |
+| Is the intended life unusually long or uncertain? | Long-term classification is meaningful only when used within its defined framework | Confirm the relevant qualification basis and project life assumptions |
+
+The table is intentionally a screening tool, not a substitute for the detailed analyses elsewhere in the book.
+
+## 4.8 Failure evidence: what can and cannot be concluded quickly
+
+A failed PE component often invites an immediate explanation based on where the fracture is visible. That is unsafe engineering practice.
+
+Examples of weak conclusions include:
+
+- “It failed beside the fusion bead, therefore the fusion was bad.”
+- “The pipe was below PN, therefore pressure was not involved.”
+- “The material was PE100, therefore the resin could not be the issue.”
+- “The fracture looks brittle, therefore there was no prior ductile deformation.”
+
+A technically defensible conclusion requires reconstruction of the load history, temperature, installation condition, product identity, joint history, damage state and fracture origin.
+
+Investigation 10 develops this failure lens in detail.
+
+## 4.9 Engineering decision from Investigation 4
+
+A PE pressure design is incomplete if it checks only present-day nominal stress or nominal pressure rating. The engineer must establish that the selected material, geometry and product standard provide an appropriate long-term basis for the actual temperature, loading history, installation condition and credible local damage mechanisms.
+
+The correct engineering sequence is therefore:
+
+`Nominal pressure load → long-term material evidence → local damage considerations → service modifiers → project verification`
+
+not:
+
+`PN marking → acceptance`
+
+### Practical check — before moving on
+
+If the design review cannot answer **what evidence supports the required service duration**, then the long-term pressure basis has not yet been demonstrated.
+
+**[VISUAL 13-02 — PLACEHOLDER]**  
+**Slow crack growth concept**  
+Show nominal pipe-wall stress, a local notch, crack initiation and progressive crack extension over time. The figure should explicitly separate nominal stress from the local crack-driving condition.
 
 ---
 
