@@ -1,53 +1,60 @@
-# כללי כתיבה ותרומה
+# PPE-BoK Contribution and Review Rules
 
-## שפת המקור
+## Governing system
 
-הכתיבה הראשית בעברית. מונחים מקצועיים באנגלית יופיעו בסוגריים בהופעתם הראשונה או כאשר הם נחוצים למניעת עמימות.
+All chapter development is governed by PDS 1.0. Read `docs/PDS/` and `governance/` before editing technical content.
 
-## היררכיית ראיות
+## Human Approval Gate
 
-1. חוקי יסוד ועקרונות פיזיקליים.
-2. תקנים בינלאומיים ודרישות רגולטוריות.
-3. ספרי יסוד וארגונים מקצועיים מוכרים.
-4. מאמרים שעברו ביקורת עמיתים.
-5. מדריכי יצרנים מובילים, בתחום מוצריהם בלבד.
-6. שיקול דעת או הסקה הנדסית – מסומנים במפורש ואינם מוצגים כמסקנה מוכחת.
+No technical chapter content becomes repository baseline without explicit author approval.
 
-## כלל שני המקורות
+Required sequence:
 
-כל קביעה טכנית מהותית תיבדק מול שני מקורות עצמאיים ככל שהמקורות הקיימים מאפשרים זאת. כאשר נמצא רק מקור ישיר אחד, הדבר יצוין ב-Review ולא תיווצר ודאות מלאכותית.
+`Draft → Internal Review → Joint Review → Author Approval → Commit / PR → Merge → Baseline`
 
-## תקנים
+Do not make silent technical improvements to `main`.
 
-- יש לציין מהדורה ושנת פרסום.
-- יש להבדיל בין דרישת חובה, המלצה ופרשנות.
-- אין להעלות עותקים מלאים של תקנים או ספרים המוגנים בזכויות יוצרים ללא רשות.
-- ניתן לשמור אינדקס, פרטי ביבליוגרפיה, הערות וקטעים קצרים מותרים בלבד.
+## Chapter development
 
-## נוסחאות
+Before Engineering Development begins, the chapter must satisfy `governance/Definition-of-Ready.md`.
 
-כל נוסחה חייבת לכלול:
+The chapter is the primary self-contained knowledge unit. Investigations build progressively and should not repeatedly restate chapter-level context.
 
-- מקור או בסיס פיזיקלי.
-- הגדרת כל המשתנים.
-- יחידות עקביות.
-- הנחות.
-- תחום תוקף.
-- מגבלות וטעויות נפוצות.
-- בדיקת ממדים ודוגמה מחושבת כאשר הדבר מועיל.
+Target approximately 60% engineering application and 40% engineering explanation across a chapter, adjusted to what is required to communicate the engineering point correctly.
 
-## מחקרים ודוגמאות
+## Standards
 
-יש לציין:
+- Name the governing standard where it can be identified.
+- Distinguish requirements, recommendations and engineering interpretation.
+- Do not reproduce protected standards text beyond permitted use.
+- During authoring, standards references may remain working references.
+- After authoring is complete, every standards-derived statement must be rechecked directly against the authoritative source before publication approval.
+- Record standards in `references/Standards-Register.md`.
 
-- היכן בוצע המחקר: תא, תעלה, צינור, מכל, פיילוט או מתקן תעשייתי.
-- קנה מידה וגיאומטריה.
-- זורמים, טמפרטורה, לחץ וריכוזים.
-- מה נמדד בפועל.
-- מידת האפשרות להעביר את הממצא למערכת אחרת.
+## Equations and engineering assets
 
-## סטטוס פרק
+Every material equation includes symbols, units, assumptions, validity limits, source/derivation basis and common misuse where relevant.
 
-`outline` → `writing` → `technical-review` → `source-review` → `editorial-review` → `ready`
+Use controlled identifiers:
 
-אין להגדיר פרק כ-`ready` לפני השלמת `review.md`.
+- `EQ-CCC-NNN`
+- `FIG-CCC-NNN`
+- `TAB-CCC-NNN`
+- `WF-CCC-NNN`
+- `EX-CCC-NNN`
+- `DT-CCC-NNN`
+- `CL-CCC-NNN`
+
+## Versioning
+
+Use chapter/document versions `1.0`, `1.1`, `1.2`, `2.0`.
+
+A baselined chapter is not silently overwritten. Technical revisions require review and a controlled new version.
+
+## Production order
+
+Chapter 13 is the PDS pilot. After pilot acceptance, full-book redevelopment proceeds sequentially from Chapter 001 through Chapter 013 unless the author explicitly approves an exception.
+
+## Definition of Done
+
+A chapter cannot be baselined until it meets `governance/Definition-of-Done.md`, including Technical Review, independent numerical checks, Standards Validation, editorial review, joint review and explicit author approval.
