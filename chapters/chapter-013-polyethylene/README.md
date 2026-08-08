@@ -18,7 +18,7 @@ review:
   units: pending
   examples: pending
   editorial: pending
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 pds_baseline: "1.0"
 cdb: "docs/PDS/Chapter-Design-Briefs/CDB-013-Polyethylene.md"
 ---
@@ -133,6 +133,19 @@ A more useful engineering comparison asks:
 - What failure modes are credible over the intended life?
 
 PE may be the preferred solution where fusion joining, flexibility, buried installation, impact tolerance or corrosion resistance provide measurable lifecycle value. In another Design Basis, those same characteristics may be less important than stiffness, dimensional stability or high-temperature capability.
+
+### Engineering screening table
+
+| PE characteristic | Possible engineering benefit | Design obligation |
+|---|---|---|
+| Flexibility | Tolerance of settlement, routing variation and some imposed displacement | Evaluate movement, restraint, supports and thermal response |
+| Fusion joining | Can create a continuous pressure boundary with few mechanical joint interfaces | Qualified procedure, equipment, operator competence and inspection remain necessary |
+| Corrosion resistance | Avoids many metallic corrosion mechanisms and associated protection systems | Chemical and environmental compatibility must still be demonstrated |
+| Low density | Easier handling, transport and installation in many projects | Installation method and damage control become important parts of the Design Basis |
+| Toughness | Useful impact and deformation tolerance in many installation conditions | Does not eliminate notch, gouge or slow-crack-growth concerns |
+| Long-term pressure capability | Suitable for pressure service within a qualified envelope | Must be tied to material classification, geometry, temperature and the governing product/application standard |
+
+The table is a screening aid only. None of these characteristics establishes final suitability without the rest of the chapter's verification chain.
 
 ## 1.2 Why short-term strength is not the governing design story
 
@@ -335,7 +348,7 @@ For a pressure pipe, internal pressure produces circumferential stress in the wa
 \sigma_\theta \approx \frac{pD_m}{2e}
 \]
 
-**Eq. 13-01 — Thin-wall hoop-stress approximation**
+**EQ-013-001 — Thin-wall hoop-stress approximation**
 
 where:
 
@@ -344,11 +357,17 @@ where:
 - \(D_m\) = representative mean diameter;
 - \(e\) = wall thickness.
 
-This equation is not the pressure-rating equation used later in the chapter. It is included here only to expose the mechanical relationship: increasing pressure or diameter increases nominal hoop stress, while increasing wall thickness reduces it.
+**Units:** use a consistent unit system. For example, if \(p\) is in MPa and \(D_m\) and \(e\) are in mm, the resulting nominal stress is in MPa.
 
-**Validity note:** the expression is a thin-wall approximation and does not replace the geometry and stress relationships required by the governing product or design standard.
+**Derivation basis:** circumferential force equilibrium for a thin-walled cylindrical pressure boundary.
 
-**Common misuse:** using a nominal hoop-stress calculation as proof of long-term life. The equation estimates nominal membrane stress; it says nothing by itself about time-to-failure, temperature, notches, local defects, material qualification or crack-growth resistance.
+**Assumptions:** membrane-dominated behaviour, approximately uniform wall thickness, representative cylindrical geometry and a wall sufficiently thin relative to diameter for the thin-wall approximation to be reasonable.
+
+**Engineering use:** the equation is included only to expose the mechanical dependence of nominal hoop stress on pressure, diameter and wall thickness. Increasing pressure or diameter increases nominal hoop stress; increasing wall thickness reduces it.
+
+**Validity / applicability limit:** this is not the standards-based PE pressure-rating relationship used later in the chapter and does not replace the geometry and stress relationships required by the governing product or design standard.
+
+**Common misuse:** using the nominal hoop-stress result as proof of long-term life or system suitability. The equation does not establish time-to-failure, temperature capability, local notch stress, material classification, product qualification or crack-growth resistance.
 
 ## 4.2 Creep, rupture and crack growth are different engineering questions
 
@@ -403,30 +422,13 @@ Slow crack growth resistance is strongly influenced by material behaviour, but t
 
 This is why a high-performing resin cannot compensate for every installation defect, and why an observed crack cannot automatically be blamed on resin quality.
 
-When SCG is credible, the engineer should ask:
-
-- Where did the crack initiate?
-- What local feature created the stress concentration?
-- What was the pressure and temperature history?
-- Was installation damage present before service?
-- Did the crack grow through base pipe, joint region or another local feature?
-- Is the observed morphology consistent with a slow process, a rapid overload, or a combination?
-
-The detailed forensic methodology belongs to the failure-analysis chapters, but these questions belong in material selection because the failure mechanism begins with the Design Basis and installation reality.
+At the material-selection stage, the key design consequence is that credible notches, installation damage, temperature and service history must be considered alongside the material's qualified crack-growth resistance. The detailed failure-evidence questions and forensic workflow are intentionally deferred to Investigation 10.
 
 ## 4.6 Why time-to-failure data matter
 
-If a material is intended for decades of pressure service, the engineer needs evidence that connects applied stress and temperature to the time at which failure occurs.
+If a material is intended for decades of pressure service, the engineer needs evidence that connects applied stress and temperature to time-dependent performance. A single burst pressure does not provide that relationship.
 
-A single burst pressure does not provide that relationship.
-
-A meaningful long-term dataset contains multiple specimens tested at controlled stress and temperature conditions, producing a population of failure times. Those data can then be evaluated through a defined regression and extrapolation methodology.
-
-Conceptually:
-
-`controlled stress + controlled temperature → observed time to failure → regression model → long-term strength evidence`
-
-Investigation 5 explains how this evidence can be generated without waiting for the full intended design life, and Investigation 6 explains what the regression output means to the practicing engineer.
+The detailed generation of long-term hydrostatic evidence, including accelerated testing and the role of regression/extrapolation, belongs to Investigations 5 and 6. At this point the design lesson is simply that nominal pressure capability must rest on qualified long-term evidence rather than on a short-duration strength result.
 
 ## 4.7 Engineering use: a long-term behaviour screening check
 
@@ -443,22 +445,7 @@ Before treating a nominal PE pressure designation as sufficient, the engineer sh
 
 The table is intentionally a screening tool, not a substitute for the detailed analyses elsewhere in the book.
 
-## 4.8 Failure evidence: what can and cannot be concluded quickly
-
-A failed PE component often invites an immediate explanation based on where the fracture is visible. That is unsafe engineering practice.
-
-Examples of weak conclusions include:
-
-- “It failed beside the fusion bead, therefore the fusion was bad.”
-- “The pipe was below PN, therefore pressure was not involved.”
-- “The material was PE100, therefore the resin could not be the issue.”
-- “The fracture looks brittle, therefore there was no prior ductile deformation.”
-
-A technically defensible conclusion requires reconstruction of the load history, temperature, installation condition, product identity, joint history, damage state and fracture origin.
-
-Investigation 10 develops this failure lens in detail.
-
-## 4.9 Engineering decision from Investigation 4
+## 4.8 Engineering decision from Investigation 4
 
 A PE pressure design is incomplete if it checks only present-day nominal stress or nominal pressure rating. The engineer must establish that the selected material, geometry and product standard provide an appropriate long-term basis for the actual temperature, loading history, installation condition and credible local damage mechanisms.
 
@@ -580,7 +567,8 @@ Required content:
 - installation damage and slow crack growth;
 - joining evidence;
 - distinction between material failure, product failure, joint failure and system-design failure;
-- evidence-preservation workflow.
+- evidence-preservation workflow;
+- explicitly retain the deferred principle from Investigation 4: failure location alone does not establish root cause, and evidence must be reconstructed before assigning mechanism or responsibility.
 
 Required asset:
 
