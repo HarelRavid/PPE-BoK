@@ -295,6 +295,18 @@ Each arrow represents a separate engineering step.
 
 Skipping steps is the source of many misapplications.
 
+### TAB-013-001 — PE classification and terminology as engineering inputs
+
+| Term / designation | What it represents | What it gives the engineer | What it does **not** prove | Primary standards path |
+|---|---|---|---|---|
+| PE material class | Long-term pressure-piping material classification | Input to the design-stress / pressure relationship | Project suitability, product conformity, temperature suitability or joining quality | ISO 12162 |
+| PE100 | Material-classification designation within the pressure-piping framework | Long-term material-strength class input | Universal approval for any fluid, temperature, installation or application | ISO 12162 + governing product/application standard |
+| SDR | Nominal outside-diameter to nominal wall-thickness ratio | Geometry input to the pressure relationship | Material quality, product conformity or service suitability | Governing product standard |
+| PN / pressure designation | Product/system pressure designation under defined reference conditions | Quick pressure-class reference within a defined standards framework | Suitability when temperature, application or other Design Basis conditions change | Governing product/application standard |
+| SCG resistance property | Resistance to slow crack growth established through a defined test/qualification route | Evidence relevant to a specific long-term damage mechanism | Immunity to arbitrary installation damage or to all failure mechanisms | Governing qualification/test standard |
+
+**Standards Validation Hold Point:** the exact definitions, classification boundaries, reference conditions and standards relationships in TAB-013-001 shall be rechecked against the authoritative editions before publication.
+
 ## 3.2 PE100 is not a universal certificate of suitability
 
 A pipe marked PE100 may still be unsuitable for a project if, for example:
@@ -310,20 +322,27 @@ Therefore:
 
 > **PE100 is a material-classification input. It is not a project approval.**
 
-## 3.3 PE100-RC requires careful standards treatment
+## 3.3 PE100-RC and enhanced SCG-resistance terminology require a defined qualification route
 
-Terms associated with enhanced resistance to slow crack growth are widely used in industry, but terminology, qualification routes and standards status must be handled carefully.
+Terms associated with enhanced resistance to slow crack growth are widely used in industry, but a commercial or market designation should not be treated as a self-contained engineering property.
 
-This chapter will not make a generic claim about the meaning or equivalence of such designations until the final Standards Validation pass confirms the authoritative definitions and their applicable scope.
+> **Enhanced SCG-resistance terminology must be tied to a defined qualification route, not inferred from a commercial label alone.**
 
-This is intentional. A popular market term is not automatically a universal standards designation.
+Where a designation such as PE100-RC is used, the engineer should identify:
+
+- the governing product or application specification;
+- the required SCG qualification method;
+- the applicable acceptance criteria;
+- the product/material scope covered by the qualification;
+- whether the designation changes any design-stress or pressure-rating basis, or only adds qualification evidence against a particular damage mechanism.
+
+Different standardized methods can address SCG resistance through different test concepts. For example, ISO 13479 uses a notched-pipe hydrostatic test framework, while ISO 18488 uses strain-hardening modulus as an assessment route. These methods should not be treated as interchangeable evidence unless the governing specification explicitly establishes that relationship.
+
+**Standards Validation Hold Point:** confirm whether the governing project/product standard recognises the designation explicitly, which SCG qualification route it requires, the applicable acceptance criteria, and whether the designation changes any design-stress or pressure-rating basis.
 
 ## 3.4 Engineering decision from Investigation 3
 
 Use the PE material designation to establish the material-classification branch of the design process. Do not use it to bypass product qualification, geometry selection, service-condition verification or project-specific engineering checks.
-
-**[TABLE 13-01 — TO DEVELOP]**  
-**PE terminology and classification — what each designation tells the engineer and what it does not tell the engineer.**
 
 ---
 
@@ -423,6 +442,16 @@ Slow crack growth resistance is strongly influenced by material behaviour, but t
 This is why a high-performing resin cannot compensate for every installation defect, and why an observed crack cannot automatically be blamed on resin quality.
 
 At the material-selection stage, the key design consequence is that credible notches, installation damage, temperature and service history must be considered alongside the material's qualified crack-growth resistance. The detailed failure-evidence questions and forensic workflow are intentionally deferred to Investigation 10.
+
+### SCG qualification navigation
+
+When a credible notch, gouge or other local-defect risk exists, the engineering path should be explicit:
+
+`Credible local defect / notch risk → identify required SCG resistance evidence → identify governing product/application standard → identify referenced SCG test method → verify product/material qualification → separately assess installation damage and system loading`
+
+A successful SCG-resistance test demonstrates performance under the defined test method and acceptance framework. It does **not** prove that an installed system is insensitive to arbitrary gouges, poor joints, excessive local strain or service conditions outside the qualified envelope.
+
+**Standards Validation Hold Point:** confirm the test method and acceptance route required by the governing product/application standard; do not infer equivalence between different SCG test methods without an authoritative basis.
 
 ## 4.6 Why time-to-failure data matter
 
@@ -584,7 +613,7 @@ Required asset:
 | Visual 13-02 | Slow crack growth concept | Placeholder defined |
 | Visual 13-03 | Long-term hydrostatic regression concept | Placeholder defined |
 | Visual 13-04 | Full PE engineering workflow | Placeholder defined |
-| Table 13-01 | PE terminology / classification | To develop |
+| TAB-013-001 | PE terminology / classification | Draft developed; standards validation pending |
 | Table 13-02 | Failure mechanism / evidence / response | To develop |
 | Table 13-03 | Design-input checklist | To develop |
 | Table 13-04 | Pipe marking: tells / does not tell | To develop |
