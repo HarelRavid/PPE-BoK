@@ -2,7 +2,7 @@
 chapter: 013
 title_en: "Polyethylene (PE)"
 part: "Materials"
-status: rev-1.0-integration-review
+status: rev-1.0-technical-review
 language: en
 technical_level: intermediate
 primary_domains:
@@ -16,9 +16,9 @@ review:
   academic: pending
   equations: pending
   units: pending
-  examples: pending
+  examples: pre-technical-verified
   editorial: pending
-last_updated: 2026-08-08
+last_updated: 2026-08-09
 pds_baseline: "1.0"
 cdb: "docs/PDS/Chapter-Design-Briefs/CDB-013-Polyethylene.md"
 ---
@@ -625,6 +625,21 @@ p_{bar}=\frac{20\sigma_s}{SDR-1}
 
 > **Calculated pressure basis ≠ automatically allowable operating pressure.**
 
+### TAB-013-005 — MRS / Design Coefficient / Design Stress / SDR / Pressure Reference Chain
+
+| Step | Quantity / input | Relationship or engineering action | Units | What it establishes | What it does **not** establish |
+|---|---|---|---|---|---|
+| 1 | Long-term evidence | Evaluate qualified long-term hydrostatic test evidence through the applicable regression/classification pathway | — | Evidence basis for material classification | Project suitability or allowable operating pressure |
+| 2 | MRS | Use the standardized material-classification value established by the governing classification framework | MPa | Material-classification strength input | Design stress or system pressure by itself |
+| 3 | Design coefficient, `C` | Identify the coefficient applicable to the governing product/application/design framework | dimensionless | Required reduction from classification strength to design-stress basis | Universal coefficient for every PE application |
+| 4 | Design stress, `σ_s` | `σ_s = MRS / C` (`EQ-013-002`) | MPa when MRS is MPa | Stress basis for subsequent geometry/pressure relationship | Temperature-adjusted or project-final allowable pressure |
+| 5 | SDR | `SDR = d_n / e_n` (`EQ-013-003`) | dimensionless | Nominal pipe geometry relationship | Material quality, product conformity or service suitability |
+| 6 | Reference pressure basis | `p = 2σ_s / (SDR - 1)` (`EQ-013-004`) when pressure and stress use consistent units | same pressure/stress units; convert explicitly where required | Reference pressure basis for selected material/design-stress/geometry chain | Automatic project allowable operating pressure |
+| 7 | Service verification | Apply governing temperature/time, fluid/environment, component/joint, transient, installation and application requirements | project-specific | Basis for project engineering disposition | Immunity from future Design Basis changes or failure |
+| 8 | Final disposition | Record `GO / CONDITIONAL GO / NO-GO` with assumptions and open items | — | Auditable engineering decision | Replacement for specialist analyses required by the Design Basis |
+
+**Use rule:** this is a navigation/reference asset. Exact normative definitions, coefficient values, reference conditions, rounding rules and pressure-design conventions remain subject to final Standards Validation.
+
 ## 8.3 Worked Example A — From PE100 to a reference pressure basis
 
 For illustration only:
@@ -647,6 +662,8 @@ This demonstrates:
 
 It does **not** establish that the coefficient applies universally, that 16 bar is suitable at elevated temperature or for a particular service, that fluid compatibility is acceptable, or that fittings/joints/system conditions are covered.
 
+**Independent verification:** arithmetic, algebraic equivalence and unit conversion have been independently re-performed. Two calculation paths return \(\sigma_s=8.0\text{ MPa}\) and \(p_{reference}=1.6\text{ MPa}=16\text{ bar}\). This verification does not validate standards applicability.
+
 **Standards Validation Hold Point:** revalidate PE100↔MRS basis, coefficient value, current pressure relationship, dimensional definitions and prescribed rounding rules.
 
 ## 8.4 Sensitivity — what changes the calculated pressure basis?
@@ -665,6 +682,8 @@ For comparison only, with \(MRS=10\text{ MPa}\) and \(C=1.25\):
 
 - SDR 11 → 16 bar reference basis;
 - SDR 9 → 20 bar reference basis.
+
+The SDR 9 result has also been independently recalculated as \(2.0\text{ MPa}=20\text{ bar}\).
 
 > **Changing SDR changes the reference pressure basis even when the material designation remains unchanged.**
 
@@ -826,6 +845,8 @@ The pipe marking, material designation, SDR and geometry are unchanged. The prev
 > **A Design Basis change can invalidate the previous engineering decision even when nothing printed on the pipe changes.**
 
 The example is complete only when the final disposition is explicit: **GO**, **CONDITIONAL GO**, or **NO-GO**.
+
+**Independent verification:** the decision path has been independently re-performed without fabricating a numerical temperature factor. The same engineering conclusion is reached: the changed temperature reopens the standards, service-life/pressure, compatibility, component/joint and final-disposition checks. If a standards-derived numerical temperature treatment is added later, it requires separate independent recalculation.
 
 ## 9.12 Make the final design decision explicit
 
@@ -1028,8 +1049,9 @@ The chapter's job is to tell the engineer **when those interfaces have been reac
 | TAB-013-002 | Pipe marking interpretation | Integrated; standards validation pending |
 | TAB-013-003 | PE Design Input / Verification Matrix | Integrated |
 | TAB-013-004 | Failure Evidence / Engineering Response Matrix | Integrated |
-| EX-013-001 | Worked Example A — pressure / SDR interpretation | Integrated; independent recalculation pending final review |
-| EX-013-002 | Worked Example B — changed Design Basis | Integrated; final standards-specific numerical treatment intentionally withheld |
+| TAB-013-005 | MRS / C / design stress / SDR / pressure reference chain | Integrated; standards validation pending |
+| EX-013-001 | Worked Example A — pressure / SDR interpretation | Integrated; independently recalculated |
+| EX-013-002 | Worked Example B — changed Design Basis | Integrated; decision path independently verified; numerical standards treatment intentionally withheld |
 | CL-013-001 | PE Pressure-Piping Design Review Checklist | Integrated |
 
 ---
@@ -1050,6 +1072,6 @@ Specific hold points include current ISO 9080/12162 terminology and editions; PE
 
 # Integration status
 
-This file is the consolidated **Chapter 13 Rev 1.0 integration-review candidate** under PDS Baseline 1.0. Investigations 1–4 preserve the approved explanatory foundation; Investigations 5–10 incorporate the approved engineering redevelopment passes; Quick Navigation, normalized engineering assets, the Design Review Checklist and chapter closure are integrated.
+This file is the consolidated **Chapter 13 Rev 1.0 technical-review candidate** under PDS Baseline 1.0. Investigations 1–4 preserve the approved explanatory foundation; Investigations 5–10 incorporate the approved engineering redevelopment passes; Quick Navigation, normalized engineering assets, the Design Review Checklist, pre-Technical-Review verification evidence and chapter closure are integrated.
 
-The chapter is **not yet publication-frozen**. Required next gates are Gap Closure Review, independent recalculation of Worked Example A (and any final numerical version of Worked Example B), Technical Review, and a separate final Standards Validation pass against authoritative current sources.
+The chapter is **not yet publication-frozen**. Gap Closure Review and pre-Technical verification are complete. Worked Example A has been independently recalculated; Worked Example B has been independently re-performed as a decision-path verification. Required remaining gates are Technical Review, a separate final Standards Validation pass against authoritative current sources, correction of any findings, final review and Design Freeze.
