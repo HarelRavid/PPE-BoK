@@ -2,7 +2,7 @@
 chapter: 013
 title_en: "Polyethylene (PE)"
 part: "Materials"
-status: rev-1.0-technical-review
+status: rev-1.0-standards-validation
 language: en
 technical_level: intermediate
 primary_domains:
@@ -11,12 +11,12 @@ primary_domains:
   - standards-navigation
   - failure-analysis
 review:
-  physics: pending
+  physics: pass
   standards: pending
   academic: pending
-  equations: pending
-  units: pending
-  examples: pre-technical-verified
+  equations: pass
+  units: pass
+  examples: pass
   editorial: pending
 last_updated: 2026-08-09
 pds_baseline: "1.0"
@@ -50,6 +50,7 @@ After completing the chapter, the reader should be able to:
 6. Recognise when temperature, cycling, chemical exposure, installation damage, slow crack growth or other service conditions invalidate a simple nominal-pressure interpretation.
 7. Identify the Design Basis information required before selecting a PE material class or SDR.
 8. Document a technically justified material and geometry decision while identifying what still requires project-specific engineering.
+9. Frame an initial failure investigation from observations and evidence without assuming that the visible fracture location identifies the root cause.
 
 ---
 
@@ -480,6 +481,9 @@ The output of the regression/extrapolation process provides a conservative long-
 
 **Standards Validation Hold Point:** exact current-edition rounding series, notation, reference conditions and classification rules shall be verified against current authoritative ISO 12162 before publication.
 
+**FIG-013-006 — Test data → regression → classification → product marking chain [PLACEHOLDER]**  
+Show the distinction between evidence generation, statistical interpretation, material classification and the information ultimately presented on a product marking. The figure shall make clear that each arrow is governed by a defined standards interface and that marking does not recreate the upstream evidence.
+
 ---
 
 # Investigation 7 — How Does Long-Term Evidence Become MRS and Design Stress?
@@ -591,17 +595,31 @@ SDR=\frac{d_n}{e_n}
 
 where \(SDR\) is dimensionless, \(d_n\) is nominal outside diameter and \(e_n\) is nominal wall thickness.
 
+**Units:** \(d_n\) and \(e_n\) shall use the same length unit; SDR is dimensionless.
+
+**Source basis:** nominal geometry relationship used by thermoplastics product standards; exact current definition, dimensional terminology and rounding/series conventions remain subject to Standards Validation.
+
+**Assumptions:** \(d_n\) and \(e_n\) are the nominal dimensions defined by the governing product standard for the selected pipe series. The relationship does not represent measured minimum residual wall at a damaged location.
+
+**Engineering use:** express pipe wall geometry in a normalized form that can be connected to the pressure relationship.
+
+**Applicability limit:** SDR alone does not establish material quality, product conformity, temperature capability, damage tolerance, fitting/joint capability or project suitability.
+
+**Common misuse:** comparing SDR values across different materials or services as if SDR alone were a pressure rating.
+
 > **For the same nominal diameter, lower SDR means a thicker nominal wall.**
 
 ## 8.2 Connecting design stress to pressure
 
-The project literature supplied during redevelopment uses:
+The supporting project literature used during redevelopment presents the relationship in an MRS-based form labelled `MOP`:
 
 \[
 MOP=\frac{20\,MRS}{C(SDR-1)}
 \]
 
-when pressure is in bar and MRS in MPa. From Investigation 7:
+when pressure is in bar and MRS in MPa. Within this chapter, the arithmetic result is treated as a **reference pressure basis** until the governing product/application standard, temperature/time treatment and full project Design Basis have been verified.
+
+From Investigation 7:
 
 \[
 \sigma_s=\frac{MRS}{C}
@@ -615,15 +633,25 @@ p=\frac{2\sigma_s}{SDR-1}
 
 **EQ-013-004 — SDR pressure relationship**
 
-If \(\sigma_s\) is in MPa, pressure is returned in MPa. Since \(1\text{ MPa}=10\text{ bar}\):
+where \(p\) is the calculated reference pressure basis, \(\sigma_s\) is design stress and SDR is the standard dimension ratio.
+
+**Units:** if \(\sigma_s\) is in MPa, \(p\) is returned in MPa. Since \(1\text{ MPa}=10\text{ bar}\):
 
 \[
 p_{bar}=\frac{20\sigma_s}{SDR-1}
 \]
 
-**Source basis:** carried from approved redevelopment content and supporting project literature; exact current normative form and applicability require final Standards Validation.
+**Source basis:** carried from the approved redevelopment basis and supporting project literature; the exact normative pressure-design form, terminology, coefficient path, dimensional definitions and rounding conventions require final Standards Validation against the governing current product/application standard.
 
-> **Calculated pressure basis ≠ automatically allowable operating pressure.**
+**Assumptions:** the selected material classification, design coefficient and nominal SDR are valid within the same governing standards path; pressure and stress units are consistent; and the nominal geometry relationship is applicable to the product under review.
+
+**Engineering use:** connect the validated design-stress basis to nominal pipe geometry to obtain a reference pressure basis for subsequent service verification.
+
+**Applicability limit:** the relationship does not by itself establish allowable project operating pressure, elevated-temperature capability, chemical compatibility, transient/cyclic suitability, component/joint capability, installation acceptability or regulatory compliance.
+
+**Common misuse:** treating the calculated result—or an `MOP`/PN label from another standards context—as unconditional project allowable pressure.
+
+> **Calculated reference pressure basis ≠ automatically allowable operating pressure.**
 
 ### TAB-013-005 — MRS / Design Coefficient / Design Stress / SDR / Pressure Reference Chain
 
@@ -655,6 +683,8 @@ MRS=10\text{ MPa}, \qquad C=1.25, \qquad SDR=11
 \[
 p=\frac{2(8)}{11-1}=1.6\text{ MPa}=16\text{ bar}
 \]
+
+**Standards path for the example:** long-term hydrostatic evidence / ISO 9080 framework → material classification / ISO 12162 framework → governing PE product/application standard for the service → applicable design coefficient and dimensional series → service-specific temperature/time and system verification. The example deliberately stops at the reference pressure basis because the final governing product/application standard and service-specific conditions are not being asserted universally here.
 
 This demonstrates:
 
@@ -744,6 +774,9 @@ Allowable project operating pressure
 > **The pipe marking tells the engineer what product is being presented. It does not tell the engineer whether the complete installed system satisfies the project Design Basis.**
 
 `read marking → identify product standard → verify material class → verify SDR/dimensions → confirm service/application scope → apply temperature/service conditions → verify fittings/joints/system → accept or reject`
+
+**FIG-013-007 — PE pipe marking anatomy [PLACEHOLDER]**  
+Show a generic pipe-marking string broken into manufacturer/traceability, material designation, nominal dimensions/SDR, pressure designation where applicable, product-standard reference and production/batch information. The figure shall visually separate identification/traceability fields from engineering conclusions that still require verification.
 
 ## 8.10 Practical engineering check
 
@@ -846,7 +879,7 @@ The pipe marking, material designation, SDR and geometry are unchanged. The prev
 
 The example is complete only when the final disposition is explicit: **GO**, **CONDITIONAL GO**, or **NO-GO**.
 
-**Independent verification:** the decision path has been independently re-performed without fabricating a numerical temperature factor. The same engineering conclusion is reached: the changed temperature reopens the standards, service-life/pressure, compatibility, component/joint and final-disposition checks. If a standards-derived numerical temperature treatment is added later, it requires separate independent recalculation.
+**Equivalent independent verification:** because this example is intentionally qualitative and contains no standards-derived numerical temperature factor, its independent verification is a decision-path re-performance rather than arithmetic recalculation. The changed temperature has been propagated independently through standards applicability, service-life/pressure basis, compatibility, components/joints, affected mechanical assumptions and final disposition, reaching the same conclusion. This equivalent verification satisfies the current example objective without fabricating unsupported numerical data. If a numerical temperature treatment is added after Standards Validation, that numerical addition requires separate independent recalculation before Design Freeze.
 
 ## 9.12 Make the final design decision explicit
 
@@ -1041,17 +1074,19 @@ The chapter's job is to tell the engineer **when those interfaces have been reac
 | FIG-013-003 | Long-term hydrostatic regression concept | Defined; original figure pending |
 | FIG-013-004 | PE pressure-design decision chain | Integrated |
 | FIG-013-005 | PE Failure Lens | Integrated |
+| FIG-013-006 | Test data → regression → classification → product marking chain | Placeholder retained |
+| FIG-013-007 | PE pipe marking anatomy | Placeholder retained |
 | EQ-013-001 | Thin-wall hoop-stress approximation | Integrated |
 | EQ-013-002 | MRS → design stress | Integrated; standards validation pending |
-| EQ-013-003 | SDR definition | Integrated; standards validation pending |
-| EQ-013-004 | SDR pressure relationship | Integrated; standards validation pending |
+| EQ-013-003 | SDR definition | Integrated; technical metadata complete; standards validation pending |
+| EQ-013-004 | SDR pressure relationship | Integrated; technical metadata complete; standards validation pending |
 | TAB-013-001 | PE classification / terminology | Integrated; standards validation pending |
 | TAB-013-002 | Pipe marking interpretation | Integrated; standards validation pending |
 | TAB-013-003 | PE Design Input / Verification Matrix | Integrated |
 | TAB-013-004 | Failure Evidence / Engineering Response Matrix | Integrated |
 | TAB-013-005 | MRS / C / design stress / SDR / pressure reference chain | Integrated; standards validation pending |
-| EX-013-001 | Worked Example A — pressure / SDR interpretation | Integrated; independently recalculated |
-| EX-013-002 | Worked Example B — changed Design Basis | Integrated; decision path independently verified; numerical standards treatment intentionally withheld |
+| EX-013-001 | Worked Example A — pressure / SDR interpretation | Integrated; independently recalculated; standards path explicit |
+| EX-013-002 | Worked Example B — changed Design Basis | Integrated; equivalent independent decision-path verification complete; numerical standards treatment intentionally withheld |
 | CL-013-001 | PE Pressure-Piping Design Review Checklist | Integrated |
 
 ---
@@ -1072,6 +1107,6 @@ Specific hold points include current ISO 9080/12162 terminology and editions; PE
 
 # Integration status
 
-This file is the consolidated **Chapter 13 Rev 1.0 technical-review candidate** under PDS Baseline 1.0. Investigations 1–4 preserve the approved explanatory foundation; Investigations 5–10 incorporate the approved engineering redevelopment passes; Quick Navigation, normalized engineering assets, the Design Review Checklist, pre-Technical-Review verification evidence and chapter closure are integrated.
+This file is the consolidated **Chapter 13 Rev 1.0 Standards-Validation candidate** under PDS Baseline 1.0. Gap Closure Review, pre-Technical verification and Technical Review are complete. The Technical Review closed with no unresolved physics, equation, unit, internal-consistency or example-verification findings. Investigations 1–10, Quick Navigation, normalized engineering assets, the Design Review Checklist and chapter closure are integrated.
 
-The chapter is **not yet publication-frozen**. Gap Closure Review and pre-Technical verification are complete. Worked Example A has been independently recalculated; Worked Example B has been independently re-performed as a decision-path verification. Required remaining gates are Technical Review, a separate final Standards Validation pass against authoritative current sources, correction of any findings, final review and Design Freeze.
+The chapter is **not yet publication-frozen**. The remaining gates are authoritative Standards Validation against current sources, correction of any standards findings, final editorial/academic review as required, and Design Freeze.
