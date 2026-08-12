@@ -2,7 +2,7 @@
 chapter: 11
 title: Engineering Characteristics of Common Plastic Piping Materials
 part: Material Selection
-status: research-based-draft
+status: Rev 1.0 — Book-Wide Review Approved
 language: en
 ---
 
@@ -10,393 +10,1324 @@ language: en
 
 ## Why This Chapter Matters
 
-Material selection becomes difficult when engineers compare material names instead of complete piping systems.
+Industrial plastic piping materials should not be compared as though each polymer family has one universal engineering ranking.
 
-Polyethylene, polypropylene, PVC, PVDF, ABS, and fluoropolymer-lined systems are not interchangeable alternatives that can be ranked from "weakest" to "strongest." Each family combines a distinct balance of long-term pressure performance, stiffness, impact behaviour, temperature capability, chemical resistance, joining options, installation requirements, inspection methods, availability, and cost.
+PE, PP, PVC-U, PVC-C, ABS, PVDF, specialty fluoropolymers, lined systems, and fibre-reinforced composites each combine different characteristics involving:
 
-A material that is excellent for buried water service may be a poor choice for hot oxidizing chemicals. A rigid material that simplifies support spacing may be unsuitable where impact, settlement, or large thermal movement is expected. A highly resistant fluoropolymer may solve the chemical problem while creating new challenges in joining, support design, availability, or project cost.
+- stiffness;
+- flexibility;
+- impact behaviour;
+- long-term pressure performance;
+- temperature response;
+- chemical interaction;
+- permeation;
+- joining;
+- installation;
+- inspection;
+- repair;
+- availability;
+- cost.
 
-This chapter provides a practical engineering comparison of the material families most commonly encountered in industrial plastic piping. It does not replace grade-specific design data, chemical-resistance tables, pressure-temperature curves, or manufacturer instructions. Its purpose is to help the engineer identify the right family of candidates before performing detailed verification.
+A material family that is highly attractive for one service may be unsuitable for another.
+
+This chapter therefore does not answer:
+
+> **Which material should the project select?**
+
+That decision belongs to the controlled selection methodology in Chapter 10.
+
+Instead, this chapter answers:
+
+> **What engineering characteristics, tendencies, limitations, and cautions distinguish the major plastic-piping material families?**
+
+The chapter provides a family-level reference layer for generating and understanding candidate systems.
+
+Its governing interpretation rule is:
+
+> **family tendency → compound or grade evidence → qualified product/system evidence → project suitability**
+
+A family-level statement is useful for engineering orientation and screening.
+
+It is not, by itself, a product specification, pressure rating, chemical approval, or project acceptance.
+
+### Reader outcomes
+
+After this chapter, the reader should be able to:
+
+- distinguish the principal engineering characteristics of common plastic-piping families;
+- compare families without reducing the decision to one property;
+- distinguish family-level tendencies from grade- or product-specific evidence;
+- recognize the characteristic mechanical and thermal behaviour of PE, PP, PVC-U, PVC-C, ABS, and PVDF systems;
+- understand the specialized role of PTFE, PFA, ECTFE, and lined systems;
+- distinguish solid-wall thermoplastic piping from lined and fibre-reinforced composite construction;
+- identify characteristic joining, installation, inspection, and repair implications;
+- recognize when family-level information is insufficient for engineering use;
+- hand candidate-family information back to Chapter 10 for controlled system selection and to Chapter 12 for detailed pressure-design verification.
 
 ---
 
-## 11.1 Compare Systems, Not Polymer Names
+## 11.1 How to Use Family-Level Material Information
 
-A polymer name alone does not define a piping system.
+Material-family information can support:
 
-A complete material decision includes:
+- preliminary screening;
+- candidate generation;
+- understanding of likely engineering trade-offs;
+- identification of questions requiring deeper verification;
+- recognition of characteristic joining and installation methods.
 
-- the resin or compound;
-- pipe dimensions and pressure series;
-- fittings and valves;
-- joining process;
-- seals, gaskets, and backing materials;
-- installation method;
-- design standard;
-- pressure-temperature relationship;
+It should not be used alone to establish:
+
+- allowable pressure;
+- allowable temperature;
+- chemical compatibility for a defined process;
+- design life;
+- support spacing;
+- joint acceptance;
+- regulatory approval;
+- complete system suitability.
+
+A useful evidence hierarchy is:
+
+### Level 1 — Family tendency
+
+General behaviour associated with a polymer family.
+
+Useful for orientation and screening.
+
+### Level 2 — Compound or grade evidence
+
+Information applying to a defined formulation or material classification.
+
+Required when the decision depends on formulation-specific behaviour.
+
+### Level 3 — Qualified product/system evidence
+
+Evidence applying to the actual pipe, fitting, valve, joint, or product system.
+
+Required for product-level engineering decisions.
+
+### Level 4 — Project suitability
+
+Demonstration that the complete candidate system satisfies the actual Design Basis, service cases, interfaces, installation conditions, and project requirements.
+
+This leads to the recurring rule:
+
+> **A true statement about a polymer family may still be insufficient to approve a particular piping system.**
+
+---
+
+## 11.2 A Common Framework for Comparing Material Families
+
+The families in this chapter are compared using the same engineering lenses wherever applicable.
+
+### Mechanical character
+
+Including:
+
+- stiffness;
+- flexibility;
+- ductility;
+- impact behaviour;
+- creep;
+- sensitivity to concentrated loading or imposed displacement.
+
+### Pressure-temperature character
+
+Including:
+
+- long-term pressure behaviour;
+- temperature sensitivity;
+- relevance of time-dependent strength.
+
+Detailed pressure calculations remain in Chapter 12.
+
+### Chemical, permeation, and purity character
+
+Including:
+
+- broad family-level chemical tendencies;
+- environmental stress interaction;
+- diffusion or permeation;
+- contamination or purity concerns.
+
+These are screening observations, not chemical approvals.
+
+### Joining character
+
+Including:
+
+- fusion;
+- solvent cementing;
+- mechanical or flanged connections;
+- specialized fabrication.
+
+Detailed joining qualification belongs in later chapters.
+
+### Installation and support character
+
+Including:
+
+- flexibility;
+- handling;
+- thermal movement;
+- support implications;
+- buried versus above-ground suitability.
+
+### Inspection and repair character
+
+Including:
+
+- accessibility of joints;
+- inspection route;
+- repair practicality;
+- dependence on specialist procedures.
+
+### Critical cautions
+
+The mechanisms or project conditions most likely to invalidate an overly simplistic family-level selection.
+
+---
+
+## FIG-011-001 — Family Information to Project Suitability
+
+**Conceptual figure placeholder**
+
+`POLYMER FAMILY`
+↓
+`Family-level tendencies`
+↓
+`Compound / grade`
+↓
+`Qualified product + components + joints`
+↓
+`Actual service / Design Basis`
+↓
+`Complete system verification`
+↓
+`PROJECT SUITABILITY`
+
+Side note:
+
+`Chapter 11`
+→ family characteristics
+
+`Chapter 10`
+→ controlled selection methodology
+
+`Chapter 12`
+→ pressure-design framework
+
+Central message:
+
+> **Family characteristics help identify candidates. They do not approve them.**
+
+---
+
+# 11.3 Polyethylene Systems
+
+## 11.3.1 Engineering character
+
+Polyethylene piping is widely used in applications where flexibility, ductility, fused continuity, and tolerance of installation movement are valuable.
+
+Family-level characteristics commonly associated with PE include:
+
+- relatively low modulus;
+- high flexibility;
+- useful ductility;
+- good impact tolerance in many qualified systems;
+- substantial thermal movement;
+- pronounced time-dependent deformation;
+- fusion-joining capability;
+- suitability for long continuous strings.
+
+These characteristics can make PE particularly attractive for:
+
+- buried infrastructure;
+- trenchless installation;
+- water and wastewater;
+- mining;
+- industrial utilities;
+- selected chemical duties;
+- gas distribution under applicable standards.
+
+Industrial PE systems are included within the ISO 15494 framework identified in the chapter source register.
+
+## 11.3.2 Mechanical and installation character
+
+PE flexibility can allow the piping system to:
+
+- accommodate ground movement;
+- tolerate moderate alignment variation;
+- reduce fitting count;
+- be installed in long fused strings.
+
+The same low stiffness requires deliberate treatment of:
+
+- deflection;
+- above-ground support;
+- concentrated equipment loads;
+- valves and flanges;
+- restraint;
+- thermal movement;
+- external loading;
+- long-term deformation.
+
+Flexibility is therefore neither automatically an advantage nor a disadvantage.
+
+Its value depends on the installation.
+
+## 11.3.3 Pressure-temperature character
+
+PE pressure performance is strongly time- and temperature-dependent.
+
+Short-term mechanical strength should not be used as a substitute for the qualified long-term pressure basis.
+
+Detailed development of:
+
+- long-term hydrostatic strength;
+- MRS;
+- design stress;
+- SDR;
+- pressure rating
+
+belongs in Chapter 12.
+
+Chapter 11 needs only the family-level conclusion:
+
+> **Elevated temperature can materially reduce the pressure capability of a PE pressure system, and the actual product/system basis must be verified.**
+
+## 11.3.4 PE80, PE100, PE100-RC, and PE100+
+
+PE80 and PE100 are associated with long-term hydrostatic-strength classification.
+
+They do not independently describe:
+
 - chemical compatibility;
-- inspection and repair strategy.
+- joining quality;
+- installation quality;
+- impact performance;
+- complete project suitability.
 
-Two products described as the same polymer can differ in formulation, long-term strength classification, impact behaviour, processing history, quality-control regime, joining instructions, and certified application range.
+PE100-RC identifies PE100 materials with enhanced slow-crack-growth qualification within the applicable framework.
 
-Accordingly, statements such as "PVDF is better than PP" or "PE is more flexible than PVC" may be directionally useful, but they are not material-selection conclusions. The correct engineering question is:
+The designation should not be interpreted as automatically increasing every relevant design property.
 
-> Which complete piping system remains fit for the defined service envelope and project life cycle?
+PE100+ is an industry quality-assurance designation associated with listed PE100 materials meeting additional recurring requirements.
+
+It is not an ISO strength class above PE100.
+
+## 11.3.5 Chemistry, permeation, and service cautions
+
+PE commonly performs well in many aqueous environments.
+
+Actual suitability may still depend on:
+
+- concentration;
+- temperature;
+- oxidizing conditions;
+- hydrocarbons;
+- surfactants;
+- mixed streams;
+- stress state;
+- permeation requirements;
+- purity requirements.
+
+Family-level chemical resistance should therefore remain a screening input.
+
+## 11.3.6 Joining character
+
+Common PE joining routes include:
+
+- butt fusion;
+- electrofusion;
+- qualified mechanical transitions;
+- flanged interfaces.
+
+Fusion can produce long, substantially continuous piping strings.
+
+Joint reliability still depends on:
+
+- material compatibility;
+- equipment;
+- preparation;
+- alignment;
+- heating;
+- pressure;
+- timing;
+- cooling;
+- operator competence;
+- inspection and traceability.
+
+## 11.3.7 Critical PE cautions
+
+Particular attention should be given to:
+
+- elevated-temperature pressure derating;
+- creep and long-term deformation;
+- thermal expansion and contraction;
+- slow crack growth;
+- local stress concentrations;
+- permeation;
+- chemical-environment interaction;
+- support and restraint of above-ground systems;
+- heavy valves and rigid interfaces.
 
 ---
 
-## 11.2 Polyethylene Systems
+# 11.4 Polypropylene Systems
 
-### 11.2.1 Where polyethylene is commonly used
+## 11.4.1 Engineering character
 
-Polyethylene piping is widely used for water, wastewater, buried infrastructure, mining, industrial utility services, selected chemical duties, gas distribution under applicable standards, and applications where flexibility and fused joints provide major installation advantages.
+Polypropylene is a major industrial thermoplastic-piping family, particularly in chemical-processing and above-ground fabricated systems.
 
-Industrial PE systems are covered within ISO 15494 together with other thermoplastic families used for industrial service. Separate application standards also exist for water and gas systems.
+Family-level characteristics commonly include:
 
-### 11.2.2 Principal engineering strengths
+- greater stiffness than many PE systems;
+- useful chemical resistance in many aqueous duties;
+- fusion fabrication;
+- significant thermal expansion;
+- time-dependent creep;
+- grade-dependent impact behaviour;
+- useful service capability across a broad industrial range when properly qualified.
 
-PE systems commonly offer:
-
-- high ductility;
-- good impact tolerance, including under many low-temperature installation conditions;
-- flexibility that can accommodate ground movement and reduce the number of fittings;
-- low density;
-- good resistance to many aqueous chemicals;
-- butt fusion and electrofusion joining options;
-- the possibility of constructing long, substantially continuous fused strings;
-- strong suitability for buried and trenchless installation when the selected product and procedure are appropriate.
-
-The low modulus that gives PE much of its installation tolerance also means that deflection, support spacing, thermal movement, external loading, and long-term deformation require explicit design attention.
-
-### 11.2.3 PE80, PE100, PE100-RC, and PE100+
-
-PE80 and PE100 are material classifications linked to long-term hydrostatic strength methodology and minimum required strength concepts. They are not direct descriptions of chemical resistance, joint quality, installation quality, or suitability for a specific process.
-
-PE100-RC identifies PE100 materials developed and qualified for enhanced resistance to slow crack growth under relevant product and material frameworks. The designation does not remove the need to assess pressure, temperature, chemical exposure, fatigue, workmanship, geometry, or abnormal loading.
-
-PE100+ is an industry quality-association designation applied to listed PE100 materials that satisfy the association's recurring independent test requirements. It should not be presented as a strength class above PE100 or as a substitute for the applicable product standard.
-
-### 11.2.4 Principal limitations and cautions
-
-Engineers should explicitly assess:
-
-- rapid reduction of allowable pressure capability as service temperature increases;
-- large thermal expansion and contraction;
-- viscoelastic deformation and creep;
-- susceptibility to slow crack growth under unfavourable combinations of stress, defects, geometry, and environment;
-- permeation or diffusion where gas purity, emissions, vacuum, or hazardous service is relevant;
-- compatibility with oxidizing chemicals, hydrocarbons, surfactants, or mixed process streams;
-- support, anchoring, and restraint forces in above-ground installations;
-- the effect of valves, instruments, flanges, and heavy fittings on local loading;
-- joint accessibility and operator qualification.
-
-PE is often an excellent system material, but it should not be selected solely because a generic compatibility chart lists the main chemical as acceptable.
+Industrial PP systems are included within ISO 15494 as identified in the chapter evidence register.
 
 ---
 
-## 11.3 Polypropylene Systems
+## 11.4.2 PP-H
 
-### 11.3.1 Where polypropylene is commonly used
+PP-H is polypropylene homopolymer.
 
-Polypropylene piping is common in chemical processing, water treatment, plating and pickling facilities, industrial drainage, laboratory and utility systems, and above-ground process installations where its chemical resistance, stiffness, and fusion-joining options are advantageous.
+It is widely encountered in industrial chemical piping and fabricated process equipment.
 
-ISO 15494 includes PP industrial piping systems together with PE and other specified thermoplastics.
+Typical family-level strengths include:
 
-### 11.3.2 PP-H
+- useful stiffness;
+- fusion weldability;
+- resistance to many acids, alkalis, salts, and aqueous solutions;
+- broad industrial fabrication capability.
 
-PP-H, polypropylene homopolymer, is widely used in industrial chemical piping. Compared with PE, it generally provides a higher modulus and is frequently selected for above-ground systems where greater stiffness and improved temperature capability are useful.
+Important cautions include:
 
-Typical advantages include:
+- low-temperature impact behaviour;
+- thermal movement;
+- creep;
+- oxidizing environments;
+- organic chemicals;
+- branch and restraint stress concentrations.
 
-- resistance to many acids, alkalis, salts, and aqueous chemical solutions;
-- good weldability using appropriate thermoplastic fusion procedures;
-- useful stiffness for fabricated process systems, tanks, headers, and ventilation-related applications;
-- broad industrial availability.
+---
 
-Important cautions include reduced impact tolerance at low temperature compared with more impact-modified PP variants, significant thermal expansion compared with metals, and service-dependent limitations with oxidizers, solvents, and mixed chemicals.
+## 11.4.3 PP-B
 
-### 11.3.3 PP-B and PP-R
+PP-B is polypropylene block copolymer.
 
-PP-B, polypropylene block copolymer, is commonly associated with improved impact performance compared with PP-H, particularly where toughness is important. Its exact use in industrial pressure piping depends on the qualified system and product standard.
+It is commonly associated with improved impact behaviour relative to PP-H.
 
-PP-R, polypropylene random copolymer, is widely used in hot- and cold-water systems and is also available in industrial systems. It combines fusion joining with useful pressure-temperature performance, but industrial chemical service must be verified against the exact compound, system, and exposure conditions.
+That general tendency should not be converted automatically into a product-specific design value.
 
-The terms PP-H, PP-B, and PP-R describe materially different polymer structures and should not be treated as commercial synonyms.
+Actual pressure, chemical, and temperature capability depends on the defined compound and qualified system.
 
-### 11.3.4 Principal limitations and cautions
+---
 
-For PP systems, engineers should assess:
+## 11.4.4 PP-R
 
-- low-temperature impact requirements;
-- pressure derating at elevated temperature;
-- long-term creep and support spacing;
+PP-R is polypropylene random copolymer.
+
+It is widely associated with hot- and cold-water systems and is also available in industrial applications.
+
+Its engineering character can combine:
+
+- fusion joining;
+- useful pressure-temperature capability;
+- industrial system availability.
+
+Chemical-service suitability still requires verification for the actual:
+
+- compound;
+- fluid;
+- concentration;
+- temperature;
+- pressure;
+- product system.
+
+PP-H, PP-B, and PP-R describe materially different polymer structures.
+
+They should not be treated as commercial synonyms.
+
+---
+
+## 11.4.5 Joining and installation character
+
+PP systems may use qualified methods such as:
+
+- butt fusion;
+- socket fusion;
+- infrared fusion;
+- bead-reduced or specialized fusion systems.
+
+The applicable method depends on the actual product system and service.
+
+Above-ground PP installations require deliberate treatment of:
+
 - thermal expansion;
-- oxidation resistance and stabilizer system;
-- compatibility with strong oxidizers and organic chemicals;
-- fabrication quality in large-diameter or shop-fabricated components;
-- stress concentration at branch connections, flanges, and rigid restraints.
-
-PP is often a strong candidate for above-ground chemical systems, but the selected grade and system architecture are as important as the family name.
+- support spacing;
+- restraint;
+- fabrication geometry;
+- heavy components;
+- local branch stresses.
 
 ---
 
-## 11.4 PVC-U and PVC-C Systems
+## 11.4.6 Critical PP cautions
 
-ISO 15493 specifies industrial piping-system requirements for ABS, PVC-U, and PVC-C in above-ground industrial applications.
+Particular attention should be given to:
 
-### 11.4.1 PVC-U
+- temperature-dependent pressure capability;
+- long-term creep;
+- low-temperature impact where relevant;
+- thermal movement;
+- oxidation resistance;
+- strong oxidizers;
+- organic chemical exposure;
+- fabricated-component quality;
+- concentrated stresses.
 
-PVC-U is a rigid, amorphous thermoplastic widely used for water treatment, industrial utilities, chemical transfer, drainage, and many low-to-moderate temperature process duties.
+---
 
-Typical engineering advantages include:
+# 11.5 PVC-U Systems
+
+## 11.5.1 Engineering character
+
+PVC-U is a rigid amorphous thermoplastic widely used in:
+
+- water treatment;
+- industrial utilities;
+- chemical transfer;
+- drainage;
+- low- to moderate-temperature process duties.
+
+ISO 15493 is identified in the source register as the relevant industrial-system framework covering PVC-U, PVC-C, and ABS.
+
+Typical PVC-U family characteristics include:
 
 - relatively high stiffness compared with PE and PP;
-- low thermal expansion relative to many other common thermoplastics, though still greater than metals;
-- broad availability of pipe, fittings, valves, and solvent-cement systems;
-- resistance to many acids, alkalis, and salts;
-- smooth internal surfaces;
-- ease of assembly where solvent cementing is permitted and correctly controlled.
+- relatively restrained thermal movement compared with many other common thermoplastics;
+- broad industrial component availability;
+- resistance to many aqueous acids, alkalis, and salts;
+- solvent-cement joining systems;
+- smooth internal surfaces.
 
-The same rigidity that helps control deflection also reduces tolerance to impact, imposed displacement, misalignment, and concentrated loading. PVC-U systems therefore require careful handling, support, restraint, and joint preparation.
+## 11.5.2 Mechanical character
 
-### 11.4.2 PVC-C
+PVC-U rigidity can simplify some support and deflection problems.
 
-PVC-C, commonly called CPVC in industry, is chlorinated poly(vinyl chloride). It is selected where higher temperature capability or a different chemical-resistance envelope is required compared with PVC-U.
+It also means the system may have less tolerance for:
 
-It should not be treated as "hotter PVC" without further analysis. Compound formulation, joining products, curing requirements, pressure-temperature rating, and chemical environment remain system-specific.
+- impact;
+- imposed displacement;
+- misalignment;
+- concentrated loading;
+- poor support geometry;
+- handling damage.
 
-### 11.4.3 Solvent-cemented joints
+A stiff material is not automatically a mechanically simpler system.
 
-Solvent cementing is not simply adhesive bonding in the ordinary sense. The process depends on surface preparation, controlled application, material softening or dissolution, assembly, and adequate curing under specified conditions.
+It changes which mechanisms require attention.
 
-Joint reliability can be reduced by:
+## 11.5.3 Joining character
 
-- poor cleaning or preparation;
+Solvent cementing is not ordinary adhesive bonding.
+
+The process depends on controlled:
+
+- preparation;
+- cleaning;
+- compatible joining products;
+- application;
+- assembly;
+- fit;
+- cure.
+
+Joint reliability may be reduced by:
+
+- poor preparation;
 - incompatible cement or primer;
-- incorrect gap or fit;
-- insufficient insertion or rotation control;
-- movement before adequate cure;
-- low temperature or high humidity outside procedure limits;
+- incorrect fit;
+- movement during cure;
+- environmental conditions outside the qualified procedure;
 - premature pressure testing;
-- excessive cement accumulation or chemical attack.
+- uncontrolled cement application.
 
-### 11.4.4 Principal limitations and cautions
+## 11.5.4 Critical PVC-U cautions
 
-Engineers should evaluate:
+Particular attention should be given to:
 
-- impact and brittle-fracture risk, especially during handling or at low temperature;
-- stress concentration and imposed displacement;
-- compatibility with solvents and organic chemicals;
-- environmental stress cracking or chemically assisted cracking under combined stress and exposure;
+- impact and brittle-fracture behaviour;
+- low-temperature handling;
+- imposed displacement;
+- local stress concentration;
+- solvent exposure;
+- chemically assisted cracking;
 - joining-product compatibility;
-- curing time before testing and operation;
-- fire and smoke requirements under applicable regulation;
-- outdoor exposure and formulation-specific UV provisions.
+- cure requirements;
+- fire and smoke requirements;
+- formulation-specific outdoor exposure provisions.
 
 ---
 
-## 11.5 ABS Systems
+# 11.6 PVC-C / CPVC Systems
 
-ABS is an amorphous thermoplastic used in selected industrial piping, chilled-water, water-treatment, marine, drainage, and low-temperature applications. ISO 15493 includes ABS industrial piping systems.
+PVC-C is chlorinated poly(vinyl chloride), commonly called CPVC in industrial practice.
 
-Its engineering appeal commonly includes:
+It is related to PVC-U but should not be treated merely as “PVC for higher temperature.”
 
-- useful impact resistance;
+Qualified PVC-C systems may provide:
+
+- increased temperature capability relative to PVC-U;
+- useful stiffness;
+- resistance to many industrial chemical environments;
+- solvent-cement system availability.
+
+Actual behaviour remains dependent on:
+
+- compound formulation;
+- product system;
+- pressure;
+- temperature;
+- chemical environment;
+- joining products;
+- cure conditions.
+
+The material designation and commercial terminology should remain clear:
+
+> **PVC-C is the ISO material designation; CPVC is the common industrial term.**
+
+Critical cautions include:
+
+- compound-specific chemistry;
+- impact and brittle behaviour;
+- installation stress;
+- solvent-cement compatibility;
+- curing;
+- pressure-temperature derating;
+- fire and regulatory requirements.
+
+---
+
+# 11.7 ABS Systems
+
+ABS is an amorphous thermoplastic used in selected:
+
+- industrial piping;
+- chilled-water systems;
+- water treatment;
+- marine service;
+- drainage;
+- low-temperature applications.
+
+ISO 15493 includes ABS industrial piping systems.
+
+Family-level characteristics commonly include:
+
+- useful impact performance;
 - relatively low density;
 - smooth bore;
-- solvent-cement joining systems;
-- good performance in selected water and low-temperature services.
+- solvent-cement joining;
+- useful performance in selected water and lower-temperature services.
 
-Its chemical-resistance envelope differs significantly from PE, PP, PVC, and fluoropolymers. Solvents, oils, hydrocarbons, oxidizers, and mixed chemical exposure require particular care.
+Its chemical-resistance envelope differs materially from those of PE, PP, PVC, and fluoropolymers.
 
-ABS should therefore be selected from verified system data rather than from general assumptions about "plastic chemical resistance."
+Particular caution is required for:
+
+- solvents;
+- oils;
+- hydrocarbons;
+- oxidizers;
+- mixed chemical streams.
+
+ABS should therefore be evaluated using verified system data rather than a general assumption that “plastic” means broadly chemically resistant.
 
 ---
 
-## 11.6 PVDF Systems
+# 11.8 PVDF Systems
 
-ISO 10931 specifies components and systems made from PVDF for above-ground industrial applications. The standard was reviewed and confirmed in 2025, with its published amendment remaining relevant at the time of this draft.
+## 11.8.1 Engineering character
 
-PVDF is a semi-crystalline fluoropolymer commonly selected for demanding chemical, high-purity, semiconductor, pharmaceutical, and process applications.
+PVDF is a semi-crystalline fluoropolymer used in demanding industrial applications.
 
-### 11.6.1 Principal engineering strengths
+ISO 10931 is identified in the chapter source register as the relevant industrial PVDF piping-system framework.
 
-PVDF systems commonly offer:
+PVDF systems are commonly encountered in:
+
+- chemical processing;
+- high-purity water;
+- semiconductor service;
+- pharmaceutical service;
+- demanding process applications.
+
+Family-level characteristics commonly include:
 
 - broad chemical resistance;
-- higher temperature capability than PE, PP, PVC-U, and ABS in many qualified systems;
-- low contamination potential in high-purity grades;
-- good resistance to ultraviolet exposure in suitable formulations;
-- fusion-joining options;
-- low permeability relative to many non-fluorinated thermoplastics, while not being absolutely impermeable;
-- useful mechanical strength and stiffness for demanding industrial systems.
+- useful elevated-temperature capability relative to several common thermoplastic families;
+- low contamination potential in suitable high-purity grades;
+- fusion joining;
+- useful mechanical strength and stiffness;
+- comparatively low permeability relative to many non-fluorinated thermoplastics.
 
-### 11.6.2 Principal limitations and cautions
-
-PVDF carries significant engineering and project implications:
-
-- higher material and fabrication cost;
-- greater sensitivity to correct fusion parameters and cleanliness requirements;
-- need to distinguish industrial, high-purity, conductive, and other formulations;
-- chemical limitations with certain strong bases, amines, solvents, or high-temperature combinations depending on grade;
-- thermal expansion and creep remain relevant despite improved temperature capability;
-- supports, joints, valves, and transition components must be selected as a compatible system;
-- high-purity service may impose requirements far beyond pressure integrity.
-
-PVDF is not automatically the safest answer whenever PP or PVC appears marginal. Its benefits must justify the additional complexity and cost.
+None of these characteristics makes PVDF universally suitable.
 
 ---
 
-## 11.7 PTFE, PFA, ECTFE, and Lined Systems
+## 11.8.2 Grade and application distinctions
 
-These fluoropolymers are important in industrial practice, but they should be treated as specialized solutions rather than default choices for ordinary service.
+The label PVDF may cover systems intended for different purposes.
 
-### PTFE
+Examples may include:
 
-PTFE provides exceptionally broad chemical resistance and a wide service-temperature range in many applications. Because conventional melt-fusion processing is not used in the same way as for PE, PP, or PVDF, PTFE is frequently encountered in liners, hoses, gaskets, bellows, seals, and specialized fabricated systems.
+- general industrial grades;
+- high-purity grades;
+- conductive formulations;
+- specialized product systems.
 
-Its low modulus, creep, cold flow, permeability considerations, and joining or sealing method must be incorporated into the design.
+A high-purity product and a general industrial product should not be assumed to be interchangeable merely because both are PVDF.
 
-### PFA
+---
 
-PFA combines fluoropolymer chemical resistance with melt-processability. It is common in high-purity and highly corrosive applications, including tubing and lined systems. Cost, permeation, mechanical support, joining quality, and availability often govern project feasibility.
+## 11.8.3 Joining character
 
-### ECTFE
+PVDF systems may use qualified processes including:
 
-ECTFE is used in selected corrosive and high-purity applications and is available as solid piping, sheet, coating, or lined-system solutions depending on supplier. It can offer a valuable balance of chemical resistance, mechanical robustness, and permeation performance for certain duties.
+- butt fusion;
+- socket fusion;
+- infrared fusion;
+- bead-reduced or specialized high-purity joining systems.
+
+The selected process may impose significant requirements for:
+
+- cleanliness;
+- machine control;
+- heating parameters;
+- alignment;
+- cooling;
+- operator competence;
+- documentation.
+
+---
+
+## 11.8.4 Critical PVDF cautions
+
+Particular attention should be given to:
+
+- product/grade distinction;
+- high-purity requirements;
+- fusion control;
+- cleanliness;
+- strong bases, amines, solvents, or other challenging chemical combinations depending on the actual grade and condition;
+- thermal expansion;
+- creep;
+- supports and interfaces;
+- cost;
+- specialist availability.
+
+PVDF should not be selected automatically whenever a lower-cost thermoplastic appears marginal.
+
+The additional performance must solve an actual engineering requirement.
+
+---
+
+# 11.9 Specialty Fluoropolymers
+
+PTFE, PFA, and ECTFE occupy important but specialized roles.
+
+The current evidence base for these families is intentionally less mature than for the principal industrial families discussed earlier.
+
+The descriptions below should therefore remain qualitative until the dedicated standards and product evidence are expanded.
+
+---
+
+## 11.9.1 PTFE
+
+PTFE is widely recognized for very broad chemical resistance and useful performance across severe chemical environments.
+
+In piping practice it is commonly encountered in:
+
+- liners;
+- hoses;
+- gaskets;
+- bellows;
+- seals;
+- specialized fabricated components.
+
+Unlike PE, PP, or PVDF, conventional melt-fusion processing is not generally applied to PTFE in the same manner.
+
+Important engineering considerations include:
+
+- low modulus;
+- creep;
+- cold flow;
+- permeation;
+- sealing;
+- mechanical support;
+- specialized fabrication.
+
+Broad chemical resistance does not remove these mechanical and system-level constraints.
+
+---
+
+## 11.9.2 PFA
+
+PFA combines fluoropolymer chemical resistance with melt processability.
+
+It is encountered in:
+
+- high-purity tubing;
+- severe chemical service;
+- specialized piping;
+- lined systems.
+
+Relevant project considerations may include:
+
+- cost;
+- permeation;
+- mechanical support;
+- joining quality;
+- product availability;
+- cleanliness.
+
+---
+
+## 11.9.3 ECTFE
+
+ECTFE is used in selected:
+
+- corrosive services;
+- high-purity applications;
+- solid piping;
+- sheet or coating systems;
+- lined equipment and piping.
+
+It may offer a useful combination of:
+
+- chemical resistance;
+- mechanical robustness;
+- permeation performance.
+
+Actual suitability remains product- and service-specific.
+
+---
+
+# 11.10 Solid-Wall Thermoplastic, Lined, and Composite Systems
+
+These constructions should not be treated as equivalent simply because they all contain polymeric materials.
+
+---
+
+## 11.10.1 Solid-wall thermoplastic piping
+
+In a solid-wall thermoplastic pipe, the thermoplastic wall itself provides the primary pressure-containing structural function.
+
+Its engineering behaviour is governed by the applicable thermoplastic:
+
+- material properties;
+- geometry;
+- long-term pressure basis;
+- joining system;
+- installation.
+
+Examples include many PE, PP, PVC, ABS, and PVDF systems.
+
+---
+
+## 11.10.2 Lined piping
+
+A lined system separates functions between layers or components.
+
+A typical system may contain:
+
+- chemically resistant liner;
+- structural shell;
+- flange system;
+- venting arrangement;
+- mechanical interfaces.
+
+The engineering problem may include:
+
+- liner collapse;
+- vacuum;
+- permeation;
+- venting;
+- thermal expansion mismatch;
+- flange behaviour;
+- liner damage;
+- repair access.
+
+A chemically compatible liner does not prove that the complete lined system is suitable.
+
+---
+
+## 11.10.3 Fibre-reinforced composite piping
+
+GRP, FRP, and RTRP systems combine a polymer matrix with fibre reinforcement.
+
+Their behaviour is fundamentally different from homogeneous thermoplastics.
+
+Important characteristics include:
+
+- anisotropy;
+- reinforcement architecture;
+- resin dependence;
+- laminate construction;
+- manufacturing-process dependence;
+- joint-design sensitivity.
+
+Composite piping therefore requires composite-specific engineering methods.
+
+ISO 14692 is identified in the chapter evidence map as one relevant framework where applicable.
+
+---
+
+## FIG-011-002 — Three Different Polymer-Based Piping Architectures
+
+**Conceptual figure placeholder**
+
+### Solid-wall thermoplastic
+
+`Homogeneous thermoplastic pressure wall`
+
+Primary structural function:
+**thermoplastic wall**
 
 ### Lined piping
 
-A lined system is not equivalent to a solid-wall thermoplastic pipe. The liner, structural shell, venting, flange design, vacuum resistance, thermal expansion mismatch, permeation management, inspection, and repair method form one integrated system.
+`Structural shell`
++
+`chemical-resistant liner`
 
-A liner that is chemically compatible may still fail if the structural or permeation design is inadequate.
+Functions divided between:
+**structure + containment surface**
+
+### Fibre-reinforced composite
+
+`Polymer matrix`
++
+`reinforcement architecture`
+
+Primary structural function:
+**composite laminate**
+
+Central message:
+
+> **Similar chemical-resistance goals do not imply similar structural behaviour or design methods.**
 
 ---
 
-## 11.8 Composite Piping: GRP, FRP, and RTRP
+# 11.11 Composite Piping — GRP, FRP, and RTRP
 
-Composite piping is not a thermoplastic family, but it is sufficiently common in industrial plastic-piping practice to require inclusion in the material-selection process.
-
-GRP, FRP, and RTRP systems combine a polymer matrix with fibre reinforcement. Their mechanical behaviour is anisotropic and depends strongly on reinforcement architecture, resin system, manufacturing process, joint design, and quality control.
-
-Typical advantages include:
+Composite systems can provide:
 
 - high specific strength;
 - useful stiffness;
-- corrosion resistance for selected resin systems;
-- suitability for large diameters;
-- reduced weight compared with metallic alternatives.
+- corrosion resistance with suitable resin systems;
+- large-diameter capability;
+- lower mass than many metallic alternatives.
 
-Typical cautions include:
+Important cautions include:
 
-- sensitivity to manufacturing defects and laminate quality;
 - directional properties;
-- different failure modes from homogeneous thermoplastics;
-- joint and flange design sensitivity;
-- impact damage that may not be obvious at the surface;
-- resin-specific chemical and temperature limits;
-- need for composite-specific design standards and qualified fabrication methods.
+- laminate quality;
+- manufacturing defects;
+- impact damage;
+- resin-specific chemical behaviour;
+- temperature limitations;
+- joint sensitivity;
+- flange design;
+- specialized inspection;
+- specialized repair.
 
-Composite piping should not be analysed using thermoplastic assumptions simply because both are colloquially called "plastic piping."
+The terminology GRP, FRP, and RTRP should ultimately be harmonized with the book glossary.
 
----
-
-## 11.9 A Practical Family-Level Comparison
-
-The following comparison is intentionally qualitative. Final decisions require product-specific pressure-temperature data, chemical-resistance verification, joining requirements, and applicable standards.
-
-| Material family | Typical strengths | Typical cautions | Common joining approach |
-|---|---|---|---|
-| PE | Ductility, impact tolerance, flexibility, buried installation, fused strings | Thermal movement, low stiffness, creep, temperature derating, permeation and SCG assessment | Butt fusion, electrofusion, mechanical transitions |
-| PP-H / PP-R / PP-B | Chemical-service availability, stiffness, fusion fabrication, useful temperature range | Thermal expansion, creep, low-temperature behaviour, oxidizers and organic chemicals | Butt fusion, socket fusion, IR or bead-reduced methods where qualified |
-| PVC-U | Stiffness, availability, many aqueous chemical duties, relatively controlled thermal movement | Impact and imposed displacement, solvent compatibility, curing and joint workmanship | Solvent cementing, flanges, mechanical transitions |
-| PVC-C | Higher temperature capability than PVC-U in qualified systems | Compound-specific chemical limits, curing, brittleness and installation control | Solvent cementing, flanges |
-| ABS | Impact performance and selected low-temperature or water duties | Narrower chemical envelope for many solvents and hydrocarbons | Solvent cementing, flanges |
-| PVDF | Demanding chemical and high-purity service, elevated-temperature capability | Cost, cleanliness, grade selection, fusion control | Butt, socket, IR, bead-reduced or other qualified fusion methods |
-| PTFE / PFA / ECTFE | Severe chemical and specialized high-purity service | Cost, creep, permeation, support and specialized joining | Specialized fusion, welding, lining, flanged systems |
-| GRP / FRP / RTRP | Large diameter, high specific strength, selected corrosive service | Anisotropy, laminate quality, impact damage, resin and joint dependence | Laminated joints, adhesive systems, mechanical or flanged joints |
-
-This table is a screening aid, not a selection specification.
+Detailed composite design remains outside the scope of this thermoplastic-family reference chapter.
 
 ---
 
-## 11.10 Common Selection Errors
+# TAB-011-001 — Family-Level Engineering Comparison
 
-### Error 1 — Selecting by maximum temperature alone
+| Family / system | Mechanical character | Thermal / pressure character | Chemistry / purity character | Typical joining character | Critical cautions |
+|---|---|---|---|---|---|
+| PE | Flexible, ductile, relatively low modulus | Strong time/temperature dependence | Useful resistance in many services; verify oxidizers, hydrocarbons, permeation | Butt fusion, electrofusion | Creep, thermal movement, SCG, support/restraint |
+| PP | Stiffer than many PE systems; grade-dependent impact | Useful industrial temperature range; creep remains important | Broad usefulness in many chemical duties; verify oxidizers/organics | Fusion processes | Thermal expansion, low-temperature impact, oxidation |
+| PVC-U | Rigid, relatively high stiffness | More limited temperature envelope than some alternatives | Useful in many aqueous chemical duties | Solvent cement, flanges | Impact, imposed displacement, solvent exposure, cure |
+| PVC-C | Rigid | Higher temperature capability than PVC-U in qualified systems | Compound-specific chemical envelope | Solvent cement, flanges | Brittleness, chemistry, cure, pressure-temperature basis |
+| ABS | Useful impact character | Common in selected lower-temperature duties | Chemical envelope requires careful verification | Solvent cement, flanges | Solvents, oils, hydrocarbons, oxidizers |
+| PVDF | Useful stiffness/strength | Elevated-temperature capability in many qualified systems | Broad chemical and high-purity capability depending on grade | Qualified fusion methods | Cost, grade distinction, cleanliness, fusion control |
+| PTFE | Low modulus, strong creep/cold-flow considerations | Specialized wide-temperature applications | Very broad chemical resistance in many services | Specialized fabrication / lining / sealing | Creep, support, sealing, permeation |
+| PFA | Flexible fluoropolymer system character | Specialized elevated-temperature applications | Severe chemical / high-purity use | Specialized fusion/fabrication | Cost, permeation, support, availability |
+| ECTFE | Product-dependent mechanical character | Specialized service | Severe chemical / permeation applications | Product-specific | Evidence/product availability |
+| Lined system | Structural behaviour governed by shell + liner interaction | System-specific | Liner selected for containment surface | Flanged / fabricated / specialized | Vacuum, permeation, venting, liner-shell interaction |
+| GRP / FRP / RTRP | Anisotropic composite | Resin/reinforcement/system dependent | Resin-system dependent | Laminated, adhesive, mechanical, flanged | Laminate quality, impact, anisotropy, joint design |
 
-The material with the highest advertised temperature limit is not automatically the best system. Pressure, chemical concentration, duration, joint method, support design, and cycling must also be considered.
+### Interpretation warning
 
-### Error 2 — Treating all grades within a family as equivalent
+This table is a **candidate-generation and orientation aid**.
 
-PE100, PP-H, high-purity PVDF, conductive PVDF, and industrial PVC compounds are not generic interchangeable commodities.
+It is not:
 
-### Error 3 — Comparing pipe only
-
-A project may find compatible pipe but incompatible valves, seals, instrumentation connections, cement, welding equipment, or repair materials.
-
-### Error 4 — Using a compatibility chart as the design approval
-
-Chemical charts are screening tools. They may not account for stress, pressure, concentration variation, impurities, permeation, cycling, or long-term exposure.
-
-### Error 5 — Ignoring installation environment
-
-Buried settlement, outdoor UV, low-temperature handling, restricted welding space, and poor access may change the preferred material family.
-
-### Error 6 — Over-specifying fluoropolymers
-
-A highly resistant material may create unnecessary cost and fabrication complexity without improving system reliability if a more common system already meets the service envelope.
-
-### Error 7 — Underestimating the joint
-
-The usable material is the one that can be joined, inspected, supported, tested, maintained, and repaired reliably in the real project environment.
+- a chemical-resistance chart;
+- a pressure-rating table;
+- a temperature-limit table;
+- a material-selection specification.
 
 ---
 
-## 11.11 Engineering Selection Sequence
+# 11.12 Comparative Statements Require Context
 
-A practical family-level sequence is:
+Statements such as:
 
-1. Define all fluids, concentrations, impurities, and cleaning media.
-2. Define the full pressure-temperature-time envelope.
-3. Identify the applicable product and design standards.
-4. Eliminate chemically unsuitable families.
-5. Evaluate long-term pressure capability and creep.
-6. Evaluate stiffness, movement, supports, external loads, and installation method.
-7. Evaluate joining technology, site access, qualification, and inspection.
-8. Verify availability of fittings, valves, seals, and transitions.
-9. Evaluate failure consequences, repairability, and life-cycle cost.
-10. Obtain written grade- and system-specific confirmation where uncertainty remains.
+- “PE is more flexible than PVC-U”;
+- “PP is stiffer than PE”;
+- “PVDF has broader chemical resistance”;
+- “PVC-C has higher temperature capability than PVC-U”
 
-The result should be a documented comparison, not an undocumented preference.
+can be useful as family-level engineering tendencies.
 
----
+They should not be interpreted as universal numerical relationships.
 
-## 11.12 Engineering Checklist
+The actual result can depend on:
 
-Before selecting a material family, confirm:
+- compound;
+- grade;
+- temperature;
+- duration;
+- test method;
+- product geometry;
+- manufacturing;
+- ageing;
+- chemical environment.
 
-- [ ] The complete process-fluid composition is known.
-- [ ] Cleaning, flushing, and upset chemicals are included.
-- [ ] Pressure, temperature, duration, and cycling are defined.
-- [ ] The application standard includes the proposed family or another justified design basis is documented.
-- [ ] Long-term pressure data are available for the exact system.
-- [ ] Chemical resistance is verified for concentration and temperature.
-- [ ] Permeation, purity, vacuum, and emissions are considered where relevant.
-- [ ] Thermal expansion and support implications are evaluated.
-- [ ] The joining method is feasible in the actual installation environment.
-- [ ] Fittings, valves, seals, and transitions are compatible.
-- [ ] Inspection and repair methods are available.
-- [ ] Product availability and qualified personnel are realistic.
-- [ ] The final decision is documented with assumptions and exclusions.
+When the engineering decision depends on magnitude rather than general direction, the engineer should move from family-level information to the relevant qualified data.
 
 ---
 
-## Chapter Summary
+# 11.13 Joining Is Part of Material-Family Character
 
-The common plastic-piping material families occupy different engineering roles.
+Joining technology is one of the most important practical distinctions among material families.
 
-PE is frequently favoured where ductility, flexibility, fused continuity, and buried installation are important. PP is a major industrial chemical-piping family, especially in above-ground fabricated systems. PVC-U, PVC-C, and ABS offer rigid solvent-cemented systems with distinct temperature, impact, and chemical envelopes. PVDF provides a higher-performance option for demanding chemical and high-purity duties. PTFE, PFA, ECTFE, lined systems, and composites solve specialized problems but introduce their own mechanical, fabrication, inspection, and cost constraints.
+Broadly:
+
+### PE
+
+Often associated with:
+
+- butt fusion;
+- electrofusion.
+
+### PP
+
+Often associated with:
+
+- butt fusion;
+- socket fusion;
+- IR or specialized fusion.
+
+### PVC-U / PVC-C / ABS
+
+Often associated with:
+
+- solvent cementing;
+- flanged or mechanical transitions.
+
+### PVDF
+
+Often associated with:
+
+- controlled fusion;
+- specialized high-purity joining.
+
+### Specialty fluoropolymers
+
+May require:
+
+- specialized fusion;
+- fabrication;
+- lining;
+- mechanical or flanged arrangements.
+
+### Composites
+
+May use:
+
+- laminated joints;
+- adhesive systems;
+- mechanical joints;
+- flanges.
+
+These are family-level descriptions.
+
+Actual joining requirements are controlled by the selected product system and applicable procedure.
+
+---
+
+# 11.14 Installation Character Is Part of the Comparison
+
+Different families transfer engineering difficulty to different parts of the project.
+
+A flexible material may reduce fitting count but increase:
+
+- movement;
+- support;
+- restraint considerations.
+
+A rigid material may simplify some span behaviour but increase sensitivity to:
+
+- impact;
+- misalignment;
+- imposed displacement.
+
+A specialty material may solve chemistry but increase:
+
+- fabrication complexity;
+- cleanliness requirements;
+- inspection difficulty;
+- cost.
+
+A composite may solve weight and diameter problems while introducing:
+
+- anisotropy;
+- laminate quality control;
+- specialized joint design.
+
+The relevant question is therefore not:
+
+> “Which material has the best property?”
+
+It is:
+
+> **“Which family creates the most manageable set of engineering demands for the defined service?”**
+
+Chapter 10 controls how that question becomes a selection decision.
+
+---
+
+# 11.15 Inspection and Repair Character
+
+Material families also differ in how construction quality and later damage can be assessed.
+
+Relevant considerations may include:
+
+- visual examination;
+- joint records;
+- fusion traceability;
+- solvent-joint process control;
+- dimensional inspection;
+- pressure testing;
+- specialized NDT where applicable;
+- repair accessibility;
+- availability of repair fittings or procedures.
+
+A material system should not be considered attractive only because it can be installed.
+
+The project must also be able to:
+
+- verify it;
+- maintain it;
+- repair it.
+
+Detailed inspection and repair methods belong in later specialist chapters.
+
+---
+
+# 11.16 Common Interpretation Errors
+
+### Error 1 — Ranking families on one property
 
 No family is universally superior.
 
-The correct choice is the complete piping system that satisfies the documented service envelope with acceptable risk, maintainability, availability, and life-cycle cost.
+### Error 2 — Treating a family tendency as a design value
+
+A qualitative comparison does not replace qualified data.
+
+### Error 3 — Treating all grades within a family as equivalent
+
+Compound and product differences may be material.
+
+### Error 4 — Comparing only pipe
+
+Fittings, valves, seals, joints, and interfaces may govern the system.
+
+### Error 5 — Using a chemical chart as approval
+
+Chemical-resistance information is a screening input.
+
+### Error 6 — Treating maximum advertised temperature as the decision
+
+Temperature interacts with pressure, duration, chemistry, joining, and mechanical behaviour.
+
+### Error 7 — Assuming a specialty fluoropolymer is automatically safer
+
+Greater chemical resistance may introduce new mechanical, fabrication, availability, and cost constraints.
+
+### Error 8 — Treating lined piping as solid-wall thermoplastic piping
+
+The structural and containment functions are different.
+
+### Error 9 — Treating composites as ordinary thermoplastics
+
+Composite behaviour is anisotropic and requires a separate design framework.
+
+### Error 10 — Repeating material selection inside the family chapter
+
+Chapter 11 describes family characteristics.
+
+Chapter 10 owns the selection decision.
+
+---
+
+# 11.17 Evidence Maturity and Controlled Holds
+
+The current chapter source register identifies primary standards including:
+
+- ISO 15494 for relevant industrial PE and PP systems;
+- ISO 15493 for ABS, PVC-U, and PVC-C;
+- ISO 10931 for PVDF;
+- ISO/TR 10358 for chemical-resistance screening;
+- ISO 9080 and ISO 12162 for long-term thermoplastic strength classification;
+- ISO 14692 for relevant GRP applications.
+
+Before final publication, the existing controlled evidence actions remain open:
+
+- clause-level review of purchased standards and amendments;
+- recheck of ISO 15494 publication status immediately before book release;
+- addition of independent technical sources for each major material family;
+- chemical-engineering review of family-level compatibility wording;
+- joining-specialist review;
+- deeper standards mapping for specialty fluoropolymers;
+- glossary harmonization for GRP / FRP / RTRP;
+- final cross-reference verification.
+
+These are final-lock evidence actions.
+
+The qualitative family descriptions in this chapter should not be converted into stronger normative claims until the supporting evidence is mature enough.
+
+---
+
+# 11.18 Boundary with Chapters 10 and 12
+
+The book now separates three different engineering questions.
+
+## Chapter 10 — Material Selection Methodology
+
+> **How should candidate piping systems be screened, compared, verified, and approved?**
+
+Chapter 10 owns:
+
+- readiness;
+- candidate definition;
+- hard gates;
+- evidence status;
+- uncertainty;
+- comparison;
+- selection;
+- verification planning;
+- approval.
+
+## Chapter 11 — Material-Family Characteristics
+
+> **What characteristic engineering behaviour should the engineer expect from the major candidate families?**
+
+Chapter 11 owns:
+
+- family tendencies;
+- characteristic trade-offs;
+- joining character;
+- installation implications;
+- critical cautions.
+
+## Chapter 12 — Long-Term Strength and Pressure Design
+
+> **How are long-term thermoplastic pressure characteristics converted into the pressure-design framework?**
+
+Chapter 12 owns:
+
+- long-term hydrostatic strength;
+- MRS;
+- design coefficients;
+- design stress;
+- SDR;
+- pressure-rating relationships.
+
+The separation prevents family descriptions from being mistaken for either a selection method or a pressure calculation.
+
+---
+
+# Engineering Interpretation Checklist
+
+Before using a statement from this chapter in an engineering decision, confirm:
+
+- [ ] Is this only a family-level tendency?
+- [ ] Does the decision require compound- or grade-specific evidence?
+- [ ] Is the actual product system identified?
+- [ ] Are the relevant pressure and temperature conditions known?
+- [ ] Has the actual chemical environment been characterized?
+- [ ] Are permeation or purity requirements relevant?
+- [ ] Is the joining route part of the evaluation?
+- [ ] Are installation and support implications considered?
+- [ ] Are fittings, valves, seals, and interfaces included?
+- [ ] Is the statement being used only for screening where appropriate?
+- [ ] Does the decision require Chapter 10 material-selection control?
+- [ ] Does the decision require Chapter 12 pressure verification?
+- [ ] Are evidence limitations or holds still visible?
+
+---
+
+# If You Remember Only One Thing
+
+> **Material-family information tells you what to investigate next; it does not tell you what the project is allowed to install.**
+
+The correct progression is:
+
+**family tendency**
+
+→ **compound / grade evidence**
+
+→ **qualified product/system evidence**
+
+→ **project-specific verification**
+
+→ **system suitability**
+
+---
+
+# Chapter Summary
+
+The major plastic-piping material families occupy different engineering roles.
+
+PE commonly offers flexibility, ductility, fusion joining, and strong buried-installation advantages, while requiring careful treatment of creep, thermal movement, support, and long-term pressure behaviour.
+
+PP is a major industrial chemical-piping family with useful stiffness and fusion fabrication, while thermal expansion, creep, low-temperature behaviour, oxidation, and chemical environment remain important.
+
+PVC-U and PVC-C provide rigid piping architectures with solvent-cement joining and distinct temperature and chemical envelopes, but require careful control of impact, imposed displacement, chemistry, and joint curing.
+
+ABS provides useful impact behaviour in selected services but has a chemical envelope that must be verified carefully.
+
+PVDF is an important higher-performance family for demanding chemical and high-purity duties, while grade selection, fusion control, cleanliness, specialist capability, and cost remain significant.
+
+PTFE, PFA, and ECTFE provide specialized solutions for severe chemical or high-purity applications, but require product-specific evidence and specialized mechanical and fabrication treatment.
+
+Lined piping and fibre-reinforced composite piping are separate system architectures and should not be analysed as though they were ordinary solid-wall thermoplastics.
+
+No material family is universally superior.
+
+The engineer should use family-level information to understand:
+
+- likely behaviour;
+- likely trade-offs;
+- likely failure or degradation concerns;
+- joining implications;
+- installation implications;
+- evidence that must be obtained next.
+
+The final engineering rule is:
+
+> **family tendency ≠ product qualification ≠ project suitability**
