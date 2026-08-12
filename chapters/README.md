@@ -1,6 +1,6 @@
 # Book Chapters
 
-GitHub is the master source for the PPE-BoK manuscript. Each chapter is stored in an independent directory.
+GitHub is the master source for the PPE-BoK manuscript. Each reviewed chapter is stored in an independent directory under `chapters/`.
 
 ```text
 chapters/chapter-000-short-title/
@@ -11,7 +11,7 @@ chapters/chapter-000-short-title/
 └── figures/
 ```
 
-Not every draft currently has all supporting files. A chapter is not considered locked until its references and technical review are complete.
+Not every chapter currently has every supporting file. A chapter is not considered publication-locked until its evidence, standards validation, technical review and final integration requirements are complete.
 
 ## Naming Rules
 
@@ -19,29 +19,44 @@ Not every draft currently has all supporting files. A chapter is not considered 
 - Short lowercase English title separated by hyphens.
 - Main manuscript file: `chapter.md`.
 
-## Current Manuscript
+## Current Reviewed Manuscript — Chapters 000–012
 
-| Chapter | Title | Manuscript status |
+| Chapter | Title | Current status |
 |---:|---|---|
-| 0 | How to Use This Book | Full draft uploaded |
-| 1 | Understanding Industrial Plastic Piping Systems | Full draft uploaded |
-| 2 | The Engineering Decision Process | Full draft uploaded |
-| 3 | Understanding Industrial Processes | Full draft uploaded |
-| 4 | Defining Engineering Requirements | Full draft uploaded |
-| 5 | Establishing the Design Basis | Full draft uploaded |
-| 6 | Service Conditions and the Design Envelope | Full draft uploaded |
-| 7 | Engineering Risk and Uncertainty | Full draft uploaded |
-| 8 | Understanding Process Fluids | Full draft uploaded |
-| 9 | Polymer Fundamentals for Industrial Plastic Piping | Research-based draft uploaded; references and review files included |
-| 10 | Engineering Methodology for Material Selection | Research-based full draft uploaded; references and review files included |
-| 11 | Engineering Characteristics of Common Plastic Piping Materials | Research-based full draft uploaded; references and review files included |
-| 12 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Research-based full draft uploaded; references and review files included |
+| 000 | How to Use This Book | Rev 1.0 content review closed; final-lock holds may remain |
+| 001 | Understanding Industrial Plastic Piping Systems | Rev 1.0 content review closed; final-lock holds may remain |
+| 002 | The Engineering Decision Process | Rev 1.0 content review closed; final-lock holds may remain |
+| 003 | Understanding Industrial Processes | Rev 1.0 content review closed; final-lock holds may remain |
+| 004 | Defining Engineering Requirements | Rev 1.0 content review closed; final-lock holds may remain |
+| 005 | Establishing the Design Basis | Rev 1.0 content review closed; final-lock holds may remain |
+| 006 | Service Conditions and the Design Envelope | Rev 1.0 content review closed; final-lock holds may remain |
+| 007 | Engineering Risk and Uncertainty | Rev 1.0 content review closed; final-lock holds may remain |
+| 008 | Understanding Process Fluids | Rev 1.0 content review closed; final-lock holds may remain |
+| 009 | Polymer Fundamentals for Industrial Plastic Piping | Rev 1.0 content review closed; final-lock evidence holds remain |
+| 010 | Engineering Methodology for Material Selection | Rev 1.0 content review closed; final-lock evidence holds remain |
+| 011 | Engineering Characteristics of Common Plastic Piping Materials | Rev 1.0 content review closed; final-lock evidence holds remain |
+| 012 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Rev 1.0 content review closed; final-lock standards holds remain |
+
+Chapter 009 was normalized into the canonical `chapters/chapter-009-polymer-fundamentals/` location during the book-wide integration pass.
 
 ## Status Meaning
 
-- **Full draft uploaded:** complete readable manuscript exists in GitHub, but citations and technical review may still require expansion.
-- **Research-based draft:** manuscript was prepared from a defined research package.
-- **Reviewed:** technical, standards, equation, and language review completed.
-- **Locked:** approved source text; changes require a documented reason.
+- **Draft:** readable manuscript exists but substantive content review remains open.
+- **Rev 1.0 content review closed:** approved content baseline exists; this does not imply standards-validation or publication lock.
+- **Reviewed / technically reviewed:** defined technical review gates have been completed for the stated scope.
+- **Standards validated:** standards-derived statements have been checked against authoritative current sources for the applicable scope.
+- **Locked / publication baseline:** approved source text after required content, standards, evidence, integration and editorial gates; later changes require documented change control.
 
-No chapter may be treated as complete solely because a heading, outline, or PDF exists. The complete manuscript must be present in this repository.
+## Active Book-Wide Workstream
+
+The sequential content review for Chapters 000–012 is complete.
+
+Current work proceeds under:
+
+`docs/BOOK-WIDE-INTEGRATION-PASS.md`
+
+The final editorial / visual cleanup remains tracked separately in:
+
+`docs/EDITORIAL-VISUAL-CLEANUP-BACKLOG.md`
+
+No chapter may be treated as publication-complete solely because a heading, outline, PDF or content-review closure exists. The complete controlled manuscript and its required evidence package must be present in this repository.
