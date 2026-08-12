@@ -20,7 +20,7 @@ The review is intended to answer, for each chapter:
 
 ## 2. Review order
 
-The review will proceed strictly in manuscript order:
+The review proceeded strictly in manuscript order:
 
 | Order | Chapter | Title | Initial repository status |
 |---:|---:|---|---|
@@ -38,11 +38,11 @@ The review will proceed strictly in manuscript order:
 | 12 | 011 | Engineering Characteristics of Common Plastic Piping Materials | Research-based full draft uploaded |
 | 13 | 012 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Research-based full draft uploaded |
 
-Chapter 013 is excluded from this sequence because its current redevelopment/review stage has been separately closed with documented controlled standards holds.
+Chapter 013 was excluded from this sequence because its redevelopment/review stage was separately closed with documented controlled standards holds.
 
 ## 3. Per-chapter review sequence
 
-Each chapter will be reviewed in the same order of operations.
+Each chapter was reviewed using the same order of operations.
 
 ### Gate A — File and evidence inventory
 
@@ -96,7 +96,7 @@ As applicable:
 
 ### Gate F — Gap Register and disposition
 
-Each chapter receives a gap register with severity and disposition:
+Each chapter received a gap register with severity and disposition:
 
 - **RETAIN** — technically and structurally sound;
 - **AUGMENT** — core chapter is sound but requires additional engineering depth/assets;
@@ -105,7 +105,7 @@ Each chapter receives a gap register with severity and disposition:
 
 ### Gate G — Revision proposal and approval
 
-Before substantive approved changes are committed to the manuscript:
+For substantive approved changes:
 
 1. present review findings;
 2. present recommended revision plan;
@@ -116,7 +116,7 @@ Before substantive approved changes are committed to the manuscript:
 
 ## 4. Book-wide consistency checks carried across chapters
 
-During every chapter review, maintain a cross-chapter watchlist for:
+During every chapter review, a cross-chapter watchlist was maintained for:
 
 - Design Basis terminology;
 - hierarchy between material, product and system qualification;
@@ -129,24 +129,40 @@ During every chapter review, maintain a cross-chapter watchlist for:
 - chapter boundaries and cross-references;
 - repeated tables/workflows that should have one canonical home.
 
-## 5. Progress tracker
+These items now continue under `docs/BOOK-WIDE-INTEGRATION-PASS.md`.
+
+## 5. Final progress tracker — content-review phase
 
 | Chapter | Inventory | Architecture | Technical | Standards/evidence | Editorial/academic | Gap register | Revision approved | Status |
 |---:|---|---|---|---|---|---|---|---|
-| 000 | Started | Pending | Pending | Pending | Pending | Pending | No | IN REVIEW |
-| 001 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 002 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 003 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 004 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 005 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 006 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 007 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 008 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 009 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 010 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 011 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
-| 012 | Pending | Pending | Pending | Pending | Pending | Pending | No | QUEUED |
+| 000 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 001 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 002 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 003 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 004 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 005 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 006 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 007 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 008 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 009 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 010 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 011 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
+| 012 | Complete | Complete | Complete | Complete with controlled holds | Complete | Complete | Yes | REV 1.0 CONTENT REVIEW CLOSED |
 
-## 6. Review discipline
+## 6. Phase closure
 
-The process will not skip ahead because a later chapter appears more urgent or easier to fix. Findings that affect later chapters may be recorded in the cross-chapter watchlist, but the active chapter remains the only chapter being substantively reviewed until its review package and user disposition are complete.
+The sequential **content-review phase for Chapters 000–012 is complete**.
+
+This closure does **not** mean that all chapters are publication-locked. Controlled standards, evidence, expert-review, asset, cross-reference and editorial actions remain open where recorded in chapter review packages.
+
+The active book-wide workstream is now:
+
+> **Book-wide integration → standards/evidence consolidation → PDS synchronization → editorial/visual cleanup → final lock workflow**
+
+See:
+
+`docs/BOOK-WIDE-INTEGRATION-PASS.md`
+
+## 7. Review discipline retained after closure
+
+The integration pass must not silently reopen approved technical content. If integration reveals a genuine engineering conflict or content error, it becomes a new controlled finding and follows the normal approval/change-control process.
