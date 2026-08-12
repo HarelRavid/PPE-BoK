@@ -3,8 +3,8 @@
 **Chapter:** 012 — Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating  
 **Review framework:** `docs/BOOK-WIDE-REVIEW-PLAN.md`  
 **Branch:** `chapter-013-redevelopment`  
-**Status:** REVIEW COMPLETE — REVISION APPROVAL PENDING  
-**Disposition:** AUGMENT / PRESSURE-DESIGN CHAIN AND TERMINOLOGY CONTROL
+**Status:** REVIEW CLOSED — REV 1.0 APPROVED AND INTEGRATED  
+**Disposition:** AUGMENT / PRESSURE-DESIGN CHAIN AND TERMINOLOGY CONTROL — COMPLETED
 
 ## 1. Review basis
 
@@ -97,7 +97,7 @@ Chapter 012 should be the quantitative / standards-mediated layer and should avo
 
 ### 3.5 Missing or underdeveloped chapter functions
 
-The main missing or underdeveloped functions are:
+The main missing or underdeveloped functions identified by the review were:
 
 1. one explicit **classification-to-project-pressure chain** that separates material characterization, material classification, design stress, geometry, product classification, and project allowable pressure;
 2. clearer distinction among **material value / pipe-classification value / component rating / system allowable pressure**;
@@ -122,9 +122,9 @@ The main missing or underdeveloped functions are:
 
 ## 4. Gate C — Technical / methodological review
 
-### 4.1 Core content to retain
+### 4.1 Core content retained
 
-The following are strong and should remain substantially intact:
+The revision retained the strong existing content:
 
 - short-term-strength warning;
 - long-term pipe-test framing;
@@ -141,30 +141,30 @@ The following are strong and should remain substantially intact:
 - temperature/time, chemistry, cyclic/transient, component and geometry limitations;
 - system-rating cautions.
 
-### 4.2 Add one canonical pressure-design chain
+### 4.2 Canonical pressure-design chain
 
-Recommended organizing chain:
+Rev 1.0 now organizes the chapter around:
 
-`pipe test data`
-→ `statistical long-term strength basis`
-→ `classified material value (e.g. MRS framework)`
-→ `application-governed design coefficient / design stress`
+`long-term pipe-test evidence`
+→ `statistical strength basis`
+→ `material classification`
+→ `application design stress`
 → `pipe geometry / SDR`
-→ `product-standard pressure classification`
-→ `temperature / time / chemistry / transient / component checks`
-→ `project allowable operating / design basis`
+→ `product pressure classification`
+→ `project service-case verification`
+→ `allowable project decision`
 
-The chapter should repeatedly distinguish these levels rather than allowing readers to jump directly from PE100 + SDR to an operating-pressure decision.
+The revised manuscript explicitly prevents jumping directly from material classification plus SDR to a project operating-pressure conclusion.
 
-### 4.3 Equation applicability must be explicit
+### 4.3 Equation applicability
 
-Before using:
+Rev 1.0 adds a formal equation-applicability gate before:
 
 `p = 2σ / (SDR - 1)`
 
-or the MRS-substituted form, the engineer should confirm that the case actually matches the homogeneous-wall, conventional outside-diameter / wall-thickness pressure-pipe convention used by the governing framework.
+or the MRS-substituted form is used.
 
-The equation should not be presented as automatically valid for:
+The revised chapter explicitly excludes automatic application to:
 
 - multilayer systems;
 - lined systems;
@@ -172,78 +172,65 @@ The equation should not be presented as automatically valid for:
 - local fittings / branches / fabricated geometry;
 - systems governed by another pressure-design convention.
 
-### 4.4 The design coefficient is not a generic safety factor
+### 4.4 Design coefficient control
 
-The chapter currently describes the coefficient carefully, but the revision should make the control stronger:
+Rev 1.0 makes explicit that the design coefficient:
 
-- it is not selected by personal preference;
-- it is not transferable between services by habit;
-- it belongs to the relevant application / product / regulatory framework;
-- additional reductions or alternative procedures may still apply.
+- is not selected by personal preference;
+- is not transferable between services by habit;
+- belongs to the relevant application / product / regulatory framework;
+- may be supplemented by additional reductions or alternative procedures.
 
-### 4.5 PN / MOP / design pressure need a terminology ownership map
+### 4.5 PN / MOP / design-pressure terminology
 
-The chapter already says the terms are not interchangeable.
+Rev 1.0 adds `TAB-012-001 — Pressure Terminology and Ownership Map` distinguishing:
 
-The revision should add a compact map showing that:
+- PN;
+- MOP;
+- design pressure;
+- operating pressure;
+- test pressure;
+- allowable project pressure.
 
-- PN belongs to a nominal component/system classification context;
-- MOP is defined by specific application standards where used;
-- design pressure belongs to the project's governing design basis / code framework;
-- operating pressure describes the actual or expected operating condition;
-- test pressure belongs to a defined test procedure.
+The table is explicitly interpretive and does not replace the governing standard definitions.
 
-No one term should be back-calculated from another without preserving the governing definition.
+### 4.6 Statistical terminology
 
-### 4.6 The 50-year reference requires careful wording
+Rev 1.0 replaces over-precise manuscript language with controlled wording such as:
 
-The current chapter correctly warns that 50 years is not a guaranteed installation life.
+- `statistical strength basis`;
+- `conservative lower statistical long-term strength basis`.
 
-The revised text should also avoid over-specifying the exact statistical terminology unless verified against the authoritative standards text.
+Exact ISO notation / terminology remains reserved for the full-text standards-lock pass.
 
-Preferred manuscript-level language until full-text closure:
+### 4.7 Worked-example boundary
 
-- `lower statistical bound`;
-- `conservative lower statistical strength basis`;
+The PE100 / SDR 11 / C = 1.25 worked example remains because its algebra is useful and previously verified.
 
-with exact ISO notation / terminology reserved for the final standards-lock pass.
+Rev 1.0 now states explicitly that it is:
 
-### 4.7 Worked example needs a stronger educational boundary
-
-The PE100 / SDR 11 / C = 1.25 example is useful and algebraically correct within its stated assumptions.
-
-The revision should label it explicitly as:
-
-- an **illustrative reference-condition example**;
+- an illustrative reference-condition example;
 - not a universal PE rule;
 - not a chemical-service design;
 - not a gas-service design;
 - not proof of component or system rating;
 - not a substitute for the governing product standard.
 
-### 4.8 Temperature / time should consume Chapter 006 cases
+### 4.8 Temperature / time integration
 
-Instead of generic “derating” language alone, the chapter should instruct the reader to evaluate the discrete service cases already defined in Chapter 006:
+Rev 1.0 connects pressure verification to Chapter 006 service cases rather than treating temperature merely as a generic derating note.
 
-- continuous hot service;
-- short cleaning cycle;
-- transient excursion;
-- multiple temperature-pressure states;
-- test / commissioning case.
+### 4.9 Uncertainty integration
 
-This keeps the chapter aligned with the book architecture.
-
-### 4.9 Uncertainty should remain visible
-
-Where the pressure-temperature relationship, chemical reduction, cumulative-time rule, or component limit is uncertain, the chapter should use Chapter 007's discipline:
+Rev 1.0 connects missing product, chemical, time-at-temperature, component, and service evidence to Chapter 007 controls:
 
 - bounded assumption;
 - sensitivity;
-- additional product evidence;
+- additional evidence;
 - controlled hold;
-- conditional approval.
+- conditional or no-go disposition.
 
-**Gate C result: PASS WITH PRESSURE-CHAIN, APPLICABILITY AND TERMINOLOGY AUGMENTATION.**
+**Gate C result: PASS — REV 1.0 IMPLEMENTED.**
 
 ---
 
@@ -261,9 +248,9 @@ The evidence package correctly identifies:
 - PPI / ASTM terminology as a related but non-identical framework;
 - PE100+ Association as an industry source rather than an ISO strength-class authority.
 
-### 5.2 Controlled standards holds
+### 5.2 Controlled standards holds remain open
 
-Before final lock, the following require authoritative full-text / edition-level verification:
+Before final lock, the following still require authoritative full-text / edition-level verification:
 
 - exact ISO 9080 lower-bound terminology / notation;
 - exact MRS classification / rounding / designation rules;
@@ -273,15 +260,15 @@ Before final lock, the following require authoritative full-text / edition-level
 - current applicable product-standard parts / editions;
 - any future ISO versus ASTM/PPI crosswalk.
 
-### 5.3 Avoid false closure
+### 5.3 No false standards closure
 
-The existing equation derivation can be technically verified without claiming that every normative term around it has been clause-level verified.
-
-The content revision should therefore distinguish:
+Rev 1.0 preserves the distinction between:
 
 - **mathematical verification**;
 - **engineering interpretation**;
 - **normative standards terminology**.
+
+The equation derivation is technically verified; the controlled standards holds above are not closed by the prose revision.
 
 **Gate D result: PASS WITH CONTROLLED FULL-TEXT STANDARDS HOLDS.**
 
@@ -289,91 +276,87 @@ The content revision should therefore distinguish:
 
 ## 6. Gate E — Editorial and academic review
 
-### Strengths
+### Strengths retained
 
-- unusually clear explanation of a difficult pressure-classification topic;
-- correct effort to separate material classification from pressure rating;
-- strong unit discipline;
-- good worked-example structure;
+- clear explanation of pressure-classification logic;
+- strong separation of material classification from pressure rating;
+- unit discipline;
+- bounded worked example;
 - repeated warnings against catalogue-value misuse;
-- useful discussion of chemistry, cyclic service, components and local geometry.
+- chemistry, cyclic-service, component and local-geometry cautions.
 
-### Editorial / structure gaps
+### Rev 1.0 editorial / structure closures
 
-1. No reader outcomes.
-2. No single visual chain tying the chapter together.
-3. Statistical terminology is more precise than the current full-text evidence allows.
-4. PN / MOP / design / operating / test-pressure definitions would benefit from a compact ownership table.
-5. The PE worked example can dominate the chapter and should be more explicitly framed as illustrative.
-6. The chapter needs a clearer equation-applicability gate.
-7. Controlled standards holds should be visible in the chapter.
-8. Final punctuation / visual polish remains deferred to the book-wide cleanup pass.
+- reader outcomes added;
+- canonical pressure-design chain added;
+- statistical wording reduced to evidence-supported precision;
+- pressure terminology map added;
+- worked example explicitly bounded;
+- equation applicability gate added;
+- controlled standards holds made visible in the chapter.
 
-**Gate E result: PASS — TARGETED AUGMENTATION / TERMINOLOGY CONTROL.**
+Final punctuation / visual polish remains deferred to the book-wide cleanup pass.
+
+**Gate E result: PASS — CONTENT REVISION COMPLETE.**
 
 ---
 
 ## 7. Gate F — Gap Register
 
-| Gap ID | Severity | Finding | Required disposition |
+| Gap ID | Severity | Finding | Final status |
 |---|---|---|---|
-| GAP-012-01 | High | No canonical classification-to-project-pressure chain | Add chapter-level chain and use it consistently |
-| GAP-012-02 | High | Material / pipe / component / system pressure levels can still blur | Add explicit hierarchy |
-| GAP-012-03 | High | ISO 9080 lower-bound terminology is more precise than current full-text verification supports | Use neutral controlled terminology pending standards lock |
-| GAP-012-04 | High | Exact MRS assignment / rounding rules are not clause-level verified | State that assignment remains standards-governed; do not reconstruct informally |
-| GAP-012-05 | High | Design coefficient can still be over-read as a generic material factor | Make application-governed ownership explicit |
-| GAP-012-06 | High | Equation applicability gate is implicit | Add explicit homogeneous-wall / governing-framework gate |
-| GAP-012-07 | High | Reference-condition classification versus project allowable pressure needs stronger separation | Add controlled distinction |
-| GAP-012-08 | Medium | PN / MOP / design / operating / test-pressure terminology needs a compact map | Add `TAB-012-001 — Pressure Terminology and Ownership Map` |
-| GAP-012-09 | Medium | Temperature/time section is not fully integrated with Chapter 006 discrete cases | Reframe around service cases |
-| GAP-012-10 | Medium | Chapter 007 uncertainty discipline is weakly integrated | Add holds / bounded assumptions / sensitivity route |
-| GAP-012-11 | Medium | Worked example can be over-applied | Add explicit illustrative-example boundary |
-| GAP-012-12 | Medium | Chapter remains PE-heavy | Keep PE example but state method breadth; add only carefully bounded non-PE references if supported |
-| GAP-012-13 | Medium | No canonical process visual | Add `FIG-012-001 — Long-Term Strength to Project Pressure Decision` |
-| GAP-012-14 | Medium | No concise classification-level map | Add material → pipe → component → system hierarchy asset |
-| GAP-012-15 | Low | No reader outcomes / final verification framing | Add outcomes and pressure-rating verification checklist |
-| GAP-012-16 | High | Controlled standards holds are not sufficiently visible in manuscript | Add explicit final-lock standards note |
+| GAP-012-01 | High | No canonical classification-to-project-pressure chain | CLOSED — chain added |
+| GAP-012-02 | High | Material / pipe / component / system pressure levels can blur | CLOSED — hierarchy added |
+| GAP-012-03 | High | ISO 9080 lower-bound terminology too precise for current verification | CLOSED FOR CONTENT — neutral terminology adopted; exact terminology remains final-lock hold |
+| GAP-012-04 | High | Exact MRS assignment / rounding rules not clause-level verified | CLOSED FOR CONTENT — manuscript defers to governing standard; final-lock hold remains |
+| GAP-012-05 | High | Design coefficient can be over-read as generic material factor | CLOSED — application-governed ownership explicit |
+| GAP-012-06 | High | Equation applicability gate implicit | CLOSED — explicit gate added |
+| GAP-012-07 | High | Reference classification versus project allowable pressure insufficiently separated | CLOSED — controlled hierarchy added |
+| GAP-012-08 | Medium | Pressure terminology map missing | CLOSED — `TAB-012-001` added |
+| GAP-012-09 | Medium | Temperature/time weakly integrated with Chapter 006 cases | CLOSED — service-case integration added |
+| GAP-012-10 | Medium | Chapter 007 uncertainty discipline weakly integrated | CLOSED — assumptions / holds / dispositions added |
+| GAP-012-11 | Medium | Worked example can be over-applied | CLOSED — illustrative boundary added |
+| GAP-012-12 | Medium | Chapter PE-heavy | CLOSED FOR CONTENT — PE example retained as explicitly illustrative; unsupported numerical expansion avoided |
+| GAP-012-13 | Medium | No canonical pressure-design visual | CLOSED — `FIG-012-001` added |
+| GAP-012-14 | Medium | No classification-level map | CLOSED — `FIG-012-002` / hierarchy added |
+| GAP-012-15 | Low | No reader outcomes / final verification framing | CLOSED — outcomes and release check added |
+| GAP-012-16 | High | Standards holds not sufficiently visible in manuscript | CLOSED FOR CONTENT — explicit standards-holds section added; holds themselves remain open for final lock |
 
 ---
 
-## 8. Disposition
+## 8. Final disposition
 
-# AUGMENT / PRESSURE-DESIGN CHAIN AND TERMINOLOGY CONTROL
+# AUGMENT / PRESSURE-DESIGN CHAIN AND TERMINOLOGY CONTROL — COMPLETED
 
-Chapter 012 is technically strong and should **not** be rewritten from scratch.
+Chapter 012 Rev 1.0 was explicitly approved and integrated into:
 
-The major revision should preserve the mathematics and engineering cautions while making the pressure-design logic more controlled:
+`chapters/chapter-012-long-term-strength-mrs-sdr-pressure-rating/chapter.md`
 
-`long-term test evidence → statistical strength basis → material classification → application design stress → geometry → product pressure classification → project service-case verification → allowable project decision`
+Integration commit:
 
-The revision should reduce—not increase—unsupported normative precision until the full standards text is available.
+`809b0f6c329bbf82918406ec5977c3d89a85ba21`
 
----
+The content revision is closed.
 
-## 9. Proposed Chapter 012 Rev 1.0 scope
+The following are **not** reopened as content gaps and remain controlled final-lock actions:
 
-1. Retain the existing long-term-strength, MRS, SDR, PN, pressure-equation, worked-example, chemistry, cyclic-service, and component-limit content.
-2. Add concise reader outcomes.
-3. Add `FIG-012-001 — Long-Term Strength to Project Pressure Decision`.
-4. Add a canonical material → pipe → component → system pressure hierarchy.
-5. Use neutral `lower statistical bound` terminology until ISO 9080 full-text terminology is closed.
-6. State explicitly that exact MRS classification / rounding / designation rules remain governed by ISO 12162 and the applicable standard.
-7. Strengthen the rule that `C` is application-governed and not a generic safety factor.
-8. Add an equation-applicability gate before the SDR pressure equations.
-9. Preserve the verified algebra and unit conversion.
-10. Reframe the PE100 SDR 11 worked example as an illustrative reference-condition example only.
-11. Add `TAB-012-001 — Pressure Terminology and Ownership Map` covering PN, MOP, design pressure, operating pressure and test pressure.
-12. Connect temperature / time evaluation explicitly to Chapter 006 service cases.
-13. Connect uncertain product / chemical / time-at-temperature data to Chapter 007 controls and holds.
-14. Keep the chapter method broad while avoiding unsupported non-PE numerical examples.
-15. Replace the current general checklist with a **Pressure Rating Verification Checklist** tied to the Design Basis, application standard and complete system.
-16. Add an explicit controlled standards-holds note before the final summary.
-17. Preserve all final-lock evidence actions rather than treating Rev 1.0 prose revision as standards closure.
+- clause-level ISO 9080 / ISO 12162 terminology verification;
+- exact MRS assignment / designation checks;
+- application-specific coefficient checks;
+- PN / MOP product-standard terminology checks;
+- non-PE product-standard examples where desired and supported;
+- ISO versus ASTM/PPI crosswalk;
+- final figures;
+- final cross-references;
+- independent technical review;
+- final visual / punctuation cleanup.
+
+Any new substantive change to Chapter 012 after this closure should be recorded as a new finding or as a deliberate reopening of an existing controlled hold.
 
 ---
 
-## 10. Approval gate
+## 9. Book-wide review status
 
-No substantive change has been made to `chapter.md` by this book-wide review.
+With Chapter 012 Rev 1.0 approved and integrated, the planned **Chapter 000–012 book-wide content review sequence is complete**.
 
-If the revision scope above is approved, prepare **Chapter 012 Rev 1.0** as a complete proposed replacement, present the integrated text for review, and only after explicit approval commit the revised manuscript.
+The next phase is book-wide integration and final-lock preparation rather than another first-pass chapter review.
