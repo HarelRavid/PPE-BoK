@@ -18,53 +18,85 @@ This guide defines presentation rules that support technical clarity and long-te
 
 Use a stable hierarchy:
 
-- `# Chapter N — Title`
-- `## Why This Chapter Matters`, `## Standards Map`, etc.
-- `## Investigation N — Engineering Question`
-- `###` for subsections within an Investigation.
+- `# Chapter NNN — Title`
+- chapter-level sections such as `## Chapter purpose`, `## Chapter standards map`, etc.;
+- `# Investigation N — Engineering Question` or the chapter-approved equivalent when the chapter uses Investigation-led structure;
+- `##` / `###` for subsections within an Investigation as required by the chapter structure.
 
 Investigations are progressive; do not repeat chapter-level introductions within every Investigation.
 
 ## 4. Equations
 
-- Number important equations by chapter: **Eq. 13-1, Eq. 13-2...**
-- Define every symbol and unit immediately after first use or in an adjacent symbol table.
-- State assumptions, limits and source / derivation basis.
-- Use consistent SI units unless a referenced standard or worked example requires another system; conversions must be explicit.
+Important equations use the controlled asset convention:
+
+- `EQ-NNN-001`
+- `EQ-NNN-002`
+- etc.
+
+Present the asset ID with an engineering-purpose title, for example:
+
+`EQ-013-004 — SDR pressure relationship`
+
+For every important equation:
+
+- define every symbol and unit immediately after first use or in an adjacent symbol table;
+- state assumptions and validity/applicability limits;
+- state source / derivation basis;
+- identify common misuse where relevant;
+- use consistent SI units unless a referenced standard or worked example requires another system; conversions must be explicit.
+
+Do not maintain a second parallel equation-numbering system such as `Eq. 13-1` unless a final publishing layer intentionally renders the controlled ID differently without changing the underlying asset identity.
 
 ## 5. Tables
 
-- Number by chapter: **Table 13-1, Table 13-2...**
-- Give every table an engineering-purpose title.
+Important engineering tables use controlled IDs such as:
+
+- `TAB-013-001`
+- `TAB-013-002`
+
+Give every table an engineering-purpose title.
+
 - Put units in headings where practical.
 - Do not use a table merely to restate prose.
 - Identify source basis for standards-derived or externally derived values.
+- A publishing format may display a reader-friendly caption, but the controlled asset ID remains the source identity.
 
 ## 6. Figures and visual placeholders
 
-During Authoring, use visual placeholders. Production occurs in the Publishing phase.
+During Authoring, use controlled visual placeholders. Final production occurs during Publishing or the applicable controlled production phase.
 
-Placeholder format:
+Placeholder identity follows the engineering-asset convention, for example:
 
-`[VISUAL 13.X-01]`
+`FIG-013-003 — Long-term hydrostatic regression concept [PLACEHOLDER]`
 
-Include:
-- Title
-- Type
-- Engineering purpose
-- Required content
-- Source status (Original / standards-derived concept / permission required / TBD)
+A placeholder should state, as needed:
 
-Final figures are numbered by chapter and must communicate an engineering message. Decorative figures are excluded.
+- controlled ID;
+- title;
+- type;
+- engineering purpose;
+- required engineering content;
+- source status: Original / standards-derived concept / permission required / TBD.
 
-## 7. Worked examples
+Final figures must communicate an engineering message. Decorative figures are excluded.
+
+## 7. Workflows, examples, decision trees and checklists
+
+Use the controlled chapter-based IDs:
+
+- Workflow: `WF-NNN-001`
+- Worked Example: `EX-NNN-001`
+- Decision Tree: `DT-NNN-001`
+- Checklist: `CL-NNN-001`
+
+### Worked examples
 
 Use a consistent visual structure:
 
 - Problem
 - Design Basis
-- Applicable standards
-- Given / Inputs
+- Applicable standards / evidence
+- Inputs
 - Method
 - Calculation
 - Verification
@@ -75,11 +107,13 @@ Normally use 1–2 substantial examples per chapter where examples add value.
 
 ## 8. Standards references
 
-Prefer explicit references such as `ISO 12162, Clause X / Table Y` after validation rather than vague wording such as “the applicable standard”.
+Prefer explicit references such as `ISO 12162, Clause X / Table Y` **after authoritative validation** rather than vague wording such as “the applicable standard”.
 
 Where exact applicability is project-dependent, state what determines applicability.
 
 Do not reproduce copyrighted standards text beyond permitted quotation. Prefer paraphrase, engineering interpretation and precise navigation references.
+
+During authoring, unvalidated clause/edition details shall be treated as working references or explicit Standards Validation hold points rather than publication-final facts.
 
 ## 9. Knowledge callouts
 
@@ -106,10 +140,14 @@ Callouts are not substitutes for equations, standards requirements or evidence.
 
 ## 11. Cross-references
 
-Use stable chapter / section / equation / table / figure identifiers. Cross-reference rather than repeating substantial technical explanations already established elsewhere in the same chapter or book.
+Use stable chapter / section / engineering-asset identifiers. Cross-reference rather than repeating substantial technical explanations already established elsewhere in the same chapter or book.
+
+Working chapter numbers may change before final architecture freeze; avoid unnecessary prose that hard-codes a final TOC assumption when a controlled asset, topic or working chapter reference is sufficient.
+
+Archived material shall not be used as an active cross-reference target unless the text explicitly discusses historical recovery.
 
 ## 12. Visual production rule
 
-**No visual is produced during Authoring. Every necessary visual is specified during Authoring and produced during Publishing.**
+**No visual is produced merely to satisfy a chapter quota. Every necessary visual is specified during Authoring and produced during the controlled Publishing stage.**
 
-The absence of a finished visual shall never interrupt technical development of the manuscript.
+The absence of a finished visual shall not interrupt technically correct manuscript development when a complete engineering placeholder is sufficient for the current gate.
