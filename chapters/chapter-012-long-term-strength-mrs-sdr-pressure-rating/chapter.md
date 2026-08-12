@@ -10,144 +10,295 @@ language: en
 
 ## Why This Chapter Matters
 
-A pressure rating printed on a plastic pipe can appear deceptively simple. An engineer may see **PE100, SDR 11, PN 16** and assume that the system is suitable for any service below 16 bar.
+A pressure designation printed on a thermoplastic pipe can appear deceptively simple.
 
-That interpretation is incomplete and can be unsafe.
+An engineer may see:
 
-The pressure capability of a thermoplastic piping system is not determined by short-term yield strength alone. It is derived from long-duration pressure testing, statistical extrapolation, material classification, a design coefficient, pipe geometry, reference temperature, service duration, and the applicable product standard. The resulting nominal pressure is a classification under defined reference conditions—not a universal allowable operating pressure for every fluid, temperature, installation, transient, or service life.
+**PE100 — SDR 11 — PN 16**
 
-This chapter explains how long-term hydrostatic strength is converted into an engineering pressure rating, what the principal terms mean, and which checks remain necessary after the calculation has been completed.
+and conclude that the system is suitable for every service below 16 bar.
 
----
+That conclusion is incomplete.
 
-## 12.1 Why Short-Term Strength Is Not Enough
+Thermoplastic pressure capability is derived through a chain that begins with long-term material evidence and ends with a project-specific engineering decision.
 
-Thermoplastics are viscoelastic. Their response to stress depends on time and temperature as well as stress magnitude.
+The relevant chain is:
 
-A pipe specimen may withstand a high internal pressure for a short laboratory test and still be unsuitable for decades of continuous service at a much lower stress. Conversely, a material selected from a short-term tensile value alone may appear stronger than another material while providing inferior long-term pressure performance.
+> **long-term pipe-test evidence → statistical strength basis → material classification → application design stress → pipe geometry → product pressure classification → project service-case verification → allowable project decision**
 
-For this reason, pressure-pipe materials are characterized using long-term hydrostatic test data obtained from pipe specimens. The objective is not merely to determine when a specimen bursts. It is to establish a statistically supported relationship between:
+Each step answers a different engineering question.
 
-- hoop stress;
-- time to failure;
-- test temperature;
-- and the observed failure behaviour.
+Confusing the steps can produce serious errors.
 
-The resulting long-term strength framework is one of the fundamental differences between thermoplastic pressure-pipe design and ordinary short-term component sizing.
+A material classification is not a pipe pressure rating.
 
----
+A pipe pressure classification is not a complete system rating.
 
-## 12.2 Long-Term Hydrostatic Strength
+A nominal pressure designation is not automatically the allowable operating pressure for the actual project.
 
-ISO 9080 specifies a statistical extrapolation method for predicting the long-term hydrostatic strength of thermoplastic materials in pipe form. The method is based on pressure-test data obtained at applicable temperatures and was developed from pipe-system test data.
+### Reader outcomes
 
-In simplified terms, multiple pipe specimens are tested under internal pressure at different hoop stresses and temperatures. Their failure times are recorded. Statistical analysis is then used to describe and extrapolate the stress-versus-time relationship.
+After this chapter, the reader should be able to:
 
-This does **not** mean that one pipe is pressurized for fifty years before a material is classified. It means that a defined body of test data, including accelerated testing at elevated stresses and temperatures, is evaluated using the prescribed extrapolation method.
-
-The full ISO 9080 procedure includes requirements that cannot be replaced by a simple hand calculation. The method addresses data quality, regression, extrapolation limits, failure branches, confidence considerations, and temperature relationships. A piping engineer generally uses the resulting classified material values rather than reproducing the complete statistical analysis during routine design.
-
-### Engineering interpretation
-
-Long-term hydrostatic strength is a material-characterization result obtained from pipe specimens under controlled conditions. It is not, by itself:
-
-- the allowable design stress;
-- the pressure rating of a particular pipe;
-- proof of chemical compatibility;
-- proof of fatigue resistance;
-- proof of joint quality;
-- or a guarantee of service life in every application.
-
-It is the starting point from which further design values are derived.
+- explain why short-term strength is insufficient for thermoplastic pressure design;
+- describe the conceptual role of long-term hydrostatic testing and statistical extrapolation;
+- distinguish long-term material strength information from MRS and design stress;
+- explain the role of the application-specific design coefficient;
+- define SDR and interpret its geometric meaning;
+- use the conventional SDR pressure relationship only when its applicability conditions are satisfied;
+- distinguish material classification, pipe/product classification, component rating, and project system allowable pressure;
+- distinguish PN, MOP, operating pressure, design pressure, and test pressure;
+- explain why temperature, time, chemistry, cycling, components, joints, and local geometry remain separate checks;
+- recognize when incomplete pressure-design evidence requires an assumption, controlled hold, or additional verification.
 
 ---
 
-## 12.3 The Reference Strength at 50 Years
+## 12.1 The Pressure-Design Chain
 
-Thermoplastic pressure-pipe classification commonly uses the predicted lower confidence limit of hydrostatic strength at a specified reference time and temperature. In the ISO framework, the material classification is associated with long-term behaviour at **20°C and 50 years**, subject to the definitions and procedures of the relevant standards.
+Thermoplastic pressure design is not one equation.
 
-The lower confidence concept matters. Engineering classification is not based simply on the average predicted strength. It is intended to represent a statistically conservative lower estimate derived from the regression analysis.
+It is a chain of engineering evidence and decisions.
 
-The relevant notation and exact definitions should be taken from the current editions of ISO 9080, ISO 12162, and the applicable product standard. This chapter deliberately avoids reproducing protected standard text or replacing the formal procedure with an informal summary.
+A useful representation is:
 
-### What the 50-year reference does and does not mean
+1. long-term pressure-test evidence;
+2. statistical long-term strength basis;
+3. material classification;
+4. application-specific design stress;
+5. pipe geometry;
+6. product pressure classification;
+7. service-condition verification;
+8. component and system verification;
+9. final project pressure decision.
 
-The use of a 50-year reference point does not mean:
-
-- that the pipe automatically fails after 50 years;
-- that every installed system is guaranteed to last 50 years;
-- or that service beyond 50 years is prohibited.
-
-It means that material classification and design values are referenced to a defined long-term test and extrapolation framework. Actual system life depends on the complete service envelope, including temperature, pressure history, fluid environment, installation quality, joints, loads, oxidation, ultraviolet exposure, transients, maintenance, and damage.
-
-Likewise, a nominal 50-year classification should not be interpreted as evidence that an arbitrary higher stress is acceptable for a shorter period without using the relevant standard, design method, and verified time-temperature data.
-
----
-
-## 12.4 Minimum Required Strength — MRS
-
-ISO 12162 establishes the classification and designation of thermoplastic materials for pressure applications and provides a method for calculating design stress.
-
-The **Minimum Required Strength (MRS)** is the classified long-term strength value assigned in accordance with the standard framework. It is expressed in megapascals.
+The chain should not be shortened casually.
 
 For example:
 
-- a material designated **PE 100** is associated with an MRS class of 10 MPa;
-- a material designated **PE 80** is associated with an MRS class of 8 MPa.
+`PE100`
+does not directly mean
+`PN 16`.
 
-The designation should be interpreted carefully.
+And:
 
-**PE100 does not mean:**
+`PN 16`
+does not directly mean
+`16 bar allowable project operating pressure`.
+
+Every link between those statements matters.
+
+---
+
+## FIG-012-001 — Long-Term Strength to Project Pressure Decision
+
+**Conceptual figure placeholder**
+
+`Long-term pipe test evidence`
+↓
+`Statistical strength basis`
+↓
+`Material classification`
+↓
+`Application design coefficient`
+↓
+`Design stress`
+↓
+`Pipe geometry / SDR`
+↓
+`Product pressure classification`
+↓
+`Temperature / time / chemistry / cycling`
+↓
+`Components / joints / local geometry`
+↓
+`PROJECT PRESSURE DECISION`
+
+Side branches:
+
+`Missing evidence`
+→
+`ASSUMPTION / CONTROLLED HOLD`
+
+`Changed service case`
+→
+`REOPEN PRESSURE VERIFICATION`
+
+Central message:
+
+> **PN is a product classification inside the chain, not the final engineering decision.**
+
+---
+
+## 12.2 Why Short-Term Strength Is Not Enough
+
+Thermoplastics are viscoelastic.
+
+Their response depends on:
+
+- stress magnitude;
+- time;
+- temperature;
+- loading history;
+- material structure;
+- environment.
+
+A thermoplastic pipe can withstand a high stress for a short period while being unsuitable for sustained long-term operation at that same stress.
+
+Short-duration mechanical values therefore cannot be used automatically as decades-long pressure-design values.
+
+Long-term pressure-pipe classification instead uses data from pipe specimens tested under pressure at defined conditions.
+
+The objective is to characterize the relationship among:
+
+- hoop stress;
+- test temperature;
+- time to failure;
+- observed failure behaviour.
+
+This is one of the fundamental differences between thermoplastic pressure-pipe engineering and design based only on short-term mechanical strength.
+
+---
+
+## 12.3 Long-Term Hydrostatic Strength Evidence
+
+ISO 9080 is identified in the chapter source register as the primary standard framework for statistical extrapolation of long-term hydrostatic strength from thermoplastic pipe-test data.
+
+In simplified engineering terms:
+
+- multiple pipe specimens are tested;
+- different stresses and temperatures are used;
+- failure times are recorded;
+- the resulting dataset is evaluated statistically;
+- long-term behaviour is extrapolated according to the governing procedure.
+
+The piping engineer normally does not recreate the complete statistical classification procedure during routine project design.
+
+Instead, the engineer uses the resulting qualified material classification within the relevant product and design framework.
+
+### Engineering interpretation
+
+The long-term hydrostatic-strength result is not, by itself:
+
+- the final design stress;
+- the pressure rating of a pipe;
+- the allowable system pressure;
+- proof of chemical compatibility;
+- fatigue qualification;
+- proof of joint quality;
+- a guarantee of installed service life.
+
+It is one upstream input into the pressure-design chain.
+
+---
+
+## 12.4 Statistical Strength Basis and the Reference Period
+
+The ISO classification framework uses long-term statistical interpretation of pipe-test data at defined reference conditions.
+
+The existing chapter basis associates material classification with a long-term reference at:
+
+- **20°C**;
+- **50 years**,
+
+subject to the definitions and procedures of the applicable standards.
+
+At this stage of the manuscript, the safest conceptual description is:
+
+> **a conservative lower statistical long-term strength basis derived according to the applicable classification framework**
+
+rather than attempting to reproduce clause-level statistical terminology without the final full-text standards lock.
+
+### What the 50-year reference does not mean
+
+A 50-year classification does not mean:
+
+- automatic failure after 50 years;
+- guaranteed 50-year field life;
+- prohibition of service beyond 50 years;
+- automatic permission to increase stress arbitrarily for shorter service.
+
+The classification is a reference point within a controlled long-term strength framework.
+
+Actual installed life depends on the complete service and system context.
+
+---
+
+## 12.5 Minimum Required Strength — MRS
+
+ISO 12162 is identified in the chapter source register as the primary ISO framework for thermoplastic material classification, designation, and design-stress calculation.
+
+The **Minimum Required Strength — MRS** is a classified long-term strength value assigned within that framework.
+
+It is expressed in MPa.
+
+Examples used in the current manuscript include:
+
+- PE100 → MRS class of 10 MPa;
+- PE80 → MRS class of 8 MPa.
+
+### PE100 does not mean
 
 - 100 MPa tensile strength;
 - 100 bar allowable pressure;
-- a 100-year guaranteed service life;
-- or universal superiority over every lower-class or different polymer system.
+- 100-year guaranteed life;
+- universal superiority over every alternative.
 
-It identifies a polyethylene material class within the applicable long-term hydrostatic-strength framework.
+It is a material classification within a defined long-term hydrostatic-strength system.
 
 ### MRS is not a complete material specification
 
-Two materials with the same MRS classification may differ in:
+Two materials with the same MRS may differ in:
 
-- resistance to slow crack growth;
-- rapid crack propagation performance;
+- slow-crack-growth performance;
+- rapid-crack-propagation behaviour;
 - oxidation stability;
 - processing behaviour;
-- fusion characteristics;
+- fusion behaviour;
 - chemical resistance;
-- pigment and additive package;
-- and product certification.
+- additive package;
+- product qualification.
 
-MRS is essential, but it is only one element of material qualification.
+MRS answers one important question.
+
+It does not answer every material or system question.
 
 ---
 
-## 12.5 PE100, PE100-RC and PE100+
+## 12.6 PE100, PE100-RC, and PE100+
 
-These designations are frequently confused.
+These terms describe different aspects of polyethylene qualification.
 
 ### PE100
 
-PE100 is a long-term strength classification linked to an MRS of 10 MPa under the applicable ISO classification framework.
+A long-term strength classification associated with an MRS class of 10 MPa in the applicable ISO framework.
 
 ### PE100-RC
 
-PE100-RC refers to PE100 materials qualified for enhanced resistance to slow crack growth under the relevant material and product requirements. The designation does not create a higher MRS class and does not remove the need to evaluate temperature, pressure, chemistry, joining, fatigue, installation damage, stress concentration, and abnormal loads.
+A PE100 material with additional slow-crack-growth qualification within the relevant material/product framework.
+
+It does not create a higher MRS class automatically.
 
 ### PE100+
 
-PE100+ is an industry quality-association designation for listed PE100 materials that satisfy the association's recurring independent-testing requirements. It is not a strength class above PE100 and should not be inserted into pressure equations as though it had an MRS greater than 10 MPa.
+An industry quality-assurance designation associated with listed PE100 materials that satisfy additional recurring requirements.
 
-A material may therefore be PE100, may additionally satisfy PE100-RC requirements, and may also appear on a PE100+ quality listing. These terms describe different aspects of qualification and should not be used interchangeably.
+It is not an ISO MRS class above PE100.
+
+The same material may therefore be:
+
+- PE100;
+- additionally qualified as PE100-RC;
+- and also included in a PE100+ quality listing.
+
+These designations should not be inserted interchangeably into pressure calculations.
 
 ---
 
-## 12.6 From MRS to Design Stress
+## 12.7 From MRS to Design Stress
 
-The material classification is converted to a design stress using a design coefficient.
+A material classification must be converted into a design stress appropriate to the applicable engineering framework.
 
-A common representation is:
+A common ISO-form relationship is:
 
 \[
 \sigma_s = \frac{MRS}{C}
@@ -155,38 +306,65 @@ A common representation is:
 
 where:
 
-- \(\sigma_s\) = design stress, in MPa;
-- \(MRS\) = minimum required strength class, in MPa;
-- \(C\) = overall service or design coefficient, dimensionless.
+- \(\sigma_s\) = design stress, MPa;
+- \(MRS\) = minimum required strength, MPa;
+- \(C\) = design coefficient, dimensionless.
 
-The coefficient is greater than 1, so the design stress is lower than the MRS.
-
-### What the design coefficient represents
-
-The coefficient provides design allowance for factors not fully represented by the classified material strength. Its prescribed or minimum value depends on the material family, application, product standard, conveyed fluid, regulatory framework, and project requirements.
-
-It should not be selected by habit or copied from an unrelated service.
-
-For example, a coefficient commonly used for PE water service cannot automatically be assumed valid for:
-
-- fuel gas;
-- compressed gas;
-- aggressive chemicals;
-- unusually severe cyclic service;
-- elevated temperature;
-- or a project governed by a different code.
-
-The applicable product and design standards must establish the required coefficient and any additional reduction factors.
-
-### Design stress is still conditional
-
-Even after dividing MRS by the correct coefficient, the result is not necessarily the final allowable stress for the actual service. Temperature, service duration, chemical environment, cyclic loading, and code-specific rules may require further adjustment or a different design procedure.
+The design coefficient reduces the classified material strength to a design value.
 
 ---
 
-## 12.7 Standard Dimension Ratio — SDR
+## 12.8 The Design Coefficient Is a Controlled Application Input
 
-The **Standard Dimension Ratio (SDR)** describes pipe geometry:
+The coefficient \(C\) should not be treated as a generic personal “safety factor.”
+
+Its applicable value depends on the governing framework.
+
+Relevant influences may include:
+
+- material family;
+- application;
+- conveyed medium;
+- product standard;
+- regulatory context;
+- design standard;
+- project requirements.
+
+The engineer should therefore ask:
+
+> **Which governing document authorizes this coefficient for this application?**
+
+A coefficient used in one water-service framework should not automatically be transferred to:
+
+- fuel gas;
+- industrial chemicals;
+- another material family;
+- another jurisdiction;
+- another product-standard system.
+
+### Design stress remains conditional
+
+Even after:
+
+\[
+\sigma_s = \frac{MRS}{C}
+\]
+
+the result is not automatically the final project allowable stress.
+
+Additional service-specific treatment may still be required for:
+
+- temperature;
+- duration;
+- chemical environment;
+- pressure cycling;
+- application-specific requirements.
+
+---
+
+## 12.9 Standard Dimension Ratio — SDR
+
+The **Standard Dimension Ratio** describes pipe geometry.
 
 \[
 SDR = \frac{d_n}{e_n}
@@ -195,47 +373,86 @@ SDR = \frac{d_n}{e_n}
 where:
 
 - \(d_n\) = nominal outside diameter;
-- \(e_n\) = nominal wall thickness, as defined by the applicable product standard.
+- \(e_n\) = nominal wall thickness,
 
-Both dimensions must be expressed in the same units, so SDR is dimensionless.
+using the definitions of the applicable product convention.
 
-A lower SDR corresponds to a thicker wall for a given outside diameter. A higher SDR corresponds to a thinner wall.
+SDR is dimensionless.
 
-Examples:
+For the same nominal outside diameter:
 
-- SDR 11 is thicker than SDR 17 at the same nominal outside diameter;
-- SDR alone does not identify the material;
-- the same SDR does not produce the same pressure capability for materials having different design stresses.
+- lower SDR → thicker wall;
+- higher SDR → thinner wall.
 
-### SDR is a geometry classification, not a performance guarantee
+For example:
 
-Knowing that a pipe is SDR 11 does not tell the engineer whether it is suitable for service. The engineer must also know:
+- SDR 11 is thicker than SDR 17 at the same nominal outside diameter.
 
-- the material classification;
-- the applicable design coefficient;
-- temperature;
-- product standard;
-- pressure definition;
-- fluid service;
-- and any derating or additional design requirements.
+SDR alone does not identify:
+
+- material;
+- pressure rating;
+- application;
+- allowable temperature;
+- chemical suitability.
+
+It is a geometry classification.
 
 ---
 
-## 12.8 Relationship Between Hoop Stress, Pressure and SDR
+## 12.10 Equation Applicability Gate
 
-For the conventional ISO pressure-pipe relationship based on outside diameter and wall thickness, hoop stress may be expressed as:
+Before using the conventional SDR pressure equation, confirm all of the following.
+
+- Is the pipe a homogeneous pressure-resisting thermoplastic wall for which the governing relationship applies?
+- Are the diameter and wall-thickness definitions consistent with the applicable product standard?
+- Is the material classification valid?
+- Is the selected design stress valid for the intended application?
+- Is the product-standard framework identified?
+- Are reference conditions understood?
+- Is another governing requirement more restrictive?
+- Is the equation being applied to straight pressure pipe rather than local geometry that requires separate treatment?
+
+If these conditions are not established, the engineer should not use the equation merely because \(SDR\), \(MRS\), and pressure values are available.
+
+The simple relationship should not automatically be applied to:
+
+- lined piping;
+- multilayer systems;
+- fibre-reinforced composites;
+- non-standard fabricated geometry;
+- systems governed by a different design convention.
+
+---
+
+## 12.11 Pressure, Hoop Stress, and SDR Relationship
+
+For the conventional ISO-style homogeneous pressure-pipe relationship:
 
 \[
 \sigma = \frac{p(d_n-e_n)}{2e_n}
 \]
 
-Using \(SDR=d_n/e_n\), this becomes:
+where:
+
+- \(\sigma\) = hoop stress;
+- \(p\) = internal pressure;
+- \(d_n\) = nominal outside diameter;
+- \(e_n\) = nominal wall thickness.
+
+Using:
+
+\[
+SDR = \frac{d_n}{e_n}
+\]
+
+the equation becomes:
 
 \[
 \sigma = \frac{p(SDR-1)}{2}
 \]
 
-Rearranging for pressure:
+Rearranging:
 
 \[
 p = \frac{2\sigma}{SDR-1}
@@ -244,57 +461,71 @@ p = \frac{2\sigma}{SDR-1}
 Substituting the design stress:
 
 \[
+\sigma_s = \frac{MRS}{C}
+\]
+
+gives:
+
+\[
 p = \frac{2MRS}{C(SDR-1)}
 \]
 
-where:
+If MRS is in MPa, the resulting pressure is in MPa.
 
-- \(p\) = pressure in MPa when stress values are in MPa;
-- \(MRS\) = minimum required strength in MPa;
-- \(C\) = design coefficient;
-- \(SDR\) = standard dimension ratio.
+Using:
 
-For pressure expressed in bar:
+\[
+1\;MPa = 10\;bar
+\]
+
+the pressure in bar may be expressed as:
 
 \[
 p_{bar} = \frac{20MRS}{C(SDR-1)}
 \]
 
-because 1 MPa equals 10 bar.
-
-### Assumptions and limitations
-
-This relationship is used within standardized thermoplastic pressure-pipe design conventions, but it must not be detached from the relevant standard system. It assumes:
-
-- the diameter and wall definitions prescribed by the applicable convention;
-- a uniform pressure-resisting wall;
-- a qualified thermoplastic pressure-pipe material;
-- a design stress applicable to the stated reference conditions;
-- and no separate governing requirement that reduces the allowable pressure.
-
-The equation does not independently address:
-
-- temperature derating;
-- chemical reduction factors;
-- cyclic or transient loading;
-- external pressure or vacuum;
-- local stresses at branches, flanges, valves, supports, or restraints;
-- scratches, notches, ovality, or installation damage;
-- joint strength and workmanship;
-- multilayer or lined constructions;
-- or code-specific design rules.
+The existing technical review verified this derivation as dimensionally and algebraically consistent.
 
 ---
 
-## 12.9 Worked Example — PE100 SDR 11 Water Pipe
+## 12.12 What the SDR Equation Does Not Evaluate
 
-Assume:
+The equation does not independently verify:
+
+- elevated-temperature capability;
+- chemical compatibility;
+- cyclic loading;
+- surge;
+- external pressure;
+- vacuum;
+- buckling;
+- local fitting stresses;
+- branch geometry;
+- flange loading;
+- valve loads;
+- supports;
+- restraints;
+- scratches;
+- notches;
+- ovality;
+- installation damage;
+- joint quality;
+- workmanship;
+- component-system rating.
+
+It answers a defined straight-pipe pressure/geometry relationship inside a larger engineering framework.
+
+---
+
+## 12.13 Worked Example — PE100 SDR 11 Reference Water-Service Case
+
+Assume, for an illustrative reference case:
 
 - material class: PE100;
-- \(MRS=10\,MPa\);
-- design coefficient: \(C=1.25\), where this value is permitted by the applicable water-pipe standard and project requirements;
-- pipe geometry: SDR 11;
-- reference conditions appropriate to the nominal classification.
+- \(MRS = 10\;MPa\);
+- \(C = 1.25\), **where that value is permitted by the applicable water-service framework**;
+- SDR = 11;
+- appropriate reference conditions.
 
 Then:
 
@@ -303,155 +534,327 @@ p = \frac{2(10)}{1.25(11-1)}
 \]
 
 \[
-p = \frac{20}{12.5}=1.6\,MPa
+p = \frac{20}{12.5}
+\]
+
+\[
+p = 1.6\;MPa
 \]
 
 Therefore:
 
 \[
-p=16\,bar
+p = 16\;bar
 \]
 
-This explains the familiar PE100 SDR 11 PN 16 relationship for the applicable reference water-service convention.
+This illustrates the familiar relationship between:
 
-### What this example does not prove
+- PE100;
+- SDR 11;
+- PN 16
 
-The calculation does not prove that the same pipe may continuously carry every fluid at 16 bar under all conditions. Before specifying the system, the engineer must still verify:
+under the applicable reference water-service convention.
 
-- the current product standard;
-- the fluid application;
-- design and operating temperatures;
-- design life;
-- chemical compatibility;
-- pressure cycles and transients;
-- surge pressure;
-- jointing method;
-- component ratings;
-- and installation configuration.
+### The example is not a universal design rule
+
+It does **not** establish that:
+
+- every PE100 SDR 11 product is acceptable in every application;
+- \(C = 1.25\) is valid for every PE service;
+- 16 bar is acceptable at every temperature;
+- 16 bar is acceptable for every chemical;
+- 16 bar is the allowable system pressure;
+- the same rule applies to gas service;
+- the same rule applies to another polymer family.
+
+Before project use, the engineer must still verify the actual governing basis.
 
 ---
 
-## 12.10 Nominal Pressure — PN
+## 12.14 Material Classification, Pipe Classification, and System Pressure
 
-**PN** is a standardized nominal pressure designation associated with a piping component or system under defined reference conditions. It is a convenient classification, but it is frequently misunderstood as an unconditional maximum allowable operating pressure.
+These levels should remain distinct.
 
-The meaning of PN must be read together with:
+### Material classification
 
-- the applicable product standard;
-- reference temperature;
-- material;
-- design coefficient;
-- component type;
-- and service conditions.
+Examples:
 
-### PN is not necessarily the operating limit at elevated temperature
+- MRS;
+- PE100.
 
-Thermoplastic strength decreases as temperature increases. Therefore, a pipe classified as PN 16 at the reference temperature may have a substantially lower allowable operating pressure at a higher continuous service temperature.
+Describes a qualified material characteristic.
 
-The applicable pressure-temperature relationship or reduction factors must be taken from the relevant standard and qualified product data. Generic derating tables should not be transferred between polymer families, grades, or manufacturers without verification.
+### Pipe/product classification
 
-### The system rating is controlled by the weakest applicable component
+Examples:
 
-A pipeline assembled from PN 16 pipe is not automatically a PN 16 system. The complete pressure boundary may include:
+- SDR;
+- PN designation;
+- applicable product standard.
+
+Describes the qualified product under a defined framework.
+
+### Component rating
+
+Applies to:
 
 - fittings;
 - valves;
 - flanges;
-- branch saddles;
-- mechanical couplings;
+- couplings;
 - instruments;
-- gaskets;
-- transition joints;
-- and fabricated components.
+- transitions;
+- fabricated components.
 
-The allowable system pressure cannot exceed the governing rating of the applicable component, joint, design condition, or code requirement.
+### Project system allowable pressure
 
----
+The pressure actually permitted for the complete installed system after considering:
 
-## 12.11 MOP, Operating Pressure and Design Pressure
+- service temperature;
+- service duration;
+- chemistry;
+- operating states;
+- transients;
+- components;
+- joints;
+- local geometry;
+- project requirements;
+- governing code/design framework.
 
-Terms such as **Maximum Operating Pressure (MOP)**, operating pressure, design pressure, allowable pressure, and nominal pressure are not interchangeable.
-
-Their exact definitions depend on the governing standard and industry.
-
-In general engineering usage:
-
-- **operating pressure** describes pressure expected during operation;
-- **design pressure** defines a design condition under the governing code or project basis;
-- **MOP** is used in certain standards for the maximum pressure permitted during operation under specified conditions;
-- **PN** is a nominal classification;
-- **test pressure** is the pressure applied under a defined test procedure.
-
-The project documentation should define each term explicitly and use it consistently. Many errors occur because a value is transferred between a product catalogue, process datasheet, stress calculation, and test procedure without preserving its original definition.
+This is the final project-level question.
 
 ---
 
-## 12.12 Temperature and Time Derating
+## FIG-012-002 — Classification Level Versus Project Decision
 
-The reference classification is not a universal pressure-temperature envelope.
+`MATERIAL`
+→ MRS / material classification
 
-At elevated temperature, the predicted long-term hydrostatic strength changes. Product standards and manufacturer design data may provide allowable pressure reduction factors, time-dependent strength values, or specific pressure-temperature tables.
+`PIPE PRODUCT`
+→ SDR / PN / product-standard classification
 
-The engineer must distinguish between:
+`COMPONENT`
+→ fitting / valve / flange rating
 
-- temporary exposure;
-- intermittent operation;
-- continuous operation;
-- and cumulative time at each temperature.
+`INSTALLED SYSTEM`
+→ service-case allowable pressure
 
-A short cleaning cycle at elevated temperature may require a different assessment from continuous high-temperature operation, but it should not be ignored merely because it is brief.
+Central message:
 
-Where a system operates at multiple temperatures and pressures, cumulative damage or service-time allocation may need to be assessed using the method required by the relevant standard. A single average temperature can conceal severe periods that dominate long-term degradation.
+> **The project system cannot inherit the pipe label without verification.**
 
 ---
 
-## 12.13 Chemical Environment and Pressure Capability
+## 12.15 Nominal Pressure — PN
 
-Long-term hydrostatic classification is commonly generated using defined test media and controlled laboratory conditions. The process fluid may change material behaviour through:
+PN is a standardized nominal pressure designation associated with a component or piping system under defined reference conditions.
+
+It is a useful classification.
+
+It is not automatically:
+
+- MOP;
+- design pressure;
+- operating pressure;
+- test pressure.
+
+PN must be interpreted together with:
+
+- applicable product standard;
+- reference temperature;
+- material;
+- design coefficient;
+- component type;
+- service basis.
+
+At elevated temperature, the usable pressure capability may be lower than the nominal reference classification.
+
+---
+
+## 12.16 Pressure Terminology Must Be Controlled
+
+Pressure terms are often transferred among:
+
+- process datasheets;
+- pipe catalogues;
+- stress calculations;
+- specifications;
+- test procedures.
+
+This is a major source of engineering error.
+
+The project should define its terminology explicitly.
+
+---
+
+## TAB-012-001 — Pressure Terminology and Ownership Map
+
+| Term | General engineering role | Typical source / owner | Must not automatically be treated as |
+|---|---|---|---|
+| Operating pressure | Expected process operating condition | Process / operations basis | Design pressure |
+| Design pressure | Governing pressure condition used in design framework | Design Basis / code methodology | PN |
+| PN | Nominal product/system pressure classification at defined reference basis | Product standard | Actual allowable operating pressure |
+| MOP | Maximum operating pressure under the applicable framework | Application standard / project basis | Universal synonym for PN |
+| Test pressure | Pressure applied during a defined test | Test standard / procedure | Operating pressure |
+| Allowable project pressure | Final permitted pressure after project verification | Engineering approval | Catalogue label |
+
+Exact definitions must follow the governing standard for the application.
+
+This table is an interpretation aid, not a replacement for those definitions.
+
+---
+
+## 12.17 Temperature and Service Time
+
+The reference material/product classification is not automatically the complete project pressure-temperature envelope.
+
+Temperature can change:
+
+- long-term material strength;
+- creep rate;
+- failure mechanism;
+- available pressure capability.
+
+The engineer should connect pressure verification to the discrete service cases established in Chapter 6.
+
+Relevant cases may include:
+
+- continuous normal operation;
+- intermittent hot operation;
+- cleaning;
+- startup;
+- shutdown;
+- temporary operation;
+- elevated-temperature transients.
+
+A single average temperature may hide periods that are important to long-term performance.
+
+---
+
+## 12.18 Multiple Pressure-Temperature Cases
+
+When the system experiences several pressure-temperature states, the engineer should not automatically select only:
+
+- maximum pressure;
+- maximum temperature;
+
+and combine them unless they are a credible simultaneous case.
+
+Instead, the pressure design should reference the actual service-envelope cases.
+
+One case may govern:
+
+- sustained pressure;
+
+another:
+
+- elevated-temperature exposure;
+
+another:
+
+- surge;
+
+another:
+
+- chemical exposure.
+
+Different mechanisms may therefore have different governing cases.
+
+---
+
+## 12.19 Chemical Environment and Pressure Capability
+
+Chemical compatibility and hydrostatic pressure classification are separate technical questions.
+
+The process fluid may influence material performance through:
 
 - swelling;
 - plasticization;
-- extraction of additives;
 - oxidation;
+- additive extraction;
 - environmental stress cracking;
 - permeation;
-- or accelerated crack growth.
+- accelerated crack growth.
 
-Therefore, hydraulic pressure classification and chemical compatibility are separate checks that must be combined in the final design.
+A chemical-resistance table marked “resistant” does not automatically establish retention of the full nominal pressure classification.
 
-A compatibility table marked “resistant” does not automatically confirm retention of the full pressure rating. The engineer should determine whether the source addresses:
+The pressure decision should therefore verify, where relevant:
 
+- compound;
 - concentration;
 - temperature;
-- exposure time;
+- exposure duration;
 - applied stress;
-- purity and contaminants;
-- and the exact material compound.
+- contaminants;
+- purity;
+- available product evidence.
 
 ---
 
-## 12.14 Static Rating Versus Cyclic and Transient Service
+## 12.20 Static Pressure Versus Cyclic and Transient Service
 
-The standard long-term hydrostatic classification is primarily a sustained-pressure material framework. Real systems may also experience:
+Long-term hydrostatic classification is primarily a sustained-pressure framework.
 
-- pump starts and stops;
-- control-valve cycling;
-- rapid pressure fluctuations;
-- surge and water hammer;
-- daily depressurization and repressurization;
-- vibration;
+Real systems may also experience:
+
+- pump starts;
+- pump stops;
+- valve cycling;
+- surge;
+- water hammer;
+- pressure pulsation;
+- repeated depressurization;
 - thermal cycles;
-- and combined mechanical loads.
+- vibration.
 
-A pipe can satisfy the static pressure calculation and still require a separate fatigue or transient assessment.
+A static pressure calculation does not automatically qualify cyclic service.
 
-This does not mean that every pressure cycle is damaging to the same degree. Fatigue depends on stress range, mean stress, cycle count, temperature, material, geometry, defects, and environment. The important engineering point is that **PN and SDR do not replace a cyclic-service evaluation**.
+The relevant downstream assessment may depend on:
+
+- stress range;
+- mean stress;
+- cycle count;
+- temperature;
+- geometry;
+- defects;
+- environment.
+
+PN and SDR do not replace fatigue or transient assessment where such assessment is required.
 
 ---
 
-## 12.15 Components, Fabrication and Local Geometry
+## 12.21 Components and the Complete Pressure Boundary
 
-The simple SDR pressure equation describes the cylindrical pipe wall. It does not fully characterize local stress at:
+The pressure boundary may contain:
+
+- pipe;
+- fittings;
+- valves;
+- flanges;
+- branch saddles;
+- couplings;
+- instruments;
+- gaskets;
+- transition joints;
+- fabricated components.
+
+The usable system pressure cannot exceed the governing limitation of the applicable:
+
+- component;
+- joint;
+- service case;
+- code requirement;
+- local geometry.
+
+A PN-labelled pipe does not transfer its classification automatically to every connected component.
+
+---
+
+## 12.22 Local Geometry and Fabrication
+
+The SDR pressure equation describes a cylindrical pipe wall.
+
+It does not fully characterize local stresses in:
 
 - tees;
 - reducers;
@@ -459,90 +862,333 @@ The simple SDR pressure equation describes the cylindrical pipe wall. It does no
 - fabricated branches;
 - flange adapters;
 - valve connections;
-- instrument nozzles;
+- nozzles;
 - support points;
 - anchors;
-- and transitions to rigid equipment.
+- rigid transitions.
 
-Standard injection-moulded fittings may be qualified as part of a product system, but fabricated components and non-standard geometry can require separate design verification.
+Standard components may be qualified within a product system.
 
-Similarly, a valid pipe pressure class does not validate a poor fusion joint, misalignment, contamination, excessive restraint, or a notch introduced during installation.
+Non-standard or fabricated geometry may require additional verification.
+
+The project should distinguish:
+
+> **product qualification**
+
+from:
+
+> **engineering verification of project-specific geometry**
 
 ---
 
-## 12.16 Common Engineering Mistakes
+## 12.23 Joint Integrity Is a Separate Requirement
+
+A valid pipe pressure classification does not prove:
+
+- fusion-joint quality;
+- solvent-joint quality;
+- flange assembly quality;
+- mechanical-joint integrity.
+
+Joint performance depends on:
+
+- qualified system;
+- procedure;
+- preparation;
+- equipment;
+- operator;
+- environment;
+- inspection;
+- assembly.
+
+The pressure equation should never be used to conceal an unverified joining basis.
+
+---
+
+## 12.24 External Pressure and Vacuum
+
+Internal-pressure classification does not automatically establish resistance to:
+
+- external pressure;
+- vacuum;
+- soil pressure;
+- groundwater;
+- buckling;
+- ovality-related instability.
+
+These conditions require separate engineering treatment where relevant.
+
+A pipe with high internal-pressure capability may still be vulnerable to external instability.
+
+---
+
+## 12.25 Test Pressure Is Not Derived Directly from PN
+
+Pressure testing is governed by the applicable:
+
+- test standard;
+- product standard;
+- project procedure;
+- safety requirements.
+
+The test pressure should not be invented by multiplying PN by a convenient factor.
+
+The engineer should separately define:
+
+- test medium;
+- test temperature;
+- test pressure;
+- duration;
+- trapped-gas control;
+- stabilization;
+- acceptance criteria.
+
+Detailed test methodology belongs later in the book.
+
+---
+
+## 12.26 Missing Pressure-Design Evidence
+
+A project may lack:
+
+- validated high-temperature data;
+- chemical-service pressure evidence;
+- product-standard confirmation;
+- current design-coefficient basis;
+- cycle-history information;
+- component ratings.
+
+These are not reasons to fabricate an answer.
+
+Possible dispositions include:
+
+- obtain manufacturer/product evidence;
+- confirm governing standard;
+- test;
+- bound the service case;
+- perform sensitivity analysis;
+- apply a controlled assumption;
+- open a controlled hold;
+- issue CONDITIONAL GO;
+- issue NO-GO.
+
+Chapter 7 governs the uncertainty discipline around these decisions.
+
+---
+
+## 12.27 Pressure Verification Record
+
+A project pressure decision should be reconstructable.
+
+A compact record may include:
+
+| Field | Purpose |
+|---|---|
+| Pressure decision ID | Unique reference |
+| Design Basis revision | Governing basis |
+| Service-case ID | Pressure-temperature-chemistry state |
+| Material classification | MRS / material class |
+| Product system | Actual qualified product |
+| SDR / geometry | Relevant pipe geometry |
+| Design coefficient basis | Governing source |
+| Reference product classification | PN / equivalent |
+| Temperature/time treatment | Service adjustment basis |
+| Chemical-pressure basis | Compatibility / pressure retention evidence |
+| Component limits | Governing component ratings |
+| Joint basis | Qualification / verification |
+| Transient/cyclic assessment | Separate check status |
+| External-pressure assessment | Where relevant |
+| Evidence status | Verified / provisional / hold |
+| Final disposition | GO / CONDITIONAL GO / NO-GO |
+| Reopen triggers | Conditions that invalidate decision |
+
+---
+
+## 12.28 Pressure-Design Release Check
+
+Before accepting a project pressure basis, confirm:
+
+- [ ] The exact material classification is known.
+- [ ] The actual product system is identified.
+- [ ] The applicable product/design framework is identified.
+- [ ] The current design-coefficient basis is confirmed.
+- [ ] The equation applicability gate is satisfied.
+- [ ] SDR uses the correct dimensional definitions.
+- [ ] Reference conditions are understood.
+- [ ] Relevant service-envelope cases are identified.
+- [ ] Elevated-temperature conditions are addressed.
+- [ ] Continuous, intermittent, and transient conditions are distinguished.
+- [ ] Chemical environment is considered separately.
+- [ ] Cyclic and surge conditions are assessed where relevant.
+- [ ] Fittings, valves, joints, flanges, instruments, and fabricated parts are checked.
+- [ ] External pressure and vacuum are assessed where relevant.
+- [ ] Pressure terminology is controlled consistently.
+- [ ] Test pressure comes from the proper test basis.
+- [ ] Unresolved evidence remains visible.
+- [ ] Final disposition is explicit.
+
+---
+
+## 12.29 Common Engineering Mistakes
 
 ### Mistake 1 — Treating PE100 as a pressure rating
 
-PE100 is a material classification, not a 100-bar rating.
+PE100 is a material classification.
 
-### Mistake 2 — Treating PE100+ as a higher strength class
+### Mistake 2 — Treating PE100+ as a stronger MRS class
 
-PE100+ is a quality-association listing, not an MRS class above PE100.
+It is not an MRS class above PE100.
 
 ### Mistake 3 — Selecting pipe from PN alone
 
-PN must be linked to material, SDR, standard, temperature, fluid, and component system.
+PN is conditional on its product framework and reference basis.
 
-### Mistake 4 — Ignoring temperature derating
+### Mistake 4 — Treating the design coefficient as a universal safety factor
 
-The reference PN does not automatically remain available at elevated temperature.
+Its application is controlled by the governing design framework.
 
-### Mistake 5 — Using the pipe rating as the system rating
+### Mistake 5 — Ignoring temperature and time
 
-Valves, fittings, joints, fabricated parts, and transitions may govern.
+Reference classification does not automatically remain valid for every service condition.
 
-### Mistake 6 — Using a water-service design coefficient for another service
+### Mistake 6 — Treating pipe rating as system rating
 
-The coefficient and design method must come from the applicable standard.
+Components, joints, and local geometry may govern.
 
-### Mistake 7 — Assuming a 50-year classification guarantees a 50-year installation life
-
-System life depends on actual pressure, temperature, environment, joints, loads, ageing, damage, and operation.
-
-### Mistake 8 — Treating static pressure capability as fatigue qualification
+### Mistake 7 — Treating static pressure classification as fatigue qualification
 
 Cyclic and transient service may require separate assessment.
 
-### Mistake 9 — Applying the SDR equation to lined or multilayer construction without verification
+### Mistake 8 — Using the SDR equation outside its applicable construction
 
-Different structures may require different test or calculation methods.
+Lined, multilayer, composite, and specialized systems may require different methods.
+
+### Mistake 9 — Treating chemical resistance as automatic pressure retention
+
+Chemistry can modify material behaviour.
+
+### Mistake 10 — Treating a 50-year classification as guaranteed installed life
+
+The installed system has a broader life-cycle basis.
+
+### Mistake 11 — Treating test pressure as a multiple of PN by habit
+
+The correct test basis comes from the applicable test framework.
+
+### Mistake 12 — Mixing PN, MOP, operating pressure, and design pressure
+
+Pressure terminology must remain controlled.
 
 ---
 
-## 12.17 Engineering Checklist
+## 12.30 Boundary with Chapters 9–11 and Later Design Chapters
 
-Before accepting a pressure rating, verify:
+### Chapter 9
 
-- [ ] The exact polymer family, grade, compound, and material classification are known.
-- [ ] The applicable product and design standards are identified.
-- [ ] The current MRS or equivalent material classification is verified.
-- [ ] The required design coefficient is taken from the correct application standard.
-- [ ] SDR is calculated from the correct nominal diameter and wall-thickness definitions.
-- [ ] Reference temperature and design life are understood.
-- [ ] Continuous, intermittent, and transient temperatures are assessed.
-- [ ] Chemical compatibility is evaluated under pressure, temperature, concentration, and time.
-- [ ] Cyclic pressure and surge conditions are considered separately.
-- [ ] Fittings, valves, joints, flanges, instruments, and fabricated components are checked.
-- [ ] External pressure, vacuum, buckling, and mechanical loads are assessed where applicable.
-- [ ] Test pressure is determined from the correct test standard rather than directly from PN.
-- [ ] All pressure terms used in the project are explicitly defined.
+Explains:
+
+> **why thermoplastics exhibit time-dependent behaviour**
+
+### Chapter 10
+
+Explains:
+
+> **how a candidate piping system is selected and approved**
+
+### Chapter 11
+
+Explains:
+
+> **the characteristic behaviour of the main plastic-piping families**
+
+### Chapter 12
+
+Explains:
+
+> **how long-term thermoplastic material strength, design stress, and geometry connect to pressure classification and project pressure verification**
+
+Later chapters must still address:
+
+- hydraulic transients;
+- fatigue;
+- mechanical loads;
+- supports;
+- flexibility;
+- joining;
+- inspection;
+- testing.
+
+Pressure classification is therefore one part of complete system design.
+
+---
+
+## 12.31 Evidence and Standards Holds
+
+The current chapter source package identifies:
+
+- ISO 9080;
+- ISO 12162;
+- ISO 4427 series;
+- ISO 4437 series;
+- ISO 15494;
+- ISO 17456;
+- PE100+ Association material;
+- PPI technical material.
+
+The existing technical review also records that the equation derivation and units have been verified.
+
+Before final lock, the following remain controlled evidence actions:
+
+- verify current product-standard wording and editions;
+- complete full-text clause-level terminology review where normative precision matters;
+- verify non-PE product-standard examples;
+- preserve the distinction between ISO and ASTM/PPI terminology;
+- complete independent technical review;
+- finalize figures and cross-references.
+
+The Rev 1.0 content revision does not close those final-lock actions.
 
 ---
 
 ## If You Remember Only One Thing
 
-> A thermoplastic pipe pressure rating is the final result of a chain of assumptions and classifications: long-term material strength, statistical confidence, design coefficient, geometry, temperature, time, service, and product-standard requirements. **PN is the label at the end of that chain—not a substitute for understanding it.**
+> **A thermoplastic pressure label is the output of a chain, not the starting point of a design.**
+
+The chain is:
+
+**long-term evidence**
+
+→ **material classification**
+
+→ **design stress**
+
+→ **SDR / geometry**
+
+→ **product pressure classification**
+
+→ **service-case verification**
+
+→ **component and system verification**
+
+→ **project allowable pressure**
+
+**PN is somewhere in the middle of that chain.**
+
+It is not the final engineering answer.
 
 ---
 
 ## Chapter Summary
 
-Thermoplastic pressure-pipe design is based on long-term hydrostatic behaviour rather than short-term material strength alone.
+Thermoplastic pressure design begins with long-term material behaviour rather than short-term strength.
 
-ISO 9080 provides the statistical framework used to predict long-term hydrostatic strength from pipe-test data. ISO 12162 establishes material classification and the calculation of design stress. MRS identifies a classified long-term material strength; the design coefficient reduces that value to a design stress; and SDR defines the relationship between outside diameter and wall thickness.
+Long-term pipe-test evidence is evaluated statistically and converted into a material classification such as MRS.
 
-For conventional pressure-pipe geometry, these values can be related through:
+The applicable engineering framework then uses a design coefficient to establish a design stress.
+
+Pipe geometry is represented by SDR.
+
+For the conventional homogeneous thermoplastic pressure-pipe relationship:
 
 \[
 p = \frac{2MRS}{C(SDR-1)}
@@ -550,6 +1196,25 @@ p = \frac{2MRS}{C(SDR-1)}
 
 when pressure and stress are expressed in MPa.
 
-The resulting nominal pressure remains conditional. Temperature, service duration, chemistry, cyclic loading, surge, component ratings, joints, fabrication, external loads, and the governing standard can reduce or otherwise control the permissible operating pressure.
+The equation is valid only within its applicable design framework.
 
-A reliable design therefore uses MRS, SDR, and PN as parts of a complete engineering assessment—not as isolated catalogue values.
+The resulting product pressure classification remains conditional.
+
+The project must still verify:
+
+- temperature;
+- time;
+- chemistry;
+- cyclic and transient pressure;
+- components;
+- joints;
+- local geometry;
+- external pressure;
+- governing standards;
+- project requirements.
+
+A reliable engineer therefore distinguishes:
+
+> **material classification ≠ pipe pressure classification ≠ system allowable pressure**
+
+The final pressure decision belongs to the complete system and the actual service case.
