@@ -1320,13 +1320,269 @@ That is the subject of Investigation 6.
 
 # Investigation 6 — Why Is Carbon Uniquely Useful for Polymer Backbones?
 
-**Authoring state:** planned. Evidence research required before development.
+Carbon is the structural center of most organic polymers used in engineering, but the explanation is often reduced to one sentence: “carbon has four bonds.” That is a useful starting point and an incomplete answer.
+
+IUPAC organic nomenclature assigns carbon a **standard bonding number of four**. The same table assigns standard bonding number four to other Group 14 elements such as silicon, so tetravalency alone cannot explain why carbon chemistry supports such extraordinary structural diversity. [S014-006]
+
+For Chapter 014, the useful engineering explanation is the combination of:
+
+- carbon's standard four-bond connectivity;
+- carbon–carbon covalent connectivity;
+- the ability to form linear, branched and cyclic carbon skeletons;
+- the ability to participate in different bond orders;
+- substitution of hydrogen by other atoms or groups;
+- the resulting freedom to build many different local chemical environments along a molecular skeleton.
+
+The purpose here is to understand **structural possibility**, not yet hybridization, polymerization, chain architecture or bulk material performance.
+
+## 6.1 Tetravalency: what “carbon forms four bonds” should mean
+
+In the IUPAC Blue Book framework, the standard bonding number of neutral carbon in ordinary organic skeletal structures is four. [S014-006]
+
+For an engineer, that means carbon can satisfy four bonding equivalents in many constitutional arrangements.
+
+This statement should not be anthropomorphized as:
+
+> “Carbon wants four bonds.”
+
+Atoms do not make engineering choices. The four-bond rule is a useful structural/electron-counting description of common carbon chemistry.
+
+### Examples of different connectivity with the same bonding-number framework
+
+A carbon atom can appear in structures where its bonding equivalents are distributed among:
+
+- four single-bond connections;
+- one double bond plus two single-bond connections;
+- one triple bond plus one single-bond connection;
+- two double-bond connections in appropriate structures.
+
+Investigation 7 will explain the `sp`, `sp2`, `sp3`, sigma and pi models behind those differences. Investigation 6 uses only the constitutional fact that different bond-order patterns are possible.
+
+### Engineering boundary
+
+Standard bonding number four does not directly establish:
+
+- molecular flexibility;
+- chain packing;
+- crystallinity;
+- transition temperature;
+- chemical resistance;
+- crack resistance;
+- pressure rating.
+
+Those require the actual structure and higher-level evidence.
+
+## 6.2 Carbon–carbon connectivity creates a framework, not a material property
+
+Carbon can bond covalently to other carbon atoms. Repeating C–C connectivity makes it possible to construct extended molecular skeletons.
+
+This is the structural bridge from small organic molecules to the large carbon-containing molecular frameworks encountered in polymer science.
+
+The important word is **framework**.
+
+A carbon skeleton tells the engineer which atoms are constitutionally connected. It does not yet tell the engineer how long the polymer chain is, how the chain population is distributed in molecular weight, how much branching exists in a real polymer grade, whether the material is crystalline, or what additives are present.
+
+Those questions belong mainly to Chapters 015–017 and the later material-family chapters.
+
+## 6.3 Linear chains, branches and rings are structural possibilities
+
+IUPAC polymer terminology defines a **chain** as a linear or branched sequence of constitutional units between selected boundary units and notes that a cyclic macromolecule may also be regarded as a chain. [S014-003]
+
+A **branched chain** contains at least one branch point between its boundary units. [S014-003]
+
+Organic chemistry also includes **carbocyclic** structures in which the members of a ring are carbon atoms. [S014-003]
+
+Together, these ideas show that carbon connectivity is not restricted to one straight line.
+
+At the molecular-structure level, carbon can participate in:
+
+- unbranched sequences;
+- branched sequences;
+- rings;
+- side chains attached to a main skeleton;
+- combinations of cyclic and acyclic features.
+
+### Critical ownership boundary
+
+Investigation 6 is **not** the chapter on polymer branching.
+
+The existence of branch points as a chemical possibility is introduced here. The engineering consequences of molecular-weight distribution, short/long-chain branching, crosslinking and chain architecture belong to Chapter 016.
+
+This prevents a structural drawing from silently becoming a statement about a commercial polymer grade.
+
+## 6.4 Saturated and unsaturated carbon frameworks: recognize the distinction, defer the orbital explanation
+
+Carbon skeletons can contain different carbon–carbon bond orders.
+
+For example, IUPAC defines alkanes as acyclic branched or unbranched hydrocarbons built from saturated carbon atoms, while organic nomenclature separately recognizes structures containing carbon–carbon double or triple bonds. [S014-003]
+
+For Chapter 014, the immediate engineering lesson is simply:
+
+> A single bond and a multiple bond are not constitutionally equivalent features.
+
+They differ in bond order and later will differ in geometry and rotational freedom.
+
+But the reason is intentionally deferred:
+
+- hybridization → Investigation 7;
+- sigma / pi bonding → Investigation 7;
+- why ethylene's C=C matters to polymerization → Investigation 8 and Chapter 015.
+
+Investigation 6 should make the engineer notice the bond-order difference without pre-empting the mechanism.
+
+## 6.5 Carbon skeleton does not mean hydrocarbon-only polymer
+
+A carbon framework can carry atoms or groups other than hydrogen.
+
+This matters immediately for piping polymers because the structural formula may include elements such as:
+
+- fluorine;
+- chlorine;
+- oxygen;
+- nitrogen;
+- other heteroatoms or functional groups where relevant.
+
+Replacing a hydrogen or carbon-containing substituent changes local bonding, electron distribution, mass, steric environment and possible intermolecular interactions.
+
+That makes substitution chemically meaningful.
+
+It does **not** justify a direct material ranking. For example, the presence of fluorine or chlorine in a repeat-unit structure is a chemistry fact; chemical resistance, permeability or allowable temperature remain measured/qualified material properties.
+
+## 6.6 How to read a skeletal / bond-line formula
+
+IUPAC defines a **skeletal formula**, also called a bond-line formula, as a two-dimensional representation in which lines show bonds, vertices represent ordinary carbon atoms, attached hydrogens on those carbon atoms are omitted, and other atoms are shown by their element symbols. [S014-003]
+
+This representation is exceptionally useful for engineers because it strips away repetitive C/H labels and makes **connectivity** visible.
+
+### Practical reading rules
+
+When reading a skeletal formula:
+
+1. **Each unlabeled vertex or line end is normally carbon** under the convention.
+2. **Lines are bonds.** Multiple parallel lines indicate higher bond order.
+3. **Hydrogens attached to ordinary carbon vertices are usually implicit.** Infer only the number needed to satisfy the standard bonding pattern represented.
+4. **Heteroatoms are written explicitly.** Their presence is therefore visually important.
+5. **Do not confuse a two-dimensional drawing with the three-dimensional molecular geometry.** Investigation 7 owns that next step.
+
+### Why this matters in PPE-BoK
+
+A piping engineer who can read a bond-line structure can rapidly identify:
+
+- carbon skeleton connectivity;
+- branch points in a simple molecular drawing;
+- rings;
+- double/triple bonds;
+- heteroatoms;
+- candidate polar bonds or interaction sites requiring later analysis.
+
+That is enough to support mechanism questions without requiring full organic-nomenclature training.
+
+## 6.7 Skeletal formula versus polymer skeletal structure
+
+A terminology distinction is useful here.
+
+IUPAC's **skeletal formula** is a drawing convention for a molecular entity. IUPAC polymer terminology also uses **skeletal structure** for the sequence of atoms in the constitutional units of a macromolecule or chain that defines its essential topological representation. [S014-003]
+
+The phrases sound similar but answer different questions:
+
+- **skeletal formula** — how a structure is drawn;
+- **skeletal structure** — which atoms form the essential molecular skeleton/topology.
+
+Chapter 014 uses the drawing convention to help the engineer see the polymer-relevant skeleton without pretending the drawing contains every aspect of the real macromolecule.
+
+## 6.8 From carbon versatility to polymer diversity — the bounded inference
+
+Carbon's structural versatility makes many molecular architectures chemically possible.
+
+A change in carbon skeleton, substituent, heteroatom or bond order can change:
+
+- the local electron distribution;
+- possible intermolecular interactions;
+- local geometry;
+- possible rotational constraints;
+- the chemical reactions available to the molecular structure.
+
+Those are legitimate **mechanism-level** consequences.
+
+The next step — claiming a specific modulus, transition temperature, diffusion coefficient, chemical resistance or fracture response — requires material-specific evidence.
+
+This is the same chapter-wide discipline in a new form:
+
+`carbon structural feature → molecular mechanism hypothesis → measured property → qualification → engineering decision`
+
+## 6.9 TAB-014-002 — Carbon structural feature → mechanism question → evidence boundary
+
+| Structural feature visible in a formula | Immediate chemistry question | Plausible mechanism level | What cannot be concluded directly |
+|---|---|---|---|
+| Linear C–C skeleton | How is the backbone connected and what rotations/geometries are possible? | Molecular connectivity / local mobility hypothesis | Actual chain architecture, crystallinity, modulus or creep |
+| Branch point in a simple structure | Which atom/group departs from the selected main path? | Topological/constitutional difference | Branching distribution or properties of a commercial polymer grade |
+| Carbon ring | How does cyclic connectivity constrain the local skeleton? | Geometry / conformational hypothesis | Stiffness or service temperature without material evidence |
+| C=C or C≡C | What changes when bond order increases? | Geometry / rotation / reactivity hypothesis | Polymerization mechanism or bulk property; see Investigations 7–8 |
+| Heteroatom / substituent | How does the new atom/group alter polarity, size or interaction possibilities? | Electron-distribution / interaction hypothesis | Compatibility, permeability or thermal capability without testing/qualification |
+
+**Table rule:** `TAB-014-002` is an inference-control tool. Its right-hand column is as important as its mechanism column.
+
+## 6.10 Common mistakes / Failure Lens
+
+### Mistake 1 — “Carbon is special only because it has valence four”
+
+Why it fails: IUPAC's standard bonding-number table gives four to other Group 14 elements as well. Tetravalency is part of the explanation, not the entire explanation.
+
+### Mistake 2 — “A branch drawn in one molecule tells me the branching of the commercial polymer”
+
+Why it fails: a structural possibility is not a measured chain-architecture distribution. Chapter 016 owns that engineering layer.
+
+### Mistake 3 — “A bond-line drawing is the real 3D shape of the molecule”
+
+Why it fails: skeletal formulas are two-dimensional connectivity representations. Three-dimensional geometry requires the bonding/orbital treatment of Investigation 7.
+
+### Mistake 4 — “Carbon skeleton means the polymer contains only carbon and hydrogen”
+
+Why it fails: many polymer structures contain heteroatoms or substituted carbon skeletons.
+
+### Mistake 5 — “A double bond just means two single bonds drawn together”
+
+Why it fails: multiple bond order changes the bonding model, geometry and rotation constraints. Investigation 7 explains the sigma/pi distinction.
+
+### Mistake 6 — “Knowing the repeat-unit skeleton gives the material properties”
+
+Why it fails: molecular weight, architecture, morphology, formulation, processing and qualification remain missing.
+
+## 6.11 Verification
+
+Before accepting a carbon-chemistry explanation in Chapter 014, check:
+
+1. Is carbon's standard bonding number four stated as a structural/electron-counting convention rather than anthropomorphic intent?
+2. Has the text avoided claiming tetravalency alone explains carbon's importance?
+3. Are chains, branches and rings introduced only as structural possibilities without pre-empting Chapter 016?
+4. Are multiple bonds recognized without prematurely teaching the hybridization/sigma/pi mechanism owned by Investigation 7?
+5. Is the skeletal-formula convention being used correctly for implicit carbon/hydrogen and explicit heteroatoms?
+6. Has any structure→bulk-property jump been stopped at the mechanism/evidence boundary?
+7. Does the explanation distinguish a drawing convention from actual three-dimensional geometry and real polymer morphology?
+
+## 6.12 Engineering decision from Investigation 6
+
+> Carbon is exceptionally useful in polymer chemistry because its ordinary four-bond connectivity can be arranged into diverse carbon frameworks — including chains, branches, rings, multiple-bond patterns and substituted structures. This structural versatility creates many possible molecular mechanisms, but it does not by itself determine a piping material's engineering properties.
+
+After Investigation 6, the engineer should be able to look at a simple organic or polymer-relevant structural formula and identify:
+
+- the carbon skeleton;
+- branch points or rings;
+- single versus multiple bonds;
+- explicitly shown heteroatoms/substituents;
+- the next mechanism question that must be asked.
+
+The next missing capability is three-dimensional/electronic interpretation:
+
+> **Why do single, double and triple bonded carbon centers adopt different bonding geometries, and what do `sp`, `sp2`, `sp3`, sigma and pi actually mean?**
+
+That is the subject of Investigation 7.
 
 ---
 
 # Investigation 7 — What Do sp, sp2, sp3, Sigma and Pi Bonds Mean to the Engineer?
 
-**Authoring state:** planned.
+**Authoring state:** planned. Evidence research required before development.
 
 ---
 
@@ -1354,12 +1610,12 @@ That is the subject of Investigation 6.
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
 | FIG-014-002 | Primary and secondary bonding map | Scientific/conceptual specification complete through Investigation 5; graphic production pending |
-| FIG-014-003 | Carbon hybridization and geometry | Planned |
+| FIG-014-003 | Carbon hybridization and geometry | Planned for Investigation 7 |
 | FIG-014-004 | Sigma and pi bonding in ethylene | Planned |
 | FIG-014-005 | Ethylene to polyethylene bridge | Planned |
 | FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; figure planned |
 | TAB-014-001 | Bonding types and engineering relevance | Primary-bonding + intermolecular-interaction rows integrated through Investigation 5 |
-| TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Planned |
+| TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Initial carbon-structure inference table integrated in Investigation 6; extend in Investigation 9 |
 | TAB-014-003 | Controlled polymer-structure examples | Planned |
 | TAB-014-004 | Downstream chapter ownership crosswalk | Planned |
 | EX-014-001 | Reading ethylene and PE repeat unit | Planned |
