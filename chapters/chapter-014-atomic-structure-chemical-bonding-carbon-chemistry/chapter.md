@@ -624,13 +624,203 @@ That is the subject of Investigation 3.
 
 # Investigation 3 — Which Electrons Actually Control Chemical Bonding?
 
-**Authoring state:** planned. Evidence research required before development.
+Knowing which elements are present is not enough to explain a polymer's chemistry. The next useful question is how the electrons associated with those atoms can participate in bonding.
+
+This is where introductory chemistry is often taught with pictures that are memorable but dangerous if taken literally. Electrons are sometimes drawn as small particles orbiting a nucleus on fixed circular paths. That picture may be useful as a historical teaching analogy, but it is not the model Chapter 014 will use for engineering reasoning.
+
+For this chapter, the minimum useful framework is:
+
+`electron → atomic orbital / electron distribution → valence context → electronegativity / electron attraction → bonding possibility`
+
+The purpose is not to solve the Schrödinger equation. The purpose is to understand why atoms of different elements form different bonding patterns and why electron distribution later matters to bond polarity, molecular geometry and intermolecular interaction.
+
+## 3.1 Electron: the negatively charged particle that enters the bonding problem
+
+IUPAC defines the **electron** as an elementary particle carrying negative elementary charge. [S014-003]
+
+Its spin and rest mass are part of the formal definition, but Chapter 014 does not need those quantities for the present engineering objective.
+
+The point to retain is narrower:
+
+> Chemical bonding depends on how electrons are distributed and shared, transferred or delocalized between atoms and molecular entities.
+
+That is why two elements with different atomic identities can exhibit different bonding behaviour even before we discuss a specific polymer.
+
+## 3.2 Orbitals are not planetary paths
+
+IUPAC defines an **atomic orbital** as a one-electron wavefunction obtained from the Schrödinger equation for an atom. [S014-003]
+
+That formal definition immediately establishes an important teaching boundary:
+
+> An orbital is not a little circular track on which an electron travels around the nucleus.
+
+For a piping engineer, the full mathematics behind the wavefunction is not needed. What matters is that orbitals provide a structured way to describe the spatial and energetic possibilities associated with electrons in an atom.
+
+This lets us reason about bonding without pretending that electrons have fixed classical trajectories.
+
+### Engineering-use simplification
+
+When Chapter 014 later draws `s` or `p` orbitals, hybrid orbitals, sigma bonds or pi bonds, treat those drawings as **models of electron distribution and bonding geometry**, not photographs of physical objects.
+
+That distinction becomes critical in Investigation 7.
+
+## 3.3 Which electrons matter most? The valence context
+
+The word **valence** has a long history in chemistry. IUPAC defines valence in terms of an atom's combining capacity with univalent atoms or fragments. [S014-003]
+
+For introductory bonding work, engineers often use the phrase **valence electrons** for the electrons associated with the outer chemically active part of the atom — the electrons most directly involved in ordinary bond formation and electron-counting models.
+
+That is a useful engineering abstraction, but it should not be treated as a universal statement that every bonding problem can be solved by drawing a simple outer shell.
+
+IUPAC's electron-counting terminology itself points to the importance of the **valence electron shell** when relating molecular topology to bonding-electron counts. [S014-003]
+
+For Chapter 014, the practical rule is:
+
+> Focus on the electrons that participate in the atom's chemically accessible bonding states; do not carry every inner electron into the polymer-bonding discussion.
+
+## 3.4 Why the periodic table becomes useful now
+
+Investigation 2 used the periodic table only as a map of elemental identity. Investigation 3 adds a second use: elements in different positions exhibit different recurring patterns in their chemically active electron structure.
+
+The engineer does not need to memorize the entire table.
+
+Instead, use it as a navigation tool to ask:
+
+- How many chemically active electrons are available in the simple bonding model?
+- Is the atom likely to form, share or attract electron density in a particular way?
+- Is the atom part of the carbon/hydrogen backbone or a more electronegative substituent or heteroatom?
+
+The exact answer may require a deeper chemical model, but the periodic pattern helps organize the first hypothesis.
+
+## 3.5 Electronegativity: useful, relative and easy to misuse
+
+IUPAC describes **electronegativity** as the power of an atom to attract electrons to itself and notes that several definitions/scales exist. [S014-003]
+
+That last point matters.
+
+Electronegativity is not one universal directly measured material property. Different scales formalize the concept in different ways. In Chapter 014 it is therefore used as a **relative chemical descriptor** that helps reason about how electron density may be distributed in a bond.
+
+### What electronegativity can help explain
+
+It can support questions such as:
+
+- Is a bond between unlike atoms likely to have uneven electron distribution?
+- Which atom is the more electron-attracting partner in a simple bond model?
+- Why might a bond acquire polarity?
+
+### What electronegativity cannot establish by itself
+
+It does not directly give:
+
+- the dipole moment of a complete polymer chain;
+- chemical compatibility with a process fluid;
+- dielectric performance;
+- permeability;
+- melting temperature;
+- modulus;
+- allowable service temperature;
+- pressure rating.
+
+Those conclusions require additional molecular and material evidence.
+
+## 3.6 From electron distribution to bond polarity — but no further yet
+
+The next connection is conceptually simple:
+
+`different electron-attracting tendencies → unequal electron distribution in a bond → possible bond polarity`
+
+Investigation 1 already introduced the warning that bond polarity must not be turned directly into a compatibility rule. Investigation 3 now provides the electron-level reason that polarity can arise.
+
+The full treatment of ionic and covalent bonding belongs to Investigation 4. Intermolecular consequences of permanent dipoles belong to Investigation 5.
+
+This separation is intentional. It prevents the chapter from collapsing several different physical levels into one word such as “polar.”
+
+## 3.7 Lewis structures: a controlled bookkeeping model
+
+Lewis formulas are useful because they make valence-electron bookkeeping visible. They can show:
+
+- which atoms are connected;
+- bonding electron pairs in a simplified representation;
+- nonbonding electron pairs where relevant;
+- formal structural possibilities.
+
+But a Lewis formula is still a model.
+
+It does not show the full electron density, three-dimensional molecular geometry, orbital shape, molecular motion or bulk-material morphology. Later Investigations add those missing layers only where they affect the engineering question.
+
+The engineer should therefore use Lewis structures as a **connectivity and electron-bookkeeping tool**, not as a literal map of electron positions.
+
+## 3.8 Why this matters to polymer structures
+
+The electron-level model becomes useful when comparing repeat-unit structures.
+
+Consider the kinds of questions a piping engineer may eventually ask:
+
+- Why does replacing hydrogen with another element change bond polarity?
+- Why does a carbon–carbon double bond behave differently from a single bond?
+- Why can some atoms support lone-pair interactions or hydrogen bonding while others do not?
+- Why do different substituents change molecular geometry or intermolecular interactions?
+
+All of those questions begin with electron distribution and valence possibilities.
+
+But the chapter-wide evidence rule remains unchanged:
+
+> Electron structure explains **why a mechanism is chemically possible**. It does not quantify the finished piping material's engineering performance.
+
+## 3.9 Common mistakes / Failure Lens
+
+### Mistake 1 — drawing electrons as fixed planets and treating the drawing as physical reality
+
+Why it fails: atomic orbitals are quantum-mechanical wavefunctions, not classical circular trajectories.
+
+### Mistake 2 — assuming “valence electrons” means every atom follows one simple outer-shell cartoon
+
+Why it fails: the phrase is a useful introductory abstraction, but real electronic structure and bonding can require more detailed treatment.
+
+### Mistake 3 — treating electronegativity as a universal material-property scale
+
+Why it fails: IUPAC notes multiple definitions/scales, and electronegativity describes an atomic electron-attraction concept rather than a finished polymer property.
+
+### Mistake 4 — using electronegativity difference alone to declare a bond or material fully ionic/covalent or chemically compatible
+
+Why it fails: bonding character and bulk behaviour require a more complete model; compatibility requires measured service-relevant evidence.
+
+### Mistake 5 — treating a Lewis drawing as complete molecular geometry
+
+Why it fails: Lewis structures are useful bookkeeping/connectivity models, not full descriptions of electron density or three-dimensional molecular structure.
+
+## 3.10 Verification
+
+Before accepting an electron-level explanation in Chapter 014, check:
+
+1. Does the wording avoid fixed-orbit planetary imagery except as an explicitly rejected historical analogy?
+2. Is an orbital described as a model/wavefunction rather than a physical path?
+3. Is valence language being used only to the depth required for bonding?
+4. Is electronegativity presented as a relative concept with multiple formal definitions/scales?
+5. Has any bond-polarity inference been kept separate from bulk-material qualification?
+6. Does the explanation stop before quantum mathematics that adds no engineering capability?
+
+## 3.11 Engineering decision from Investigation 3
+
+> The chemically relevant difference between elements is not only the number of protons that identifies them, but also the accessible electron structure that governs how they can participate in bonding. For engineering use, orbitals and valence concepts are models for electron distribution and bonding possibilities — not direct predictors of bulk pipe performance.
+
+After Investigation 3, the engineer should be able to use three disciplined ideas:
+
+- **orbitals** describe electron-state/distribution possibilities, not classical paths;
+- **valence context** identifies the electrons and combining capacity relevant to ordinary bonding models;
+- **electronegativity** helps form a relative hypothesis about electron distribution and bond polarity, but does not by itself establish a material property.
+
+The next engineering question is therefore:
+
+> **What kinds of primary bonds result when atoms interact, and why do those bonds create different classes of material behaviour?**
+
+That is the subject of Investigation 4.
 
 ---
 
 # Investigation 4 — What Are Primary Bonds and Why Do Material Classes Differ?
 
-**Authoring state:** planned.
+**Authoring state:** planned. Evidence research required before development.
 
 ---
 
@@ -675,7 +865,7 @@ That is the subject of Investigation 3.
 | ID | Asset | Status |
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
-| FIG-014-002 | Primary and secondary bonding map | Planned |
+| FIG-014-002 | Primary and secondary bonding map | Planned for Investigations 4–5 |
 | FIG-014-003 | Carbon hybridization and geometry | Planned |
 | FIG-014-004 | Sigma and pi bonding in ethylene | Planned |
 | FIG-014-005 | Ethylene to polyethylene bridge | Planned |
