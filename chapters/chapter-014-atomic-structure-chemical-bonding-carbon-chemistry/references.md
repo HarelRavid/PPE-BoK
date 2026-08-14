@@ -179,7 +179,80 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - **Boundary:** nomenclature guidance does not define the polymerization route, PE grade, molecular architecture, morphology or piping qualification.
 - **Validation requirement:** recheck the current applicable IUPAC polymer-nomenclature recommendation set before publication freeze.
 
-## 4. Internal PPE-BoK sources used for architecture and non-duplication
+## 4. Investigation 9 — Direct primary literature
+
+### S014-009 — Shinzawa & Mizukado (2020) — PA6 water absorption, H-bond network and elastic response
+
+- **Authors:** Hideyuki Shinzawa; Junji Mizukado.
+- **Title:** *Water absorption by polyamide (PA) 6 studied with two-trace two-dimensional (2T2D) near-infrared (NIR) correlation spectroscopy*.
+- **Journal:** Journal of Molecular Structure, 1217, 128389 (2020).
+- **DOI:** 10.1016/j.molstruc.2020.128389.
+- **Evidence class:** C — directly reviewed primary research at abstract/highlight/conclusion level from the publisher record.
+- **Measured/evidenced result used:** wet treatment was associated with a substantial decrease in Young's modulus; spectroscopic interpretation linked absorbed water to disruption of H-bonded bridges in PA6 amorphous regions and increased chain mobility/plasticization; the authors also reported a change in crystalline/amorphous population, demonstrating a morphology confounder rather than a one-variable mechanism.
+- **Allowed Chapter 014 use:** support a bounded example in which a chemically plausible amide/H-bond interaction hypothesis is linked to measured mechanical change and observed molecular/morphological change.
+- **Transferability limit:** specific PA6 specimens/treatment and spectroscopy/mechanical context; not a universal quantitative rule for all polyamides, reinforced grades or piping compounds.
+- **Prohibited inference:** no generic PA water-uptake limit, design modulus, service-temperature limit or piping acceptance criterion may be derived from this paper.
+
+### S014-010 — Sambale et al. (2021) — PA6 water sorption and swelling
+
+- **Authors:** Anna Katharina Sambale; Michael Stanko; Jessica Emde; Markus Stommel.
+- **Title:** *Characterisation and FE Modelling of the Sorption and Swelling Behaviour of Polyamide 6 in Water*.
+- **Journal:** Polymers, 13(9), 1480 (2021).
+- **DOI:** 10.3390/polym13091480.
+- **Evidence class:** C — directly reviewed open-access primary research.
+- **Measured/evidenced result used:** PA6 water sorption and moisture-induced swelling were experimentally characterized across specimen geometries/conditioning states; concentration-dependent diffusion coefficients and swelling behavior were used to construct an FE representation. The paper also describes polar water interaction with polar amide groups and H-bond-related chain-mobility mechanisms as scientific context.
+- **Allowed Chapter 014 use:** show that chemical affinity/hydrogen-bonding reasoning can identify a relevant transport/swelling mechanism, but the engineering magnitude depends on geometry, concentration, diffusion behavior and conditioning state.
+- **Transferability limit:** PA6 molded specimens and water-conditioning context; not pressure-pipe qualification and not a universal property value for PA materials.
+- **Prohibited inference:** no piping design acceptance, fixed diffusion coefficient, universal swelling allowance or mechanical derating may be generalized without the applicable material/product evidence.
+
+### S014-011 — Graunke et al. (2016) — fluoropolymer membrane gas transport
+
+- **Authors:** Thorsten Graunke; Katrin Schmitt; Stefan Raible; Jürgen Wöllenstein.
+- **Title:** *Towards Enhanced Gas Sensor Performance with Fluoropolymer Membranes*.
+- **Journal:** Sensors, 16(10), 1605 (2016).
+- **DOI:** 10.3390/s16101605.
+- **PMCID:** PMC5087394.
+- **Evidence class:** C — directly reviewed open-access primary research.
+- **Measured/evidenced result used:** permeation behavior was experimentally compared across multiple fluoropolymer membranes selected for different fluorination levels and structural features, including ether-containing monomers; the observed transport behavior was not reducible to one simple polarity/fluorination predictor, and the authors discuss crystallinity/free-volume/structural effects.
+- **Allowed Chapter 014 use:** deliberately use as a counterexample to `chemical descriptor → universal transport ranking`; a chemically reasonable hypothesis must survive measured transport data and morphology/structure confounders.
+- **Transferability limit:** thin membrane/gas-sensor configuration, specific commercial films and test setup; not pressure-pipe wall permeation and not hydrogen-service qualification.
+- **Prohibited inference:** do not rank piping-grade PVDF/PTFE/PFA/ECTFE or other fluoropolymers for service from these membrane results alone.
+
+### S014-012 — Monson, Moon & Extrand (2009) — PFA grade/process/crystallinity and gas permeation
+
+- **Authors:** L. Monson; Sung In Moon; C. W. Extrand.
+- **Title:** *Gas permeation resistance of various grades of perfluoroalkoxy–polytetrafluoroethylene copolymers*.
+- **Journal:** Journal of Applied Polymer Science, 111(1), 141–147 (2009).
+- **DOI:** 10.1002/app.28858.
+- **Evidence class:** C — directly reviewed primary publisher abstract.
+- **Measured/evidenced result used:** PFA/PTFE copolymer specimens were compression molded with fast and slow cooling; permeability, diffusion and solubility coefficients were measured for H2, N2 and O2. Slow-cooled samples showed substantially better permeation resistance, and the authors concluded that process can be as important as polymer grade; differences were attributed to crystallinity arising from architecture and processing. Molecular mass had no appreciable effect within a fixed cooling method in the reported study, while comonomer/filler effects were also observed.
+- **Allowed Chapter 014 use:** demonstrate that even within one fluoropolymer family, processing/morphology can rival or dominate a simple grade/chemistry expectation for measured transport.
+- **Transferability limit:** compression-molded PFA/PTFE-copolymer specimens, specific cooling histories and gases; not a pipe-wall qualification study.
+- **Prohibited inference:** no direct PFA piping permeability value, hydrogen-system acceptance or service-life conclusion may be transferred from this study.
+
+## 5. Investigation 9 Evidence Matrix — gate record
+
+| Case | Exact molecular / structural feature | Hypothesis to test | Measured property / observation | Direct primary evidence | Important confounders | Supported conclusion | Explicitly unsupported conclusion | Transferability to piping compounds |
+|---|---|---|---|---|---|---|---|---|
+| A — PA6 + water | Polar amide groups and interchain H-bond network | Water can interact with amide/H-bond sites, change chain mobility and produce measurable sorption/swelling/mechanical change | Young's-modulus decrease after wet treatment; water sorption; swelling; concentration-dependent diffusion; spectroscopic/morphology changes | S014-009; S014-010 | amorphous/crystalline fraction, conditioning history, geometry, concentration, specimen form | Amide/H-bond chemistry is a defensible mechanism hypothesis and water exposure measurably alters PA6 response in the studied systems | One universal PA6/PA compatibility limit, fixed modulus reduction, swelling allowance or piping derating | LOW–MODERATE for mechanism only; LOW for quantitative piping design values |
+| B — fluoropolymer membranes | Degree of fluorination, ether-containing monomer structures and resulting polarity/free-volume/morphology differences | A simple chemical descriptor might rank gas/water-vapor transport | Experimentally measured permeation across selected fluoropolymer membranes | S014-011 | film thickness/form, crystallinity, free volume, commercial grade, test gas/humidity, sensor setup | Chemical structure helps formulate transport hypotheses, but simple fluorination/polarity ordering is not a universal predictor | General piping-grade permeability ranking or service qualification from repeat-unit chemistry | LOW for quantitative pipe transfer; useful as a falsification/discipline example |
+| C — PFA process/morphology | Same general PFA/PTFE-copolymer family with grade/comonomer differences plus different cooling histories | Chemistry/grade alone should control permeation if processing is secondary | H2/N2/O2 permeability, diffusion and solubility; slow-cooled samples had substantially better permeation resistance | S014-012 | cooling rate, crystallinity, comonomer content, filler, molecular architecture, specimen processing | Processing-induced morphology can be as important as polymer grade for the measured transport response | A universal PFA permeability value or conclusion that one processing route always controls all properties | MODERATE for the general mechanism that processing/morphology matter; LOW for pipe-specific magnitude |
+
+### 5.1 Gate disposition
+
+The three retained cases satisfy the Investigation 9 entry requirement because each contains:
+
+1. a stated molecular/structural hypothesis;
+2. direct measured primary evidence;
+3. identified confounders;
+4. an explicit transferability boundary;
+5. a supported conclusion and an unsupported conclusion.
+
+**Investigation 9 status: READY FOR CONTROLLED AUTHORING using Cases A–C only.**
+
+No additional material-specific example may be added to Investigation 9 without passing the same matrix process first.
+
+## 6. Internal PPE-BoK sources used for architecture and non-duplication
 
 ### I014-001 — Chapter 009 — Polymer Fundamentals for Industrial Plastic Piping
 
@@ -193,7 +266,7 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 
 **Use:** preserve recovered first-principles depth and downstream ownership boundaries.
 
-## 5. Primary-literature trigger rules
+## 7. Primary-literature trigger rules
 
 Primary research shall be added when a statement moves beyond stable chemistry terminology into a claim such as:
 
@@ -208,7 +281,7 @@ For those claims, the authoring sequence is:
 
 A review article may help discover literature but shall not substitute for direct review of the underlying primary source when the claim is technically load-bearing.
 
-## 6. Planned primary-source research by Investigation
+## 8. Planned primary-source research by Investigation
 
 | Investigation | Evidence need | State |
 |---|---|---|
@@ -220,10 +293,10 @@ A review article may help discover literature but shall not substitute for direc
 | 6 — Carbon chemistry | IUPAC Blue Book + Gold Book chain/branch/ring/skeletal terminology | AUTHORED — TERMINOLOGY CHECK COMPLETE |
 | 7 — sp/sp2/sp3, sigma/pi | IUPAC hybridization/hybrid orbital/sigma-pi/rotation terminology + diagram recommendations | AUTHORED — TERMINOLOGY/MODEL CHECK COMPLETE |
 | 8 — Ethene / polyethylene bridge | IUPAC ethene/ethylene naming + monomer/monomeric-unit/polymerization/polymer nomenclature | AUTHORED — TERMINOLOGY/STRUCTURAL BRIDGE CHECK COMPLETE |
-| 9 — Structure → property hypotheses | direct primary polymer literature required for every retained material-specific bridge | **BLOCKED — PRIMARY LITERATURE GATE** |
+| 9 — Structure → property hypotheses | S014-009 through S014-012 + Evidence Matrix Cases A–C | **READY FOR CONTROLLED AUTHORING** |
 | 10 — Evidence boundary | chapter evidence map + downstream standards/qualification crosswalk | PLANNED AFTER INVESTIGATION 9 |
 
-## 7. Claim-control rules
+## 9. Claim-control rules
 
 1. **Mechanism is not qualification.** A plausible molecular explanation is not a qualified engineering property.
 2. **No direct bond-energy → pipe-strength conversion.** Bond dissociation energy is not bulk tensile strength, allowable stress or pressure capability.
@@ -255,31 +328,31 @@ A review article may help discover literature but shall not substitute for direc
 28. **No `double bond = two identical singles`.** Localized C=C uses one σ + one π component.
 29. **No σ/π ambiguity.** State localized-bond versus rigorous MO-symmetry usage.
 30. **No reaction-mechanism-by-arrow shortcut.** `CH2=CH2 → [–CH2–CH2–]n` in Chapter 014 is structural comparison only.
-31. **No ethene/ethylene silent nomenclature mixing.** State whether the monomer common name or strict group name context is intended.
+31. **No ethene/ethylene silent nomenclature mixing.** State whether the monomer common name or strict group-name context is intended.
 32. **No repeat unit = PE grade.** `[–CH2–CH2–]n` does not define PE80/PE100, molecular architecture, morphology, additives, SCG resistance, pressure rating or service suitability.
 33. **No confusing saturated PE with `poly(ethene-1,2-diyl)`.** Verify the actual backbone represented by any systematic polymer name.
+34. **No primary-study → universal material rule.** Every Investigation 9 conclusion must carry its specimen/test/morphology/processing transferability boundary.
+35. **No chemistry-only transport ranking.** The fluoropolymer cases are retained specifically to show that simple fluorination/polarity ordering can fail when morphology/free volume/processing differ.
+36. **No PA6 water mechanism → universal PA design allowance.** The PA6 cases support a mechanism and measured changes only in their studied systems.
+37. **No PFA process observation → universal pipe-processing prescription.** The PFA study demonstrates process/morphology importance for measured specimens, not a design or manufacturing standard.
 
-## 8. Current evidence readiness
+## 10. Current evidence readiness
 
-**Investigations 1–8:** AUTHORED as controlled development candidates. Their scientific load remains foundational and bounded by authoritative terminology/recommendation sources. No Chapter 014 chemistry statement is permitted to substitute for qualified piping design evidence.
+**Investigations 1–8:** AUTHORED as controlled development candidates.
 
-**Investigation 8 source gate:** COMPLETE for the retained nomenclature/structural-bridge scope.
+**Investigation 9 primary-literature gate:** **PASS FOR CONTROLLED AUTHORING OF CASES A–C ONLY.**
 
-`FIG-014-004` and `FIG-014-005` now have complete scientific specifications, and `EX-014-001` is integrated as a controlled interpretation example. The example remains subject to independent scientific/editorial checking before chapter closure.
+The gate is closed using four directly reviewed primary sources: S014-009 through S014-012. The retained examples were selected to teach evidence discipline rather than produce a polymer ranking:
 
-**Ready to author Investigation 9:** **NO — BLOCKED.**
+- Case A demonstrates a plausible chemistry mechanism that is supported experimentally but is coupled to morphology/conditioning;
+- Case B demonstrates that a simple fluorination/polarity hypothesis is insufficient as a universal transport predictor;
+- Case C demonstrates that processing-induced crystallinity can rival polymer-grade effects in measured gas transport.
 
-Investigation 9 is the first chapter unit whose purpose is to convert molecular features into material-specific engineering-property hypotheses. Before any prose is authored, each retained bridge requires:
+No numeric result from these papers shall be transferred into a piping design value in Chapter 014.
 
-1. an explicitly stated structure/mechanism hypothesis;
-2. one or more directly reviewed primary studies containing relevant measured data;
-3. an applicability and transferability assessment;
-4. a statement of confounders such as molecular weight, morphology, formulation, temperature and test method;
-5. a defined boundary on what may and may not be generalized to piping compounds.
+**Ready to author Investigation 10:** NO. It follows the completed, reviewed Investigation 9 wording and will formalize the final chapter workflow/checklist and downstream ownership crosswalk.
 
-**Ready to author Investigation 10:** NO. It follows the evidence-qualified conclusions of Investigation 9 and will formalize the final chapter workflow/checklist and downstream ownership crosswalk.
-
-## 9. Publication hold points
+## 11. Publication hold points
 
 Before Chapter 014 publication:
 
@@ -288,8 +361,8 @@ Before Chapter 014 publication:
 - capture the IUPAC Gold Book version/date for load-bearing terms;
 - recheck IUPAC Blue Book and polymer-nomenclature source status;
 - verify terminology and geometry used in figures/tables;
-- independently check `EX-014-001`;
-- directly review all primary sources used for material-specific structure–property claims;
+- independently check `EX-014-001` and the future `EX-014-002`;
+- independently review Investigation 9 transferability wording against S014-009 through S014-012;
 - complete claim-level citation placement;
 - complete Technical Review and Standards/Evidence Validation;
 - document transferability limits for every material-specific example.
