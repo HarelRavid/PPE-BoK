@@ -39,16 +39,19 @@ Not every early draft currently has all supporting files. A chapter is not publi
 | 010 | Engineering Methodology for Material Selection | Research-based full draft; source register and review record present |
 | 011 | Engineering Characteristics of Common Plastic Piping Materials | Research-based full draft; source register and review record present |
 | 012 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Research-based full draft; source register and review record present |
-| 013 | Polyethylene (PE) | Full redevelopment candidate exists on `chapter-013-redevelopment`; not yet a `main` chapter baseline; authoritative Standards Validation and remaining publication gates are still required |
+| 013 | Polyethylene (PE) | Active standards-validation candidate on `main`; Technical Review PASS; Academic/Evidence Review PASS for the current core claim set; Editorial/Style conditional PASS; full-text Standards Validation holds remain open under Issue #9; not publication-frozen |
 
 ## Working continuation
 
 Working Chapters 014 onward are defined in `BOOK_STRUCTURE.md`. They are roadmap entries, not active manuscript directories until the applicable CDB and development work begin.
 
+Planning and CDB preparation for Working Chapter 014 may proceed while the externally blocked Chapter 013 full-text standards holds remain open. This does not close Chapter 013, does not change its Design Freeze status and does not authorize Chapter 014 Engineering Development before Definition-of-Ready approval.
+
 ## Status interpretation
 
 - **Baseline draft:** readable source exists on `main`; this does not imply publication readiness.
 - **Research-based full draft:** substantive source and evidence/review support exist, but Definition of Done may remain open.
+- **Active standards-validation candidate:** substantive technical content has been author-approved and merged to `main`, but authoritative Standards Validation and/or bounded publication gates remain open; this status is not publication readiness.
 - **Redevelopment candidate:** controlled work exists on a branch/PR but has not yet become the official `main` chapter baseline.
 - **Publication ready / released:** may be used only after all gates in `governance/Definition-of-Done.md` are satisfied and the approved revision is merged to `main`.
 
