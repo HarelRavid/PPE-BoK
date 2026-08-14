@@ -119,13 +119,22 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - conformation — `C01258`, DOI `10.1351/goldbook.C01258`;
 - angle strain — `A00349`, DOI `10.1351/goldbook.A00349`.
 
-**Investigation 7 terminology/model disposition:**
-- hybridization is a linear combination of atomic orbitals and is used as an explanatory local-bonding model, not as literal physical orbital mixing;
-- `sp3`, `sp2`, `sp` are used for idealized tetrahedral, trigonal and linear/digonal local carbon environments respectively;
-- the regular tetrahedral reference angle is approximately `109.5°`;
-- `sigma`/`pi` terminology must distinguish rigorous molecular-orbital symmetry use from the localized two-centre bond model used for engineering explanation;
-- `free rotation` is not treated as zero-barrier rotation; use the IUPAC rotational-barrier concept and observation-time qualification;
-- hybridization/rotation descriptors do not directly establish polymer stiffness, thermal capability, chemical resistance or pipe performance.
+**Investigation 7 terminology/model disposition:** hybridization is a linear combination of atomic orbitals and is used as an explanatory local-bonding model, not literal physical orbital mixing. `sp3`, `sp2`, `sp` are idealized tetrahedral, trigonal and linear/digonal local carbon environments. `sigma`/`pi` terminology distinguishes rigorous molecular-orbital symmetry use from the localized two-centre bond model. `Free rotation` is not zero-barrier rotation; use rotational-barrier/time-scale language.
+
+**Investigation 8 controlled entries checked 2026-08-14:**
+- monomer — `M04017`, DOI `10.1351/goldbook.M04017`;
+- monomeric unit — `M04018`, DOI `10.1351/goldbook.M04018`;
+- polymerization — `P04740`, DOI `10.1351/goldbook.P04740`;
+- chain polymerization — `C00958`, DOI `10.1351/goldbook.C00958`;
+- polyolefin — `15255`, DOI `10.1351/goldbook.15255`;
+- poly(ethene-1,2-diyl) — `08890`, DOI `10.1351/goldbook.08890`.
+
+**Investigation 8 terminology disposition:**
+- use `ethene` as the controlled chemical name for `CH2=CH2` while allowing `ethylene` where established industrial/common language makes the intended monomer meaning unambiguous;
+- distinguish monomer, monomeric unit and constitutional repeating unit rather than treating them as synonyms;
+- use `CH2=CH2 → [–CH2–CH2–]n` only as a **structural comparison**, never as a complete polymerization mechanism;
+- retain `polyethylene` / `PE` as the normal engineering term while recognizing IUPAC source-based `polyethene` and structure-based `poly(methylene)` naming context;
+- explicitly reject confusion of ordinary saturated polyethylene with `poly(ethene-1,2-diyl)`, whose cited Gold Book entry corresponds to an unsaturated polyacetylene/vinylene-type backbone.
 
 **Boundary:** Gold Book definitions control terminology; they do not establish bulk polymer property values or pipe-system qualification.
 
@@ -135,7 +144,6 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - **DOI:** 10.1351/PAC-REC-10-01-02
 - **Evidence class:** B — authoritative IUPAC Recommendation
 - **Authoring use:** hydrogen-bond definition and evidence boundary.
-- **Investigation 5 disposition:** primary authority for hydrogen-bond wording; use as an evidence-based interaction concept rather than a generic `strong dipole–dipole` label.
 
 ### S014-005 — Arunan et al., Defining the hydrogen bond: An account (IUPAC Technical Report, 2011)
 
@@ -150,25 +158,32 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - **Published book:** 2014; recommendations identified as 2013 recommendations.
 - **Online corrected release used for authoring:** Version 3, posted 2023-12-06.
 - **Authoring use:** standard bonding-number convention for carbon and controlled organic-structure/nomenclature context.
-- **Investigation 6 specific use:** section P-14 records standard bonding number `4` for carbon and other relevant Group 14 elements. This prevents the false claim that carbon's usefulness is explained by `four bonds` alone.
+- **Investigation 6 use:** section P-14 records standard bonding number `4` for carbon and other relevant Group 14 elements.
+- **Investigation 8 use:** controls the distinction between `ethene` as the hydrocarbon name and `ethylene` as an established divalent-group name in strict nomenclature contexts.
 - **Boundary:** nomenclature/bonding-number convention is not a polymer-property or piping-design standard.
 - **Validation requirement:** recheck corrected release and later IUPAC revisions before publication freeze.
 
 ### S014-007 — IUPAC Recommendations 2008 — Graphical Representation Standards for Chemical Structure Diagrams
 
 - **Organization:** IUPAC, Division VIII.
-- **Publication:** Pure and Applied Chemistry 80(2), 277–410 (2008); official IUPAC web version states it is identical to the published recommendation.
+- **Publication:** Pure and Applied Chemistry 80(2), 277–410 (2008).
 - **Authoring use:** controlled idealized 2D geometry/depiction support and drawing cautions for Investigation 7 figures.
-- **Investigation 7 specific use:** three-bond trigonal-planar depictions use equal `120°` spacing; carbon-like two-bond collinear cases are represented at `180°`; the document explicitly warns that diagram angles are approximate graphical conventions and must not be over-generalized into exact 3D molecular geometry.
-- **Boundary:** structure-diagram recommendation is not a polymer-property source. Exact real molecular bond angles remain molecule-dependent.
+- **Boundary:** structure-diagram recommendation is not a polymer-property source.
+
+### S014-008 — IUPAC regular single-strand polymer nomenclature guidance
+
+- **Organization:** IUPAC Macromolecular Division / official IUPAC nomenclature guidance.
+- **Authoring use:** source-based and structure-based nomenclature bridge for the ethene/polyethylene example.
+- **Investigation 8 specific use:** official IUPAC guidance distinguishes the monomer `CH2=CH2` as **ethene** from the divalent group name **ethylene** and identifies accepted polymer naming layers including `polyethene` / `polyethylene` and structure-based `poly(methylene)` for ordinary saturated PE.
+- **Critical exclusion:** do not infer that similar systematic names describe identical structures; `poly(ethene-1,2-diyl)` is specifically flagged as a different unsaturated backbone entry.
+- **Boundary:** nomenclature guidance does not define the polymerization route, PE grade, molecular architecture, morphology or piping qualification.
+- **Validation requirement:** recheck the current applicable IUPAC polymer-nomenclature recommendation set before publication freeze.
 
 ## 4. Internal PPE-BoK sources used for architecture and non-duplication
 
 ### I014-001 — Chapter 009 — Polymer Fundamentals for Industrial Plastic Piping
 
 **Use:** establish what broad polymer-science context already exists so Chapter 014 deepens rather than repeats it.
-
-**Do not inherit uncritically:** any Chapter 009 normative or quantitative statement that belongs to its own Standards Validation path.
 
 ### I014-002 — CDB-014
 
@@ -203,10 +218,10 @@ A review article may help discover literature but shall not substitute for direc
 | 4 — Primary bonding / material classes | IUPAC covalent/ionic/delocalization terminology | AUTHORED — TERMINOLOGY CHECK COMPLETE |
 | 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | AUTHORED — EVIDENCE CHECK COMPLETE |
 | 6 — Carbon chemistry | IUPAC Blue Book + Gold Book chain/branch/ring/skeletal terminology | AUTHORED — TERMINOLOGY CHECK COMPLETE |
-| 7 — sp/sp2/sp3, sigma/pi | IUPAC hybridization/hybrid orbital/sigma-pi/rotation terminology + IUPAC diagram geometry recommendations | AUTHORED — TERMINOLOGY/MODEL CHECK COMPLETE |
-| 8 — Ethylene | authoritative ethene/ethylene structure, double-bond and polymerization-boundary sources | NEXT RESEARCH CHECKPOINT |
-| 9 — Structure → property hypotheses | primary polymer literature required for every material-specific bridge | REQUIRED RESEARCH |
-| 10 — Evidence boundary | chapter evidence map + downstream standards/qualification crosswalk | PLANNED |
+| 7 — sp/sp2/sp3, sigma/pi | IUPAC hybridization/hybrid orbital/sigma-pi/rotation terminology + diagram recommendations | AUTHORED — TERMINOLOGY/MODEL CHECK COMPLETE |
+| 8 — Ethene / polyethylene bridge | IUPAC ethene/ethylene naming + monomer/monomeric-unit/polymerization/polymer nomenclature | AUTHORED — TERMINOLOGY/STRUCTURAL BRIDGE CHECK COMPLETE |
+| 9 — Structure → property hypotheses | direct primary polymer literature required for every retained material-specific bridge | **BLOCKED — PRIMARY LITERATURE GATE** |
+| 10 — Evidence boundary | chapter evidence map + downstream standards/qualification crosswalk | PLANNED AFTER INVESTIGATION 9 |
 
 ## 7. Claim-control rules
 
@@ -234,28 +249,35 @@ A review article may help discover literature but shall not substitute for direc
 22. **No skeletal formula = 3D geometry.** Bond-line drawings encode connectivity.
 23. **No carbon skeleton → hydrocarbon-only assumption.** Heteroatoms/substituents matter.
 24. **No literal orbital-mixing picture.** Hybridization is a linear-combination/model construct.
-25. **No exact-angle absolutism.** `109.5°`, `120°`, `180°` are ideal/reference geometry values in this chapter, not universal measured values.
-26. **No polymer-wide hybridization label without context.** Hybridization is local to the atom/bonding environment.
-27. **No `single bond = zero barrier` shortcut.** Use rotational-barrier language; `free rotation` is conditional on energy barrier and time scale.
-28. **No `double bond = two identical singles`.** Localized C=C language uses one σ + one π component.
-29. **No σ/π ambiguity.** State when using localized two-centre bond language versus rigorous molecular-orbital symmetry terminology.
-30. **No double-bond rotation absolutes outside the bonded-state model.** Describe π overlap as a strong rotational constraint; reactions/excitation/bond breaking are separate mechanisms.
+25. **No exact-angle absolutism.** `109.5°`, `120°`, `180°` are ideal/reference values, not universal measured values.
+26. **No polymer-wide hybridization label without context.** Hybridization is local.
+27. **No `single bond = zero barrier` shortcut.** Use rotational-barrier/time-scale language.
+28. **No `double bond = two identical singles`.** Localized C=C uses one σ + one π component.
+29. **No σ/π ambiguity.** State localized-bond versus rigorous MO-symmetry usage.
+30. **No reaction-mechanism-by-arrow shortcut.** `CH2=CH2 → [–CH2–CH2–]n` in Chapter 014 is structural comparison only.
+31. **No ethene/ethylene silent nomenclature mixing.** State whether the monomer common name or strict group name context is intended.
+32. **No repeat unit = PE grade.** `[–CH2–CH2–]n` does not define PE80/PE100, molecular architecture, morphology, additives, SCG resistance, pressure rating or service suitability.
+33. **No confusing saturated PE with `poly(ethene-1,2-diyl)`.** Verify the actual backbone represented by any systematic polymer name.
 
 ## 8. Current evidence readiness
 
-**Investigations 1–7:** AUTHORED as controlled development candidates. Current scientific content remains foundational/qualitative and uses authoritative terminology/recommendation sources with explicit design-evidence boundaries.
+**Investigations 1–8:** AUTHORED as controlled development candidates. Their scientific load remains foundational and bounded by authoritative terminology/recommendation sources. No Chapter 014 chemistry statement is permitted to substitute for qualified piping design evidence.
 
-**Investigation 7 source gate:** COMPLETE for the retained foundational scope.
+**Investigation 8 source gate:** COMPLETE for the retained nomenclature/structural-bridge scope.
 
-The Investigation directly uses IUPAC definitions for hybridization, hybrid orbital, σ/π, rotational barrier and free rotation. Idealized geometry is bounded as a local model; the IUPAC 2008 graphical-representation recommendation supports 120° trigonal and 180° linear drawing references, while the Gold Book regular-tetrahedron reference supports approximately 109.5°. No material-specific property magnitude is inferred from hybridization.
+`FIG-014-004` and `FIG-014-005` now have complete scientific specifications, and `EX-014-001` is integrated as a controlled interpretation example. The example remains subject to independent scientific/editorial checking before chapter closure.
 
-**Ready to author Investigation 8 without further research:** NO.
+**Ready to author Investigation 9:** **NO — BLOCKED.**
 
-Investigation 8 requires a focused ethene/ethylene source pass covering the controlled preferred/common naming, molecular structure, local `sp2` geometry, C=C σ+π bridge, and the conceptual ethylene → polyethylene repeat-unit transition. It must stop before the actual chain-growth mechanism, radical/catalyst chemistry and process–structure consequences owned by Chapter 015.
+Investigation 9 is the first chapter unit whose purpose is to convert molecular features into material-specific engineering-property hypotheses. Before any prose is authored, each retained bridge requires:
 
-**Ready to author Investigation 9:** NO — BLOCKED.
+1. an explicitly stated structure/mechanism hypothesis;
+2. one or more directly reviewed primary studies containing relevant measured data;
+3. an applicability and transferability assessment;
+4. a statement of confounders such as molecular weight, morphology, formulation, temperature and test method;
+5. a defined boundary on what may and may not be generalized to piping compounds.
 
-Investigation 9 remains blocked until direct primary polymer literature is selected and reviewed for every retained material-specific structure→property bridge.
+**Ready to author Investigation 10:** NO. It follows the evidence-qualified conclusions of Investigation 9 and will formalize the final chapter workflow/checklist and downstream ownership crosswalk.
 
 ## 9. Publication hold points
 
@@ -264,8 +286,9 @@ Before Chapter 014 publication:
 - recheck ISO 472 lifecycle and any replacement edition;
 - recheck ISO 1043-1 lifecycle and amendment state;
 - capture the IUPAC Gold Book version/date for load-bearing terms;
-- recheck IUPAC Blue Book corrected-release status;
+- recheck IUPAC Blue Book and polymer-nomenclature source status;
 - verify terminology and geometry used in figures/tables;
+- independently check `EX-014-001`;
 - directly review all primary sources used for material-specific structure–property claims;
 - complete claim-level citation placement;
 - complete Technical Review and Standards/Evidence Validation;
