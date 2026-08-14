@@ -89,6 +89,13 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
   - delocalization of electrons — `08789`, DOI `10.1351/goldbook.08789`;
   - chemical bond — `CT07009`, DOI `10.1351/goldbook.CT07009`.
 - **Investigation 4 terminology disposition:** do not frame ionic and covalent bonding as perfectly pure binary categories; IUPAC explicitly prefers considering degree of ionic character in practical cases. For metallic bonding, the authoring pass uses the verified IUPAC electron-delocalization description — including electrons extended over several atoms or a lattice and extensive delocalization being typical of metals — rather than inventing a stand-alone current IUPAC `metallic bond` definition that was not located in this verification pass.
+- **Investigation 5 controlled entries checked 2026-08-14:**
+  - van der Waals forces — `V06597`, DOI `10.1351/goldbook.V06597`;
+  - dipole–dipole interaction — `D01758`, DOI `10.1351/goldbook.D01758`;
+  - dipole-induced dipole interaction — `D01759`, DOI `10.1351/goldbook.D01759`;
+  - London forces / dispersion forces — `L03617`, DOI `10.1351/goldbook.L03617`;
+  - polarizability — `P04711`, DOI `10.1351/goldbook.P04711`.
+- **Investigation 5 terminology disposition:** treat `van der Waals forces` as the umbrella family that includes dipole–dipole, dipole-induced dipole and London/dispersion forces. Do not list van der Waals as a separate additive force alongside those components. Preserve the IUPAC point that London/dispersion interactions are also components of interactions between polar molecular entities, not only apolar ones. Use polarizability qualitatively unless a directly supported quantitative model is introduced.
 - **Boundary:** Gold Book definitions control terminology; they do not establish bulk polymer property values or pipe-system qualification.
 
 ### S014-004 — Arunan et al., Definition of the hydrogen bond (IUPAC Recommendations 2011)
@@ -97,6 +104,7 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - **DOI:** 10.1351/PAC-REC-10-01-02
 - **Evidence class:** B — authoritative IUPAC Recommendation
 - **Authoring use:** hydrogen-bond definition and evidence boundary.
+- **Investigation 5 disposition:** primary authority for the hydrogen-bond wording. The chapter uses the IUPAC definition as an evidence-based interaction concept rather than reducing hydrogen bonding to a simple `strong dipole–dipole` label.
 
 ### S014-005 — Arunan et al., Defining the hydrogen bond: An account (IUPAC Technical Report, 2011)
 
@@ -104,6 +112,7 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - **DOI:** 10.1351/PAC-REP-10-01-01
 - **Evidence class:** B
 - **Authoring use:** deeper explanation when Investigation 5 requires mechanism detail beyond the concise recommendation.
+- **Investigation 5 disposition:** companion rationale/evidence source; supports the chapter rule that hydrogen-bond identification is not based only on a proximity cartoon or a single electrostatic descriptor.
 
 ## 4. Internal PPE-BoK sources used for architecture and non-duplication
 
@@ -144,8 +153,8 @@ A review article may help discover literature but shall not substitute for direc
 | 2 — Matter / atoms / molecules | IUPAC Gold Book entries for atom, element, atomic number, molecule, molecular entity and chemical substance | AUTHORED — TERMINOLOGY CHECK COMPLETE |
 | 3 — Valence electrons / orbitals | IUPAC electron, atomic-orbital, valence, electronegativity and electron-counting terminology; avoid unnecessary quantum derivation | AUTHORED — TERMINOLOGY CHECK COMPLETE |
 | 4 — Primary bonding / material classes | IUPAC covalent-bond, ionic-bond and electron-delocalization definitions; bulk material-class comparisons deliberately bounded | AUTHORED — TERMINOLOGY CHECK COMPLETE |
-| 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | NEXT RESEARCH / PARTLY READY |
-| 6 — Carbon chemistry | authoritative organic-chemistry terminology / recommendations | PLANNED |
+| 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | AUTHORED — EVIDENCE CHECK COMPLETE |
+| 6 — Carbon chemistry | authoritative organic-chemistry terminology / recommendations | NEXT RESEARCH CHECKPOINT |
 | 7 — sp/sp2/sp3, sigma/pi | IUPAC Gold Book entries already identified; additional source only if needed | PARTLY READY |
 | 8 — Ethylene | authoritative structural/nomenclature source; polymerization mechanism deferred to Ch015 | PLANNED |
 | 9 — Structure → property hypotheses | primary polymer literature required for every material-specific bridge | REQUIRED RESEARCH |
@@ -167,18 +176,27 @@ A review article may help discover literature but shall not substitute for direc
 12. **No pure ionic/covalent false dichotomy.** Use ionic character where the distinction is mixed; do not force real bonding into pure end-member categories.
 13. **No bond-type → bulk-property shortcut.** A bond label cannot by itself establish ductility, brittleness, strength, service temperature or corrosion/chemical resistance.
 14. **No invented metallic-bond authority.** Until a specific authoritative definition is selected, use the verified IUPAC electron-delocalization language and state the model boundary.
+15. **No duplicate van der Waals category.** `van der Waals` is the umbrella for the specified dipolar/dispersion interactions used here, not an extra force to add again.
+16. **No London-only-in-apolar shortcut.** London/dispersion interactions also contribute in polar systems.
+17. **No one-dimensional intermolecular-force ladder.** Interaction labels shall not be converted into a universal ranking of stiffness, melting behaviour, permeability, compatibility or service temperature.
+18. **No automatic hydrogen-bond claim from heteroatom presence.** Use the IUPAC 2011 definition/evidence framework and distinguish a plausible site from demonstrated relevance.
+19. **No hydrogen bond = covalent crosslink.** Hydrogen bonding is a noncovalent interaction; covalent crosslinking changes chemical connectivity and belongs to a different structural level.
 
 ## 8. Current evidence readiness
 
-**Investigations 1–4:** AUTHORED as controlled development candidates. Their current scientific load is foundational/qualitative and is supported by authoritative terminology sources, with explicit limitations preventing direct material-design conclusions.
+**Investigations 1–5:** AUTHORED as controlled development candidates. Their current scientific load is foundational/qualitative and is supported by authoritative terminology/recommendation sources, with explicit limitations preventing direct material-design conclusions.
 
-**Ready to author Investigation 5 without further research:** NO — but the key source path is already identified.
+**Investigation 5 source gate:** COMPLETE for the retained foundational scope.
 
-Investigation 5 shall directly use IUPAC Gold Book terminology for hydrogen bonding, dipole–dipole interaction, London forces and van der Waals forces, together with the 2011 IUPAC Hydrogen Bond Recommendation and Technical Report. It must avoid treating intermolecular-force labels as a one-dimensional strength ranking or as direct predictors of a polymer's bulk property.
+The Investigation directly uses the IUPAC Gold Book hierarchy for van der Waals, dipole–dipole, dipole-induced dipole and London/dispersion interactions, and the IUPAC 2011 Recommendation/Technical Report for hydrogen bonding. It deliberately avoids material-specific quantitative property claims, so no polymer primary study is yet load-bearing at this checkpoint.
+
+**Ready to author Investigation 6 without further research:** NO.
+
+Investigation 6 requires a focused carbon-chemistry terminology pass covering carbon valence/tetravalency at the correct teaching level, carbon–carbon connectivity, chains/rings/branching as structural possibilities, and the boundary with hybridization detail owned by Investigation 7. It must avoid turning carbon's structural versatility into a claim that carbon chemistry alone determines polymer performance.
 
 **Ready to author the complete chapter without further research:** NO.
 
-Investigations 5–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
+Investigations 6–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
 
 ## 9. Publication hold points
 
