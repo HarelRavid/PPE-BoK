@@ -4,7 +4,7 @@
 **PDS baseline:** 1.0  
 **Current stage:** Engineering Development  
 **CDB author approval:** 2026-08-14  
-**Development checkpoint:** Investigations 1–2 authored
+**Development checkpoint:** Investigations 1–3 authored
 
 ## 1. Gate status
 
@@ -12,13 +12,13 @@
 |---|---|---|
 | CDB / Definition of Ready | PASS | Author explicitly approved CDB-014 on 2026-08-14 |
 | Technical Outline | ACTIVE | 10-Investigation implementation path defined |
-| Evidence Plan | ACTIVE | Investigation 2 terminology checkpoint complete; staged evidence triggers retained |
-| Engineering Development | IN PROGRESS | Investigations 1–2 authored; Investigations 3–10 not yet developed |
+| Evidence Plan | ACTIVE | Investigations 2–3 terminology checkpoints complete; staged evidence triggers retained |
+| Engineering Development | IN PROGRESS | Investigations 1–3 authored; Investigations 4–10 not yet developed |
 | Physics / scientific correctness review | PENDING | Formal review after broader development checkpoint |
-| Standards / terminology validation | PARTIAL | Current ISO lifecycle recorded; Investigation 2 IUPAC terminology checked; final validation later |
-| Academic / primary evidence review | PARTIAL | Not yet required for Investigations 1–2; mandatory before load-bearing material-specific claims |
-| Equations | N/A CURRENT SCOPE | No equation introduced through Investigation 2 |
-| Units | N/A CURRENT SCOPE | No quantitative engineering calculation introduced through Investigation 2 |
+| Standards / terminology validation | PARTIAL | Current ISO lifecycle recorded; IUPAC terminology checked through Investigation 3; final validation later |
+| Academic / primary evidence review | PARTIAL | Not yet required for Investigations 1–3; mandatory before load-bearing material-specific claims |
+| Equations | N/A CURRENT SCOPE | No equation introduced through Investigation 3 |
+| Units | N/A CURRENT SCOPE | No quantitative engineering calculation introduced through Investigation 3 |
 | Examples | PENDING | Planned in Investigations 8–9 |
 | Editorial / Style | PENDING | Formal pass after substantive development |
 | Desk Test | PENDING | Required before chapter closure |
@@ -94,40 +94,77 @@ The word `compound` has potential ambiguity between general chemical usage and t
 
 No primary polymer literature is required for the claims retained in Investigation 2 because the Investigation does not assert a material-specific structure→property magnitude or engineering acceptance conclusion.
 
-## 4. Scientific simplification risks to monitor
+## 4. Investigation 3 authoring review
+
+### Terminology checkpoint
+
+**PASS for authoring checkpoint.**
+
+The following IUPAC Gold Book entries were directly checked before authoring:
+
+- electron — `E01975`;
+- atomic orbital — `A00500`;
+- valence — `V06588`;
+- electronegativity — `E01990`;
+- electron-counting rules — `ET07022`;
+- lone pair — `L03618`;
+- Lewis formula — `L03513`.
+
+### Scope compliance
+
+**PASS for current foundational scope.**
+
+Investigation 3:
+
+- rejects the fixed planetary-orbit picture as a literal engineering/scientific model;
+- defines atomic orbitals at the level needed to support later bonding and hybridization discussions;
+- treats valence-electron language as a bounded introductory abstraction rather than a universal complete electronic-structure model;
+- presents electronegativity as a relative atomic concept with multiple definitions/scales;
+- keeps Lewis structures in the role of connectivity/electron-bookkeeping models rather than full molecular-geometry descriptions;
+- stops before ionic/covalent/metallic bonding treatment owned by Investigation 4;
+- does not introduce any material-specific quantitative property or design-acceptance claim.
+
+### Evidence disposition
+
+**PASS for current stable-terminology scope, subject to later formal scientific review.**
+
+No primary polymer literature is required for Investigation 3 because the retained content concerns foundational electron/bonding terminology and explicitly avoids claiming measured polymer-property magnitudes.
+
+## 5. Scientific simplification risks to monitor
 
 The following items require explicit attention in later formal scientific review:
 
 1. Do not imply that the chapter hierarchy is a strict one-way causal chain; feedback and multiscale interactions exist.
 2. Do not imply that a named bond type uniquely determines a material class or bulk property.
-3. Keep “chemical bond” terminology aligned with current IUPAC wording without reproducing extended source text unnecessarily.
-4. Avoid implying that “stronger intermolecular interaction” always produces a monotonic increase/decrease in one bulk property.
+3. Keep `chemical bond` terminology aligned with current IUPAC wording without reproducing extended source text unnecessarily.
+4. Avoid implying that stronger intermolecular interaction always produces a monotonic increase/decrease in one bulk property.
 5. Keep chemistry-to-compatibility examples qualitative until direct material-specific evidence is reviewed.
 6. Do not use `molecule` as a universal synonym for every chemical entity or bulk substance.
 7. Preserve the context-dependent dual usage of `chemical element` without confusing elemental identity with a separate elemental phase in a material.
-8. Keep Investigation 3 at the minimum electron/orbital depth needed for bonding; do not drift into an academic quantum-chemistry syllabus.
+8. Preserve the distinction between an orbital as a wavefunction/model and a classical particle path.
+9. Do not imply that simple valence-shell drawings provide a complete electronic-structure description for every atom or bonding case.
+10. Do not use electronegativity as a deterministic polymer-property or chemical-compatibility scale.
 
-## 5. Controlled holds before Investigation 3
+## 6. Controlled holds before Investigation 4
 
-Investigation 3 may begin after a focused terminology/science pass confirms the chapter usage for:
+Investigation 4 may begin after a focused primary-bonding pass confirms the preferred chapter usage for:
 
-- electron;
-- valence electron / valence shell language;
-- atomic orbital;
-- electron configuration at the minimum useful level;
-- electronegativity;
-- relationship between electron distribution and bond formation without unsupported classical orbit pictures.
+- covalent bond;
+- ionic bond;
+- metallic bonding / delocalized-electron description;
+- bond polarity versus bond type;
+- controlled comparison among polymers, metals and ceramics without assigning bulk properties directly from a bond label.
 
-The chapter shall not introduce quantum numbers, Schrödinger-equation derivations or orbital mathematics unless a later engineering conclusion demonstrably requires them.
+If the Investigation uses statements such as “metals are generally ductile” or “ionic solids are brittle” as engineering teaching rules, those statements require appropriate materials-science evidence and qualification language rather than being presented as consequences of one bond type alone.
 
-## 6. Controlled holds before Investigation 9
+## 7. Controlled holds before Investigation 9
 
 Investigation 9 is **BLOCKED** until direct primary sources are selected and reviewed for each material-specific structure–property example retained in the chapter.
 
 The authoring team shall not backfill unsupported examples after writing.
 
-## 7. Current decision
+## 8. Current decision
 
-**CONTINUE ENGINEERING DEVELOPMENT SEQUENTIALLY TO INVESTIGATION 3 RESEARCH.**
+**CONTINUE ENGINEERING DEVELOPMENT SEQUENTIALLY TO INVESTIGATION 4 RESEARCH.**
 
-Investigations 1–2 are controlled authoring candidates on the development branch. The chapter is not ready for technical closure, merge to `main`, or publication. Formal scientific/technical review remains a later gate after a broader substantive checkpoint.
+Investigations 1–3 are controlled authoring candidates on the development branch. The chapter is not ready for technical closure, merge to `main`, or publication. Formal scientific/technical review remains a later gate after a broader substantive checkpoint.
