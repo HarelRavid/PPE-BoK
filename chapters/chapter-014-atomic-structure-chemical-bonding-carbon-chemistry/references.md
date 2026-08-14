@@ -53,7 +53,7 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
 - **Current online version used for authoring:** 5.0.0 (2025)
 - **Authoring use:** authoritative chemical terminology.
 - **Controlled-term rule:** when a term is important to an Investigation, record the Gold Book term identifier / DOI and the accessed version in the claim record.
-- **Important current entries already checked:**
+- **Important entries checked for Investigation 1 and later bonding work:**
   - chemical bond — `CT07009`;
   - hybridization — `H02874`;
   - hybrid orbital — `HT07049`;
@@ -65,6 +65,15 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
   - sigma / pi — `S05434`;
   - ionic bond — `IT07058`;
   - Lewis formula — `L03513`.
+- **Investigation 2 controlled entries checked 2026-08-14:**
+  - atom — `A00493`, DOI `10.1351/goldbook.A00493`;
+  - chemical element — `C01022`, DOI `10.1351/goldbook.C01022`;
+  - atomic number / proton number — `A00499`, DOI `10.1351/goldbook.A00499`;
+  - molecule — `M04002`, DOI `10.1351/goldbook.M04002`;
+  - molecular entity — `M03986`, DOI `10.1351/goldbook.M03986`;
+  - chemical substance — `C01039`, DOI `10.1351/goldbook.C01039`;
+  - chemical species — `CT01038`, DOI `10.1351/goldbook.CT01038`.
+- **Investigation 2 terminology disposition:** use `molecule` only for neutral multi-atom entities; use `molecular entity` where ions or other singular chemical entities must remain in scope; use `chemical substance` for bulk matter of defined composition. Avoid implying that every chemical substance consists of discrete molecules.
 - **Boundary:** Gold Book definitions control terminology; they do not establish bulk polymer property values or pipe-system qualification.
 
 ### S014-004 — Arunan et al., Definition of the hydrogen bond (IUPAC Recommendations 2011)
@@ -116,9 +125,9 @@ A review article may help discover literature but shall not substitute for direc
 
 | Investigation | Evidence need | State |
 |---|---|---|
-| 1 — Why atoms and bonds matter | CDB + stable IUPAC terminology; no material-specific quantitative claim needed | READY |
-| 2 — Matter / atoms / molecules | IUPAC terminology; basic authoritative chemistry reference | PLANNED |
-| 3 — Valence electrons / orbitals | IUPAC terminology / recommendations; avoid unnecessary quantum derivation | PLANNED |
+| 1 — Why atoms and bonds matter | CDB + stable IUPAC terminology; no material-specific quantitative claim needed | AUTHORED — CHECKPOINT PASS |
+| 2 — Matter / atoms / molecules | IUPAC Gold Book entries for atom, element, atomic number, molecule, molecular entity and chemical substance | AUTHORED — TERMINOLOGY CHECK COMPLETE |
+| 3 — Valence electrons / orbitals | IUPAC terminology / recommendations; avoid unnecessary quantum derivation | NEXT RESEARCH CHECKPOINT |
 | 4 — Primary bonding / material classes | IUPAC definitions + bounded materials-science evidence if comparative claims become specific | PLANNED |
 | 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | PARTLY READY |
 | 6 — Carbon chemistry | authoritative organic-chemistry terminology / recommendations | PLANNED |
@@ -136,16 +145,22 @@ A review article may help discover literature but shall not substitute for direc
 5. **No monomer = compound assumption.** A monomer or repeat-unit drawing does not capture molecular weight distribution, morphology, additives, processing history or product qualification.
 6. **No unsourced property rankings.** Common piping polymers may be used illustratively only when the conclusion is qualitative and properly bounded, or when a direct source is attached.
 7. **No silent terminology drift.** Important definitions are checked against the cited current IUPAC/ISO source during final validation.
+8. **No molecule-only model of matter.** Where the chemical system may include ions, formula units or other entities, choose the term that matches the actual entity rather than forcing `molecule` into every explanation.
+9. **Disambiguate `compound`.** Distinguish a chemical compound/substance from a formulated polymer or piping compound whenever the context could be misunderstood.
 
 ## 8. Current evidence readiness
 
-**Ready to author Investigation 1:** YES.
+**Investigation 1:** AUTHORED; current checkpoint evidence adequate for non-quantitative engineering orientation.
 
-Investigation 1 is an engineering-orientation Investigation. It can establish the hierarchy from chemical structure to engineering evidence and the limits of first-principles reasoning using the approved CDB, Chapter 009 context and current authoritative terminology sources without introducing unverified material-specific numerical claims.
+**Investigation 2:** AUTHORED; current IUPAC terminology checkpoint complete for atom, chemical element, atomic number, molecule, molecular entity and chemical substance. No material-specific performance claim was introduced.
+
+**Ready to author Investigation 3 without further research:** NO.
+
+Investigation 3 requires a focused terminology/science pass for electron, valence electron, atomic orbital, electron configuration and electronegativity. The chapter shall deliberately stop short of quantum-mechanical derivations that do not change an engineering decision.
 
 **Ready to author the complete chapter without further research:** NO.
 
-Investigations 2–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
+Investigations 3–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
 
 ## 9. Publication hold points
 
