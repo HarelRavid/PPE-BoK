@@ -48,7 +48,7 @@ After completing the chapter, the reader should be able to:
 3. understand why carbon can form the structural variety required for polymer backbones;
 4. read simple monomer and repeat-unit structures and identify chemically meaningful features;
 5. understand `sp`, `sp2`, `sp3`, sigma and pi bonding at a level useful for polymer engineering;
-6. explain why the carbon–carbon double bond in ethylene differs from the carbon–carbon single bonds of a polyethylene backbone;
+6. explain why the carbon–carbon double bond in ethene/ethylene differs from the carbon–carbon single bonds of a polyethylene backbone;
 7. form bounded structure–property hypotheses from features such as polarity, side groups and intermolecular interactions;
 8. identify what additional measured property, test, qualification or standard is required before that hypothesis becomes an engineering decision;
 9. avoid common false shortcuts such as “strong chemical bond = strong pipe” or “polar polymer = chemically compatible/incompatible”;
@@ -65,7 +65,7 @@ After completing the chapter, the reader should be able to:
 - hydrogen bonding, dipole interactions and London/dispersion interactions;
 - carbon tetravalency and structural diversity;
 - `sp`, `sp2`, `sp3`, sigma and pi concepts;
-- ethylene as the bridge to polymerization;
+- ethene/ethylene as the bridge to polymerization;
 - structure-to-mechanism reasoning;
 - evidence boundaries between chemistry and design acceptance.
 
@@ -91,6 +91,7 @@ After completing the chapter, the reader should be able to:
 | Which polymer abbreviations are standardized? | ISO 1043-1:2011 + Amd 1:2016 | Abbreviation/symbol discipline | Working; confirmed current at research checkpoint |
 | How should chemical terms be defined? | IUPAC Gold Book, 5th ed., online v5.0.0 (2025) | Chemical terminology | Working authoritative terminology source |
 | What is a hydrogen bond? | IUPAC Recommendations 2011 + Technical Report | Controlled definition and evidence boundary | Working authoritative scientific source |
+| How should ethene/polyethylene terminology and CRU language be controlled? | IUPAC organic/polymer nomenclature recommendations | Monomer/common-name/repeat-unit discipline | Working; controlled through Investigation 8 |
 | Does a named polymer exhibit a specific property trend because of chemistry? | Directly reviewed primary literature | Material-specific mechanism evidence | Required before load-bearing use |
 | Is a material acceptable for a real piping service? | Product/application standards + qualified property evidence | Engineering acceptance | Outside Ch014 chemistry alone |
 
@@ -132,7 +133,7 @@ These descriptors are not engineering acceptance values.
 - **Intermolecular interactions:** Investigation 5.
 - **Carbon chemistry:** Investigation 6.
 - **Hybridization / sigma / pi:** Investigation 7.
-- **Ethylene:** Investigation 8.
+- **Ethene / ethylene and the PE bridge:** Investigation 8.
 - **Structure → property hypotheses:** Investigation 9.
 - **Where first-principles reasoning must stop:** Investigation 10.
 
@@ -499,7 +500,7 @@ This distinction becomes useful whenever charge or non-molecular structures matt
 
 ### Why Chapter 014 prefers “molecular entity” when precision matters
 
-If the chapter is discussing a neutral organic molecule such as ethylene, **molecule** is appropriate.
+If the chapter is discussing a neutral organic molecule such as ethene, **molecule** is appropriate.
 
 If the discussion needs to include ions or other individually distinguishable chemical entities, **molecular entity** is safer and more general.
 
@@ -828,7 +829,7 @@ The working rule is:
 
 > A bonding model describes how electron density and electrostatic interactions stabilize a structure. Bulk material behaviour emerges only after structure, scale, defects, morphology, processing and loading are added.
 
-Investigation 4 establishes the primary-bonding models. Investigation 5 will deal with interactions between molecular entities and polymer chains that are not the covalent backbone bonds themselves.
+Investigation 4 establishes the primary-bonding models. Investigation 5 deals with interactions between molecular entities and polymer chains that are not the covalent backbone bonds themselves.
 
 ## 4.1 Covalent bonding: shared electron density between nuclei
 
@@ -844,16 +845,7 @@ That connectivity determines which atoms belong to the same molecular structure 
 
 ### What covalent bonding does not establish by itself
 
-Knowing that a backbone is covalently bonded does not directly establish:
-
-- tensile strength;
-- elastic modulus;
-- creep resistance;
-- fracture toughness;
-- melting or softening temperature;
-- permeability;
-- chemical compatibility;
-- pressure rating.
+Knowing that a backbone is covalently bonded does not directly establish tensile strength, elastic modulus, creep resistance, fracture toughness, melting/softening temperature, permeability, chemical compatibility or pressure rating.
 
 Those are higher-level material and product questions.
 
@@ -871,20 +863,11 @@ Real bonding can contain mixed character. The binary picture is a useful teachin
 
 ### Engineering consequence of the continuum
 
-When a material or chemical species is described as “ionic,” the engineer should ask what is actually meant:
-
-- Are discrete ions present in a fluid?
-- Is an ionic crystal or salt being described?
-- Is the statement really about significant ionic character in a bond?
-- Is the issue chemical interaction with a polymer rather than the bonding inside the polymer itself?
-
-These are different engineering contexts.
-
-The chapter therefore avoids using “ionic” as a shortcut for a fixed set of mechanical properties.
+When a material or chemical species is described as “ionic,” the engineer should ask what is actually meant: discrete ions in a fluid, ionic crystal/salt, significant ionic character, or a chemical interaction with a polymer. Those are different contexts.
 
 ## 4.3 Metallic bonding: use verified electron delocalization rather than a cartoon
 
-For the current authoring pass, Chapter 014 does not rely on an invented stand-alone IUPAC definition of “metallic bond.” Instead, it uses IUPAC's current definition of **delocalization of electrons**.
+For the current authoring pass, Chapter 014 does not rely on an invented stand-alone IUPAC definition of “metallic bond.” Instead, it uses IUPAC's definition of **delocalization of electrons**.
 
 IUPAC notes that a delocalized electron is not associated with one particular atom or one particular covalent bond, but occupies an extended orbital over several atoms or an entire lattice; extensive electron delocalization is typical of metals. [S014-003]
 
@@ -894,48 +877,24 @@ That gives the engineering model we need:
 
 The familiar phrase “sea of electrons” can be a teaching analogy, but it should not be mistaken for a complete electronic-structure model.
 
-### What this does and does not explain
-
-Extended electron delocalization helps explain why metallic bonding must be treated differently from localized molecular bonding. It is also relevant to electronic behaviour.
-
-It does **not**, by itself, prove that a particular metal is ductile, strong, corrosion resistant or suitable for a piping interface. Alloy composition, crystal structure, phases, defects, grain structure, heat treatment, temperature and environment all remain relevant.
+It does not, by itself, prove that a particular metal is ductile, strong, corrosion resistant or suitable for a piping interface.
 
 ## 4.4 Material classes are not bond labels
 
-A useful materials-science orientation is to compare polymers, metals and ceramics. But the comparison must be made at the correct level.
+Many polymer molecules are built from covalent bonds along the backbone and side groups, but intermolecular interactions, chain entanglement, molecular architecture and morphology become essential to macroscopic behaviour.
 
-### Polymers
+Metals are usefully distinguished by extended electron delocalization through the lattice, but that is not a complete mechanical model.
 
-Many polymer molecules are built from covalent bonds along the backbone and side groups. The bulk polymer, however, is not held together only by one type of interaction. Intermolecular interactions, chain entanglement, molecular architecture and morphology become essential to macroscopic behaviour.
-
-Investigation 5 owns the intermolecular-interaction layer; Chapters 016–020 own the larger chain/morphology/time/failure consequences.
-
-### Metals
-
-Metals are usefully distinguished by extended electron delocalization through the lattice. That is a bonding/electronic-structure distinction.
-
-It is not a complete mechanical model of a metal.
-
-### Ceramics and inorganic solids
-
-Many ceramic and inorganic solids contain substantial ionic and/or covalent bonding character. Treating “ceramic” as synonymous with “purely ionic” is therefore unsafe.
-
-Chapter 014 does not attempt to derive ceramic fracture mechanics or metal plasticity from bonding alone. Those would require a proper materials-science treatment beyond this chapter's purpose.
-
-### The engineering lesson
+Many ceramic and inorganic solids contain substantial ionic and/or covalent bonding character; `ceramic = purely ionic` is unsafe.
 
 > Bonding helps explain why material classes require different physical models, but material class and bond type are not interchangeable labels.
 
 ## 4.5 Bond polarity is not the same question as bond category
 
-Investigation 3 introduced electronegativity and uneven electron distribution. Investigation 4 now needs one more distinction:
-
 - **bond category/model** asks how the stabilizing interaction is represented;
 - **bond polarity / ionic character** asks how unevenly electron density or charge character is distributed.
 
-A covalent bond can be polar. A bond can have partial ionic character. Therefore, “polar covalent” is not a contradiction, and the covalent/ionic distinction should not be treated as a simple on/off switch.
-
-This becomes important when the chapter later discusses C–H, C–F, C–Cl and other bonds in polymer structures.
+A covalent bond can be polar. A bond can have partial ionic character. Therefore, “polar covalent” is not a contradiction.
 
 ## 4.6 TAB-014-001 — Primary bonding models and engineering relevance
 
@@ -945,949 +904,588 @@ This becomes important when the chapter later discusses C–H, C–F, C–Cl and
 | Ionic character / ionic bonding | Electrostatic attraction between charged species; real bonds may contain varying ionic character | Helps interpret ions, salts and mixed bond character | A fixed mechanical-property set or universal chemical-compatibility rule |
 | Extended electron delocalization typical of metals | Electrons occupy states/orbitals extended over many atoms or the lattice | Distinguishes metallic electronic/bonding structure from localized molecular bonding | Ductility, strength, corrosion resistance or interface suitability without material evidence |
 
-**Table rule:** `TAB-014-001` is not yet complete. Investigation 5 extends the chapter's bonding map with hydrogen bonding, dipole–dipole and London/dispersion interactions. Those are not silently merged into the primary-bond rows.
-
 ## 4.7 FIG-014-002 — Primary and secondary bonding map — partial placeholder
 
-The final figure shall separate two levels visually:
+The final figure separates:
 
-**Level A — chemical connectivity / extended solid bonding**
+**Level A — chemical connectivity / extended solid bonding:** covalent, ionic character/ionic, extended electron delocalization.
 
-- covalent bonding;
-- ionic character / ionic bonding;
-- extended electron delocalization typical of metallic solids.
+**Level B — noncovalent interactions:** hydrogen bonding, permanent-dipole, dipole-induced-dipole, London/dispersion.
 
-**Level B — interactions between molecular entities / chain segments**
-
-- hydrogen bonding;
-- permanent-dipole interactions;
-- London/dispersion interactions;
-- other van der Waals interactions where relevant.
-
-Investigation 5 completes the conceptual specification of Level B.
-
-The figure must explicitly avoid ranking these interactions as though one universal energy scale determines all bulk polymer properties.
+The figure must not rank these as though one universal energy scale determines bulk polymer properties.
 
 ## 4.8 Why this distinction matters in plastic piping
 
-A piping engineer may encounter statements such as:
-
-- “PE has strong C–C bonds.”
-- “PVDF is polar because of C–F bonding.”
-- “A salt is ionic.”
-- “Metal backing rings behave differently because metals have metallic bonding.”
-
-Each statement may contain a useful chemical clue, but none is yet an engineering design conclusion.
-
-The proper sequence is still:
+Statements such as “PE has strong C–C bonds,” “PVDF is polar because of C–F bonding,” “a salt is ionic,” or “metals have metallic bonding” may contain useful clues, but none is a design conclusion.
 
 `bonding description → structural/mechanistic implication → measured material response → qualification / application evidence → engineering decision`
 
-The bonding description is strongest when used to choose the next question, not when used to skip the next question.
-
 ## 4.9 Common mistakes / Failure Lens
 
-### Mistake 1 — “Every bond is either 100% ionic or 100% covalent”
-
-Why it fails: IUPAC explicitly recommends considering degree of ionic character rather than forcing real bonds into pure end-member categories.
-
-### Mistake 2 — “Polymer chains have covalent bonds, therefore polymers are mechanically strong in the same way as covalent solids”
-
-Why it fails: intramolecular connectivity is only one structural level. Chain interactions, architecture, morphology, defects, time and temperature still control bulk response.
-
-### Mistake 3 — “Ceramic means ionic”
-
-Why it fails: many ceramic and inorganic solids contain mixed ionic/covalent character; the material class cannot be reduced to one bond label.
-
-### Mistake 4 — “Metallic bonding means the metal will be ductile”
-
-Why it fails: electron delocalization is part of the electronic/bonding picture, while ductility depends on crystal structure, defects, microstructure, temperature, strain rate and other material variables.
-
-### Mistake 5 — “Bond polarity and bond type are the same classification”
-
-Why it fails: polarity/ionic character can vary within bonding models; a covalent bond can be polar.
-
-### Mistake 6 — “Primary bond strength ranks the service temperature of piping materials”
-
-Why it fails: service temperature is a material/product/system property influenced by molecular mobility, morphology, degradation, load duration, qualification and the applicable standard.
+- forcing every bond into 100% ionic or 100% covalent;
+- equating covalent backbone bonds with bulk polymer strength;
+- equating ceramic with ionic;
+- equating metallic bonding with guaranteed ductility;
+- treating bond polarity and bond type as the same classification;
+- ranking piping service temperature from primary-bond labels.
 
 ## 4.10 Verification
 
-Before accepting a primary-bonding explanation in Chapter 014, check:
-
-1. Is the covalent-bond description consistent with current IUPAC terminology?
-2. Has ionic bonding been treated as a continuum of ionic character rather than an absolute binary where inappropriate?
-3. If metallic behaviour is discussed, is the chapter using verified electron-delocalization language rather than inventing a formal definition?
-4. Has any bulk property been presented as a direct consequence of a single bond label?
-5. Are polymer intrachain covalent bonding and interchain interactions kept as separate structural levels?
-6. Are ceramics and metals used only as bounded comparison classes rather than simplified stereotypes?
-7. Does the wording route property magnitude and design acceptance to measured/qualified evidence?
+Before accepting a primary-bonding explanation, check terminology, degree of ionic character, use of verified electron-delocalization language, avoidance of direct bulk-property claims, and separation of intrachain covalent bonding from interchain interactions.
 
 ## 4.11 Engineering decision from Investigation 4
 
 > Use covalent, ionic-character and extended-electron-delocalization models to describe **how a structure is chemically/electronically stabilized**. Do not use a bond label as a substitute for a bulk-material model or a piping qualification decision.
 
-The engineer should now retain four distinctions:
-
-1. covalent bonding establishes localized chemical connectivity through shared electron density;
-2. ionic character exists on a continuum, even though the ideal ionic model is electrostatic attraction between cations and anions;
-3. metals require an extended-electron/delocalized-lattice model rather than only localized two-atom bonds;
-4. bulk properties emerge from bonding **plus** higher structural levels.
-
-That leaves a critical polymer question unanswered:
-
-> If the atoms within a polymer chain are covalently bonded, **what holds neighbouring chains or molecular entities near one another?**
-
-That is the subject of Investigation 5.
-
 ---
 
 # Investigation 5 — What Holds Polymer Molecules Together When They Are Not Covalently Bonded to Each Other?
 
-Polymer chains are not isolated objects floating independently through a solid. Neighbouring chains and chain segments interact continuously through electrostatic and quantum-mechanical interactions that do **not** require new covalent bonds between every pair of segments.
+Polymer chains and chain segments interact continuously through electrostatic and quantum-mechanical interactions that do not require new covalent bonds between every pair of segments.
 
-These interactions matter because a polymer's bulk response depends not only on the covalent connectivity inside each chain, but also on how chains and segments attract, repel, orient, pack and move relative to one another.
-
-The engineering challenge is that the vocabulary is often taught as a misleading ladder:
+The misleading classroom ladder
 
 `London < dipole–dipole < hydrogen bond < covalent bond`
 
-That ranking may be convenient for a classroom mnemonic, but it is not a safe polymer-engineering model. Real behaviour depends on distance, orientation, number and distribution of interacting sites, polarizability, molecular geometry, chain architecture, morphology, temperature and the property being measured.
-
-Chapter 014 therefore uses the following rule:
+is not a safe polymer-engineering model. Real behaviour depends on distance, orientation, number/distribution of sites, polarizability, geometry, architecture, morphology, temperature and the measured property.
 
 > Identify the **interaction mechanism** first. Do not turn the interaction label into a universal ranking of bulk polymer properties.
 
-## 5.1 Intramolecular versus intermolecular: keep the structural levels separate
-
-The first distinction is positional rather than energetic.
+## 5.1 Intramolecular versus intermolecular
 
 - **Intramolecular** interactions occur within one molecular entity.
 - **Intermolecular** interactions occur between different molecular entities.
 
-For polymers, the distinction can become visually confusing because one chain may be extremely long and may fold back near itself. The same physical type of noncovalent interaction may therefore occur between segments of different chains or between separated segments of the same chain.
-
-IUPAC's definition of van der Waals forces explicitly allows such forces between molecular entities **or between groups within the same molecular entity**. [S014-003]
-
-The engineering point is:
-
-> “Intermolecular force” is useful shorthand in polymer discussions, but the actual interaction may be segment-to-segment, and the chain identity of the two segments does not by itself determine the physics.
+For polymers, the same physical noncovalent interaction may act between segments of different chains or separated segments of the same chain. IUPAC's van der Waals definition explicitly allows interactions between entities or between groups within the same entity. [S014-003]
 
 ## 5.2 van der Waals forces: an umbrella, not one additional force
 
-IUPAC uses **van der Waals forces** as an umbrella term for attractive or repulsive interactions between molecular entities, excluding bond formation and the direct electrostatic interactions of ionic groups. The term includes:
+IUPAC uses **van der Waals forces** as an umbrella including dipole–dipole, dipole-induced dipole and London/dispersion interactions. [S014-003]
 
-- dipole–dipole interactions;
-- dipole-induced dipole interactions;
-- London / dispersion forces. [S014-003]
+Thus `dipole–dipole + London + van der Waals` is a category error when `van der Waals` is being used in the IUPAC sense.
 
-This resolves a common terminology error.
+## 5.3 Dipole–dipole interaction
 
-The list:
+Permanent-dipole interactions depend on separation and orientation. A polar bond can contribute to a molecular dipole, but bond dipole and whole-molecule dipole are not identical concepts.
 
-`dipole–dipole + London + van der Waals`
+The presence of a permanent dipole does not by itself establish modulus, transition temperature, creep, compatibility, uptake, permeability, fusion temperature or pressure capability.
 
-incorrectly suggests that van der Waals is a separate fourth mechanism to add on top of the others. In the terminology used here, **van der Waals is the broader family name** that includes those mechanisms.
+## 5.4 Dipole-induced dipole interaction
 
-### Engineering implication
+A permanent dipole can distort a neighbouring electron distribution and induce a dipole. The mechanism highlights **polarizability**, used qualitatively here and not converted into a material property without evidence.
 
-When a datasheet, textbook or failure discussion says only “van der Waals forces,” the phrase is not specific enough to identify which component of the interaction is important. The engineer should ask whether the reasoning concerns permanent dipoles, induced dipoles, dispersion/polarizability, or simply a nonspecific noncovalent attraction.
+## 5.5 London / dispersion forces
 
-## 5.3 Dipole–dipole interaction: permanent charge separation meets orientation
+IUPAC identifies London/dispersion forces with mutual polarizability and states that they contribute in both apolar and polar systems. [S014-003]
 
-A polar bond can contribute to a permanent molecular dipole, but a bond dipole and a whole-molecule dipole are not the same thing. Molecular geometry can reinforce or cancel individual bond contributions.
+> London forces are not switched off when a molecule is polar.
 
-When molecular entities possess permanent dipoles, **dipole–dipole interactions** depend on the electrostatic interaction between those dipoles and on their relative separation and orientation. [S014-003]
+A polymer without a strong permanent dipole is therefore not interaction-free.
 
-This orientation dependence is important for polymers because repeat-unit chemistry alone does not tell the engineer how all chain segments will orient in the real material.
+## 5.6 Hydrogen bonding
 
-### What the engineer may infer
+The 2011 IUPAC Recommendation gives hydrogen bonding a dedicated evidence-based definition and criteria; it should not be reduced to “strong dipole–dipole.” [S014-004][S014-005]
 
-A structure containing polar bonds or a permanent dipole can justify asking whether permanent-dipole interactions contribute materially to segment interactions.
+Safe sequence:
 
-### What the engineer may not infer directly
+`possible donor/acceptor chemistry → geometrically possible interaction → evidence of H-bond relevance → measured material consequence`
 
-The presence of a permanent dipole does not by itself establish:
+Hydrogen bonding is also not the same as covalent crosslinking.
 
-- elastic modulus;
-- glass-transition or melting temperature;
-- creep resistance;
-- chemical compatibility;
-- solvent uptake;
-- permeability;
-- fusion temperature;
-- pressure capability.
+## 5.7 Multiple mechanisms can coexist
 
-Those quantities require the actual polymer structure, morphology, formulation and measured evidence.
+A molecular system may simultaneously contain covalent bonds, polar covalent bonds, permanent-dipole interactions, dipole-induced dipole interactions, London/dispersion forces and hydrogen bonding.
 
-## 5.4 Dipole-induced dipole interaction: one entity polarizes another
-
-A permanent dipole can distort the electron distribution of a neighbouring entity and create an **induced dipole**. The resulting interaction is classified by IUPAC within the van der Waals family as dipole-induced dipole interaction. [S014-003]
-
-The mechanism highlights another useful engineering descriptor: **polarizability** — how readily an electron distribution can be distorted by an electric field or neighbouring charge distribution.
-
-For Chapter 014, polarizability is used qualitatively. It is not converted into a polymer property without direct evidence.
-
-The important lesson is that an entity does not need to carry a permanent dipole before it can participate in an electrostatically induced interaction.
-
-## 5.5 London / dispersion forces: present even when permanent polarity is absent
-
-IUPAC defines **London forces**, also called **dispersion forces**, as attractive interactions associated with mutual polarizability. They are important between apolar molecules and are also components of the interaction between polar molecules. [S014-003]
-
-That last clause prevents a common error:
-
-> London forces are **not** switched off when a molecule is polar.
-
-A polar polymer can have permanent-dipole interactions **and** dispersion contributions at the same time.
-
-Likewise, a polymer that lacks a strong permanent dipole is not interaction-free. Fluctuating electron distributions and mutual polarizability still create dispersion attraction.
-
-### Engineering significance
-
-London/dispersion forces help explain why nominally nonpolar molecular structures can still condense, pack and interact.
-
-But the chapter does not convert “more dispersion” into a universal claim of higher stiffness, higher melting temperature or lower permeability. Those outcomes depend on the complete molecular and morphological system.
-
-## 5.6 Hydrogen bonding: a specific interaction with its own evidence criteria
-
-Hydrogen bonding deserves separate treatment because it is frequently reduced to the phrase “a strong dipole–dipole force.” That description is too crude for a professional reference.
-
-The 2011 IUPAC Recommendation defines a hydrogen bond as an attractive interaction involving a hydrogen atom bound to a more electronegative atom or group and an interacting atom or group in the same or another molecular entity, where there is evidence of bond formation character. The Recommendation is accompanied by experimental and theoretical criteria used to support identification of a hydrogen bond. [S014-004]
-
-The companion IUPAC Technical Report explains the rationale, evidence base and broader historical treatment. [S014-005]
-
-### Why this matters to Chapter 014
-
-Hydrogen bonding is therefore not identified merely because a drawing contains hydrogen near an electronegative atom. The structural arrangement must support the interaction, and the formal IUPAC treatment is evidence-based rather than a simple distance-only cartoon.
-
-For engineering reasoning, the safe sequence is:
-
-`possible donor/acceptor chemistry → geometrically possible interaction → evidence that hydrogen bonding is relevant → measured material consequence`
-
-not:
-
-`contains O/N/F → hydrogen-bonded polymer → known bulk property`
-
-### Do not confuse hydrogen bonding with a new covalent backbone bond
-
-Hydrogen bonding can include contributions that are not purely classical electrostatics, which is one reason IUPAC treats it carefully. It still must not be represented in the chapter as though every hydrogen bond were simply another permanent covalent link in the polymer backbone.
-
-If actual covalent crosslinking occurs, that is a different structural level and belongs mainly to Chapter 016.
-
-## 5.7 One polymer can contain several interaction mechanisms at once
-
-The interaction map is **additive and overlapping**, not a set of mutually exclusive boxes.
-
-A molecular system can simultaneously exhibit:
-
-- covalent bonds within its chemical structure;
-- polar covalent bonds;
-- permanent-dipole interactions;
-- dipole-induced dipole interactions;
-- London/dispersion interactions;
-- hydrogen bonding where the required chemistry and geometry exist.
-
-The presence of one mechanism does not cancel the others.
-
-This is why the question “Which force holds this polymer together?” is usually too simple. A better question is:
+A better question than “which force holds this polymer together?” is:
 
 > **Which interaction mechanisms are present, how are they distributed through the actual chain/morphology, and which measured property are we trying to explain?**
-
-That question routes the engineer toward the correct evidence instead of toward a one-word answer.
 
 ## 5.8 TAB-014-001 — Bonding and interaction map, continuation
 
 | Interaction model / descriptor | Physical picture | Useful engineering interpretation | What must **not** be concluded directly |
 |---|---|---|---|
-| van der Waals forces | Umbrella family including dipole–dipole, dipole-induced dipole and London/dispersion interactions | Signals non-bond-forming interactions between molecular entities or separated groups | Treating “van der Waals” as one extra force to add separately to its included components |
-| Dipole–dipole interaction | Interaction between permanent dipoles; depends on separation and orientation | Helps explain why permanent molecular polarity can contribute to segment interaction | Bulk modulus, compatibility, permeability or service temperature from dipole presence alone |
-| Dipole-induced dipole interaction | A permanent dipole distorts a neighbouring electron distribution, inducing a dipole | Connects permanent polarity to neighbour polarizability | A quantitative material property without measured evidence |
-| London / dispersion forces | Attraction arising from mutual polarizability and fluctuating/induced electron distributions | Explains attraction even in apolar systems and contributes also in polar systems | Assuming dispersion exists only in nonpolar polymers or ranking bulk properties from it alone |
-| Hydrogen bonding | Specific attractive interaction involving H bound to an electronegative atom/group and an interacting partner, supported by structural/evidence criteria | Identifies a potentially important directional noncovalent interaction | Treating every O/N/F-containing polymer as automatically hydrogen-bonded or using H-bond presence as a design value |
-
-**Table rule:** the table separates **chemical connectivity / primary-bonding models** from **noncovalent interaction mechanisms**. It does not rank them on one universal “strength” axis.
+| van der Waals forces | Umbrella including dipole–dipole, dipole-induced dipole and London/dispersion | Nonspecific family of non-bond-forming interactions | Treating it as a separate extra force |
+| Dipole–dipole | Permanent dipoles; orientation/separation matter | Polarity can contribute to segment interaction | Bulk property from dipole presence alone |
+| Dipole-induced dipole | Permanent dipole induces neighbour dipole | Connects polarity to polarizability | Quantitative property without evidence |
+| London / dispersion | Mutual polarizability/fluctuating electron distributions | Attraction in apolar and polar systems | Assuming dispersion only in nonpolar systems |
+| Hydrogen bonding | Specific H-centered attractive interaction with evidence criteria | Potentially important directional noncovalent interaction | Automatic H-bond assignment or design value |
 
 ## 5.9 FIG-014-002 — Primary and secondary bonding map — conceptual specification complete
 
-The final graphic shall contain two visually separated layers.
+Level A shows primary/extended bonding; Level B shows van der Waals family with its dipolar/dispersion children and hydrogen bonding separately. Warnings: mechanisms coexist; dispersion occurs in polar systems; the map is not a bulk-property ranking.
 
-### Level A — chemical connectivity / extended solid bonding
+## 5.10 Why labels do not directly predict polymer properties
 
-- covalent connectivity;
-- ionic character / ionic bonding;
-- extended electron delocalization typical of metallic solids.
-
-### Level B — noncovalent interactions between entities or chain segments
-
-A parent box labeled **van der Waals family** contains:
-
-- dipole–dipole;
-- dipole-induced dipole;
-- London / dispersion.
-
-A separate adjacent box shows **hydrogen bonding**, with a note that its identification follows the IUPAC 2011 evidence-based definition and is not reduced to a generic dipole label.
-
-The figure shall include three explicit warnings:
-
-1. interaction mechanisms can coexist;
-2. London/dispersion contributions also occur in polar systems;
-3. the map is **not** a bulk-property ranking.
-
-Graphic production remains a later asset task; the scientific content/specification is now defined.
-
-## 5.10 Why interaction labels do not directly predict polymer properties
-
-Intermolecular and intersegment interactions can affect the energetic landscape for chain packing and motion. That makes them scientifically relevant to thermal, mechanical, transport and joining behaviour.
-
-But the actual bulk response depends on more than the existence of an interaction site.
-
-At minimum, the engineer may need to consider:
-
-- number and distribution of interaction sites;
-- molecular geometry;
-- distance and orientation;
-- polarizability;
-- chain flexibility and architecture;
-- molecular weight and entanglement;
-- crystalline/amorphous morphology;
-- temperature and time scale;
-- additives, plasticizers, fillers or absorbed species;
-- processing history.
-
-Those variables explain why the sentence “polymer A has stronger intermolecular forces than polymer B” is usually too vague to support an engineering decision.
-
-The correct next step is to name the **specific measured property** and seek evidence at that level.
+Property response also depends on interaction-site distribution, geometry, distance/orientation, polarizability, chain architecture, molecular weight, morphology, temperature/time, additives and processing history.
 
 ## 5.11 Common mistakes / Failure Lens
 
-### Mistake 1 — “van der Waals” is a separate force added on top of London and dipole–dipole
-
-Why it fails: IUPAC uses van der Waals as the umbrella that includes dipole–dipole, dipole-induced dipole and London forces.
-
-### Mistake 2 — “London forces exist only in nonpolar molecules”
-
-Why it fails: IUPAC explicitly notes that London/dispersion forces are also components of the interactions between polar molecules.
-
-### Mistake 3 — “Hydrogen bond = very strong dipole–dipole force”
-
-Why it fails: the IUPAC 2011 treatment uses a dedicated definition and evidence criteria and does not reduce hydrogen bonding to one simplistic electrostatic label.
-
-### Mistake 4 — “If a repeat unit is polar, the polymer must have a known high stiffness or high melting point”
-
-Why it fails: polarity is one descriptor among many; architecture, morphology, orientation, temperature and the measured property still matter.
-
-### Mistake 5 — “A nonpolar polymer has no intermolecular attraction”
-
-Why it fails: dispersion interactions remain present through mutual polarizability.
-
-### Mistake 6 — “One interaction type determines chemical compatibility”
-
-Why it fails: compatibility is an exposure-dependent material response involving chemistry, morphology, concentration, temperature, stress and time.
-
-### Mistake 7 — “Hydrogen bonding means covalent crosslinking”
-
-Why it fails: hydrogen bonding is a noncovalent interaction; covalent crosslinking changes chemical connectivity and is a different structural mechanism.
+- treating van der Waals as an extra force;
+- limiting London forces to nonpolar molecules;
+- defining H-bond as only a strong dipole interaction;
+- deriving stiffness/Tm from polarity alone;
+- saying a nonpolar polymer has no attraction;
+- using one interaction type as a compatibility rule;
+- confusing hydrogen bonding with covalent crosslinking.
 
 ## 5.12 Verification
 
-Before accepting an intermolecular-interaction explanation in Chapter 014, check:
-
-1. Is `van der Waals` being used as an umbrella term consistently with IUPAC rather than as a duplicate category?
-2. Are London/dispersion forces allowed to coexist with permanent-dipole interactions?
-3. Is dipole–dipole reasoning kept dependent on actual molecular dipole and orientation rather than bond polarity alone?
-4. Is hydrogen bonding identified using the IUPAC 2011 framework rather than a proximity cartoon alone?
-5. Has the text avoided a one-dimensional “force strength” ladder as a predictor of bulk polymer behaviour?
-6. If a bulk property is mentioned, has the statement remained a mechanism hypothesis rather than an unsupported magnitude or ranking?
-7. Are chain architecture and morphology routed to Chapters 016–017 instead of being silently collapsed into intermolecular-force language?
+Check umbrella terminology, coexistence of dispersion/dipolar mechanisms, H-bond evidence discipline, rejection of a one-axis force-strength ladder, and routing of bulk-property claims to material evidence.
 
 ## 5.13 Engineering decision from Investigation 5
 
 > Polymer chains and chain segments can interact through several overlapping noncovalent mechanisms. Use the interaction map to identify **what physical mechanism is plausible**, then move to the measured property and material-specific evidence before making an engineering conclusion.
 
-The engineer should now retain five distinctions:
-
-1. covalent bonds define much of the polymer's chemical connectivity, while noncovalent interactions act between nearby entities or segments;
-2. van der Waals is an umbrella family, not an extra force separate from dipole/dispersion components;
-3. permanent dipoles, induced dipoles and London/dispersion contributions can coexist;
-4. hydrogen bonding has a specific evidence-based IUPAC definition and is not merely shorthand for “strong polarity”;
-5. no interaction label directly supplies stiffness, thermal capability, permeability, compatibility or pressure rating.
-
-With the noncovalent interaction layer established, the next question moves from **how molecules interact** to **why carbon can build the enormous structural variety of polymer backbones in the first place**.
-
-That is the subject of Investigation 6.
-
 ---
 
 # Investigation 6 — Why Is Carbon Uniquely Useful for Polymer Backbones?
 
-Carbon is the structural center of most organic polymers used in engineering, but the explanation is often reduced to one sentence: “carbon has four bonds.” That is a useful starting point and an incomplete answer.
+Carbon is the structural center of most organic polymers used in engineering, but “carbon has four bonds” is only part of the explanation.
 
-IUPAC organic nomenclature assigns carbon a **standard bonding number of four**. The same table assigns standard bonding number four to other Group 14 elements such as silicon, so tetravalency alone cannot explain why carbon chemistry supports such extraordinary structural diversity. [S014-006]
+IUPAC assigns carbon a **standard bonding number of four**; the same table assigns four to other relevant Group 14 elements, so tetravalency alone cannot explain carbon's structural diversity. [S014-006]
 
-For Chapter 014, the useful engineering explanation is the combination of:
+Useful engineering explanation combines four-bond connectivity, C–C connectivity, linear/branched/cyclic skeletons, multiple bond orders and substitution by other atoms/groups.
 
-- carbon's standard four-bond connectivity;
-- carbon–carbon covalent connectivity;
-- the ability to form linear, branched and cyclic carbon skeletons;
-- the ability to participate in different bond orders;
-- substitution of hydrogen by other atoms or groups;
-- the resulting freedom to build many different local chemical environments along a molecular skeleton.
+## 6.1 Tetravalency
 
-The purpose here is to understand **structural possibility**, not yet hybridization, polymerization, chain architecture or bulk material performance.
+The four-bond rule is a structural/electron-counting description, not anthropomorphic intent. Carbon can distribute bonding equivalents among four singles, double+singles, triple+single, or appropriate double-bond patterns.
 
-## 6.1 Tetravalency: what “carbon forms four bonds” should mean
+It does not directly establish flexibility, packing, crystallinity, transition temperature, resistance or pressure rating.
 
-In the IUPAC Blue Book framework, the standard bonding number of neutral carbon in ordinary organic skeletal structures is four. [S014-006]
+## 6.2 Carbon–carbon connectivity
 
-For an engineer, that means carbon can satisfy four bonding equivalents in many constitutional arrangements.
+Repeating C–C connectivity allows extended molecular skeletons. A skeleton is a framework, not a material property; chain length, molecular-weight distribution, branching distribution, morphology and formulation remain separate questions.
 
-This statement should not be anthropomorphized as:
+## 6.3 Chains, branches and rings
 
-> “Carbon wants four bonds.”
+IUPAC polymer terminology allows linear/branched chains and cyclic macromolecular contexts; carbocyclic structures contain carbon ring members. [S014-003]
 
-Atoms do not make engineering choices. The four-bond rule is a useful structural/electron-counting description of common carbon chemistry.
+Investigation 6 introduces structural possibility only. Real short/long-chain branching, crosslinking and architecture belong to Chapter 016.
 
-### Examples of different connectivity with the same bonding-number framework
+## 6.4 Saturated and unsaturated frameworks
 
-A carbon atom can appear in structures where its bonding equivalents are distributed among:
+Single and multiple C–C bond orders are constitutionally different. Hybridization and σ/π explanation belongs to Investigation 7; ethene polymerization belongs to Investigation 8/Chapter 015.
 
-- four single-bond connections;
-- one double bond plus two single-bond connections;
-- one triple bond plus one single-bond connection;
-- two double-bond connections in appropriate structures.
+## 6.5 Carbon skeleton does not mean hydrocarbon-only
 
-Investigation 7 will explain the `sp`, `sp2`, `sp3`, sigma and pi models behind those differences. Investigation 6 uses only the constitutional fact that different bond-order patterns are possible.
-
-### Engineering boundary
-
-Standard bonding number four does not directly establish:
-
-- molecular flexibility;
-- chain packing;
-- crystallinity;
-- transition temperature;
-- chemical resistance;
-- crack resistance;
-- pressure rating.
-
-Those require the actual structure and higher-level evidence.
-
-## 6.2 Carbon–carbon connectivity creates a framework, not a material property
-
-Carbon can bond covalently to other carbon atoms. Repeating C–C connectivity makes it possible to construct extended molecular skeletons.
-
-This is the structural bridge from small organic molecules to the large carbon-containing molecular frameworks encountered in polymer science.
-
-The important word is **framework**.
-
-A carbon skeleton tells the engineer which atoms are constitutionally connected. It does not yet tell the engineer how long the polymer chain is, how the chain population is distributed in molecular weight, how much branching exists in a real polymer grade, whether the material is crystalline, or what additives are present.
-
-Those questions belong mainly to Chapters 015–017 and the later material-family chapters.
-
-## 6.3 Linear chains, branches and rings are structural possibilities
-
-IUPAC polymer terminology defines a **chain** as a linear or branched sequence of constitutional units between selected boundary units and notes that a cyclic macromolecule may also be regarded as a chain. [S014-003]
-
-A **branched chain** contains at least one branch point between its boundary units. [S014-003]
-
-Organic chemistry also includes **carbocyclic** structures in which the members of a ring are carbon atoms. [S014-003]
-
-Together, these ideas show that carbon connectivity is not restricted to one straight line.
-
-At the molecular-structure level, carbon can participate in:
-
-- unbranched sequences;
-- branched sequences;
-- rings;
-- side chains attached to a main skeleton;
-- combinations of cyclic and acyclic features.
-
-### Critical ownership boundary
-
-Investigation 6 is **not** the chapter on polymer branching.
-
-The existence of branch points as a chemical possibility is introduced here. The engineering consequences of molecular-weight distribution, short/long-chain branching, crosslinking and chain architecture belong to Chapter 016.
-
-This prevents a structural drawing from silently becoming a statement about a commercial polymer grade.
-
-## 6.4 Saturated and unsaturated carbon frameworks: recognize the distinction, defer the orbital explanation
-
-Carbon skeletons can contain different carbon–carbon bond orders.
-
-For example, IUPAC defines alkanes as acyclic branched or unbranched hydrocarbons built from saturated carbon atoms, while organic nomenclature separately recognizes structures containing carbon–carbon double or triple bonds. [S014-003]
-
-For Chapter 014, the immediate engineering lesson is simply:
-
-> A single bond and a multiple bond are not constitutionally equivalent features.
-
-They differ in bond order and later will differ in geometry and rotational freedom.
-
-But the reason is intentionally deferred:
-
-- hybridization → Investigation 7;
-- sigma / pi bonding → Investigation 7;
-- why ethylene's C=C matters to polymerization → Investigation 8 and Chapter 015.
-
-Investigation 6 should make the engineer notice the bond-order difference without pre-empting the mechanism.
-
-## 6.5 Carbon skeleton does not mean hydrocarbon-only polymer
-
-A carbon framework can carry atoms or groups other than hydrogen.
-
-This matters immediately for piping polymers because the structural formula may include elements such as:
-
-- fluorine;
-- chlorine;
-- oxygen;
-- nitrogen;
-- other heteroatoms or functional groups where relevant.
-
-Replacing a hydrogen or carbon-containing substituent changes local bonding, electron distribution, mass, steric environment and possible intermolecular interactions.
-
-That makes substitution chemically meaningful.
-
-It does **not** justify a direct material ranking. For example, the presence of fluorine or chlorine in a repeat-unit structure is a chemistry fact; chemical resistance, permeability or allowable temperature remain measured/qualified material properties.
+Heteroatoms/substituents such as F, Cl, O or N can change local bonding, electron distribution, mass, steric environment and interaction possibilities. They do not directly establish compatibility, permeability or allowable temperature.
 
 ## 6.6 How to read a skeletal / bond-line formula
 
-IUPAC defines a **skeletal formula**, also called a bond-line formula, as a two-dimensional representation in which lines show bonds, vertices represent ordinary carbon atoms, attached hydrogens on those carbon atoms are omitted, and other atoms are shown by their element symbols. [S014-003]
+IUPAC skeletal formulas use lines for bonds, unlabeled vertices/ends for ordinary carbon, implicit attached H on those carbons, and explicit symbols for other atoms. [S014-003]
 
-This representation is exceptionally useful for engineers because it strips away repetitive C/H labels and makes **connectivity** visible.
-
-### Practical reading rules
-
-When reading a skeletal formula:
-
-1. **Each unlabeled vertex or line end is normally carbon** under the convention.
-2. **Lines are bonds.** Multiple parallel lines indicate higher bond order.
-3. **Hydrogens attached to ordinary carbon vertices are usually implicit.** Infer only the number needed to satisfy the standard bonding pattern represented.
-4. **Heteroatoms are written explicitly.** Their presence is therefore visually important.
-5. **Do not confuse a two-dimensional drawing with the three-dimensional molecular geometry.** Investigation 7 owns that next step.
-
-### Why this matters in PPE-BoK
-
-A piping engineer who can read a bond-line structure can rapidly identify:
-
-- carbon skeleton connectivity;
-- branch points in a simple molecular drawing;
-- rings;
-- double/triple bonds;
-- heteroatoms;
-- candidate polar bonds or interaction sites requiring later analysis.
-
-That is enough to support mechanism questions without requiring full organic-nomenclature training.
+Use them to identify connectivity, branches, rings, multiple bonds, heteroatoms and candidate interaction sites — not 3D geometry.
 
 ## 6.7 Skeletal formula versus polymer skeletal structure
 
-A terminology distinction is useful here.
+- **skeletal formula** — drawing convention;
+- **skeletal structure** — essential atom sequence/topological representation in a macromolecule/chain.
 
-IUPAC's **skeletal formula** is a drawing convention for a molecular entity. IUPAC polymer terminology also uses **skeletal structure** for the sequence of atoms in the constitutional units of a macromolecule or chain that defines its essential topological representation. [S014-003]
-
-The phrases sound similar but answer different questions:
-
-- **skeletal formula** — how a structure is drawn;
-- **skeletal structure** — which atoms form the essential molecular skeleton/topology.
-
-Chapter 014 uses the drawing convention to help the engineer see the polymer-relevant skeleton without pretending the drawing contains every aspect of the real macromolecule.
-
-## 6.8 From carbon versatility to polymer diversity — the bounded inference
-
-Carbon's structural versatility makes many molecular architectures chemically possible.
-
-A change in carbon skeleton, substituent, heteroatom or bond order can change:
-
-- the local electron distribution;
-- possible intermolecular interactions;
-- local geometry;
-- possible rotational constraints;
-- the chemical reactions available to the molecular structure.
-
-Those are legitimate **mechanism-level** consequences.
-
-The next step — claiming a specific modulus, transition temperature, diffusion coefficient, chemical resistance or fracture response — requires material-specific evidence.
-
-This is the same chapter-wide discipline in a new form:
+## 6.8 Bounded inference
 
 `carbon structural feature → molecular mechanism hypothesis → measured property → qualification → engineering decision`
 
-## 6.9 TAB-014-002 — Carbon structural feature → mechanism question → evidence boundary
+## 6.9 TAB-014-002 — Carbon feature → mechanism → evidence boundary
 
-| Structural feature visible in a formula | Immediate chemistry question | Plausible mechanism level | What cannot be concluded directly |
+| Feature | Immediate question | Plausible mechanism | What cannot be concluded directly |
 |---|---|---|---|
-| Linear C–C skeleton | How is the backbone connected and what rotations/geometries are possible? | Molecular connectivity / local mobility hypothesis | Actual chain architecture, crystallinity, modulus or creep |
-| Branch point in a simple structure | Which atom/group departs from the selected main path? | Topological/constitutional difference | Branching distribution or properties of a commercial polymer grade |
-| Carbon ring | How does cyclic connectivity constrain the local skeleton? | Geometry / conformational hypothesis | Stiffness or service temperature without material evidence |
-| C=C or C≡C | What changes when bond order increases? | Geometry / rotation / reactivity hypothesis | Polymerization mechanism or bulk property; see Investigations 7–8 |
-| Heteroatom / substituent | How does the new atom/group alter polarity, size or interaction possibilities? | Electron-distribution / interaction hypothesis | Compatibility, permeability or thermal capability without testing/qualification |
-
-**Table rule:** `TAB-014-002` is an inference-control tool. Its right-hand column is as important as its mechanism column.
+| Linear C–C skeleton | Connectivity/rotation/geometry? | Local mobility hypothesis | Real architecture, crystallinity, modulus, creep |
+| Branch point | Which group leaves main path? | Topological difference | Commercial grade branching distribution |
+| Carbon ring | How does cyclic connectivity constrain skeleton? | Geometry/conformation | Stiffness/service temperature |
+| C=C or C≡C | What changes with bond order? | Geometry/rotation/reactivity | Polymerization mechanism/bulk property |
+| Heteroatom/substituent | How does local chemistry change? | Polarity/steric/interaction hypothesis | Compatibility/permeability/thermal capability |
 
 ## 6.10 Common mistakes / Failure Lens
 
-### Mistake 1 — “Carbon is special only because it has valence four”
-
-Why it fails: IUPAC's standard bonding-number table gives four to other Group 14 elements as well. Tetravalency is part of the explanation, not the entire explanation.
-
-### Mistake 2 — “A branch drawn in one molecule tells me the branching of the commercial polymer”
-
-Why it fails: a structural possibility is not a measured chain-architecture distribution. Chapter 016 owns that engineering layer.
-
-### Mistake 3 — “A bond-line drawing is the real 3D shape of the molecule”
-
-Why it fails: skeletal formulas are two-dimensional connectivity representations. Three-dimensional geometry requires the bonding/orbital treatment of Investigation 7.
-
-### Mistake 4 — “Carbon skeleton means the polymer contains only carbon and hydrogen”
-
-Why it fails: many polymer structures contain heteroatoms or substituted carbon skeletons.
-
-### Mistake 5 — “A double bond just means two single bonds drawn together”
-
-Why it fails: multiple bond order changes the bonding model, geometry and rotation constraints. Investigation 7 explains the sigma/pi distinction.
-
-### Mistake 6 — “Knowing the repeat-unit skeleton gives the material properties”
-
-Why it fails: molecular weight, architecture, morphology, formulation, processing and qualification remain missing.
+Avoid tetravalency-only explanations, branch-drawing→grade conclusions, 2D formula→3D shape, carbon skeleton→hydrocarbon-only assumptions, double-bond=two singles, and repeat-unit→bulk-property shortcuts.
 
 ## 6.11 Verification
 
-Before accepting a carbon-chemistry explanation in Chapter 014, check:
-
-1. Is carbon's standard bonding number four stated as a structural/electron-counting convention rather than anthropomorphic intent?
-2. Has the text avoided claiming tetravalency alone explains carbon's importance?
-3. Are chains, branches and rings introduced only as structural possibilities without pre-empting Chapter 016?
-4. Are multiple bonds recognized without prematurely teaching the hybridization/sigma/pi mechanism owned by Investigation 7?
-5. Is the skeletal-formula convention being used correctly for implicit carbon/hydrogen and explicit heteroatoms?
-6. Has any structure→bulk-property jump been stopped at the mechanism/evidence boundary?
-7. Does the explanation distinguish a drawing convention from actual three-dimensional geometry and real polymer morphology?
+Check four-bond wording, chapter ownership, multiple-bond boundary, skeletal-formula convention and prevention of structure→bulk-property jumps.
 
 ## 6.12 Engineering decision from Investigation 6
 
 > Carbon is exceptionally useful in polymer chemistry because its ordinary four-bond connectivity can be arranged into diverse carbon frameworks — including chains, branches, rings, multiple-bond patterns and substituted structures. This structural versatility creates many possible molecular mechanisms, but it does not by itself determine a piping material's engineering properties.
 
-After Investigation 6, the engineer should be able to look at a simple organic or polymer-relevant structural formula and identify:
-
-- the carbon skeleton;
-- branch points or rings;
-- single versus multiple bonds;
-- explicitly shown heteroatoms/substituents;
-- the next mechanism question that must be asked.
-
-The next missing capability is three-dimensional/electronic interpretation:
-
-> **Why do single, double and triple bonded carbon centers adopt different bonding geometries, and what do `sp`, `sp2`, `sp3`, sigma and pi actually mean?**
-
-That is the subject of Investigation 7.
-
 ---
 
 # Investigation 7 — What Do sp, sp2, sp3, Sigma and Pi Bonds Mean to the Engineer?
 
-A two-dimensional structural formula can show which atoms are connected, but it does not explain why the local geometry around carbon changes with bonding pattern or why a carbon–carbon double bond behaves differently from a carbon–carbon single bond.
+A 2D formula shows connectivity but not why local carbon geometry changes with bonding pattern or why C=C differs from C–C.
 
-The common organic-chemistry language for this bridge is **hybridization** together with **sigma (σ)** and **pi (π)** bonding.
+IUPAC defines hybridization as a linear combination of atomic orbitals and notes common use of `sp3`, `sp2`, `sp` for tetrahedral, trigonal and digonal/linear atoms. [S014-003]
 
-These are useful models. They must not be mistaken for literal mechanical parts inside the molecule.
+Hybridization is a controlled explanatory model, not a bulk property.
 
-IUPAC defines hybridization as a linear combination of atomic orbitals on an atom and notes that hybrid orbitals are commonly used in organic chemistry to describe tetrahedral (`sp3`), trigonal (`sp2`) and digonal/linear (`sp`) atoms. [S014-003]
+## 7.1 Hybridization is a model
 
-The chapter therefore uses hybridization as a controlled explanatory model for local bonding geometry and bond symmetry — not as a direct material-property classification.
+A hybrid orbital is derived by linear combination/hybridization of atomic orbitals at the same atom. The teaching word “mix” is acceptable only if recognized as mathematical/model language, not literal fluid mixing.
 
-## 7.1 Hybridization is a model of orbitals, not a physical mixing process
+## 7.2 `sp3`: tetrahedral model
 
-IUPAC defines a **hybrid orbital** as an atomic orbital derived by hybridization of atomic orbitals with different angular-momentum quantum numbers located at the same atom. [S014-003]
+`sp3` carbon uses an ideal tetrahedral local model, reference angle about `109.5°`. The key point is 3D local geometry; real angles may deviate and the value is not a tolerance/property specification.
 
-The common teaching language says that an `s` orbital and one or more `p` orbitals “mix” to produce hybrid orbitals. That language is acceptable only if the reader remembers what the formal model actually means: a mathematical linear combination used to represent bonding and geometry.
+## 7.3 `sp2`: trigonal-planar model
 
-The safe Chapter 014 interpretation is:
+`sp2` local geometry is idealized trigonal-planar, approximately `120°`, with one unhybridized `p` direction available for π bonding. This affects local geometry/orbital arrangement but does not directly determine bulk properties.
 
-> Hybridization is a model for constructing orbitals that are convenient for describing local bonding directions and geometry.
+## 7.4 `sp`: linear model
 
-It is **not**:
+`sp` local geometry is idealized linear/digonal, approximately `180°`, with two unhybridized `p` directions available for π components.
 
-- a photograph of orbitals physically blending like fluids;
-- a standalone measurable bulk property of the polymer;
-- a rule that every atom in every molecular environment must be described by one perfectly pure `sp`, `sp2` or `sp3` label.
+## 7.5 The map is local
 
-The model is powerful because it organizes geometry. It is dangerous when the label is treated as the engineering conclusion.
+A molecule/polymer can contain several hybridization environments. `This polymer is sp3` is normally too crude without specifying which centers.
 
-## 7.2 `sp3`: the tetrahedral carbon model
+## 7.6 Sigma and pi
 
-In the common localized bonding model, carbon centers associated with four approximately tetrahedrally directed bonding domains are described using `sp3` hybrid orbitals.
+IUPAC notes both rigorous MO-symmetry and localized two-centre uses of σ/π language. In the localized model used here:
 
-IUPAC explicitly connects `sp3` hybridization with tetrahedral atoms. The ideal regular tetrahedral angle is approximately `109.5°` (more precisely about 109°28′ in the regular-tetrahedron reference used by IUPAC terminology). [S014-003]
+- ordinary C–C single: one σ;
+- ordinary C=C: σ + π;
+- ordinary C≡C: σ + 2π.
 
-### Engineering meaning
+A localized π bond has a nodal plane including the internuclear axis; the localized σ description lacks that nodal plane. [S014-003]
 
-The important point is not memorizing 109.5°.
+## 7.7 Rotation: use a barrier model
 
-It is recognizing that an `sp3` carbon is **not planar**. Its four bonding directions extend in three dimensions.
+“Single bonds rotate freely” is too absolute. IUPAC defines rotational barriers and limits “free rotation” to sufficiently low barriers on the experimental time scale. [S014-003]
 
-This matters when an engineer reads a zig-zag skeletal drawing: the printed line drawing is a projection/representation of connectivity, not evidence that the carbon backbone is literally a flat two-dimensional zig-zag.
+Rotation around a conventional C=C disrupts the parallel alignment required for effective π overlap, giving a qualitatively stronger rotational constraint than an ordinary single σ bond. No universal barrier value is asserted.
 
-### Model boundary
+## 7.8 FIG-014-003 — Carbon hybridization and geometry
 
-Real bond angles can depart from the ideal tetrahedral value because of ring strain, substituents, electronic effects and molecular constraints. The ideal geometry is therefore a reference model, not a tolerance or property specification.
+Conceptual spec complete:
+- `sp3`: tetrahedral, ~109.5°;
+- `sp2`: trigonal planar, ~120°, one unhybridized p;
+- `sp`: linear, ~180°, two unhybridized p directions.
+Warnings: ideal local models, real deviations possible, not bulk-property labels.
 
-## 7.3 `sp2`: the trigonal-planar carbon model
+## 7.9 FIG-014-004 — Sigma and pi bonding in ethene — partial specification
 
-IUPAC connects `sp2` hybridization with trigonal atoms. For the common trigonal-planar carbon representation, three bonding directions lie approximately in one plane and are separated by about `120°` in the idealized geometry. [S014-003]
+Show C–C axis, σ component, unhybridized p orbitals, side-by-side π overlap, nodal plane, and rotation constraint. Complete in Investigation 8.
 
-The key engineering observation is **planarity at the local center**.
+## 7.10 From geometry to mechanism hypothesis
 
-A carbon involved in a conventional carbon–carbon double-bond description is commonly treated as `sp2`-hybridized. Three `sp2` hybrid orbitals provide the local sigma-bonding framework, while one unhybridized `p` orbital remains available for the π component discussed below.
-
-### Why this matters
-
-Compared with a tetrahedral local carbon center, the trigonal-planar model changes:
-
-- local geometry;
-- orientation of substituents;
-- the orbital arrangement available for multiple bonding;
-- rotational constraints when a π interaction is present.
-
-It still does **not** directly provide a polymer modulus, glass-transition temperature, crystallinity or pressure capability.
-
-## 7.4 `sp`: the linear carbon model
-
-IUPAC connects `sp` hybridization with digonal/linear atoms.
-
-In the idealized carbon model, two principal sigma-bonding directions are collinear, corresponding to a local angle near `180°`. Two unhybridized `p` orbitals remain available for π bonding in structures such as a carbon–carbon triple bond.
-
-For Chapter 014, `sp` is included mainly to complete the geometry/bond-order map. Most immediate piping-polymer examples in later Investigations will be dominated by `sp3` and `sp2` carbon chemistry.
-
-The same evidence boundary applies: linear local geometry is a chemistry fact, not a macroscopic material property.
-
-## 7.5 The `sp3 / sp2 / sp` map is local, not a polymer-wide label
-
-A polymer or monomer can contain more than one local bonding environment.
-
-Therefore statements such as:
-
-> “This polymer is sp3.”
-
-are usually too crude unless the speaker is explicitly referring to the relevant carbon centers in a simplified backbone model.
-
-A molecular structure may contain:
-
-- `sp3` carbon centers in saturated regions;
-- `sp2` centers in double bonds or aromatic structures;
-- `sp` centers in triple-bonded structures;
-- heteroatoms whose bonding is not adequately communicated by copying the carbon labels without analysis.
-
-The hybridization descriptor belongs to the **local atom/bonding environment**.
-
-It should not be silently elevated to the level of a complete macromolecule, compound or pipe material.
-
-## 7.6 Sigma and pi: symmetry language with a localized-bond engineering use
-
-IUPAC's `sigma, pi` terminology carries an important caveat: the terms can be used rigorously for molecular orbitals based on symmetry and are also commonly used in a localized two-centre bond description. The chapter must keep those uses conceptually distinct. [S014-003]
-
-At the localized organic-chemistry level useful here:
-
-- a **σ bond** has electron density arranged with symmetry around the internuclear axis and no nodal plane containing that axis in the localized description;
-- a **π bond** has a nodal plane containing the internuclear axis and electron density on opposite sides of that plane in the localized description. [S014-003]
-
-### Why this is useful to an engineer
-
-The model explains why a conventional double bond is not simply “two identical single bonds drawn next to each other.”
-
-In the localized picture:
-
-- a carbon–carbon single bond is represented primarily as one σ bond;
-- a carbon–carbon double bond is represented as one σ component plus one π component;
-- a carbon–carbon triple bond is represented as one σ component plus two mutually oriented π components.
-
-This is the orbital-level reason bond order changes geometry and rotational behavior.
-
-## 7.7 Rotation: replace the phrase “single bonds rotate freely” with a barrier model
-
-A common textbook shortcut says:
-
-> “Single bonds rotate freely; double bonds do not rotate.”
-
-The first half is too absolute.
-
-IUPAC defines a **rotational barrier** as the potential-energy barrier associated with changing torsion angle. IUPAC also restricts the phrase **free rotation** to cases where the barrier is low enough that different conformations are not perceptible on the experimental time scale. [S014-003]
-
-So the correct engineering model is:
-
-> Rotation about a formally single bond may permit conformational change, but it normally occurs on an energy landscape with a finite rotational barrier.
-
-### Why a double bond is more constrained
-
-In the localized σ/π model, rotation around the internuclear axis of a carbon–carbon double bond would disrupt the parallel alignment required for effective π overlap.
-
-That creates a qualitatively different rotational constraint from an ordinary single σ bond.
-
-The chapter intentionally does **not** attach one universal numerical rotation barrier to “single” or “double” bonds. Actual barriers depend on molecular context, substituents, conjugation, sterics and other factors.
-
-### Polymer relevance
-
-The local ability or inability to change torsion angle is one ingredient in chain conformational freedom.
-
-It is not the whole polymer mobility problem. Real chain mobility also depends on:
-
-- neighboring bond sequences;
-- side groups;
-- intermolecular interactions;
-- chain architecture;
-- morphology;
-- temperature;
-- time scale.
-
-Those higher-level effects belong mainly to Chapters 016–019.
-
-## 7.8 FIG-014-003 — Carbon hybridization and geometry — conceptual specification complete
-
-The figure shall show three side-by-side idealized local carbon environments.
-
-### Panel A — `sp3`
-
-- four directed hybrid-orbital/bonding domains;
-- tetrahedral geometry;
-- ideal reference angle approximately `109.5°`;
-- explicit label: **3D local geometry — not a flat skeletal drawing**.
-
-### Panel B — `sp2`
-
-- three `sp2` directions in one plane;
-- ideal trigonal-planar spacing approximately `120°`;
-- one unhybridized `p` orbital perpendicular to the plane;
-- explicit label: **local model used for conventional C=C description**.
-
-### Panel C — `sp`
-
-- two collinear `sp` directions;
-- ideal local angle approximately `180°`;
-- two mutually perpendicular unhybridized `p` orbital directions;
-- explicit label: **local model used for conventional C≡C description**.
-
-### Figure warnings
-
-The final graphic shall state:
-
-1. these are idealized local models;
-2. actual molecular geometry can deviate from ideal angles;
-3. hybridization is an explanatory orbital model, not a bulk polymer property;
-4. a molecule may contain multiple local hybridization environments.
-
-Graphic production remains pending; the scientific specification is now defined.
-
-## 7.9 FIG-014-004 — Sigma and pi bonding in ethylene — partial specification
-
-Investigation 7 establishes the generic orbital concept. Investigation 8 will complete the ethylene-specific figure.
-
-The figure shall eventually show:
-
-- the C–C internuclear axis;
-- the σ component along that axis;
-- one unhybridized `p` orbital on each `sp2` carbon;
-- side-by-side overlap producing the localized π description above/below the molecular plane;
-- the nodal-plane concept;
-- a rotation arrow crossed out or annotated to show that loss of `p`-orbital alignment would disrupt the π interaction.
-
-The final figure must **not** imply that electrons travel in fixed loops or that the colored lobes are hard physical objects.
-
-## 7.10 From local geometry to an engineering mechanism hypothesis
-
-Hybridization and σ/π descriptions help an engineer identify local structural constraints.
-
-For example, a change from a saturated single-bonded carbon framework to a region containing `sp2` centers can plausibly change:
-
-- local geometry;
-- torsional freedom;
-- planarity;
-- electron distribution;
-- chemical reactivity pathways.
-
-Those are mechanism-level statements.
-
-The chapter does not allow the next unsupported leap:
-
-`more sp2 carbon → stiffer / stronger / hotter-service pipe`
-
-The actual material consequence depends on how much of the structure is affected, how the units are distributed, molecular weight, chain architecture, morphology, processing and the measured property of interest.
+Local hybridization can plausibly alter geometry, torsional freedom, planarity, electron distribution and reaction pathways. It cannot support `more sp2 → stronger/stiffer/higher-service pipe` without material evidence.
 
 ## 7.11 Common mistakes / Failure Lens
 
-### Mistake 1 — “Hybrid orbitals are physical objects that literally mix”
-
-Why it fails: IUPAC defines hybridization as a linear combination of atomic orbitals. The model is a representation of bonding/electron distribution.
-
-### Mistake 2 — “sp3 means 109.5° exactly everywhere”
-
-Why it fails: tetrahedral geometry is an idealized reference; real bond angles can deviate because of molecular environment and constraints.
-
-### Mistake 3 — “sp2 means the whole polymer is planar”
-
-Why it fails: `sp2` describes a local atom/bonding environment. A macromolecule can contain many local environments and higher-level conformations.
-
-### Mistake 4 — “A double bond is two identical single bonds”
-
-Why it fails: in the localized model a double bond contains σ and π components with different symmetry/orbital character.
-
-### Mistake 5 — “Single bonds rotate with zero resistance”
-
-Why it fails: IUPAC's rotational-barrier concept recognizes a finite energy landscape; `free rotation` is conditional on barrier and observation time scale.
-
-### Mistake 6 — “Double bonds can never rotate under any circumstance”
-
-Why it fails: the useful engineering statement is that the π component creates a substantial rotational constraint in the ordinary bonded state; reaction, excitation or bond-breaking pathways are different questions.
-
-### Mistake 7 — “Hybridization predicts the pipe property”
-
-Why it fails: hybridization is a local chemistry descriptor. Bulk behavior requires architecture, morphology, formulation, processing and material evidence.
-
-### Mistake 8 — “σ and π always refer to one simple localized bond picture”
-
-Why it fails: IUPAC notes rigorous molecular-orbital symmetry usage as well as localized bond usage. The context must be stated.
+Avoid literal orbital mixing, exact-angle absolutism, whole-polymer hybridization labels, double bond = two identical singles, zero-barrier single-bond rotation, absolute impossibility statements about all double-bond rotation pathways, direct hybridization→property inference, and σ/π context ambiguity.
 
 ## 7.12 Verification
 
-Before accepting a hybridization/σ–π explanation in Chapter 014, check:
-
-1. Is hybridization described as a linear-combination/model concept rather than a literal physical mixing event?
-2. Are `sp3`, `sp2` and `sp` tied to idealized local tetrahedral, trigonal and linear/digonal geometries?
-3. Are numerical angles presented as ideal/reference values rather than tolerances or universal measured values?
-4. Is the local hybridization descriptor kept separate from whole-polymer morphology or property claims?
-5. Are σ and π uses clearly identified as localized-bond language where that model is being used?
-6. Is rotation around a single bond described with a rotational barrier rather than as absolutely free?
-7. Is double-bond rotational constraint linked to the π-overlap model without inventing a universal barrier value?
-8. Has the text stopped before ethylene polymerization chemistry owned by Investigation 8 / Chapter 015?
+Check model language, ideal geometry boundaries, local-vs-whole-polymer scope, σ/π context, rotational-barrier language and stop before polymerization chemistry.
 
 ## 7.13 Engineering decision from Investigation 7
 
 > Use `sp3`, `sp2` and `sp` hybridization as idealized local orbital/geometry models, and use σ/π language to explain why single and multiple carbon–carbon bonds differ in symmetry and rotational constraint. These descriptors explain local molecular mechanisms; they do not directly determine bulk polymer or piping performance.
 
-The engineer should now be able to interpret a simple carbon structure at three levels:
-
-1. **connectivity** — which atoms are connected;
-2. **local geometry/orbital model** — `sp3`, `sp2` or `sp` where appropriate;
-3. **bond-component model** — σ only for the ordinary single-bond picture, σ+π for the ordinary double-bond picture, and σ+2π for the ordinary triple-bond picture.
-
-The chapter can now apply this framework to the most important bridge molecule for polyethylene:
-
-> **ethylene (ethene), with its carbon–carbon double bond.**
-
-That is the subject of Investigation 8.
-
 ---
 
-# Investigation 8 — What Is Special About Ethylene?
+# Investigation 8 — What Is Special About Ethene / Ethylene?
 
-**Authoring state:** planned. Evidence research required before development.
+The molecule that bridges this chapter's first-principles chemistry to polyethylene is `CH2=CH2`.
+
+In strict IUPAC organic nomenclature the monomer molecule is **ethene**. The traditional word **ethylene** remains deeply embedded in polymer and industrial language, but IUPAC nomenclature also uses `ethylene` for the divalent group `–CH2–CH2–`; older IUPAC polymer guidance explicitly warns not to use the group name as though it were the preferred monomer name. [S014-008]
+
+PPE-BoK therefore uses the following terminology rule:
+
+> **Ethene** is the controlled chemical name for `CH2=CH2`; **ethylene** may be retained when referring to established industrial/common usage, especially in the name polyethylene, provided the context is unambiguous.
+
+This small naming point matters because the chapter is about engineering communication as much as chemistry.
+
+## 8.1 Read the ethene structure before thinking about polymerization
+
+Ethene contains:
+
+- two carbon atoms;
+- four hydrogen atoms;
+- one carbon–carbon double bond;
+- two hydrogen atoms attached to each carbon.
+
+At the local orbital-model level developed in Investigation 7:
+
+- each carbon is described as `sp2` in the conventional model;
+- the local carbon environment is approximately trigonal planar;
+- the C=C bond is represented as one σ component plus one π component;
+- the unhybridized `p` orbitals are aligned to create the localized π description.
+
+These statements describe the **starting molecular structure**. They do not yet describe a polymerization mechanism.
+
+## 8.2 Why the C=C bond is the important structural feature
+
+The C=C bond makes ethene chemically different from ethane.
+
+In the localized model, the σ framework connects the carbon nuclei along the internuclear axis while the π component depends on side-by-side overlap of the unhybridized `p` orbitals.
+
+That π component:
+
+- changes the electron distribution relative to an ordinary C–C single bond;
+- supports the local planar `sp2` description;
+- imposes a strong rotational constraint in the ordinary bonded state;
+- creates a multiple-bond chemical feature that can participate in polymer-forming reactions.
+
+The last point is deliberately phrased at mechanism-boundary level.
+
+Chapter 014 does **not** explain how an initiator, radical, coordination catalyst or other reactive site causes chain growth. That belongs to Chapter 015.
+
+## 8.3 FIG-014-004 — Sigma and pi bonding in ethene — conceptual specification complete
+
+The final figure shall show an idealized ethene molecule using the localized model.
+
+Required elements:
+
+1. both carbon atoms labeled `sp2`;
+2. approximate trigonal-planar geometry around each carbon;
+3. C–C internuclear axis;
+4. σ component along that axis;
+5. one unhybridized `p` orbital direction on each carbon, perpendicular to the molecular plane;
+6. side-by-side overlap representing the π component above/below the molecular plane;
+7. nodal-plane annotation;
+8. a rotation annotation explaining that rotation would disrupt effective p-orbital alignment/π overlap.
+
+Required warnings:
+
+- orbital lobes are model representations, not hard physical objects;
+- the drawing is idealized;
+- no polymerization arrows/mechanistic intermediates belong in this figure.
+
+## 8.4 What changes in the polyethylene skeleton?
+
+A regular polyethylene chain is commonly represented with the repeating carbon skeleton:
+
+`–CH2–CH2–`
+
+IUPAC polymer terminology distinguishes the **monomer** from the **monomeric unit** and from the **constitutional repeating unit (CRU)**. A monomeric unit is the largest constitutional unit contributed by one monomer molecule to the macromolecule; a CRU is the smallest constitutional unit whose repetition constitutes a regular chain/macromolecule. [S014-003]
+
+For the simple idealized PE representation, the engineering bridge is:
+
+`CH2=CH2  →  [–CH2–CH2–]n`
+
+The key **structural observation** is that the carbon–carbon double-bond representation of the monomer is not retained as a C=C between every pair in the saturated polyethylene backbone. The repeating chain skeleton is represented by C–C single-bond connectivity.
+
+This is the bridge the reader must understand before Chapter 015 explains the reaction sequence that produces it.
+
+## 8.5 Structural before/after is not a reaction mechanism
+
+The arrow in
+
+`CH2=CH2  →  [–CH2–CH2–]n`
+
+is dangerously easy to misread.
+
+In Chapter 014 it means only:
+
+> **compare the connectivity/bond-order pattern of the monomer with the idealized repeating skeleton of the polymer.**
+
+It does **not** specify:
+
+- initiation;
+- propagation;
+- termination;
+- chain transfer;
+- radical chemistry;
+- coordination chemistry;
+- Ziegler–Natta catalysis;
+- metallocene catalysis;
+- reactor conditions;
+- molecular-weight control;
+- branching control.
+
+IUPAC defines polymerization generally as converting monomer(s) into a polymer and defines chain polymerization through repeated reactions between monomer(s) and reactive sites with regeneration of the reactive site. Those definitions confirm that the true mechanism is a process sequence, not the single teaching arrow shown above. [S014-003]
+
+All detailed mechanism/process content is owned by Chapter 015.
+
+## 8.6 Polyethene, polyethylene and poly(methylene): know which naming layer you are using
+
+IUPAC polymer nomenclature recognizes established source-based names **polyethene** and **polyethylene** for the common material and gives **poly(methylene)** as the corresponding structure-based name in the cited regular single-strand polymer guidance. [S014-008]
+
+For PPE-BoK:
+
+- **PE / polyethylene** remains the normal engineering/material term because it is the language used throughout piping standards and industry;
+- **polyethene** may appear when discussing source-based IUPAC naming;
+- **poly(methylene)** may appear when explaining structure-based nomenclature;
+- these names shall not be mixed casually with `poly(ethene-1,2-diyl)`, which is a different structure referring to a vinylene/polyacetylene-type backbone rather than ordinary saturated PE. [S014-003]
+
+That final warning is important because similar-looking systematic names can describe very different bond patterns.
+
+## 8.7 FIG-014-005 — Ethene to polyethylene bridge — conceptual specification complete
+
+The figure shall contain three panels.
+
+### Panel A — Monomer identity
+
+`ethene (industrial/common: ethylene)`
+
+`CH2=CH2`
+
+Annotations:
+- C=C;
+- local `sp2` carbon;
+- σ+π localized double-bond model.
+
+### Panel B — Controlled structural bridge
+
+A large arrow labeled:
+
+**STRUCTURAL COMPARISON ONLY — NOT A POLYMERIZATION MECHANISM**
+
+No radical, catalyst or reaction intermediate shall be shown.
+
+### Panel C — Idealized PE repeating skeleton
+
+`[–CH2–CH2–]n`
+
+Annotations:
+- saturated C–C backbone representation;
+- local carbon centers represented as `sp3` in the simple model;
+- CRU / repeating-skeleton language;
+- explicit cross-reference: **mechanism → Chapter 015; chain architecture → Chapter 016; morphology → Chapter 017**.
+
+## 8.8 EX-014-001 — Reading ethene and the PE repeat unit
+
+### Problem
+
+An engineer is shown two formulas:
+
+A. `CH2=CH2`
+
+B. `[–CH2–CH2–]n`
+
+What can be concluded directly from the structures, and what cannot?
+
+### Step 1 — Identify A
+
+A is ethene, commonly called ethylene in industry.
+
+Direct observations:
+
+- two carbon atoms;
+- four H atoms;
+- C=C;
+- conventional `sp2` local model;
+- σ+π localized double-bond description;
+- local planar geometry and restricted rotation in the ordinary C=C state.
+
+### Step 2 — Identify B
+
+B is the idealized repeating skeleton used for ordinary polyethylene/PE.
+
+Direct observations:
+
+- saturated carbon backbone representation;
+- repeating `–CH2–CH2–` pattern;
+- conventional local `sp3` description for the backbone carbon centers;
+- single-bond connectivity rather than C=C repetition.
+
+### Step 3 — State the legitimate bridge
+
+The ethene monomer's C=C connectivity is transformed during polymer formation into the saturated C–C backbone connectivity represented in PE.
+
+### Step 4 — State what the formulas do **not** tell us
+
+The formulas alone do not specify:
+
+- polymerization mechanism/catalyst;
+- molecular weight or molecular-weight distribution;
+- branching;
+- crystallinity;
+- density grade;
+- additive package;
+- SCG resistance;
+- pressure rating;
+- service temperature;
+- fusion parameters;
+- chemical compatibility.
+
+### Engineering decision
+
+> The monomer/repeat-unit comparison is sufficient to understand the structural bridge from C=C chemistry to a saturated PE backbone. It is insufficient to identify or qualify a real PE piping compound.
+
+## 8.9 Why a polyethylene repeat unit is not a PE100 specification
+
+This distinction deserves an explicit piping-engineering statement.
+
+`[–CH2–CH2–]n` tells the engineer the idealized repeating chemical skeleton associated with polyethylene.
+
+It does not tell the engineer whether the material is:
+
+- a particular density class;
+- PE80;
+- PE100;
+- enhanced-SCG-resistance PE;
+- a listed/qualified piping compound;
+- suitable for a particular gas, water, chemical or hydrogen service.
+
+Those classifications emerge at much higher evidence levels. Chapter 013 and the later design/application chapters own those questions.
+
+This is exactly why Chapter 014 separates **chemical identity** from **engineering qualification**.
+
+## 8.10 Common mistakes / Failure Lens
+
+### Mistake 1 — using `ethylene` and `ethene` without context
+
+Why it fails: `ethene` is the controlled name for `CH2=CH2`, while `ethylene` also has a specific group-name use in IUPAC nomenclature even though industry commonly uses it for the monomer.
+
+### Mistake 2 — reading the monomer→polymer arrow as the mechanism
+
+Why it fails: the one-line structural bridge omits initiation, propagation, reactive sites, catalysts and process conditions.
+
+### Mistake 3 — saying “the double bond opens” and treating that as a complete mechanism
+
+Why it fails: it is at most a coarse structural shorthand; Chapter 015 must explain the actual reaction model appropriate to the polymerization route.
+
+### Mistake 4 — treating the PE repeat-unit drawing as a grade specification
+
+Why it fails: the repeat unit does not encode molecular-weight distribution, branching, morphology, additives or product qualification.
+
+### Mistake 5 — confusing polyethylene with poly(ethene-1,2-diyl)
+
+Why it fails: the latter denotes a backbone retaining ethene-1,2-diyl/vinylene C=C repeating units and corresponds to polyacetylene-type chemistry, not ordinary saturated PE.
+
+### Mistake 6 — assuming `sp3` backbone description fixes polymer flexibility
+
+Why it fails: local hybridization is only one mechanism input; torsional barriers, side groups, chain architecture, intermolecular interactions and morphology still matter.
+
+## 8.11 Verification
+
+Before accepting an ethene→PE explanation, check:
+
+1. Is `CH2=CH2` identified as ethene, with industrial `ethylene` usage explicitly disambiguated?
+2. Is C=C described through the already-controlled `sp2`, σ+π model?
+3. Is `[–CH2–CH2–]n` presented as an idealized repeating skeleton rather than a complete commercial-material definition?
+4. Is the structural comparison arrow explicitly labeled **not a reaction mechanism**?
+5. Are initiation/catalysis/kinetics/branching-control topics deferred to Chapter 015/016?
+6. Are monomer, monomeric unit and CRU terminology kept distinct?
+7. Has any PE grade, property or pressure qualification been inferred from the repeat unit alone?
+8. Are confusing structure-based/source-based names checked before use?
+
+## 8.12 Engineering decision from Investigation 8
+
+> Ethene (`CH2=CH2`) is the controlled chemical starting structure for the polyethylene bridge: its `sp2` C=C σ+π bonding pattern differs fundamentally from the saturated C–C backbone pattern represented by `[–CH2–CH2–]n`. That structural comparison explains **what changes in connectivity**, but not **how polymerization occurs** and not **which engineering grade of PE results**.
+
+After Investigation 8, the reader has the complete first-principles chain required for the next stage:
+
+`atom → electrons → bonding → intermolecular interaction → carbon skeleton → local hybridization / σπ → ethene monomer → idealized PE repeating skeleton`
+
+The next question is no longer “what does the chemistry look like?” It is:
+
+> **How can a molecular feature be turned into a defensible engineering-property hypothesis without overclaiming?**
+
+That is Investigation 9 — and unlike Investigations 1–8, it requires direct primary polymer literature for every retained material-specific bridge.
 
 ---
 
 # Investigation 9 — How Do Molecular Features Become Engineering-Property Hypotheses?
 
-**Authoring state:** blocked pending direct primary-literature research for material-specific claims.
+**Authoring state:** BLOCKED pending direct primary-literature research for every retained material-specific structure→property claim.
 
 ---
 
 # Investigation 10 — What Can Chemistry Tell Us, and Where Must the Engineer Stop?
 
-**Authoring state:** planned after Investigations 1–9.
+**Authoring state:** planned after Investigation 9 evidence development.
 
 ---
 
@@ -1895,20 +1493,20 @@ That is the subject of Investigation 8.
 
 | ID | Asset | Status |
 |---|---|---|
-| FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
-| FIG-014-002 | Primary and secondary bonding map | Scientific/conceptual specification complete through Investigation 5; graphic production pending |
-| FIG-014-003 | Carbon hybridization and geometry | Scientific/conceptual specification complete in Investigation 7; graphic production pending |
-| FIG-014-004 | Sigma and pi bonding in ethylene | Partial scientific specification integrated in Investigation 7; complete in Investigation 8 |
-| FIG-014-005 | Ethylene to polyethylene bridge | Planned |
-| FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; figure planned |
-| TAB-014-001 | Bonding types and engineering relevance | Primary-bonding + intermolecular-interaction rows integrated through Investigation 5 |
-| TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Initial carbon-structure inference table integrated in Investigation 6; extend in Investigation 9 |
-| TAB-014-003 | Controlled polymer-structure examples | Planned |
-| TAB-014-004 | Downstream chapter ownership crosswalk | Planned |
-| EX-014-001 | Reading ethylene and PE repeat unit | Planned for Investigation 8 |
-| EX-014-002 | Comparing two simple polymer structures | Planned |
-| WF-014-001 | Chemical structure → evidence → decision boundary | Logic introduced; final asset planned |
-| CL-014-001 | Before inferring engineering behaviour from chemical structure | Planned |
+| FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated; graphic production pending |
+| FIG-014-002 | Primary and secondary bonding map | Scientific specification complete; graphic production pending |
+| FIG-014-003 | Carbon hybridization and geometry | Scientific specification complete; graphic production pending |
+| FIG-014-004 | Sigma and pi bonding in ethene | Scientific specification complete in Investigation 8; graphic production pending |
+| FIG-014-005 | Ethene to polyethylene bridge | Scientific specification complete in Investigation 8; graphic production pending |
+| FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; formal development planned in Investigation 9/10 |
+| TAB-014-001 | Bonding types and engineering relevance | Integrated through Investigation 5 |
+| TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Initial table integrated in Investigation 6; extend in Investigation 9 |
+| TAB-014-003 | Controlled polymer-structure examples | Planned for Investigation 9 after primary-literature gate |
+| TAB-014-004 | Downstream chapter ownership crosswalk | Planned for Investigation 10 |
+| EX-014-001 | Reading ethene and PE repeat unit | Integrated in Investigation 8; independent scientific/editorial check pending |
+| EX-014-002 | Comparing two simple polymer structures | BLOCKED with Investigation 9 primary-literature gate |
+| WF-014-001 | Chemical structure → evidence → decision boundary | Logic introduced; formalize in Investigation 9/10 |
+| CL-014-001 | Before inferring engineering behaviour from chemical structure | Planned for Investigation 10 |
 
 ---
 
