@@ -83,6 +83,12 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
   - lone pair — `L03618`, DOI `10.1351/goldbook.L03618`;
   - Lewis formula — `L03513`.
 - **Investigation 3 terminology disposition:** explicitly reject fixed planetary-orbit imagery; use `atomic orbital` as a wavefunction/model of electron-state and spatial possibility. Treat `valence electron` language as an introductory bonding abstraction rather than a claim that every bonding problem is captured by a simple outer-shell cartoon. Treat electronegativity as a relative atomic concept with multiple formal definitions/scales, not as a directly transferable polymer-property number.
+- **Investigation 4 controlled entries checked 2026-08-14:**
+  - covalent bond — `C01384`, DOI `10.1351/goldbook.C01384`;
+  - ionic bond — `IT07058`, DOI `10.1351/goldbook.IT07058`;
+  - delocalization of electrons — `08789`, DOI `10.1351/goldbook.08789`;
+  - chemical bond — `CT07009`, DOI `10.1351/goldbook.CT07009`.
+- **Investigation 4 terminology disposition:** do not frame ionic and covalent bonding as perfectly pure binary categories; IUPAC explicitly prefers considering degree of ionic character in practical cases. For metallic bonding, the authoring pass uses the verified IUPAC electron-delocalization description — including electrons extended over several atoms or a lattice and extensive delocalization being typical of metals — rather than inventing a stand-alone current IUPAC `metallic bond` definition that was not located in this verification pass.
 - **Boundary:** Gold Book definitions control terminology; they do not establish bulk polymer property values or pipe-system qualification.
 
 ### S014-004 — Arunan et al., Definition of the hydrogen bond (IUPAC Recommendations 2011)
@@ -137,8 +143,8 @@ A review article may help discover literature but shall not substitute for direc
 | 1 — Why atoms and bonds matter | CDB + stable IUPAC terminology; no material-specific quantitative claim needed | AUTHORED — CHECKPOINT PASS |
 | 2 — Matter / atoms / molecules | IUPAC Gold Book entries for atom, element, atomic number, molecule, molecular entity and chemical substance | AUTHORED — TERMINOLOGY CHECK COMPLETE |
 | 3 — Valence electrons / orbitals | IUPAC electron, atomic-orbital, valence, electronegativity and electron-counting terminology; avoid unnecessary quantum derivation | AUTHORED — TERMINOLOGY CHECK COMPLETE |
-| 4 — Primary bonding / material classes | IUPAC definitions + bounded materials-science evidence if comparative claims become specific | NEXT RESEARCH CHECKPOINT |
-| 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | PARTLY READY |
+| 4 — Primary bonding / material classes | IUPAC covalent-bond, ionic-bond and electron-delocalization definitions; bulk material-class comparisons deliberately bounded | AUTHORED — TERMINOLOGY CHECK COMPLETE |
+| 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | NEXT RESEARCH / PARTLY READY |
 | 6 — Carbon chemistry | authoritative organic-chemistry terminology / recommendations | PLANNED |
 | 7 — sp/sp2/sp3, sigma/pi | IUPAC Gold Book entries already identified; additional source only if needed | PARTLY READY |
 | 8 — Ethylene | authoritative structural/nomenclature source; polymerization mechanism deferred to Ch015 | PLANNED |
@@ -158,22 +164,21 @@ A review article may help discover literature but shall not substitute for direc
 9. **Disambiguate `compound`.** Distinguish a chemical compound/substance from a formulated polymer or piping compound whenever the context could be misunderstood.
 10. **No planetary-orbit model.** Orbital drawings are representations of electron-state/distribution models, not literal electron tracks.
 11. **No electronegativity determinism.** Electronegativity supports bond-polarity reasoning but does not directly provide a polymer compatibility, permeability, thermal or mechanical property.
+12. **No pure ionic/covalent false dichotomy.** Use ionic character where the distinction is mixed; do not force real bonding into pure end-member categories.
+13. **No bond-type → bulk-property shortcut.** A bond label cannot by itself establish ductility, brittleness, strength, service temperature or corrosion/chemical resistance.
+14. **No invented metallic-bond authority.** Until a specific authoritative definition is selected, use the verified IUPAC electron-delocalization language and state the model boundary.
 
 ## 8. Current evidence readiness
 
-**Investigation 1:** AUTHORED; current checkpoint evidence adequate for non-quantitative engineering orientation.
+**Investigations 1–4:** AUTHORED as controlled development candidates. Their current scientific load is foundational/qualitative and is supported by authoritative terminology sources, with explicit limitations preventing direct material-design conclusions.
 
-**Investigation 2:** AUTHORED; current IUPAC terminology checkpoint complete for atom, chemical element, atomic number, molecule, molecular entity and chemical substance. No material-specific performance claim was introduced.
+**Ready to author Investigation 5 without further research:** NO — but the key source path is already identified.
 
-**Investigation 3:** AUTHORED; current IUPAC terminology checkpoint complete for electron, atomic orbital, valence and electronegativity. The chapter intentionally treats valence-electron language as a bounded educational abstraction and rejects literal planetary-orbit imagery.
-
-**Ready to author Investigation 4 without further research:** NO.
-
-Investigation 4 requires a focused primary-bonding pass for covalent, ionic and metallic bonding and a deliberate evidence boundary for any comparison among polymers, metals and ceramics. Stable definitions can come from IUPAC; any load-bearing statement about bulk material-class properties must be supported at the correct materials-science evidence level rather than inferred directly from bond labels.
+Investigation 5 shall directly use IUPAC Gold Book terminology for hydrogen bonding, dipole–dipole interaction, London forces and van der Waals forces, together with the 2011 IUPAC Hydrogen Bond Recommendation and Technical Report. It must avoid treating intermolecular-force labels as a one-dimensional strength ranking or as direct predictors of a polymer's bulk property.
 
 **Ready to author the complete chapter without further research:** NO.
 
-Investigations 4–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
+Investigations 5–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
 
 ## 9. Publication hold points
 
