@@ -74,6 +74,15 @@ The chapter shall not convert vocabulary documents, molecular structure or chemi
   - chemical substance — `C01039`, DOI `10.1351/goldbook.C01039`;
   - chemical species — `CT01038`, DOI `10.1351/goldbook.CT01038`.
 - **Investigation 2 terminology disposition:** use `molecule` only for neutral multi-atom entities; use `molecular entity` where ions or other singular chemical entities must remain in scope; use `chemical substance` for bulk matter of defined composition. Avoid implying that every chemical substance consists of discrete molecules.
+- **Investigation 3 controlled entries checked 2026-08-14:**
+  - electron — `E01975`, DOI `10.1351/goldbook.E01975`;
+  - atomic orbital — `A00500`, DOI `10.1351/goldbook.A00500`;
+  - valence — `V06588`, DOI `10.1351/goldbook.V06588`;
+  - electronegativity — `E01990`, DOI `10.1351/goldbook.E01990`;
+  - electron-counting rules — `ET07022`, DOI `10.1351/goldbook.ET07022`;
+  - lone pair — `L03618`, DOI `10.1351/goldbook.L03618`;
+  - Lewis formula — `L03513`.
+- **Investigation 3 terminology disposition:** explicitly reject fixed planetary-orbit imagery; use `atomic orbital` as a wavefunction/model of electron-state and spatial possibility. Treat `valence electron` language as an introductory bonding abstraction rather than a claim that every bonding problem is captured by a simple outer-shell cartoon. Treat electronegativity as a relative atomic concept with multiple formal definitions/scales, not as a directly transferable polymer-property number.
 - **Boundary:** Gold Book definitions control terminology; they do not establish bulk polymer property values or pipe-system qualification.
 
 ### S014-004 — Arunan et al., Definition of the hydrogen bond (IUPAC Recommendations 2011)
@@ -127,8 +136,8 @@ A review article may help discover literature but shall not substitute for direc
 |---|---|---|
 | 1 — Why atoms and bonds matter | CDB + stable IUPAC terminology; no material-specific quantitative claim needed | AUTHORED — CHECKPOINT PASS |
 | 2 — Matter / atoms / molecules | IUPAC Gold Book entries for atom, element, atomic number, molecule, molecular entity and chemical substance | AUTHORED — TERMINOLOGY CHECK COMPLETE |
-| 3 — Valence electrons / orbitals | IUPAC terminology / recommendations; avoid unnecessary quantum derivation | NEXT RESEARCH CHECKPOINT |
-| 4 — Primary bonding / material classes | IUPAC definitions + bounded materials-science evidence if comparative claims become specific | PLANNED |
+| 3 — Valence electrons / orbitals | IUPAC electron, atomic-orbital, valence, electronegativity and electron-counting terminology; avoid unnecessary quantum derivation | AUTHORED — TERMINOLOGY CHECK COMPLETE |
+| 4 — Primary bonding / material classes | IUPAC definitions + bounded materials-science evidence if comparative claims become specific | NEXT RESEARCH CHECKPOINT |
 | 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | PARTLY READY |
 | 6 — Carbon chemistry | authoritative organic-chemistry terminology / recommendations | PLANNED |
 | 7 — sp/sp2/sp3, sigma/pi | IUPAC Gold Book entries already identified; additional source only if needed | PARTLY READY |
@@ -147,6 +156,8 @@ A review article may help discover literature but shall not substitute for direc
 7. **No silent terminology drift.** Important definitions are checked against the cited current IUPAC/ISO source during final validation.
 8. **No molecule-only model of matter.** Where the chemical system may include ions, formula units or other entities, choose the term that matches the actual entity rather than forcing `molecule` into every explanation.
 9. **Disambiguate `compound`.** Distinguish a chemical compound/substance from a formulated polymer or piping compound whenever the context could be misunderstood.
+10. **No planetary-orbit model.** Orbital drawings are representations of electron-state/distribution models, not literal electron tracks.
+11. **No electronegativity determinism.** Electronegativity supports bond-polarity reasoning but does not directly provide a polymer compatibility, permeability, thermal or mechanical property.
 
 ## 8. Current evidence readiness
 
@@ -154,13 +165,15 @@ A review article may help discover literature but shall not substitute for direc
 
 **Investigation 2:** AUTHORED; current IUPAC terminology checkpoint complete for atom, chemical element, atomic number, molecule, molecular entity and chemical substance. No material-specific performance claim was introduced.
 
-**Ready to author Investigation 3 without further research:** NO.
+**Investigation 3:** AUTHORED; current IUPAC terminology checkpoint complete for electron, atomic orbital, valence and electronegativity. The chapter intentionally treats valence-electron language as a bounded educational abstraction and rejects literal planetary-orbit imagery.
 
-Investigation 3 requires a focused terminology/science pass for electron, valence electron, atomic orbital, electron configuration and electronegativity. The chapter shall deliberately stop short of quantum-mechanical derivations that do not change an engineering decision.
+**Ready to author Investigation 4 without further research:** NO.
+
+Investigation 4 requires a focused primary-bonding pass for covalent, ionic and metallic bonding and a deliberate evidence boundary for any comparison among polymers, metals and ceramics. Stable definitions can come from IUPAC; any load-bearing statement about bulk material-class properties must be supported at the correct materials-science evidence level rather than inferred directly from bond labels.
 
 **Ready to author the complete chapter without further research:** NO.
 
-Investigations 3–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
+Investigations 4–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
 
 ## 9. Publication hold points
 
