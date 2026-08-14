@@ -42,9 +42,13 @@ Superseded project guidance is retained under [`/archive`](../../archive/) and d
 
 ## Production sequence
 
-Chapter 013 — Polyethylene (PE) remains the PDS pilot/reference implementation. Its redevelopment candidate contains the complete engineering arc developed during the pilot, but publication closure still requires resolution of the active branch/PR state, authoritative Standards Validation and the remaining Definition-of-Done gates.
+Chapter 013 — Polyethylene (PE) remains the PDS pilot/reference implementation. The controlled Chapter 13 manuscript and review package were author-approved and integrated to `main` through PR #8 as an **active standards-validation candidate**.
 
-After Chapter 013 publication closure, the next new development unit is the author-approved CDB for **Working Chapter 014**, followed by continuation according to `BOOK_STRUCTURE.md`.
+Chapter 13 is not publication-frozen. Authoritative full-text Standards Validation remains open under Issue #9, and Design Freeze remains blocked until those source-dependent holds and the bounded final publication actions are resolved.
+
+Because the remaining Chapter 13 blocker is controlled external source access rather than unfinished Engineering Development, author-approved planning may proceed for **Working Chapter 014** while Issue #9 remains open. This does not waive any Chapter 13 Definition-of-Done requirement.
+
+Working Chapter 014 may enter Engineering Development only after its Chapter Design Brief defines the required purpose/scope, reader outcomes, Design Basis variables, standards/evidence path, Investigation structure, engineering assets, exclusions/cross-references and acceptance criteria, and receives explicit author approval in accordance with the Definition of Ready.
 
 The recovered book architecture extends well beyond Chapter 013. The PDS does not impose a target chapter count.
 
