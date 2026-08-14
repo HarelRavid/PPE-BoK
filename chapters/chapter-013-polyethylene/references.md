@@ -3,7 +3,8 @@
 **Chapter:** 013 — Polyethylene (PE)  
 **PDS baseline:** 1.0  
 **Status:** Standards-validation candidate  
-**Last authoritative public-source status check:** 2026-08-14
+**Last authoritative public-source status check:** 2026-08-14  
+**Academic/Evidence Review:** PASS for current core claim set — 2026-08-14
 
 ## 1. Source-control rule
 
@@ -98,13 +99,69 @@ Until the full-text holds are closed:
 
 ---
 
-## 5. Supporting literature and evidence
+## 5. Primary academic / experimental evidence
 
-### Foundational / technical literature
+The primary-research set below was directly reviewed for the current Chapter 13 core mechanism claims. Detailed claim mapping and transferability limits are recorded in `reviews/chapter-013/ACADEMIC-EVIDENCE-REVIEW-2026-08-14.md`.
 
-The academic and handbook source layer for Chapter 13 remains subject to the final Academic/Evidence Review. Candidate source families include authoritative polymer-materials texts, plastics-pipe handbooks, peer-reviewed PE slow-crack-growth/fracture literature and professional-organization technical guidance.
+### AE-013-01 — Ductile / SCG long-time failure transition
 
-**Publication rule:** exact bibliographic entries shall be added only after the source has been directly reviewed for the claim it supports. Do not populate this register from memory or generated summaries.
+Brown, N.; Donofrio, J.; Lu, X. “The transition between ductile and slow-crack-growth failure in polyethylene.” *Polymer* 28(8), 1326–1330 (1987). DOI: `10.1016/0032-3861(87)90446-0`.
+
+**Use:** supports the distinction between long-time creep/ductile failure and brittle slow-crack-growth failure and the existence of a mechanism transition under different time/stress conditions.  
+**Limit:** not a universal project transition criterion or design allowable.
+
+### AE-013-02 — Branching / tie molecules / morphology and SCG
+
+Huang, Y.-L.; Brown, N. “Dependence of slow crack growth in polyethylene on butyl branch density: Morphology and theory.” *Journal of Polymer Science Part B: Polymer Physics* 29(1), 129–137 (1991). DOI: `10.1002/polb.1991.090290116`.
+
+**Use:** primary evidence linking branching, lamellar/morphological parameters and tie-molecule concepts to SCG behaviour.  
+**Limit:** quantitative relationships are system/material specific.
+
+### AE-013-03 — Notched constant-load SCG sensitivity
+
+Lu, X.; Zhou, Z.; Brown, N. “A sensitive mechanical test for slow crack growth in polyethylene.” *Polymer Engineering & Science* 37(11), 1896–1900 (1997). DOI: `10.1002/pen.11839`.
+
+**Use:** supports the importance of notch/crack-growth resistance and the sensitivity of SCG to molecular structure and morphology.  
+**Limit:** specimen-level accelerated testing does not establish arbitrary installed-system damage acceptance.
+
+### AE-013-04 — Amorphous-phase mobility / craze-fibril mechanism
+
+Men, Y. F.; Rieger, J.; Enderle, H.-F.; Lilge, D. “The mobility of the amorphous phase in polyethylene as a determining factor for slow crack growth.” *European Physical Journal E* 15(4), 421–425 (2004). DOI: `10.1140/epje/i2004-10059-3`.
+
+**Use:** supports the role of amorphous-phase mobility and craze-fibril development in PE SCG for the materials studied.  
+**Limit:** the reported correlation is not a substitute for product/application-standard qualification.
+
+### AE-013-05 — Morphology influence on HDPE SCG
+
+Pan, Y.; Gao, X.; Wang, Z.; Lei, J.; Li, Z.; Shen, K. “Effect of different morphologies on slow crack growth of high-density polyethylene.” *RSC Advances* 5, 28191–28202 (2015). DOI: `10.1039/C5RA00918A`.
+
+**Use:** experimental evidence that different HDPE morphologies can materially alter SCG behaviour.  
+**Limit:** the special specimen-processing route is not a quantitative surrogate for every extruded pressure-pipe product.
+
+### AE-013-06 — HDPE creep / time-temperature / thermal-history evidence
+
+Pilz, G.; Wurzer, S.; Morak, M.; Pinter, G. “Assessment of the stepped isothermal method for accelerated creep testing of high-density polyethylene.” *Mechanics of Time-Dependent Materials* 26, 775–790 (2022). DOI: `10.1007/s11043-021-09512-1`.
+
+**Use:** experimental evidence for time- and temperature-dependent HDPE creep/viscoelastic response, non-linearity at higher loading/temperature and thermal-history/morphology effects.  
+**Limit:** SIM on the tested HDPE material is not the ISO 9080 normative pipe-form qualification route.
+
+### AE-013-07 — Long-term plasticity-controlled PE100 failure
+
+Kanters, M. J. W.; Remerie, K.; Govaert, L. E. “A new protocol for accelerated screening of long-term plasticity-controlled failure of polyethylene pipe grades.” *Polymer Engineering & Science* 56(6), 676–688 (2016). DOI: `10.1002/pen.24294`.
+
+**Use:** primary PE100 pipe-grade evidence that long-term failure behaviour is rate/time/temperature dependent and cannot be inferred from one short-term strength number.  
+**Limit:** research protocol, not the governing classification/product-standard method.
+
+### AE-013-08 — Cyclic crack growth / SCG in HDPE pipe
+
+Gao, B.; Luo, M.; Lin, K.; Ding, J.; Liu, B. “Fatigue crack growth and slow crack growth of HDPE pipes under internal pressure and flat plate compression.” *International Journal of Pressure Vessels and Piping* 208, 105155 (2024). DOI: `10.1016/j.ijpvp.2024.105155`.
+
+**Use:** primary pipe-level evidence that pulsatile loading and local cracks can affect HDPE crack growth and that fatigue/SCG interactions require separate engineering attention.  
+**Limit:** no universal fatigue design curve or cycle limit is inferred from the tested geometry/conditions.
+
+### Academic review disposition
+
+The current core non-normative material/mechanism claim set is **adequately supported for Chapter 13 engineering depth**. Future new material technical claims reopen Academic/Evidence Review for those claims. Deeper polymer morphology, constitutive viscoelasticity, fracture mechanics and fatigue methodology remain intentionally allocated to later dedicated chapters.
 
 ### Historical project literature
 
@@ -120,8 +177,9 @@ Project-internal literature reviews and earlier Chapter 13 development artifacts
 | Equations / units / worked-example arithmetic | Technical Review passed in redevelopment evidence |
 | Current standards identity / public scope / lifecycle status | Rechecked against official ISO public records on 2026-08-14 |
 | Current authoritative clause/table/equation validation | **OPEN — controlled holds SVH-013-01 through SVH-013-05** |
-| Academic / peer-reviewed evidence normalization | OPEN |
-| Final editorial/source formatting | OPEN |
+| Academic / peer-reviewed evidence normalization | **PASS for current core claim set — review dated 2026-08-14** |
+| Final claim-level citation placement / source formatting | OPEN — editorial stage |
+| Final editorial/style review | OPEN |
 | Design Freeze | BLOCKED until required holds and Definition-of-Done gates close |
 
 ---
