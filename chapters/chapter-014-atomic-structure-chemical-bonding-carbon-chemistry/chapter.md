@@ -1582,13 +1582,300 @@ That is the subject of Investigation 7.
 
 # Investigation 7 — What Do sp, sp2, sp3, Sigma and Pi Bonds Mean to the Engineer?
 
-**Authoring state:** planned. Evidence research required before development.
+A two-dimensional structural formula can show which atoms are connected, but it does not explain why the local geometry around carbon changes with bonding pattern or why a carbon–carbon double bond behaves differently from a carbon–carbon single bond.
+
+The common organic-chemistry language for this bridge is **hybridization** together with **sigma (σ)** and **pi (π)** bonding.
+
+These are useful models. They must not be mistaken for literal mechanical parts inside the molecule.
+
+IUPAC defines hybridization as a linear combination of atomic orbitals on an atom and notes that hybrid orbitals are commonly used in organic chemistry to describe tetrahedral (`sp3`), trigonal (`sp2`) and digonal/linear (`sp`) atoms. [S014-003]
+
+The chapter therefore uses hybridization as a controlled explanatory model for local bonding geometry and bond symmetry — not as a direct material-property classification.
+
+## 7.1 Hybridization is a model of orbitals, not a physical mixing process
+
+IUPAC defines a **hybrid orbital** as an atomic orbital derived by hybridization of atomic orbitals with different angular-momentum quantum numbers located at the same atom. [S014-003]
+
+The common teaching language says that an `s` orbital and one or more `p` orbitals “mix” to produce hybrid orbitals. That language is acceptable only if the reader remembers what the formal model actually means: a mathematical linear combination used to represent bonding and geometry.
+
+The safe Chapter 014 interpretation is:
+
+> Hybridization is a model for constructing orbitals that are convenient for describing local bonding directions and geometry.
+
+It is **not**:
+
+- a photograph of orbitals physically blending like fluids;
+- a standalone measurable bulk property of the polymer;
+- a rule that every atom in every molecular environment must be described by one perfectly pure `sp`, `sp2` or `sp3` label.
+
+The model is powerful because it organizes geometry. It is dangerous when the label is treated as the engineering conclusion.
+
+## 7.2 `sp3`: the tetrahedral carbon model
+
+In the common localized bonding model, carbon centers associated with four approximately tetrahedrally directed bonding domains are described using `sp3` hybrid orbitals.
+
+IUPAC explicitly connects `sp3` hybridization with tetrahedral atoms. The ideal regular tetrahedral angle is approximately `109.5°` (more precisely about 109°28′ in the regular-tetrahedron reference used by IUPAC terminology). [S014-003]
+
+### Engineering meaning
+
+The important point is not memorizing 109.5°.
+
+It is recognizing that an `sp3` carbon is **not planar**. Its four bonding directions extend in three dimensions.
+
+This matters when an engineer reads a zig-zag skeletal drawing: the printed line drawing is a projection/representation of connectivity, not evidence that the carbon backbone is literally a flat two-dimensional zig-zag.
+
+### Model boundary
+
+Real bond angles can depart from the ideal tetrahedral value because of ring strain, substituents, electronic effects and molecular constraints. The ideal geometry is therefore a reference model, not a tolerance or property specification.
+
+## 7.3 `sp2`: the trigonal-planar carbon model
+
+IUPAC connects `sp2` hybridization with trigonal atoms. For the common trigonal-planar carbon representation, three bonding directions lie approximately in one plane and are separated by about `120°` in the idealized geometry. [S014-003]
+
+The key engineering observation is **planarity at the local center**.
+
+A carbon involved in a conventional carbon–carbon double-bond description is commonly treated as `sp2`-hybridized. Three `sp2` hybrid orbitals provide the local sigma-bonding framework, while one unhybridized `p` orbital remains available for the π component discussed below.
+
+### Why this matters
+
+Compared with a tetrahedral local carbon center, the trigonal-planar model changes:
+
+- local geometry;
+- orientation of substituents;
+- the orbital arrangement available for multiple bonding;
+- rotational constraints when a π interaction is present.
+
+It still does **not** directly provide a polymer modulus, glass-transition temperature, crystallinity or pressure capability.
+
+## 7.4 `sp`: the linear carbon model
+
+IUPAC connects `sp` hybridization with digonal/linear atoms.
+
+In the idealized carbon model, two principal sigma-bonding directions are collinear, corresponding to a local angle near `180°`. Two unhybridized `p` orbitals remain available for π bonding in structures such as a carbon–carbon triple bond.
+
+For Chapter 014, `sp` is included mainly to complete the geometry/bond-order map. Most immediate piping-polymer examples in later Investigations will be dominated by `sp3` and `sp2` carbon chemistry.
+
+The same evidence boundary applies: linear local geometry is a chemistry fact, not a macroscopic material property.
+
+## 7.5 The `sp3 / sp2 / sp` map is local, not a polymer-wide label
+
+A polymer or monomer can contain more than one local bonding environment.
+
+Therefore statements such as:
+
+> “This polymer is sp3.”
+
+are usually too crude unless the speaker is explicitly referring to the relevant carbon centers in a simplified backbone model.
+
+A molecular structure may contain:
+
+- `sp3` carbon centers in saturated regions;
+- `sp2` centers in double bonds or aromatic structures;
+- `sp` centers in triple-bonded structures;
+- heteroatoms whose bonding is not adequately communicated by copying the carbon labels without analysis.
+
+The hybridization descriptor belongs to the **local atom/bonding environment**.
+
+It should not be silently elevated to the level of a complete macromolecule, compound or pipe material.
+
+## 7.6 Sigma and pi: symmetry language with a localized-bond engineering use
+
+IUPAC's `sigma, pi` terminology carries an important caveat: the terms can be used rigorously for molecular orbitals based on symmetry and are also commonly used in a localized two-centre bond description. The chapter must keep those uses conceptually distinct. [S014-003]
+
+At the localized organic-chemistry level useful here:
+
+- a **σ bond** has electron density arranged with symmetry around the internuclear axis and no nodal plane containing that axis in the localized description;
+- a **π bond** has a nodal plane containing the internuclear axis and electron density on opposite sides of that plane in the localized description. [S014-003]
+
+### Why this is useful to an engineer
+
+The model explains why a conventional double bond is not simply “two identical single bonds drawn next to each other.”
+
+In the localized picture:
+
+- a carbon–carbon single bond is represented primarily as one σ bond;
+- a carbon–carbon double bond is represented as one σ component plus one π component;
+- a carbon–carbon triple bond is represented as one σ component plus two mutually oriented π components.
+
+This is the orbital-level reason bond order changes geometry and rotational behavior.
+
+## 7.7 Rotation: replace the phrase “single bonds rotate freely” with a barrier model
+
+A common textbook shortcut says:
+
+> “Single bonds rotate freely; double bonds do not rotate.”
+
+The first half is too absolute.
+
+IUPAC defines a **rotational barrier** as the potential-energy barrier associated with changing torsion angle. IUPAC also restricts the phrase **free rotation** to cases where the barrier is low enough that different conformations are not perceptible on the experimental time scale. [S014-003]
+
+So the correct engineering model is:
+
+> Rotation about a formally single bond may permit conformational change, but it normally occurs on an energy landscape with a finite rotational barrier.
+
+### Why a double bond is more constrained
+
+In the localized σ/π model, rotation around the internuclear axis of a carbon–carbon double bond would disrupt the parallel alignment required for effective π overlap.
+
+That creates a qualitatively different rotational constraint from an ordinary single σ bond.
+
+The chapter intentionally does **not** attach one universal numerical rotation barrier to “single” or “double” bonds. Actual barriers depend on molecular context, substituents, conjugation, sterics and other factors.
+
+### Polymer relevance
+
+The local ability or inability to change torsion angle is one ingredient in chain conformational freedom.
+
+It is not the whole polymer mobility problem. Real chain mobility also depends on:
+
+- neighboring bond sequences;
+- side groups;
+- intermolecular interactions;
+- chain architecture;
+- morphology;
+- temperature;
+- time scale.
+
+Those higher-level effects belong mainly to Chapters 016–019.
+
+## 7.8 FIG-014-003 — Carbon hybridization and geometry — conceptual specification complete
+
+The figure shall show three side-by-side idealized local carbon environments.
+
+### Panel A — `sp3`
+
+- four directed hybrid-orbital/bonding domains;
+- tetrahedral geometry;
+- ideal reference angle approximately `109.5°`;
+- explicit label: **3D local geometry — not a flat skeletal drawing**.
+
+### Panel B — `sp2`
+
+- three `sp2` directions in one plane;
+- ideal trigonal-planar spacing approximately `120°`;
+- one unhybridized `p` orbital perpendicular to the plane;
+- explicit label: **local model used for conventional C=C description**.
+
+### Panel C — `sp`
+
+- two collinear `sp` directions;
+- ideal local angle approximately `180°`;
+- two mutually perpendicular unhybridized `p` orbital directions;
+- explicit label: **local model used for conventional C≡C description**.
+
+### Figure warnings
+
+The final graphic shall state:
+
+1. these are idealized local models;
+2. actual molecular geometry can deviate from ideal angles;
+3. hybridization is an explanatory orbital model, not a bulk polymer property;
+4. a molecule may contain multiple local hybridization environments.
+
+Graphic production remains pending; the scientific specification is now defined.
+
+## 7.9 FIG-014-004 — Sigma and pi bonding in ethylene — partial specification
+
+Investigation 7 establishes the generic orbital concept. Investigation 8 will complete the ethylene-specific figure.
+
+The figure shall eventually show:
+
+- the C–C internuclear axis;
+- the σ component along that axis;
+- one unhybridized `p` orbital on each `sp2` carbon;
+- side-by-side overlap producing the localized π description above/below the molecular plane;
+- the nodal-plane concept;
+- a rotation arrow crossed out or annotated to show that loss of `p`-orbital alignment would disrupt the π interaction.
+
+The final figure must **not** imply that electrons travel in fixed loops or that the colored lobes are hard physical objects.
+
+## 7.10 From local geometry to an engineering mechanism hypothesis
+
+Hybridization and σ/π descriptions help an engineer identify local structural constraints.
+
+For example, a change from a saturated single-bonded carbon framework to a region containing `sp2` centers can plausibly change:
+
+- local geometry;
+- torsional freedom;
+- planarity;
+- electron distribution;
+- chemical reactivity pathways.
+
+Those are mechanism-level statements.
+
+The chapter does not allow the next unsupported leap:
+
+`more sp2 carbon → stiffer / stronger / hotter-service pipe`
+
+The actual material consequence depends on how much of the structure is affected, how the units are distributed, molecular weight, chain architecture, morphology, processing and the measured property of interest.
+
+## 7.11 Common mistakes / Failure Lens
+
+### Mistake 1 — “Hybrid orbitals are physical objects that literally mix”
+
+Why it fails: IUPAC defines hybridization as a linear combination of atomic orbitals. The model is a representation of bonding/electron distribution.
+
+### Mistake 2 — “sp3 means 109.5° exactly everywhere”
+
+Why it fails: tetrahedral geometry is an idealized reference; real bond angles can deviate because of molecular environment and constraints.
+
+### Mistake 3 — “sp2 means the whole polymer is planar”
+
+Why it fails: `sp2` describes a local atom/bonding environment. A macromolecule can contain many local environments and higher-level conformations.
+
+### Mistake 4 — “A double bond is two identical single bonds”
+
+Why it fails: in the localized model a double bond contains σ and π components with different symmetry/orbital character.
+
+### Mistake 5 — “Single bonds rotate with zero resistance”
+
+Why it fails: IUPAC's rotational-barrier concept recognizes a finite energy landscape; `free rotation` is conditional on barrier and observation time scale.
+
+### Mistake 6 — “Double bonds can never rotate under any circumstance”
+
+Why it fails: the useful engineering statement is that the π component creates a substantial rotational constraint in the ordinary bonded state; reaction, excitation or bond-breaking pathways are different questions.
+
+### Mistake 7 — “Hybridization predicts the pipe property”
+
+Why it fails: hybridization is a local chemistry descriptor. Bulk behavior requires architecture, morphology, formulation, processing and material evidence.
+
+### Mistake 8 — “σ and π always refer to one simple localized bond picture”
+
+Why it fails: IUPAC notes rigorous molecular-orbital symmetry usage as well as localized bond usage. The context must be stated.
+
+## 7.12 Verification
+
+Before accepting a hybridization/σ–π explanation in Chapter 014, check:
+
+1. Is hybridization described as a linear-combination/model concept rather than a literal physical mixing event?
+2. Are `sp3`, `sp2` and `sp` tied to idealized local tetrahedral, trigonal and linear/digonal geometries?
+3. Are numerical angles presented as ideal/reference values rather than tolerances or universal measured values?
+4. Is the local hybridization descriptor kept separate from whole-polymer morphology or property claims?
+5. Are σ and π uses clearly identified as localized-bond language where that model is being used?
+6. Is rotation around a single bond described with a rotational barrier rather than as absolutely free?
+7. Is double-bond rotational constraint linked to the π-overlap model without inventing a universal barrier value?
+8. Has the text stopped before ethylene polymerization chemistry owned by Investigation 8 / Chapter 015?
+
+## 7.13 Engineering decision from Investigation 7
+
+> Use `sp3`, `sp2` and `sp` hybridization as idealized local orbital/geometry models, and use σ/π language to explain why single and multiple carbon–carbon bonds differ in symmetry and rotational constraint. These descriptors explain local molecular mechanisms; they do not directly determine bulk polymer or piping performance.
+
+The engineer should now be able to interpret a simple carbon structure at three levels:
+
+1. **connectivity** — which atoms are connected;
+2. **local geometry/orbital model** — `sp3`, `sp2` or `sp` where appropriate;
+3. **bond-component model** — σ only for the ordinary single-bond picture, σ+π for the ordinary double-bond picture, and σ+2π for the ordinary triple-bond picture.
+
+The chapter can now apply this framework to the most important bridge molecule for polyethylene:
+
+> **ethylene (ethene), with its carbon–carbon double bond.**
+
+That is the subject of Investigation 8.
 
 ---
 
 # Investigation 8 — What Is Special About Ethylene?
 
-**Authoring state:** planned.
+**Authoring state:** planned. Evidence research required before development.
 
 ---
 
@@ -1610,15 +1897,15 @@ That is the subject of Investigation 7.
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
 | FIG-014-002 | Primary and secondary bonding map | Scientific/conceptual specification complete through Investigation 5; graphic production pending |
-| FIG-014-003 | Carbon hybridization and geometry | Planned for Investigation 7 |
-| FIG-014-004 | Sigma and pi bonding in ethylene | Planned |
+| FIG-014-003 | Carbon hybridization and geometry | Scientific/conceptual specification complete in Investigation 7; graphic production pending |
+| FIG-014-004 | Sigma and pi bonding in ethylene | Partial scientific specification integrated in Investigation 7; complete in Investigation 8 |
 | FIG-014-005 | Ethylene to polyethylene bridge | Planned |
 | FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; figure planned |
 | TAB-014-001 | Bonding types and engineering relevance | Primary-bonding + intermolecular-interaction rows integrated through Investigation 5 |
 | TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Initial carbon-structure inference table integrated in Investigation 6; extend in Investigation 9 |
 | TAB-014-003 | Controlled polymer-structure examples | Planned |
 | TAB-014-004 | Downstream chapter ownership crosswalk | Planned |
-| EX-014-001 | Reading ethylene and PE repeat unit | Planned |
+| EX-014-001 | Reading ethylene and PE repeat unit | Planned for Investigation 8 |
 | EX-014-002 | Comparing two simple polymer structures | Planned |
 | WF-014-001 | Chemical structure → evidence → decision boundary | Logic introduced; final asset planned |
 | CL-014-001 | Before inferring engineering behaviour from chemical structure | Planned |
