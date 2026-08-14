@@ -4,7 +4,7 @@
 **PDS baseline:** 1.0  
 **Current stage:** Engineering Development  
 **CDB author approval:** 2026-08-14  
-**Development checkpoint:** Investigations 1–7 authored
+**Development checkpoint:** Investigations 1–8 authored
 
 ## 1. Gate status
 
@@ -12,14 +12,14 @@
 |---|---|---|
 | CDB / Definition of Ready | PASS | Author explicitly approved CDB-014 on 2026-08-14 |
 | Technical Outline | ACTIVE | 10-Investigation implementation path defined |
-| Evidence Plan | ACTIVE | Terminology/evidence checkpoints complete through Investigation 7 |
-| Engineering Development | IN PROGRESS | Investigations 1–7 authored; Investigations 8–10 not yet developed |
+| Evidence Plan | ACTIVE | Terminology/evidence checkpoints complete through Investigation 8; Investigation 9 primary-literature gate now active |
+| Engineering Development | IN PROGRESS | Investigations 1–8 authored; Investigation 9 blocked on primary literature; Investigation 10 not yet developed |
 | Physics / scientific correctness review | PENDING | Formal review after broader development checkpoint |
-| Standards / terminology validation | PARTIAL | Current ISO lifecycle recorded; IUPAC terminology/recommendations checked through Investigation 7; final validation later |
-| Academic / primary evidence review | PARTIAL | Foundational IUPAC sources reviewed; polymer-specific primary literature remains mandatory before load-bearing structure→property claims |
-| Equations | N/A CURRENT SCOPE | No design/calculation equation introduced through Investigation 7 |
-| Units | N/A CURRENT SCOPE | No quantitative engineering calculation introduced through Investigation 7 |
-| Examples | PENDING | First controlled worked interpretation planned in Investigation 8 |
+| Standards / terminology validation | PARTIAL | Current ISO lifecycle recorded; IUPAC terminology/recommendations checked through Investigation 8; final validation later |
+| Academic / primary evidence review | ACTIVE GATE | Foundational IUPAC sources reviewed; direct polymer primary literature now required before Investigation 9 prose |
+| Equations | N/A CURRENT SCOPE | No design/calculation equation introduced through Investigation 8 |
+| Units | N/A CURRENT SCOPE | No quantitative engineering calculation introduced through Investigation 8 |
+| Examples | PARTIAL | `EX-014-001` integrated; independent scientific/editorial check later; `EX-014-002` blocked with Investigation 9 |
 | Editorial / Style | PENDING | Formal pass after substantive development |
 | Desk Test | PENDING | Required before chapter closure |
 | Final Author Approval | BLOCKED | Requires completion of all chapter gates |
@@ -39,17 +39,22 @@
 
 **PASS for current foundational scope.**
 
-Investigation 6 uses the IUPAC Blue Book standard bonding-number framework and current Gold Book chain/branch/skeletal terminology. It:
-
-- treats carbon's standard bonding number four as a structural/electron-counting convention;
-- rejects tetravalency as the sole explanation of carbon's structural importance;
-- introduces chain/branch/ring connectivity only as structural possibility;
-- defers commercial chain architecture to Chapter 016;
-- distinguishes skeletal formula from polymer skeletal structure;
-- introduces `TAB-014-002` as an inference-control table;
-- introduces no material-specific quantitative property or piping acceptance value.
+Investigation 6 uses the IUPAC Blue Book standard bonding-number framework and Gold Book chain/branch/skeletal terminology. It treats carbon's four-bond convention as necessary context rather than the sole explanation of carbon chemistry, keeps real chain architecture in Chapter 016, distinguishes skeletal formula from 3D geometry, and introduces `TAB-014-002` as an inference-control tool rather than a property-ranking table.
 
 ## 4. Investigation 7 authoring review
+
+**PASS for current foundational scope.**
+
+Directly checked IUPAC terminology for hybridization, hybrid orbital, sigma/pi, rotational barrier, free rotation, conformation and angle strain, plus IUPAC graphical-representation guidance. The Investigation:
+
+- treats hybridization as a local orbital model, not literal physical mixing;
+- uses idealized `sp3` / `sp2` / `sp` geometry with bounded `109.5°` / `120°` / `180°` reference values;
+- distinguishes localized σ/π language from rigorous MO-symmetry use;
+- replaces `single bonds rotate freely` with rotational-barrier/time-scale language;
+- defines `FIG-014-003` and the initial scientific specification for `FIG-014-004`;
+- stops before polymerization chemistry.
+
+## 5. Investigation 8 authoring review
 
 ### Evidence checkpoint
 
@@ -57,41 +62,42 @@ Investigation 6 uses the IUPAC Blue Book standard bonding-number framework and c
 
 Directly checked/used:
 
-- IUPAC Gold Book — hybridization `H02874`;
-- IUPAC Gold Book — hybrid orbital `HT07049`;
-- IUPAC Gold Book — sigma / pi `S05434`;
-- IUPAC Gold Book — rotational barrier `R05408`;
-- IUPAC Gold Book — free rotation `F02520`;
-- IUPAC Gold Book — conformation `C01258`;
-- IUPAC Gold Book — angle strain `A00349`;
-- IUPAC Recommendations 2008 — *Graphical Representation Standards for Chemical Structure Diagrams* for bounded 120° trigonal and 180° linear drawing references and explicit diagram-vs-real-geometry caution.
+- IUPAC nomenclature guidance distinguishing monomer `CH2=CH2` as **ethene** from `ethylene` as a divalent-group name in strict nomenclature, while preserving established industrial/common `ethylene` usage where unambiguous;
+- IUPAC Gold Book — monomer `M04017`;
+- IUPAC Gold Book — monomeric unit `M04018`;
+- IUPAC Gold Book — polymerization `P04740`;
+- IUPAC Gold Book — chain polymerization `C00958`;
+- IUPAC Gold Book — polyolefin `15255`;
+- IUPAC Gold Book — `poly(ethene-1,2-diyl)` `08890`, used specifically as a false-friend warning rather than as a polyethylene synonym;
+- IUPAC regular single-strand polymer nomenclature guidance for `polyethene` / `polyethylene` source-based naming and `poly(methylene)` structure-based context.
 
 ### Scope compliance
 
 **PASS for current foundational scope.**
 
-Investigation 7:
+Investigation 8:
 
-- defines hybridization as a linear-combination/orbital model rather than a literal physical mixing process;
-- uses `sp3`, `sp2`, `sp` as idealized **local** tetrahedral, trigonal-planar and linear/digonal carbon models;
-- presents `109.5°`, `120°`, `180°` only as ideal/reference values, not exact universal molecular angles;
-- distinguishes local atom hybridization from whole-polymer morphology or material classification;
-- uses IUPAC's explicit caveat that sigma/pi language can refer to rigorous molecular-orbital symmetry or to the localized two-centre bond model;
-- explains the ordinary localized C–C single/double/triple pictures as σ, σ+π and σ+2π respectively;
-- replaces the absolute phrase `single bonds rotate freely` with rotational-barrier and observation-time language;
-- explains double-bond rotational constraint through the π-overlap model without assigning an unsupported universal barrier;
-- defines the scientific specification for `FIG-014-003`;
-- partially defines `FIG-014-004` for completion in Investigation 8;
-- stops before ethylene polymerization mechanisms owned by Investigation 8 / Chapter 015;
-- introduces no material-specific quantitative property or piping design-acceptance claim.
+- identifies `CH2=CH2` as ethene and explicitly controls industrial/common `ethylene` usage;
+- applies the Investigation 7 local `sp2` / σ+π model to ethene without reopening orbital theory;
+- explains why the C=C feature is chemically relevant while stopping before an actual chain-growth mechanism;
+- presents `CH2=CH2 → [–CH2–CH2–]n` only as a **structural comparison**, explicitly not as a polymerization mechanism;
+- distinguishes monomer, monomeric unit and CRU concepts;
+- defers initiation, propagation, termination, chain transfer, radical chemistry, Ziegler–Natta/metallocene catalysis, kinetics, molecular-weight control and branching control to Chapters 015–016;
+- explicitly warns that ordinary saturated polyethylene is not `poly(ethene-1,2-diyl)`;
+- completes the scientific specifications for `FIG-014-004` and `FIG-014-005`;
+- integrates `EX-014-001 — Reading ethene and the PE repeat unit`;
+- explicitly states that `[–CH2–CH2–]n` does not define PE80, PE100, SCG resistance, morphology, additive package, pressure rating, chemical compatibility, service temperature or joining parameters;
+- introduces no material-specific design-acceptance value.
 
 ### Evidence disposition
 
-**PASS for current stable foundational scope, subject to later formal scientific review.**
+**PASS for current nomenclature/structural-bridge scope, subject to later formal scientific/editorial review.**
 
-No polymer-specific primary paper is load-bearing in Investigation 7 because the retained claims concern established orbital/bonding models and deliberately stop before material-specific structure→property magnitudes.
+`EX-014-001` is integrated as a controlled teaching example but still requires an independent scientific/editorial check before chapter closure.
 
-## 5. Scientific simplification risks to monitor
+No material-specific structure→property claim is load-bearing in Investigation 8. The next Investigation deliberately changes that evidence level and therefore remains blocked until direct primary literature is reviewed.
+
+## 6. Scientific simplification risks to monitor
 
 1. Do not treat the chapter hierarchy as a strict one-way causal chain.
 2. Do not assign bulk properties directly from bond type, polarity, interaction type or hybridization.
@@ -110,35 +116,44 @@ No polymer-specific primary paper is load-bearing in Investigation 7 because the
 15. Do not say single bonds have zero rotational barrier.
 16. Do not say double bonds are merely two identical single bonds.
 17. Distinguish localized σ/π language from rigorous molecular-orbital symmetry usage.
-18. Keep chemistry-to-compatibility/property examples qualitative until direct material-specific evidence is reviewed.
+18. Do not use a one-line ethene→PE arrow as a reaction mechanism.
+19. Do not silently mix strict ethene/ethylene nomenclature contexts.
+20. Do not use a PE repeat-unit drawing as a grade/material qualification.
+21. Keep chemistry-to-property/compatibility examples qualitative until direct material-specific evidence is reviewed.
 
-## 6. Controlled holds before Investigation 8
+## 7. Controlled hold before Investigation 9 — PRIMARY LITERATURE GATE
 
-Investigation 8 may begin after a focused ethene/ethylene evidence pass confirms the preferred chapter treatment for:
+Investigation 9 is **BLOCKED** until each retained material-specific structure→property bridge has direct primary evidence.
 
-- `ethene` as the preferred systematic name and `ethylene` as the retained common/engineering term where applicable;
-- molecular formula and connectivity of `CH2=CH2`;
-- local `sp2` / trigonal-planar carbon environment;
-- the localized C=C σ+π model and its rotational implication;
-- the conceptual transformation from ethylene monomer connectivity to the polyethylene repeat-unit skeleton;
-- exact wording that distinguishes **structural before/after representation** from the actual polymerization mechanism.
+Before authoring any Investigation 9 prose, the authoring team shall define a small controlled set of examples and, for each example, record:
 
-Investigation 8 shall create/complete:
+1. the exact molecular feature being compared;
+2. the proposed physical/chemical mechanism;
+3. the measured engineering property used to test that mechanism;
+4. the direct primary study/studies reviewed;
+5. material identity and condition;
+6. test temperature/environment/method;
+7. confounders such as molecular weight, crystallinity, morphology, formulation or processing;
+8. transferability to commercial piping compounds;
+9. what conclusion is supported;
+10. what conclusion remains unsupported.
 
-- `FIG-014-004 — Sigma and pi bonding in ethylene`;
-- `FIG-014-005 — Ethylene to polyethylene bridge`;
-- `EX-014-001 — Reading ethylene and the PE repeat unit`.
+A review paper may locate candidate literature but shall not close the gate for a load-bearing claim. The underlying primary work must be reviewed directly.
 
-The Investigation shall **stop before** radical initiation/propagation, Ziegler–Natta/metallocene catalysis, kinetics and process–structure relationships, which are owned by Chapter 015.
+`EX-014-002` and `TAB-014-003` remain blocked with this gate.
 
-## 7. Controlled holds before Investigation 9
+## 8. Controlled hold before Investigation 10
 
-Investigation 9 is **BLOCKED** until direct primary sources are selected and reviewed for each material-specific structure–property example retained in the chapter.
+Investigation 10 shall not be authored until Investigation 9 establishes the final evidence-qualified structure→property examples. Investigation 10 will then formalize:
 
-The authoring team shall not backfill unsupported examples after writing.
+- `FIG-014-006`;
+- `WF-014-001`;
+- `CL-014-001`;
+- `TAB-014-004` downstream chapter ownership;
+- the final chemistry→engineering decision boundary.
 
-## 8. Current decision
+## 9. Current decision
 
-**CONTINUE ENGINEERING DEVELOPMENT SEQUENTIALLY TO INVESTIGATION 8 RESEARCH.**
+**STOP SEQUENTIAL AUTHORING AT THE INVESTIGATION 9 PRIMARY-LITERATURE GATE; BEGIN DIRECT PRIMARY-LITERATURE RESEARCH.**
 
-Investigations 1–7 are controlled authoring candidates on the development branch. The chapter is not ready for technical closure, merge to `main`, or publication. Formal scientific/technical review remains a later gate after a broader substantive checkpoint.
+Investigations 1–8 are controlled authoring candidates on the development branch. The chapter is not ready for technical closure, Ready-for-Review transition, merge to `main`, or publication. Investigation 9 prose must not be written until its direct-evidence gate is formally satisfied.
