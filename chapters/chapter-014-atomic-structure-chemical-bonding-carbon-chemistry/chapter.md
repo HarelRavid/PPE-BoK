@@ -412,7 +412,213 @@ The investigations that follow build the chemistry needed to make Level 1 accura
 
 # Investigation 2 — What Is Matter Made of at the Useful Engineering Scale?
 
-**Authoring state:** planned. Evidence research required before development.
+A piping engineer does not need a complete model of subatomic physics to understand polymer chemistry. The useful starting point is simpler: identify the **chemical entities** that make up a material, distinguish the names used for different levels of description, and know which level is relevant to the engineering question.
+
+The vocabulary matters because careless language produces careless reasoning. An atom is not an element. An element is not a molecule. A molecule is not the same thing as a bulk chemical substance. And not every chemical substance is best imagined as a collection of discrete molecules.
+
+For Chapter 014, the working hierarchy is:
+
+`atom → elemental identity → molecular entity / molecule → chemical substance → polymeric material → piping product`
+
+This hierarchy is deliberately incomplete. Investigation 3 will add the electron structure required for bonding; later Investigations will add bond type, intermolecular interactions, carbon geometry and polymer-specific structure.
+
+## 2.1 Atom: the smallest level that still carries elemental identity
+
+IUPAC defines an **atom** as the smallest particle that still characterizes a chemical element. Its nucleus carries positive charge and almost all of the atom's mass, while the electrons determine the atom's spatial extent. [S014-003]
+
+At the level needed here, the engineer should retain three ideas:
+
+1. an atom has a positively charged nucleus and electrons;
+2. the number of protons in the nucleus identifies the element;
+3. the arrangement and availability of electrons are what will matter when we discuss bonding.
+
+The third point is the bridge to Investigation 3.
+
+The chapter intentionally stops here. Detailed nuclear structure, quantum numbers, wave functions and atomic spectroscopy are not required to answer the polymer-engineering questions defined by CDB-014.
+
+### Engineering use
+
+When reading a repeat-unit or molecular formula, the first useful question is simply:
+
+> **Which elements are present?**
+
+Carbon and hydrogen dominate many polymer backbones, but other piping polymers introduce atoms such as chlorine, fluorine or oxygen into the molecular structure. The presence of a different element changes the available bonding and electron-distribution possibilities. It does not, by itself, determine the finished material's engineering performance.
+
+## 2.2 Atomic number: what makes carbon carbon?
+
+IUPAC uses the symbol `Z` for **atomic number**, also called proton number, and defines it as the number of protons in the atomic nucleus. [S014-003]
+
+That is the identity rule for an element.
+
+If the proton number changes, the element changes. Carbon is carbon because its atoms have the proton number associated with carbon; fluorine and chlorine have different proton numbers and therefore different elemental identities.
+
+For Chapter 014, atomic number is not introduced as a quantity to calculate with. Its value is conceptual: it explains why the periodic table represents different elemental identities rather than different grades of the same material.
+
+### What atomic number does not tell the engineer
+
+Atomic number alone does not establish:
+
+- how atoms are bonded in a molecule;
+- whether a bond is polar;
+- molecular geometry;
+- chain architecture;
+- crystallinity;
+- modulus or tensile strength;
+- chemical resistance;
+- pressure capability.
+
+Those require additional structural and engineering information.
+
+## 2.3 Chemical element: a category of atoms, not a piece of bulk material
+
+IUPAC gives **chemical element** two closely related usages: a species of atoms having the same number of protons, and a pure chemical substance composed of such atoms. [S014-003]
+
+The dual usage is worth knowing because engineering language often shifts between them without warning.
+
+For example, the statement “the polymer contains fluorine” usually refers to elemental identity within the molecular structure. It does **not** mean the pipe contains bulk elemental fluorine as a separate phase.
+
+Similarly, saying that polyethylene contains carbon and hydrogen identifies the elements from which its molecular structure is built. It does not describe the macroscopic material formulation, morphology or properties.
+
+### Engineering decision rule
+
+When an elemental name appears in a material discussion, ask:
+
+> Is the speaker describing **elemental identity inside a chemical structure**, or a **separate chemical substance / phase** actually present in the material or process?
+
+Those are different engineering statements.
+
+## 2.4 Molecule versus molecular entity
+
+The word **molecule** is useful but narrower than many engineers assume.
+
+IUPAC defines a molecule as an electrically neutral entity consisting of more than one atom. [S014-003]
+
+IUPAC uses **molecular entity** as the broader singular term. A molecular entity can be an atom, molecule, ion, ion pair, radical, complex or another constitutionally distinguishable entity. [S014-003]
+
+This distinction becomes useful whenever charge or non-molecular structures matter.
+
+### Why Chapter 014 prefers “molecular entity” when precision matters
+
+If the chapter is discussing a neutral organic molecule such as ethylene, **molecule** is appropriate.
+
+If the discussion needs to include ions or other individually distinguishable chemical entities, **molecular entity** is safer and more general.
+
+This prevents a common simplification in engineering explanations:
+
+> “Everything in chemistry is a molecule.”
+
+That statement is not precise enough for later discussions of ionic bonding, salts, charged species or chemical interactions.
+
+## 2.5 Chemical substance: the macroscopic bridge
+
+The phrase **chemical substance** moves the discussion from one entity to matter in bulk.
+
+IUPAC describes a chemical substance as matter of constant composition best characterized by the entities from which it is made; those entities may be molecules, formula units or atoms. [S014-003]
+
+This is an important boundary for engineers because it prevents another classroom shortcut:
+
+> A bulk substance is not always best represented as a pile of identical discrete molecules.
+
+Depending on the material, the useful entity may instead be an atom, a formula unit or another structural description.
+
+For the polymer engineer, this distinction prepares the way for a later step: even a chemically identified polymer substance is still not the same thing as a **commercial piping compound**. A finished compound may contain stabilizers, pigments, fillers or other constituents and will also have a specific molecular-weight distribution, morphology and processing history.
+
+Those additional levels are intentionally deferred to later chapters.
+
+## 2.6 What should we do with the word “compound”?
+
+In normal engineering language, **compound** is often used as a broad chemical word for matter formed from more than one element, and in plastics engineering the word **compound** is also commonly used for the formulated polymer material supplied for processing.
+
+Those two usages can collide.
+
+Chapter 014 therefore applies a terminology rule:
+
+- use **chemical substance**, **molecule** or **molecular entity** when discussing chemistry at the atomic/molecular level;
+- use **polymer compound** or **piping compound** when referring to the formulated engineering material;
+- do not assume that the word “compound” by itself tells the reader which meaning is intended.
+
+This terminology discipline is especially important in later material-selection and qualification chapters, where “compound” may refer to a qualified formulation rather than merely a chemical composition.
+
+## 2.7 The engineering abstraction: stop at the scale that answers the question
+
+A good engineering model contains enough detail to answer the question and no more detail than necessary.
+
+For the current chapter:
+
+- **Atomic identity** is needed to know which elements are present.
+- **Electron structure** is needed to explain bonding — Investigation 3.
+- **Bonding and molecular geometry** are needed to explain structural possibilities — Investigations 4–8.
+- **Measured material properties** are needed to quantify engineering behaviour.
+- **Product/application qualification** is needed to support real piping acceptance.
+
+Going deeper into nuclear physics does not improve those decisions. Stopping before electron structure, however, would leave the bonding discussion unsupported.
+
+That establishes the lower and upper boundaries of the atomic model used in PPE-BoK.
+
+## 2.8 A practical reading method for chemical formulas
+
+When a piping engineer encounters a chemical or repeat-unit formula, use the following first pass:
+
+1. **Identify the elements.** Which elemental symbols are present?
+2. **Identify the entity being represented.** Is this a molecule, repeat unit, ion or another representation?
+3. **Do not infer bonding from composition alone.** The same elements can be connected in different structures.
+4. **Do not infer bulk properties from the formula alone.** Molecular architecture, morphology, formulation and processing are still missing.
+5. **Route the next question.** If the issue is how electrons produce bonds, move to Investigation 3; if it is how carbon geometry affects structure, move later in the chapter.
+
+This five-step reading method is intentionally modest. Its purpose is to prevent category errors before more advanced structure–property reasoning begins.
+
+## 2.9 Common mistakes / Failure Lens
+
+### Mistake 1 — “Atom” and “element” mean the same thing
+
+Why it fails: an atom is an individual chemical entity; an element identifies the species/category defined by proton number and may also refer to the corresponding pure substance depending on context.
+
+### Mistake 2 — “Every chemical substance is made of molecules”
+
+Why it fails: IUPAC's chemical-substance definition explicitly allows characterization by molecules, formula units or atoms.
+
+### Mistake 3 — “If I know which elements are present, I know the material properties”
+
+Why it fails: elemental composition does not specify connectivity, geometry, electron distribution, chain architecture, morphology, formulation or manufacturing history.
+
+### Mistake 4 — “Compound” has one unambiguous meaning
+
+Why it fails: chemical usage and plastics-compounding usage are different enough to create engineering ambiguity unless the intended meaning is stated.
+
+### Mistake 5 — teaching atomic detail that has no engineering consequence
+
+Why it fails: unnecessary quantum or nuclear detail obscures the chapter's actual purpose — explaining the chain from chemistry to bounded engineering reasoning.
+
+## 2.10 Verification
+
+Before accepting an atomic/molecular statement in Chapter 014, check:
+
+1. Is the term being used consistently with the current IUPAC terminology source?
+2. Is the statement about an individual entity, a species/category, or a bulk substance?
+3. Does the wording accidentally imply that all substances are molecular?
+4. Does the explanation include only the subatomic detail needed for the next engineering mechanism?
+5. Has any bulk-property conclusion been introduced without the missing structural/material evidence?
+
+If the answer to item 5 is yes, the statement has crossed the Chapter 014 evidence boundary and must be revised or supported at the correct evidence level.
+
+## 2.11 Engineering decision from Investigation 2
+
+> Use atomic and chemical terminology to identify **what the material is made from and what level of chemical entity is being described**. Do not treat elemental identity or a simple formula as a proxy for molecular structure or bulk engineering performance.
+
+After Investigation 2, the engineer should be able to distinguish:
+
+- **atom** — an individual entity carrying elemental identity;
+- **atomic number `Z`** — the proton count defining that elemental identity;
+- **chemical element** — the category/species of atoms sharing that proton number, with a context-dependent pure-substance usage;
+- **molecule** — a neutral multi-atom entity;
+- **molecular entity** — the broader singular chemical-entity concept;
+- **chemical substance** — matter of defined composition characterized by its constituent entities.
+
+The next question is now unavoidable:
+
+> If elemental identity is fixed by the nucleus, **which electrons determine how those atoms can bond?**
+
+That is the subject of Investigation 3.
 
 ---
 
@@ -468,7 +674,7 @@ The investigations that follow build the chemistry needed to make Level 1 accura
 
 | ID | Asset | Status |
 |---|---|---|
-| FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1 |
+| FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
 | FIG-014-002 | Primary and secondary bonding map | Planned |
 | FIG-014-003 | Carbon hybridization and geometry | Planned |
 | FIG-014-004 | Sigma and pi bonding in ethylene | Planned |
