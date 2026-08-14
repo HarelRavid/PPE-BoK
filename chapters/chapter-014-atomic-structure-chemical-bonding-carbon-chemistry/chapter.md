@@ -820,13 +820,231 @@ That is the subject of Investigation 4.
 
 # Investigation 4 — What Are Primary Bonds and Why Do Material Classes Differ?
 
-**Authoring state:** planned. Evidence research required before development.
+Engineers often classify bonding into simple categories — covalent, ionic and metallic — and then attach a list of bulk properties to each category. That can be useful as a first orientation, but it becomes misleading if the categories are treated as perfectly pure or if a bulk material property is claimed to follow directly from one bond label.
+
+Chapter 014 therefore uses **primary bonding** as an engineering teaching category, not as a claim that every real material belongs to one chemically pure box.
+
+The working rule is:
+
+> A bonding model describes how electron density and electrostatic interactions stabilize a structure. Bulk material behaviour emerges only after structure, scale, defects, morphology, processing and loading are added.
+
+Investigation 4 establishes the primary-bonding models. Investigation 5 will deal with interactions between molecular entities and polymer chains that are not the covalent backbone bonds themselves.
+
+## 4.1 Covalent bonding: shared electron density between nuclei
+
+IUPAC defines a **covalent bond** in terms of a region of relatively high electron density between nuclei that arises at least partly from electron sharing and produces an attractive force and characteristic internuclear distance. [S014-003]
+
+For polymer engineering, this is the key model behind the bonds that build many organic polymer backbones and side groups.
+
+The useful engineering statement is not “covalent bonds make polymers strong.” It is more precise:
+
+> Covalent bonding establishes the chemical connectivity of the polymer molecule or network.
+
+That connectivity determines which atoms belong to the same molecular structure and which bond rotations, geometries and reaction pathways are possible. Later chapters then add molecular weight, branching, crosslinking, morphology and other factors that govern how a population of those molecules behaves as a material.
+
+### What covalent bonding does not establish by itself
+
+Knowing that a backbone is covalently bonded does not directly establish:
+
+- tensile strength;
+- elastic modulus;
+- creep resistance;
+- fracture toughness;
+- melting or softening temperature;
+- permeability;
+- chemical compatibility;
+- pressure rating.
+
+Those are higher-level material and product questions.
+
+## 4.2 Ionic bonding: electrostatic attraction, but not a perfectly separate universe
+
+IUPAC describes an **ionic bond** in strict terms as electrostatic attraction between the charges of a cation and an anion. It also makes a particularly important qualification: in practice it is preferable to consider the **amount of ionic character** rather than forcing bonds into purely ionic or purely covalent categories. [S014-003]
+
+This matters because introductory diagrams often imply a sharp boundary:
+
+`electron shared → covalent`
+
+`electron transferred → ionic`
+
+Real bonding can contain mixed character. The binary picture is a useful teaching limit, not a complete description of every solid or chemical bond.
+
+### Engineering consequence of the continuum
+
+When a material or chemical species is described as “ionic,” the engineer should ask what is actually meant:
+
+- Are discrete ions present in a fluid?
+- Is an ionic crystal or salt being described?
+- Is the statement really about significant ionic character in a bond?
+- Is the issue chemical interaction with a polymer rather than the bonding inside the polymer itself?
+
+These are different engineering contexts.
+
+The chapter therefore avoids using “ionic” as a shortcut for a fixed set of mechanical properties.
+
+## 4.3 Metallic bonding: use verified electron delocalization rather than a cartoon
+
+For the current authoring pass, Chapter 014 does not rely on an invented stand-alone IUPAC definition of “metallic bond.” Instead, it uses IUPAC's current definition of **delocalization of electrons**.
+
+IUPAC notes that a delocalized electron is not associated with one particular atom or one particular covalent bond, but occupies an extended orbital over several atoms or an entire lattice; extensive electron delocalization is typical of metals. [S014-003]
+
+That gives the engineering model we need:
+
+> In a metallic solid, bonding cannot be represented adequately as a collection of isolated two-atom covalent bonds. Electron density is extended through the structure.
+
+The familiar phrase “sea of electrons” can be a teaching analogy, but it should not be mistaken for a complete electronic-structure model.
+
+### What this does and does not explain
+
+Extended electron delocalization helps explain why metallic bonding must be treated differently from localized molecular bonding. It is also relevant to electronic behaviour.
+
+It does **not**, by itself, prove that a particular metal is ductile, strong, corrosion resistant or suitable for a piping interface. Alloy composition, crystal structure, phases, defects, grain structure, heat treatment, temperature and environment all remain relevant.
+
+## 4.4 Material classes are not bond labels
+
+A useful materials-science orientation is to compare polymers, metals and ceramics. But the comparison must be made at the correct level.
+
+### Polymers
+
+Many polymer molecules are built from covalent bonds along the backbone and side groups. The bulk polymer, however, is not held together only by one type of interaction. Intermolecular interactions, chain entanglement, molecular architecture and morphology become essential to macroscopic behaviour.
+
+Investigation 5 owns the intermolecular-interaction layer; Chapters 016–020 own the larger chain/morphology/time/failure consequences.
+
+### Metals
+
+Metals are usefully distinguished by extended electron delocalization through the lattice. That is a bonding/electronic-structure distinction.
+
+It is not a complete mechanical model of a metal.
+
+### Ceramics and inorganic solids
+
+Many ceramic and inorganic solids contain substantial ionic and/or covalent bonding character. Treating “ceramic” as synonymous with “purely ionic” is therefore unsafe.
+
+Chapter 014 does not attempt to derive ceramic fracture mechanics or metal plasticity from bonding alone. Those would require a proper materials-science treatment beyond this chapter's purpose.
+
+### The engineering lesson
+
+> Bonding helps explain why material classes require different physical models, but material class and bond type are not interchangeable labels.
+
+## 4.5 Bond polarity is not the same question as bond category
+
+Investigation 3 introduced electronegativity and uneven electron distribution. Investigation 4 now needs one more distinction:
+
+- **bond category/model** asks how the stabilizing interaction is represented;
+- **bond polarity / ionic character** asks how unevenly electron density or charge character is distributed.
+
+A covalent bond can be polar. A bond can have partial ionic character. Therefore, “polar covalent” is not a contradiction, and the covalent/ionic distinction should not be treated as a simple on/off switch.
+
+This becomes important when the chapter later discusses C–H, C–F, C–Cl and other bonds in polymer structures.
+
+## 4.6 TAB-014-001 — Primary bonding models and engineering relevance
+
+| Bonding model / descriptor | Electron / charge picture | Useful engineering interpretation | What must **not** be concluded directly |
+|---|---|---|---|
+| Covalent bonding | Relatively high electron density between nuclei arising at least partly from sharing | Establishes chemical connectivity and local molecular structure | Bulk strength, creep, fracture, pressure rating or service temperature |
+| Ionic character / ionic bonding | Electrostatic attraction between charged species; real bonds may contain varying ionic character | Helps interpret ions, salts and mixed bond character | A fixed mechanical-property set or universal chemical-compatibility rule |
+| Extended electron delocalization typical of metals | Electrons occupy states/orbitals extended over many atoms or the lattice | Distinguishes metallic electronic/bonding structure from localized molecular bonding | Ductility, strength, corrosion resistance or interface suitability without material evidence |
+
+**Table rule:** `TAB-014-001` is not yet complete. Investigation 5 will extend the chapter's bonding map with hydrogen bonding, dipole–dipole and London/dispersion interactions. Those are not to be silently merged into the primary-bond rows.
+
+## 4.7 FIG-014-002 — Primary and secondary bonding map — partial placeholder
+
+The final figure shall separate two levels visually:
+
+**Level A — chemical connectivity / extended solid bonding**
+
+- covalent bonding;
+- ionic character / ionic bonding;
+- extended electron delocalization typical of metallic solids.
+
+**Level B — interactions between molecular entities / chain segments**
+
+- hydrogen bonding;
+- permanent-dipole interactions;
+- London/dispersion interactions;
+- other van der Waals interactions where relevant.
+
+Investigation 5 will complete Level B.
+
+The figure must explicitly avoid ranking these interactions as though one universal energy scale determines all bulk polymer properties.
+
+## 4.8 Why this distinction matters in plastic piping
+
+A piping engineer may encounter statements such as:
+
+- “PE has strong C–C bonds.”
+- “PVDF is polar because of C–F bonding.”
+- “A salt is ionic.”
+- “Metal backing rings behave differently because metals have metallic bonding.”
+
+Each statement may contain a useful chemical clue, but none is yet an engineering design conclusion.
+
+The proper sequence is still:
+
+`bonding description → structural/mechanistic implication → measured material response → qualification / application evidence → engineering decision`
+
+The bonding description is strongest when used to choose the next question, not when used to skip the next question.
+
+## 4.9 Common mistakes / Failure Lens
+
+### Mistake 1 — “Every bond is either 100% ionic or 100% covalent”
+
+Why it fails: IUPAC explicitly recommends considering degree of ionic character rather than forcing real bonds into pure end-member categories.
+
+### Mistake 2 — “Polymer chains have covalent bonds, therefore polymers are mechanically strong in the same way as covalent solids”
+
+Why it fails: intramolecular connectivity is only one structural level. Chain interactions, architecture, morphology, defects, time and temperature still control bulk response.
+
+### Mistake 3 — “Ceramic means ionic”
+
+Why it fails: many ceramic and inorganic solids contain mixed ionic/covalent character; the material class cannot be reduced to one bond label.
+
+### Mistake 4 — “Metallic bonding means the metal will be ductile”
+
+Why it fails: electron delocalization is part of the electronic/bonding picture, while ductility depends on crystal structure, defects, microstructure, temperature, strain rate and other material variables.
+
+### Mistake 5 — “Bond polarity and bond type are the same classification”
+
+Why it fails: polarity/ionic character can vary within bonding models; a covalent bond can be polar.
+
+### Mistake 6 — “Primary bond strength ranks the service temperature of piping materials”
+
+Why it fails: service temperature is a material/product/system property influenced by molecular mobility, morphology, degradation, load duration, qualification and the applicable standard.
+
+## 4.10 Verification
+
+Before accepting a primary-bonding explanation in Chapter 014, check:
+
+1. Is the covalent-bond description consistent with current IUPAC terminology?
+2. Has ionic bonding been treated as a continuum of ionic character rather than an absolute binary where inappropriate?
+3. If metallic behaviour is discussed, is the chapter using verified electron-delocalization language rather than inventing a formal definition?
+4. Has any bulk property been presented as a direct consequence of a single bond label?
+5. Are polymer intrachain covalent bonding and interchain interactions kept as separate structural levels?
+6. Are ceramics and metals used only as bounded comparison classes rather than simplified stereotypes?
+7. Does the wording route property magnitude and design acceptance to measured/qualified evidence?
+
+## 4.11 Engineering decision from Investigation 4
+
+> Use covalent, ionic-character and extended-electron-delocalization models to describe **how a structure is chemically/electronically stabilized**. Do not use a bond label as a substitute for a bulk-material model or a piping qualification decision.
+
+The engineer should now retain four distinctions:
+
+1. covalent bonding establishes localized chemical connectivity through shared electron density;
+2. ionic character exists on a continuum, even though the ideal ionic model is electrostatic attraction between cations and anions;
+3. metals require an extended-electron/delocalized-lattice model rather than only localized two-atom bonds;
+4. bulk properties emerge from bonding **plus** higher structural levels.
+
+That leaves a critical polymer question unanswered:
+
+> If the atoms within a polymer chain are covalently bonded, **what holds neighbouring chains or molecular entities near one another?**
+
+That is the subject of Investigation 5.
 
 ---
 
 # Investigation 5 — What Holds Polymer Molecules Together When They Are Not Covalently Bonded to Each Other?
 
-**Authoring state:** planned.
+**Authoring state:** planned. Evidence research required before development.
 
 ---
 
@@ -865,12 +1083,12 @@ That is the subject of Investigation 4.
 | ID | Asset | Status |
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
-| FIG-014-002 | Primary and secondary bonding map | Planned for Investigations 4–5 |
+| FIG-014-002 | Primary and secondary bonding map | Partial placeholder integrated in Investigation 4; Level B completes in Investigation 5 |
 | FIG-014-003 | Carbon hybridization and geometry | Planned |
 | FIG-014-004 | Sigma and pi bonding in ethylene | Planned |
 | FIG-014-005 | Ethylene to polyethylene bridge | Planned |
 | FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; figure planned |
-| TAB-014-001 | Bonding types and engineering relevance | Planned |
+| TAB-014-001 | Bonding types and engineering relevance | Primary-bonding rows integrated; extend in Investigation 5 |
 | TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Planned |
 | TAB-014-003 | Controlled polymer-structure examples | Planned |
 | TAB-014-004 | Downstream chapter ownership crosswalk | Planned |
