@@ -3,6 +3,7 @@
 **Status:** ACTIVE WORKING ARCHITECTURE — DO NOT FREEZE FINAL TOC  
 **Change class:** B — Structural  
 **Last architecture recovery:** 2026-08-12  
+**Last production-status sync:** 2026-08-14  
 **Governing principle:** היקף הידע קובע את מספר הפרקים; מספר הפרקים אינו יעד בפני עצמו.
 
 > מסמך זה הוא חוזה הארכיטקטורה הפעיל של הספר. הוא מרכז את מבנה העבודה, את ה־knowledge scope שחובה לשמר, את מצב הכתיבה ואת גבולות אי־הוודאות. מספור הפרקים, שמות ה־Parts והחלוקה לכרכים יוקפאו רק לאחר השלמת התוכן, Topic-to-Chapter Coverage Audit, Technical Review ו־Editorial Review.
@@ -126,20 +127,26 @@ Engineering Assets כוללים לפחות:
 
 ### 4.2 Chapter 013 — Polyethylene (PE)
 
-Chapter 013 הוא pilot ה־PDS הראשון.
+Chapter 013 הוא pilot ה־PDS הראשון וה־reference implementation הפעיל.
 
-מצב העבודה שנמצא ב־branch `chapter-013-redevelopment`:
+מצב ה־baseline לאחר PR #8:
 
-- Investigations 1–10 integrated.
+- הפרק וה־review package המשויך אליו מוזגו ל־`main` כ־**active standards-validation candidate**.
+- Investigations 1–10 integrated and complete for the approved CDB scope.
 - Long-term evidence → regression → MRS → design coefficient → design stress → SDR → reference pressure chain integrated.
 - Worked Example A and Worked Example B integrated.
 - Failure Lens integrated.
 - Chapter Design Review Checklist integrated.
-- Technical Review completed without unresolved physics/equation/unit/example findings.
-- Original figure placeholders remain where appropriate.
-- **Standards Validation remains a publication hold point.**
-- Chapter 013 is not considered publication-frozen until authoritative standards validation, correction of findings, remaining editorial/academic review and Design Freeze are completed.
-- Its open redevelopment PR/branch state must be resolved before the chapter becomes part of the official `main` baseline.
+- Technical Review: **PASS**.
+- Physics / equations / units / worked-example verification: **PASS**.
+- Academic/Evidence Review: **PASS for the current core non-normative claim set** with explicit applicability limits.
+- Editorial/Style Review: **CONDITIONAL PASS — no structural rewrite required**.
+- Public authoritative ISO identity / edition lifecycle / public scope navigation was rechecked on 2026-08-14.
+- **Authoritative full-text Standards Validation remains OPEN** under Issue #9 (`SVH-013-01` through `SVH-013-05`).
+- Chapter 013 is **not publication-frozen**; Design Freeze remains blocked until the source-dependent standards holds and bounded final publication actions close.
+- Historical PR #2 was closed without merge and remains provenance only.
+
+The remaining Chapter 013 blocker is controlled external source access, not unfinished Engineering Development. Author-approved planning/CDB work for Working Chapter 014 may therefore proceed in parallel while Issue #9 remains open. This does not waive any Chapter 013 Definition-of-Done requirement and does not authorize Chapter 014 Engineering Development before its own Definition of Ready is approved.
 
 ---
 
@@ -1066,32 +1073,15 @@ If the answer is not clearly yes, the chapter returns for improvement.
 
 # 12. Immediate continuation checkpoint
 
-Current practical sequence before new chapter production:
+Current practical sequence after the controlled Chapter 13 integration:
 
-1. Resolve Chapter 013 branch/PR status.
-2. Complete authoritative Standards Validation for Chapter 013.
-3. Correct any standards findings and complete remaining publication gates.
-4. Create the controlled Chapter Design Brief for Working Chapter 014.
-5. Begin Chapter 014 using the recovered first-principles polymer-science scope.
-6. Continue sequentially while maintaining the Master Knowledge-Scope coverage map.
+1. Keep Chapter 013 full-text Standards Validation controlled under Issue #9; do not represent it as publication-frozen.
+2. Acquire or lawfully access the current authoritative standards needed to close `SVH-013-01` through `SVH-013-05`, then return Chapter 013 to final Standards Validation and Design Freeze.
+3. In parallel with that external source-access hold, prepare the controlled Chapter Design Brief for Working Chapter 014.
+4. Review the Chapter 014 CDB against `governance/Definition-of-Ready.md` and obtain explicit author approval.
+5. Only after that approval, begin Chapter 014 Engineering Development using the recovered first-principles polymer-science scope.
+6. Continue sequentially while maintaining the Master Knowledge-Scope coverage map and preserving Chapter 013’s unresolved publication gates until they are formally closed.
 
 The current intended first new chapter is:
 
 > **Working Chapter 014 — Atomic Structure, Chemical Bonding and Carbon Chemistry for Polymer Engineers**
-
-Its purpose is not to teach chemistry in isolation, but to establish the molecular basis needed to understand why thermoplastic piping materials exhibit different stiffness, creep, fracture, diffusion, thermal and joining behaviour.
-
----
-
-# 13. Architecture freeze rule
-
-The final chapter count, final numbering and final volume boundaries shall remain unfrozen until:
-
-- all mandatory domains are mapped;
-- no verified historical topic remains accidentally uncovered;
-- all “planned but missing” items are dispositioned;
-- duplicates are intentionally consolidated;
-- controlled historical holds are documented;
-- technical and editorial reviews are complete.
-
-**Final rule:** preserve the knowledge first; optimize the table of contents second.

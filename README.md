@@ -54,9 +54,10 @@ Examples: `EQ-013-001`, `FIG-013-002`, `TAB-013-001`, `WF-013-001`, `EX-013-001`
 
 ## Current status
 
-- Chapters 000–012 form the current early-book baseline/foundation on `main`.
+- Chapters 000–013 are now represented on the official `main` baseline as controlled manuscript sources at their respective maturity levels.
 - Chapter 009 is stored canonically under `chapters/chapter-009-polymer-fundamentals/`; the former `Book/` structure is archived.
-- Chapter 013 — Polyethylene is the PDS pilot/reference implementation. Its redevelopment candidate contains the full Investigation 1–10 engineering arc, but publication closure still requires resolution of its branch/PR state, authoritative Standards Validation and the remaining publication gates.
-- The recovered continuation architecture extends beyond Chapter 013. Working Chapter 014 is the next planned development unit after Chapter 013 closure.
+- Chapter 013 — Polyethylene was integrated through clean PR #8 as the active **standards-validation candidate**. Its Investigation 1–10 engineering arc is complete for the approved CDB scope; Technical Review and the current core Academic/Evidence Review are PASS, and Editorial/Style Review is a conditional pass with no structural rewrite required.
+- Chapter 013 is **not publication-frozen**. Authoritative full-text Standards Validation holds remain open under Issue #9, and Design Freeze remains blocked until those holds and the bounded final publication actions are closed.
+- The recovered continuation architecture extends beyond Chapter 013. Working Chapter 014 is the next planned development unit. Planning/CDB work may proceed while the external Chapter 013 full-text source-access hold remains open, but Chapter 014 shall not enter Engineering Development until its CDB satisfies the Definition of Ready and receives author approval.
 
 See [`BOOK_STRUCTURE.md`](BOOK_STRUCTURE.md) for the full working roadmap and [`CHANGELOG.md`](CHANGELOG.md) for repository-level changes.
