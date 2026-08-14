@@ -1,42 +1,84 @@
-# מקורות – פרק 000
+# Chapter NNN — References and Evidence Register
 
-## תקנים בינלאומיים
+**Chapter:** NNN  
+**PDS Baseline:** 1.0  
+**Status:** Working source register / Publication validation pending
 
-| מזהה | מהדורה | סעיפים רלוונטיים | סוג ההתייחסות | הערות תחום תוקף |
-|---|---:|---|---|---|
-| ISO / EN / ASME / ASTM | שנה | סעיפים | חובה / המלצה / שיטת בדיקה | הערות |
+This file records the evidence used by the chapter. It is a navigation and traceability record; it does not replace direct consultation of authoritative standards or source documents.
 
-## ספרי יסוד וארגונים מקצועיים
+## 1. Standards and regulatory sources
 
-| מקור | מהדורה | פרקים/עמודים | תרומה לפרק |
-|---|---:|---|---|
-|  |  |  |  |
+| Source | Repository-documented edition / status | Scope / applicability | Chapter use | Final validation state |
+|---|---|---|---|---|
+|  |  |  |  | Working / Validated |
 
-## מאמרים שעברו ביקורת עמיתים
+For standards-derived claims, final publication requires direct authoritative verification of edition, scope, clause/table/annex references, values, terminology and normative meaning.
 
-| DOI / Citation | שנה | מערכת שנבדקה | מה נמדד בפועל | רלוונטיות לצנרת תהליך | מגבלות |
+## 2. Fundamental engineering books and handbooks
+
+| Source | Edition | Relevant chapters / pages | Engineering contribution | Limitations / notes |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+## 3. Peer-reviewed literature
+
+| Citation / DOI | Year | System / scale studied | What was measured | Transferability to chapter problem | Limitations |
 |---|---:|---|---|---|---|
 |  |  |  |  |  |  |
 
-## מדריכי יצרנים ונתוני תעשייה
+## 4. Professional-organization and industry guidance
 
-| יצרן/ארגון | מסמך | מהדורה | תחום מוצר | מגבלות שימוש |
-|---|---|---:|---|---|
-|  |  |  |  |  |
-
-## מפת קביעות ומקורות
-
-| קביעה בפרק | מקור 1 | מקור 2 | רמת ודאות | הערות |
+| Organization | Document | Edition / date | Engineering use | Authority classification / limitations |
 |---|---|---|---|---|
-|  |  |  | A / B / C / D |  |
+|  |  |  |  | Professional guidance / industry guidance |
 
-## מקרא רמת ודאות
+## 5. Manufacturer technical documentation
 
-- **A – ידע מבוסס:** תקן, עקרון יסוד או מספר מקורות עצמאיים חזקים.
-- **B – קונצנזוס הנדסי:** הסכמה רחבה בספרות ובתעשייה ללא דרישת תקן מפורשת.
-- **C – השערה נתמכת:** ראיות חלקיות או מחקרים מוגבלים; אינה מוצגת כמסקנה.
-- **D – פער ידע:** לא נמצאה עדות ישירה מספקת.
+| Manufacturer | Document | Revision / date | Product / system scope | Engineering use | Limitation |
+|---|---|---|---|---|---|
+|  |  |  |  |  | Product-specific guidance; not universalized |
 
-## מקורות שנבדקו אך לא שימשו
+## 6. Claim-to-evidence map
 
-יש לתעד מקורות שנפסלו עקב חוסר רלוונטיות, איכות נמוכה, תנאים שונים מדי או סתירה שלא נפתרה.
+| Chapter claim / decision input | Primary source | Supporting source | Statement class | Applicability / transferability limit | Validation state |
+|---|---|---|---|---|---|
+|  |  |  | Engineering principle / Standard requirement / Regulatory requirement / Industry recommendation / Manufacturer guidance / Empirical correlation / Mechanistic model / Engineering inference / Knowledge gap |  | Working / Checked / Standards-validated |
+
+## 7. Standards Validation hold points
+
+List standards-derived items that must be reopened after authoring:
+
+- edition / current-status confirmation;
+- exact scope and applicability;
+- clause / table / annex / figure / equation references;
+- definitions and terminology;
+- coefficients and numerical values;
+- units and rounding rules;
+- mandatory versus informative wording;
+- exceptions and boundary conditions;
+- cross-framework terminology or compatibility.
+
+## 8. Evidence / objectivity hold points
+
+Record claims requiring additional evidence, independent corroboration, specialist review or explicit engineering-inference labeling.
+
+| Item | Open question | Required evidence / review | Status |
+|---|---|---|---|
+|  |  |  | Open |
+
+## 9. Sources screened but not used
+
+Record materially relevant sources that were reviewed but excluded, especially where exclusion explains an evidence boundary.
+
+| Source | Reason not used | Revisit trigger |
+|---|---|---|
+|  | Out of scope / weak authority / incompatible conditions / superseded / unresolved contradiction |  |
+
+## 10. Evidence-use rules
+
+- Do not convert manufacturer guidance into a standard requirement.
+- Do not convert common practice into a legal or normative obligation.
+- Do not apply laboratory or small-scale results to industrial piping without an explicit transferability review.
+- Do not treat a repository-documented standard edition as final proof of current status until Standards Validation.
+- Generated text is never evidence.
+- Where uncertainty materially affects the engineering decision, make the uncertainty visible in the chapter and review record.

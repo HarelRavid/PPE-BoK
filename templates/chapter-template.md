@@ -1,112 +1,236 @@
 ---
-chapter: "000"
-title_he: "שם הפרק"
+chapter: "NNN"
 title_en: "Chapter Title"
 part: "Working Part"
-status: "outline"
-language: "he"
-last_updated: "YYYY-MM-DD"
+status: draft
+language: en
+technical_level: foundational | intermediate | advanced
+primary_domains: []
 review:
-  physics: false
-  equations: false
-  units: false
-  standards: false
-  academic_sources: false
-  examples: false
-  editorial: false
+  physics: pending
+  standards: pending
+  academic: pending
+  equations: pending
+  units: pending
+  examples: pending
+  editorial: pending
+last_updated: YYYY-MM-DD
+pds_baseline: "1.0"
+cdb: "docs/PDS/Chapter-Design-Briefs/CDB-NNN-Short-Title.md"
 ---
 
-# פרק 000 – שם הפרק
+# Chapter NNN — Chapter Title
 
-## מטרת הפרק
+## Chapter purpose
 
-תיאור קצר של מטרת הפרק, קהל היעד וההחלטות ההנדסיות שהוא נועד לתמוך בהן.
+State what engineering capability this chapter is intended to create and the scope boundary of the chapter.
 
-## Knowledge Objects Covered
+## Chapter engineering question
 
-- KO-000-001
-- KO-000-002
+> State the primary engineering question the reader should be able to answer after using this chapter.
 
-## 000.1 מבוא
+## What the engineer should be able to do after this chapter
 
-טקסט הפרק.
+After completing the chapter, the reader should be able to:
 
-## הפיזיקה תחילה – Physics First
+1. ...
+2. ...
+3. ...
 
-אילו מנגנונים פיזיקליים שולטים בתופעה?
+## Scope and exclusions
 
-## בסיס הראיות
+### In scope
 
-- תקנים רלוונטיים.
-- ספרות יסוד.
-- מאמרים אקדמיים.
-- נתוני תעשייה או יצרנים.
+- ...
 
-## מודלים ומשוואות
+### Explicitly outside this chapter
+
+- ...
+
+Cross-reference the chapter that owns each deferred specialist subject where known.
+
+---
+
+# Chapter standards / evidence map
+
+| Engineering question | Standard / evidence family | Engineering use | Final validation state |
+|---|---|---|---|
+|  |  |  | Working / Validated |
+
+**Authoring rule:** standards may be used as working navigation sources during development. Exact editions, clause/table references, coefficients, limits and normative interpretations are not publication-final until the dedicated Standards Validation gate is complete against authoritative sources.
+
+---
+
+# Required Design Basis / engineering inputs
+
+List the input variables required before the chapter method can be applied, for example:
+
+- service fluid / environment;
+- pressure / temperature / time;
+- geometry;
+- load cases;
+- installation condition;
+- material/product qualification;
+- applicable standards / jurisdiction;
+- required design life;
+- uncertainty or missing information.
+
+> **Engineering decision rule:** identify which missing inputs make the engineering decision provisional rather than final.
+
+---
+
+# Engineering Quick Navigation
+
+Use only if it materially helps a practicing engineer locate the relevant method, table, workflow, example or checklist quickly.
+
+- **Question / task A:** Investigation X.
+- **Question / task B:** Investigation Y.
+- **Design review:** `CL-NNN-001`.
+
+---
+
+# Investigation 1 — Engineering Question
+
+Introduce the question and why it matters to a real engineering decision.
+
+## 1.1 Governing physics / mechanism
+
+Explain the mechanism at the depth required to support correct engineering application.
+
+## 1.2 Applicable standards / evidence
+
+Identify what the engineer obtains from each relevant source and what remains outside its scope.
+
+## 1.3 Engineering method / logic
+
+Describe the practical method, decision sequence or model.
+
+### Equation / model where required
 
 \[
 Y=f(x)
 \]
 
-כאשר:
+**EQ-NNN-001 — Equation title**
 
-- \(Y\) – הגדרה ויחידות.
-- \(x\) – הגדרה ויחידות.
+where:
 
-**הנחות:**
+- \(Y\) — definition, units;
+- \(x\) — definition, units.
 
-**תחום תוקף:**
+**Source / derivation basis:**  
+**Assumptions:**  
+**Validity / applicability limits:**  
+**Engineering use:**  
+**Common misuse:**
 
-**מתי אין להשתמש במודל:**
+## 1.4 Verification
 
-## משמעות הנדסית
+State how the engineer should independently check the calculation, model, evidence or decision.
 
-כיצד התופעה משפיעה על תכן, הפעלה, תחזוקה ובטיחות.
+## 1.5 Common mistakes / Failure Lens
 
-## דוגמה יישומית
+- ...
 
-ניתן להשתמש באלקטרולייזר, מערכת תרחיף, כרייה או מערכת אחרת כדוגמה. יש להבהיר שהדוגמה ממחישה עקרונות כלליים ואינה מגבילה את תחום הספר.
+## 1.6 Engineering decision from Investigation 1
 
-## Engineering Insight
+> State the decision or capability produced by the Investigation and what remains project-specific.
 
-תובנה הנדסית המבוססת על העקרונות והמקורות המוצגים בפרק.
+---
 
-## Engineering Inference
+# Investigation 2 — Engineering Question
 
-> להשתמש רק כאשר נדרשת הסקה מעבר לממצא ישיר. יש לציין במפורש את הראיות התומכות ואת אי-הוודאות. אין להציג את ההסקה כמסקנה מוכחת.
+Repeat the Investigation pattern only to the depth useful for this subject. Do not mechanically reproduce sections that add no engineering value.
 
-## טעויות נפוצות
+---
 
-1. טעות.
-2. טעות.
+# Worked Example — when useful
 
-## Reality Check
+## EX-NNN-001 — Example title
 
-מה עשוי המפעיל או המהנדס לראות בשטח?
+### Problem
 
-## If You Remember Only One Thing
+### Design Basis
 
-המסר המרכזי של הפרק במשפט או בפסקה קצרה.
+### Applicable standards / evidence
 
-## What We Know / What We Do Not Know
+### Inputs
 
-### ידוע היטב
+### Method / equations
 
-### קונצנזוס הנדסי
+### Calculation
 
-### עדיין נחקר
+### Independent verification
 
-### פערי ידע
+### Engineering decision
 
-## Design Review Questions
+### What this example does **not** prove
 
-- [ ] שאלה הנדסית.
-- [ ] שאלה הנדסית.
+---
 
-## The Next Question
+# Engineering workflow / decision tool — when useful
 
-השאלה המובילה לפרק הבא.
+**WF-NNN-001 — Workflow title**
 
-## מקורות
+`Question → Inputs → Standards / Evidence → Method → Calculation / Evaluation → Verification → Decision → Documentation`
 
-ראו `references.md` בתיקיית הפרק.
+---
+
+# CL-NNN-001 — Chapter Design Review Checklist
+
+| ID | Review question | Required evidence / disposition |
+|---|---|---|
+| CL-01 |  |  |
+| CL-02 |  |  |
+
+A checked item means evidence has been reviewed and found acceptable. Use `N/A` only with justification.
+
+---
+
+# Chapter engineering closure
+
+Summarize the engineering chain established by the chapter and reconnect it to the Design Basis / system decision.
+
+## Key distinctions to retain
+
+1. ...
+2. ...
+3. ...
+
+## Residual project-specific engineering
+
+List the interfaces where the reader must move to another chapter, specialist discipline, project analysis or authoritative standard.
+
+---
+
+# Chapter engineering assets — register
+
+| ID | Asset | Status |
+|---|---|---|
+| EQ-NNN-001 |  | Planned / Integrated / Validated |
+| FIG-NNN-001 |  | Placeholder / Produced / Validated |
+| TAB-NNN-001 |  | Planned / Integrated / Validated |
+| WF-NNN-001 |  | Planned / Integrated / Validated |
+| EX-NNN-001 |  | Planned / Integrated / Independently checked |
+| CL-NNN-001 |  | Planned / Integrated |
+
+---
+
+# Publication hold points
+
+Before publication, close all chapter-specific gates required by the CDB and `governance/Definition-of-Done.md`, including as applicable:
+
+- Technical Review;
+- equations / units / examples independently checked;
+- authoritative Standards Validation;
+- evidence / objectivity review;
+- cross-book consistency;
+- editorial / style review;
+- Desk Test;
+- joint author review;
+- explicit author approval;
+- merge to `main`.
+
+# References
+
+Maintain chapter-specific evidence in `references.md` where the chapter workflow uses a separate source register, and keep the central `references/Standards-Register.md` synchronized for standards used book-wide.

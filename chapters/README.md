@@ -1,47 +1,55 @@
 # Book Chapters
 
-GitHub is the master source for the PPE-BoK manuscript. Each chapter is stored in an independent directory.
+GitHub `main` is the master source for the PPE-BoK manuscript. Canonical chapter source content is stored under `/chapters`, one chapter per directory.
 
 ```text
 chapters/chapter-000-short-title/
-├── chapter.md
-├── references.md
-├── review.md
-├── notes.md
-└── figures/
+├── chapter.md          # canonical chapter narrative
+├── references.md       # chapter source register where present
+├── review.md           # chapter-local review/support record where present
+├── notes.md            # unresolved working notes where present
+└── figures/            # controlled/original figure source files where present
 ```
 
-Not every draft currently has all supporting files. A chapter is not considered locked until its references and technical review are complete.
+Formal PDS review packages may additionally be stored under `reviews/chapter-NNN/`.
 
-## Naming Rules
+Not every early draft currently has all supporting files. A chapter is not publication-complete merely because a readable manuscript exists.
 
-- Three-digit working chapter number.
+## Naming rules
+
+- Three-digit working chapter number in the directory name.
 - Short lowercase English title separated by hyphens.
-- Main manuscript file: `chapter.md`.
+- Canonical manuscript file: `chapter.md`.
+- Working chapter numbers may change during final architecture review; the active roadmap is `BOOK_STRUCTURE.md`.
 
-## Current Manuscript
+## Current manuscript inventory on `main`
 
-| Chapter | Title | Manuscript status |
+| Chapter | Title | Current `main` status |
 |---:|---|---|
-| 0 | How to Use This Book | Full draft uploaded |
-| 1 | Understanding Industrial Plastic Piping Systems | Full draft uploaded |
-| 2 | The Engineering Decision Process | Full draft uploaded |
-| 3 | Understanding Industrial Processes | Full draft uploaded |
-| 4 | Defining Engineering Requirements | Full draft uploaded |
-| 5 | Establishing the Design Basis | Full draft uploaded |
-| 6 | Service Conditions and the Design Envelope | Full draft uploaded |
-| 7 | Engineering Risk and Uncertainty | Full draft uploaded |
-| 8 | Understanding Process Fluids | Full draft uploaded |
-| 9 | Polymer Fundamentals for Industrial Plastic Piping | Research-based draft uploaded; references and review files included |
-| 10 | Engineering Methodology for Material Selection | Research-based full draft uploaded; references and review files included |
-| 11 | Engineering Characteristics of Common Plastic Piping Materials | Research-based full draft uploaded; references and review files included |
-| 12 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Research-based full draft uploaded; references and review files included |
+| 000 | How to Use This Book | Early-book baseline draft |
+| 001 | Understanding Industrial Plastic Piping Systems | Early-book baseline draft |
+| 002 | The Engineering Decision Process | Early-book baseline draft |
+| 003 | Understanding Industrial Processes | Early-book baseline draft |
+| 004 | Defining Engineering Requirements | Early-book baseline draft |
+| 005 | Establishing the Design Basis | Early-book baseline draft |
+| 006 | Service Conditions and the Design Envelope | Early-book baseline draft |
+| 007 | Engineering Risk and Uncertainty | Early-book baseline draft |
+| 008 | Understanding Process Fluids | Early-book baseline draft |
+| 009 | Polymer Fundamentals for Industrial Plastic Piping | Canonicalized under `/chapters`; source register and review record present; further depth is planned elsewhere in the recovered architecture |
+| 010 | Engineering Methodology for Material Selection | Research-based full draft; source register and review record present |
+| 011 | Engineering Characteristics of Common Plastic Piping Materials | Research-based full draft; source register and review record present |
+| 012 | Long-Term Strength, MRS, Design Stress, SDR and Pressure Rating | Research-based full draft; source register and review record present |
+| 013 | Polyethylene (PE) | Full redevelopment candidate exists on `chapter-013-redevelopment`; not yet a `main` chapter baseline; authoritative Standards Validation and remaining publication gates are still required |
 
-## Status Meaning
+## Working continuation
 
-- **Full draft uploaded:** complete readable manuscript exists in GitHub, but citations and technical review may still require expansion.
-- **Research-based draft:** manuscript was prepared from a defined research package.
-- **Reviewed:** technical, standards, equation, and language review completed.
-- **Locked:** approved source text; changes require a documented reason.
+Working Chapters 014 onward are defined in `BOOK_STRUCTURE.md`. They are roadmap entries, not active manuscript directories until the applicable CDB and development work begin.
 
-No chapter may be treated as complete solely because a heading, outline, or PDF exists. The complete manuscript must be present in this repository.
+## Status interpretation
+
+- **Baseline draft:** readable source exists on `main`; this does not imply publication readiness.
+- **Research-based full draft:** substantive source and evidence/review support exist, but Definition of Done may remain open.
+- **Redevelopment candidate:** controlled work exists on a branch/PR but has not yet become the official `main` chapter baseline.
+- **Publication ready / released:** may be used only after all gates in `governance/Definition-of-Done.md` are satisfied and the approved revision is merged to `main`.
+
+No chapter may be treated as complete solely because a heading, outline, PDF, branch or pull request exists. The complete approved manuscript and required review evidence must reach the official repository baseline.

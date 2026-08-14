@@ -3,9 +3,9 @@
 **Document ID:** EDR-XXX  
 **Chapter:** XXX  
 **PDS Baseline:** 1.0  
-**Status:** Draft / Under Review / Approved
+**Status:** Draft / Under Review / Approved / Closed
 
-> Pilot review artifact. Use during the PDS 1.0 pilot; adoption into a future PDS revision requires post-pilot change control.
+> Use this diagnostic review when an existing or draft chapter requires a formal engineering assessment before redevelopment, augmentation or controlled revision. The EDR diagnoses; it does not replace the chapter or perform the redevelopment itself.
 
 ## 1. Executive Summary
 
@@ -14,27 +14,32 @@
 - Engineering utility: High / Medium / Low
 - Recommended redevelopment mode: Retain / Engineering Augmentation / Targeted Rewrite / Major Redevelopment
 
-Summarize the evidence supporting the decision. The purpose of the EDR is diagnosis, not rewriting.
+Summarize the evidence supporting the decision.
 
 ## 2. Scope and Reference Documents
 
-Identify the exact chapter revision reviewed and the governing project documents, including the approved CDB and PDS baseline. Record standards only as review references; standards-derived technical claims remain subject to the formal Standards Validation gate.
+Identify the exact chapter revision reviewed and the governing project documents, including the approved CDB, `BOOK_STRUCTURE.md` where architecture matters, and the PDS baseline.
+
+Record standards as review/navigation references. Standards-derived technical claims remain subject to the formal authoritative Standards Validation gate unless that gate has already been completed and documented.
 
 ## 3. Assessment Criteria
 
 Assess, as applicable:
 
-- chapter architecture and investigation progression;
+- chapter architecture and Investigation progression;
+- CDB scope and reader outcomes;
 - technical reasoning and mechanisms;
 - engineering utility and decision support;
 - quantitative support;
 - standards navigation;
 - engineering assets;
 - assumptions and validity limits;
-- practical usability / desk-test performance;
+- practical usability / Desk Test performance;
+- evidence/objectivity;
+- cross-book consistency;
 - editorial and production readiness.
 
-Do not require an asset merely to satisfy a quota. Every recommended addition must improve engineering capability.
+Do not require an asset merely to satisfy a quota. Every recommended addition must improve engineering capability or controlled traceability.
 
 ## 4. Pass 1 — Architecture Review
 
@@ -58,7 +63,9 @@ Review each Investigation against its engineering question and intended reader o
 |---|---|---|---|---|---|
 | 1 |  |  |  |  |  |
 
-For equations verify symbols, units, assumptions, validity/applicability limits, source or derivation basis and common misuse where relevant. For standards integration verify that the standard path is explicit enough to navigate; final clause numbers, numerical values and standards-derived interpretations are not accepted until Standards Validation.
+For equations verify symbols, units, assumptions, validity/applicability limits, source or derivation basis and common misuse where relevant.
+
+For standards integration verify that the standards path is explicit enough to navigate. Final clause numbers, numerical values, coefficients, editions and standards-derived interpretations are not accepted for publication until Standards Validation.
 
 ## 6. Pass 3 — Production Readiness
 
@@ -84,7 +91,7 @@ Scores support comparison and prioritization; they are not substitutes for engin
 
 ## 8. Gap Register Summary
 
-List all actionable gaps using stable IDs. Each gap shall have a severity, engineering impact and disposition path. Detailed tracking may be maintained in the chapter Gap Register.
+List all actionable gaps using stable IDs. Each gap shall have severity, engineering impact and a disposition path. Detailed tracking may be maintained in the chapter Gap Register.
 
 ## 9. Redevelopment Recommendation
 
@@ -93,9 +100,10 @@ State explicitly:
 - content to retain;
 - content to move or tighten;
 - content/assets to add;
-- content requiring validation;
+- content requiring technical or standards validation;
 - content requiring rewrite, if any;
-- recommended work-package sequence.
+- recommended work-package sequence;
+- cross-book implications.
 
 ## 10. Acceptance Criteria
 
@@ -109,6 +117,6 @@ Record the approved disposition and whether redevelopment may proceed.
 
 Map relevant PDS/CDB requirements to evidence in the reviewed chapter.
 
-## Appendix B — Candidate Lessons Learned
+## Appendix B — Lessons Learned / PDS Change Candidates
 
-Record process lessons as **candidates only** during the PDS 1.0 pilot. Do not silently modify the frozen PDS.
+Record process lessons separately from chapter findings. A lesson does not become an active PDS requirement merely because it appears in an EDR. Any proposed methodology change requires the applicable controlled PDS/change-control approval.

@@ -2,7 +2,13 @@
 
 ## Governing system
 
-All chapter development is governed by PDS 1.0. Read `docs/PDS/` and `governance/` before editing technical content.
+All chapter development is governed by PDS 1.0. Before editing technical content, read:
+
+- `BOOK_STRUCTURE.md` — active working book architecture and continuation map;
+- `docs/PDS/` — engineering-development doctrine, workflow, validation and style controls;
+- `governance/` — repository architecture, configuration management and readiness/completion gates.
+
+Archived material under `archive/` is retained for provenance only and does not override active controlled documents.
 
 ## Human Approval Gate
 
@@ -16,11 +22,13 @@ Do not make silent technical improvements to `main`.
 
 ## Chapter development
 
-Before Engineering Development begins, the chapter must satisfy `governance/Definition-of-Ready.md`.
+Before Engineering Development begins, the chapter must satisfy `governance/Definition-of-Ready.md`, including an approved Chapter Design Brief (CDB).
 
 The chapter is the primary self-contained knowledge unit. Investigations build progressively and should not repeatedly restate chapter-level context.
 
 Target approximately 60% engineering application and 40% engineering explanation across a chapter, adjusted to what is required to communicate the engineering point correctly.
+
+Working chapter numbers and Part boundaries may remain provisional until final architecture review. Do not rename or renumber controlled content merely to make the TOC visually tidy during active development.
 
 ## Standards
 
@@ -29,7 +37,8 @@ Target approximately 60% engineering application and 40% engineering explanation
 - Do not reproduce protected standards text beyond permitted use.
 - During authoring, standards references may remain working references.
 - After authoring is complete, every standards-derived statement must be rechecked directly against the authoritative source before publication approval.
-- Record standards in `references/Standards-Register.md`.
+- Record standards in `references/Standards-Register.md` and keep chapter-specific source records synchronized.
+- Do not treat a repository-documented edition as proof that it is still the current edition unless the final Standards Validation gate has confirmed it.
 
 ## Equations and engineering assets
 
@@ -45,15 +54,27 @@ Use controlled identifiers:
 - `DT-CCC-NNN`
 - `CL-CCC-NNN`
 
+Controlled asset IDs are not silently reused after baselining.
+
+## Review records
+
+- Formal chapter diagnostic/redevelopment reviews use the controlled templates under `reviews/templates/` where applicable.
+- Chapter-specific review evidence belongs under `reviews/chapter-NNN/` or the chapter support files as defined by the applicable CDB/workflow.
+- Review records are evidence of decisions and closure; they are not substitutes for the chapter itself.
+
 ## Versioning
 
-Use chapter/document versions `1.0`, `1.1`, `1.2`, `2.0`.
+Use chapter/document versions `1.0`, `1.1`, `1.2`, `2.0` where a controlled revision is required.
 
 A baselined chapter is not silently overwritten. Technical revisions require review and a controlled new version.
 
 ## Production order
 
-Chapter 13 is the PDS pilot. After pilot acceptance, full-book redevelopment proceeds sequentially from Chapter 001 through Chapter 013 unless the author explicitly approves an exception.
+Chapter 013 is the PDS pilot/reference implementation. Its publication closure remains a controlled prerequisite before starting the next new working chapter.
+
+After Chapter 013 closure, development proceeds according to the active `BOOK_STRUCTURE.md`, beginning with the approved CDB for Working Chapter 014 unless the author explicitly approves another controlled sequence.
+
+The book is topic-driven rather than chapter-count-driven. Final numbering is not a production target.
 
 ## Definition of Done
 
