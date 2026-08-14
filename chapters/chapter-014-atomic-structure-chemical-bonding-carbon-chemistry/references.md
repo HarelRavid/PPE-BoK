@@ -1,0 +1,161 @@
+# Chapter 014 — Standards and Evidence Plan
+
+**Working chapter:** 014 — Atomic Structure, Chemical Bonding and Carbon Chemistry for Polymer Engineers  
+**PDS baseline:** 1.0  
+**Status:** Active authoring evidence plan  
+**Research checkpoint:** 2026-08-14  
+
+## 1. Evidence objective
+
+Chapter 014 is a foundational science chapter. Its evidence system is therefore different from a pressure-design or product-standard chapter.
+
+The chapter shall use standards primarily to control terminology and polymer abbreviations. Scientific mechanisms shall be supported by authoritative chemical terminology/recommendations and, when claims become material-specific or performance-specific, by directly reviewed academic evidence.
+
+The chapter shall not convert vocabulary documents, molecular structure or chemistry reasoning into normative design requirements.
+
+## 2. Evidence classes used in this chapter
+
+| Class | Meaning | Permitted use |
+|---|---|---|
+| A | Current authoritative standard / official terminology source | Terminology, symbols, abbreviations and any directly applicable controlled statement |
+| B | Authoritative recommendation / technical report from a recognized scientific body | Scientific definitions and bounded mechanism explanation |
+| C | Directly reviewed primary research | Material-specific or mechanism-specific evidence beyond stable foundational science |
+| D | Established academic reference work | Foundational explanation where no project-specific or normative conclusion is being made |
+| E | Secondary / manufacturer / educational source | Navigation only; not sufficient for a material technical claim |
+
+## 3. Authoritative terminology and standards sources
+
+### S014-001 — ISO 472:2013 — Plastics — Vocabulary
+
+- **Organization:** ISO
+- **Edition:** 4, 2013-02
+- **Current public status checked:** 2026-08-14
+- **ISO public status:** Published; stage 90.92, *International Standard to be revised*.
+- **Amendment:** ISO 472:2013/Amd 1:2018 — *Plastics — Vocabulary — Amendment 1: Additional items*.
+- **Authoring use:** controlled plastics/polymer terminology where relevant.
+- **Boundary:** vocabulary does not create pressure-rating, material-selection, chemical-compatibility or qualification requirements.
+- **Validation requirement:** recheck lifecycle and exact adopted terms at Standards/Evidence Validation because a revision is in progress.
+
+### S014-002 — ISO 1043-1:2011 — Plastics — Symbols and abbreviated terms — Part 1: Basic polymers and their special characteristics
+
+- **Organization:** ISO
+- **Edition:** 4, 2011-11
+- **Current public status checked:** 2026-08-14
+- **ISO public status:** Published / confirmed.
+- **Amendment:** ISO 1043-1:2011/Amd 1:2016 — *New symbol ST for syndiotactic*.
+- **Authoring use:** standardized polymer abbreviations and symbol discipline.
+- **Boundary:** abbreviation control only; not a design or property standard.
+- **Validation requirement:** recheck current lifecycle before publication.
+
+### S014-003 — IUPAC Compendium of Chemical Terminology (Gold Book), 5th ed., online version 5.0.0 (2025)
+
+- **Organization:** IUPAC
+- **Current online version used for authoring:** 5.0.0 (2025)
+- **Authoring use:** authoritative chemical terminology.
+- **Controlled-term rule:** when a term is important to an Investigation, record the Gold Book term identifier / DOI and the accessed version in the claim record.
+- **Important current entries already checked:**
+  - chemical bond — `CT07009`;
+  - hybridization — `H02874`;
+  - hybrid orbital — `HT07049`;
+  - electronegativity — `E01990`;
+  - bond polarity — `08195`;
+  - London forces — `L03617`;
+  - dipole–dipole interaction — `D01758`;
+  - van der Waals forces — `V06597`;
+  - sigma / pi — `S05434`;
+  - ionic bond — `IT07058`;
+  - Lewis formula — `L03513`.
+- **Boundary:** Gold Book definitions control terminology; they do not establish bulk polymer property values or pipe-system qualification.
+
+### S014-004 — Arunan et al., Definition of the hydrogen bond (IUPAC Recommendations 2011)
+
+- **Publication:** Pure and Applied Chemistry, 83(8), 1637–1641 (2011)
+- **DOI:** 10.1351/PAC-REC-10-01-02
+- **Evidence class:** B — authoritative IUPAC Recommendation
+- **Authoring use:** hydrogen-bond definition and evidence boundary.
+
+### S014-005 — Arunan et al., Defining the hydrogen bond: An account (IUPAC Technical Report, 2011)
+
+- **Publication:** Pure and Applied Chemistry, 83(8), 1619–1636 (2011)
+- **DOI:** 10.1351/PAC-REP-10-01-01
+- **Evidence class:** B
+- **Authoring use:** deeper explanation when Investigation 5 requires mechanism detail beyond the concise recommendation.
+
+## 4. Internal PPE-BoK sources used for architecture and non-duplication
+
+### I014-001 — Chapter 009 — Polymer Fundamentals for Industrial Plastic Piping
+
+**Use:** establish what broad polymer-science context already exists so Chapter 014 deepens rather than repeats it.
+
+**Do not inherit uncritically:** any Chapter 009 normative or quantitative statement that belongs to its own Standards Validation path.
+
+### I014-002 — CDB-014
+
+**Use:** binding scope, depth, Investigation sequence, evidence boundary and required assets for this development pass.
+
+### I014-003 — Master Knowledge-Scope Map / BOOK_STRUCTURE.md
+
+**Use:** preserve recovered first-principles depth and downstream ownership boundaries.
+
+## 5. Primary-literature trigger rules
+
+Primary research shall be added when a statement moves beyond stable chemistry terminology into a claim such as:
+
+- a particular polymer chemistry causes a measured change in diffusion/permeation;
+- a side group or polarity produces a measured property difference between real piping compounds;
+- a molecular feature controls a quantified thermal, mechanical, fracture or joining response;
+- a material-specific mechanism is used to explain service performance.
+
+For those claims, the authoring sequence is:
+
+`claim → direct primary source → applicability check → transferability limit → wording → citation`
+
+A review article may help discover literature but shall not substitute for direct review of the underlying primary source when the claim is technically load-bearing.
+
+## 6. Planned primary-source research by Investigation
+
+| Investigation | Evidence need | State |
+|---|---|---|
+| 1 — Why atoms and bonds matter | CDB + stable IUPAC terminology; no material-specific quantitative claim needed | READY |
+| 2 — Matter / atoms / molecules | IUPAC terminology; basic authoritative chemistry reference | PLANNED |
+| 3 — Valence electrons / orbitals | IUPAC terminology / recommendations; avoid unnecessary quantum derivation | PLANNED |
+| 4 — Primary bonding / material classes | IUPAC definitions + bounded materials-science evidence if comparative claims become specific | PLANNED |
+| 5 — Intermolecular interactions | IUPAC Gold Book + 2011 H-bond Recommendation/Technical Report | PARTLY READY |
+| 6 — Carbon chemistry | authoritative organic-chemistry terminology / recommendations | PLANNED |
+| 7 — sp/sp2/sp3, sigma/pi | IUPAC Gold Book entries already identified; additional source only if needed | PARTLY READY |
+| 8 — Ethylene | authoritative structural/nomenclature source; polymerization mechanism deferred to Ch015 | PLANNED |
+| 9 — Structure → property hypotheses | primary polymer literature required for every material-specific bridge | REQUIRED RESEARCH |
+| 10 — Evidence boundary | chapter evidence map + downstream standards/qualification crosswalk | PLANNED |
+
+## 7. Claim-control rules
+
+1. **Mechanism is not qualification.** A plausible molecular explanation is not a qualified engineering property.
+2. **No direct bond-energy → pipe-strength conversion.** Bond dissociation energy is not bulk tensile strength, allowable stress or pressure capability.
+3. **No polarity-only compatibility rule.** Bond/molecular polarity may inform a hypothesis but does not replace chemical-compatibility evidence at concentration, temperature, stress and time.
+4. **No hybridization determinism.** `sp`, `sp2` or `sp3` descriptors do not independently determine macroscopic performance.
+5. **No monomer = compound assumption.** A monomer or repeat-unit drawing does not capture molecular weight distribution, morphology, additives, processing history or product qualification.
+6. **No unsourced property rankings.** Common piping polymers may be used illustratively only when the conclusion is qualitative and properly bounded, or when a direct source is attached.
+7. **No silent terminology drift.** Important definitions are checked against the cited current IUPAC/ISO source during final validation.
+
+## 8. Current evidence readiness
+
+**Ready to author Investigation 1:** YES.
+
+Investigation 1 is an engineering-orientation Investigation. It can establish the hierarchy from chemical structure to engineering evidence and the limits of first-principles reasoning using the approved CDB, Chapter 009 context and current authoritative terminology sources without introducing unverified material-specific numerical claims.
+
+**Ready to author the complete chapter without further research:** NO.
+
+Investigations 2–10 require staged terminology and primary-literature research according to the table above, especially Investigation 9.
+
+## 9. Publication hold points
+
+Before Chapter 014 publication:
+
+- recheck ISO 472 lifecycle and any replacement edition;
+- recheck ISO 1043-1 lifecycle and amendment state;
+- capture the IUPAC Gold Book version/date for load-bearing terms;
+- verify terminology used in figures and tables;
+- directly review all primary sources used for material-specific structure–property claims;
+- complete claim-level citation placement;
+- complete Technical Review and Standards/Evidence Validation;
+- document transferability limits for every material-specific example.
