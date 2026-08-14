@@ -945,7 +945,7 @@ This becomes important when the chapter later discusses C–H, C–F, C–Cl and
 | Ionic character / ionic bonding | Electrostatic attraction between charged species; real bonds may contain varying ionic character | Helps interpret ions, salts and mixed bond character | A fixed mechanical-property set or universal chemical-compatibility rule |
 | Extended electron delocalization typical of metals | Electrons occupy states/orbitals extended over many atoms or the lattice | Distinguishes metallic electronic/bonding structure from localized molecular bonding | Ductility, strength, corrosion resistance or interface suitability without material evidence |
 
-**Table rule:** `TAB-014-001` is not yet complete. Investigation 5 will extend the chapter's bonding map with hydrogen bonding, dipole–dipole and London/dispersion interactions. Those are not to be silently merged into the primary-bond rows.
+**Table rule:** `TAB-014-001` is not yet complete. Investigation 5 extends the chapter's bonding map with hydrogen bonding, dipole–dipole and London/dispersion interactions. Those are not silently merged into the primary-bond rows.
 
 ## 4.7 FIG-014-002 — Primary and secondary bonding map — partial placeholder
 
@@ -964,7 +964,7 @@ The final figure shall separate two levels visually:
 - London/dispersion interactions;
 - other van der Waals interactions where relevant.
 
-Investigation 5 will complete Level B.
+Investigation 5 completes the conceptual specification of Level B.
 
 The figure must explicitly avoid ranking these interactions as though one universal energy scale determines all bulk polymer properties.
 
@@ -1044,13 +1044,283 @@ That is the subject of Investigation 5.
 
 # Investigation 5 — What Holds Polymer Molecules Together When They Are Not Covalently Bonded to Each Other?
 
-**Authoring state:** planned. Evidence research required before development.
+Polymer chains are not isolated objects floating independently through a solid. Neighbouring chains and chain segments interact continuously through electrostatic and quantum-mechanical interactions that do **not** require new covalent bonds between every pair of segments.
+
+These interactions matter because a polymer's bulk response depends not only on the covalent connectivity inside each chain, but also on how chains and segments attract, repel, orient, pack and move relative to one another.
+
+The engineering challenge is that the vocabulary is often taught as a misleading ladder:
+
+`London < dipole–dipole < hydrogen bond < covalent bond`
+
+That ranking may be convenient for a classroom mnemonic, but it is not a safe polymer-engineering model. Real behaviour depends on distance, orientation, number and distribution of interacting sites, polarizability, molecular geometry, chain architecture, morphology, temperature and the property being measured.
+
+Chapter 014 therefore uses the following rule:
+
+> Identify the **interaction mechanism** first. Do not turn the interaction label into a universal ranking of bulk polymer properties.
+
+## 5.1 Intramolecular versus intermolecular: keep the structural levels separate
+
+The first distinction is positional rather than energetic.
+
+- **Intramolecular** interactions occur within one molecular entity.
+- **Intermolecular** interactions occur between different molecular entities.
+
+For polymers, the distinction can become visually confusing because one chain may be extremely long and may fold back near itself. The same physical type of noncovalent interaction may therefore occur between segments of different chains or between separated segments of the same chain.
+
+IUPAC's definition of van der Waals forces explicitly allows such forces between molecular entities **or between groups within the same molecular entity**. [S014-003]
+
+The engineering point is:
+
+> “Intermolecular force” is useful shorthand in polymer discussions, but the actual interaction may be segment-to-segment, and the chain identity of the two segments does not by itself determine the physics.
+
+## 5.2 van der Waals forces: an umbrella, not one additional force
+
+IUPAC uses **van der Waals forces** as an umbrella term for attractive or repulsive interactions between molecular entities, excluding bond formation and the direct electrostatic interactions of ionic groups. The term includes:
+
+- dipole–dipole interactions;
+- dipole-induced dipole interactions;
+- London / dispersion forces. [S014-003]
+
+This resolves a common terminology error.
+
+The list:
+
+`dipole–dipole + London + van der Waals`
+
+incorrectly suggests that van der Waals is a separate fourth mechanism to add on top of the others. In the terminology used here, **van der Waals is the broader family name** that includes those mechanisms.
+
+### Engineering implication
+
+When a datasheet, textbook or failure discussion says only “van der Waals forces,” the phrase is not specific enough to identify which component of the interaction is important. The engineer should ask whether the reasoning concerns permanent dipoles, induced dipoles, dispersion/polarizability, or simply a nonspecific noncovalent attraction.
+
+## 5.3 Dipole–dipole interaction: permanent charge separation meets orientation
+
+A polar bond can contribute to a permanent molecular dipole, but a bond dipole and a whole-molecule dipole are not the same thing. Molecular geometry can reinforce or cancel individual bond contributions.
+
+When molecular entities possess permanent dipoles, **dipole–dipole interactions** depend on the electrostatic interaction between those dipoles and on their relative separation and orientation. [S014-003]
+
+This orientation dependence is important for polymers because repeat-unit chemistry alone does not tell the engineer how all chain segments will orient in the real material.
+
+### What the engineer may infer
+
+A structure containing polar bonds or a permanent dipole can justify asking whether permanent-dipole interactions contribute materially to segment interactions.
+
+### What the engineer may not infer directly
+
+The presence of a permanent dipole does not by itself establish:
+
+- elastic modulus;
+- glass-transition or melting temperature;
+- creep resistance;
+- chemical compatibility;
+- solvent uptake;
+- permeability;
+- fusion temperature;
+- pressure capability.
+
+Those quantities require the actual polymer structure, morphology, formulation and measured evidence.
+
+## 5.4 Dipole-induced dipole interaction: one entity polarizes another
+
+A permanent dipole can distort the electron distribution of a neighbouring entity and create an **induced dipole**. The resulting interaction is classified by IUPAC within the van der Waals family as dipole-induced dipole interaction. [S014-003]
+
+The mechanism highlights another useful engineering descriptor: **polarizability** — how readily an electron distribution can be distorted by an electric field or neighbouring charge distribution.
+
+For Chapter 014, polarizability is used qualitatively. It is not converted into a polymer property without direct evidence.
+
+The important lesson is that an entity does not need to carry a permanent dipole before it can participate in an electrostatically induced interaction.
+
+## 5.5 London / dispersion forces: present even when permanent polarity is absent
+
+IUPAC defines **London forces**, also called **dispersion forces**, as attractive interactions associated with mutual polarizability. They are important between apolar molecules and are also components of the interaction between polar molecules. [S014-003]
+
+That last clause prevents a common error:
+
+> London forces are **not** switched off when a molecule is polar.
+
+A polar polymer can have permanent-dipole interactions **and** dispersion contributions at the same time.
+
+Likewise, a polymer that lacks a strong permanent dipole is not interaction-free. Fluctuating electron distributions and mutual polarizability still create dispersion attraction.
+
+### Engineering significance
+
+London/dispersion forces help explain why nominally nonpolar molecular structures can still condense, pack and interact.
+
+But the chapter does not convert “more dispersion” into a universal claim of higher stiffness, higher melting temperature or lower permeability. Those outcomes depend on the complete molecular and morphological system.
+
+## 5.6 Hydrogen bonding: a specific interaction with its own evidence criteria
+
+Hydrogen bonding deserves separate treatment because it is frequently reduced to the phrase “a strong dipole–dipole force.” That description is too crude for a professional reference.
+
+The 2011 IUPAC Recommendation defines a hydrogen bond as an attractive interaction involving a hydrogen atom bound to a more electronegative atom or group and an interacting atom or group in the same or another molecular entity, where there is evidence of bond formation character. The Recommendation is accompanied by experimental and theoretical criteria used to support identification of a hydrogen bond. [S014-004]
+
+The companion IUPAC Technical Report explains the rationale, evidence base and broader historical treatment. [S014-005]
+
+### Why this matters to Chapter 014
+
+Hydrogen bonding is therefore not identified merely because a drawing contains hydrogen near an electronegative atom. The structural arrangement must support the interaction, and the formal IUPAC treatment is evidence-based rather than a simple distance-only cartoon.
+
+For engineering reasoning, the safe sequence is:
+
+`possible donor/acceptor chemistry → geometrically possible interaction → evidence that hydrogen bonding is relevant → measured material consequence`
+
+not:
+
+`contains O/N/F → hydrogen-bonded polymer → known bulk property`
+
+### Do not confuse hydrogen bonding with a new covalent backbone bond
+
+Hydrogen bonding can include contributions that are not purely classical electrostatics, which is one reason IUPAC treats it carefully. It still must not be represented in the chapter as though every hydrogen bond were simply another permanent covalent link in the polymer backbone.
+
+If actual covalent crosslinking occurs, that is a different structural level and belongs mainly to Chapter 016.
+
+## 5.7 One polymer can contain several interaction mechanisms at once
+
+The interaction map is **additive and overlapping**, not a set of mutually exclusive boxes.
+
+A molecular system can simultaneously exhibit:
+
+- covalent bonds within its chemical structure;
+- polar covalent bonds;
+- permanent-dipole interactions;
+- dipole-induced dipole interactions;
+- London/dispersion interactions;
+- hydrogen bonding where the required chemistry and geometry exist.
+
+The presence of one mechanism does not cancel the others.
+
+This is why the question “Which force holds this polymer together?” is usually too simple. A better question is:
+
+> **Which interaction mechanisms are present, how are they distributed through the actual chain/morphology, and which measured property are we trying to explain?**
+
+That question routes the engineer toward the correct evidence instead of toward a one-word answer.
+
+## 5.8 TAB-014-001 — Bonding and interaction map, continuation
+
+| Interaction model / descriptor | Physical picture | Useful engineering interpretation | What must **not** be concluded directly |
+|---|---|---|---|
+| van der Waals forces | Umbrella family including dipole–dipole, dipole-induced dipole and London/dispersion interactions | Signals non-bond-forming interactions between molecular entities or separated groups | Treating “van der Waals” as one extra force to add separately to its included components |
+| Dipole–dipole interaction | Interaction between permanent dipoles; depends on separation and orientation | Helps explain why permanent molecular polarity can contribute to segment interaction | Bulk modulus, compatibility, permeability or service temperature from dipole presence alone |
+| Dipole-induced dipole interaction | A permanent dipole distorts a neighbouring electron distribution, inducing a dipole | Connects permanent polarity to neighbour polarizability | A quantitative material property without measured evidence |
+| London / dispersion forces | Attraction arising from mutual polarizability and fluctuating/induced electron distributions | Explains attraction even in apolar systems and contributes also in polar systems | Assuming dispersion exists only in nonpolar polymers or ranking bulk properties from it alone |
+| Hydrogen bonding | Specific attractive interaction involving H bound to an electronegative atom/group and an interacting partner, supported by structural/evidence criteria | Identifies a potentially important directional noncovalent interaction | Treating every O/N/F-containing polymer as automatically hydrogen-bonded or using H-bond presence as a design value |
+
+**Table rule:** the table separates **chemical connectivity / primary-bonding models** from **noncovalent interaction mechanisms**. It does not rank them on one universal “strength” axis.
+
+## 5.9 FIG-014-002 — Primary and secondary bonding map — conceptual specification complete
+
+The final graphic shall contain two visually separated layers.
+
+### Level A — chemical connectivity / extended solid bonding
+
+- covalent connectivity;
+- ionic character / ionic bonding;
+- extended electron delocalization typical of metallic solids.
+
+### Level B — noncovalent interactions between entities or chain segments
+
+A parent box labeled **van der Waals family** contains:
+
+- dipole–dipole;
+- dipole-induced dipole;
+- London / dispersion.
+
+A separate adjacent box shows **hydrogen bonding**, with a note that its identification follows the IUPAC 2011 evidence-based definition and is not reduced to a generic dipole label.
+
+The figure shall include three explicit warnings:
+
+1. interaction mechanisms can coexist;
+2. London/dispersion contributions also occur in polar systems;
+3. the map is **not** a bulk-property ranking.
+
+Graphic production remains a later asset task; the scientific content/specification is now defined.
+
+## 5.10 Why interaction labels do not directly predict polymer properties
+
+Intermolecular and intersegment interactions can affect the energetic landscape for chain packing and motion. That makes them scientifically relevant to thermal, mechanical, transport and joining behaviour.
+
+But the actual bulk response depends on more than the existence of an interaction site.
+
+At minimum, the engineer may need to consider:
+
+- number and distribution of interaction sites;
+- molecular geometry;
+- distance and orientation;
+- polarizability;
+- chain flexibility and architecture;
+- molecular weight and entanglement;
+- crystalline/amorphous morphology;
+- temperature and time scale;
+- additives, plasticizers, fillers or absorbed species;
+- processing history.
+
+Those variables explain why the sentence “polymer A has stronger intermolecular forces than polymer B” is usually too vague to support an engineering decision.
+
+The correct next step is to name the **specific measured property** and seek evidence at that level.
+
+## 5.11 Common mistakes / Failure Lens
+
+### Mistake 1 — “van der Waals” is a separate force added on top of London and dipole–dipole
+
+Why it fails: IUPAC uses van der Waals as the umbrella that includes dipole–dipole, dipole-induced dipole and London forces.
+
+### Mistake 2 — “London forces exist only in nonpolar molecules”
+
+Why it fails: IUPAC explicitly notes that London/dispersion forces are also components of the interactions between polar molecules.
+
+### Mistake 3 — “Hydrogen bond = very strong dipole–dipole force”
+
+Why it fails: the IUPAC 2011 treatment uses a dedicated definition and evidence criteria and does not reduce hydrogen bonding to one simplistic electrostatic label.
+
+### Mistake 4 — “If a repeat unit is polar, the polymer must have a known high stiffness or high melting point”
+
+Why it fails: polarity is one descriptor among many; architecture, morphology, orientation, temperature and the measured property still matter.
+
+### Mistake 5 — “A nonpolar polymer has no intermolecular attraction”
+
+Why it fails: dispersion interactions remain present through mutual polarizability.
+
+### Mistake 6 — “One interaction type determines chemical compatibility”
+
+Why it fails: compatibility is an exposure-dependent material response involving chemistry, morphology, concentration, temperature, stress and time.
+
+### Mistake 7 — “Hydrogen bonding means covalent crosslinking”
+
+Why it fails: hydrogen bonding is a noncovalent interaction; covalent crosslinking changes chemical connectivity and is a different structural mechanism.
+
+## 5.12 Verification
+
+Before accepting an intermolecular-interaction explanation in Chapter 014, check:
+
+1. Is `van der Waals` being used as an umbrella term consistently with IUPAC rather than as a duplicate category?
+2. Are London/dispersion forces allowed to coexist with permanent-dipole interactions?
+3. Is dipole–dipole reasoning kept dependent on actual molecular dipole and orientation rather than bond polarity alone?
+4. Is hydrogen bonding identified using the IUPAC 2011 framework rather than a proximity cartoon alone?
+5. Has the text avoided a one-dimensional “force strength” ladder as a predictor of bulk polymer behaviour?
+6. If a bulk property is mentioned, has the statement remained a mechanism hypothesis rather than an unsupported magnitude or ranking?
+7. Are chain architecture and morphology routed to Chapters 016–017 instead of being silently collapsed into intermolecular-force language?
+
+## 5.13 Engineering decision from Investigation 5
+
+> Polymer chains and chain segments can interact through several overlapping noncovalent mechanisms. Use the interaction map to identify **what physical mechanism is plausible**, then move to the measured property and material-specific evidence before making an engineering conclusion.
+
+The engineer should now retain five distinctions:
+
+1. covalent bonds define much of the polymer's chemical connectivity, while noncovalent interactions act between nearby entities or segments;
+2. van der Waals is an umbrella family, not an extra force separate from dipole/dispersion components;
+3. permanent dipoles, induced dipoles and London/dispersion contributions can coexist;
+4. hydrogen bonding has a specific evidence-based IUPAC definition and is not merely shorthand for “strong polarity”;
+5. no interaction label directly supplies stiffness, thermal capability, permeability, compatibility or pressure rating.
+
+With the noncovalent interaction layer established, the next question moves from **how molecules interact** to **why carbon can build the enormous structural variety of polymer backbones in the first place**.
+
+That is the subject of Investigation 6.
 
 ---
 
 # Investigation 6 — Why Is Carbon Uniquely Useful for Polymer Backbones?
 
-**Authoring state:** planned.
+**Authoring state:** planned. Evidence research required before development.
 
 ---
 
@@ -1083,12 +1353,12 @@ That is the subject of Investigation 5.
 | ID | Asset | Status |
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated in Investigation 1; terminology boundary reinforced in Investigation 2 |
-| FIG-014-002 | Primary and secondary bonding map | Partial placeholder integrated in Investigation 4; Level B completes in Investigation 5 |
+| FIG-014-002 | Primary and secondary bonding map | Scientific/conceptual specification complete through Investigation 5; graphic production pending |
 | FIG-014-003 | Carbon hybridization and geometry | Planned |
 | FIG-014-004 | Sigma and pi bonding in ethylene | Planned |
 | FIG-014-005 | Ethylene to polyethylene bridge | Planned |
 | FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; figure planned |
-| TAB-014-001 | Bonding types and engineering relevance | Primary-bonding rows integrated; extend in Investigation 5 |
+| TAB-014-001 | Bonding types and engineering relevance | Primary-bonding + intermolecular-interaction rows integrated through Investigation 5 |
 | TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Planned |
 | TAB-014-003 | Controlled polymer-structure examples | Planned |
 | TAB-014-004 | Downstream chapter ownership crosswalk | Planned |
