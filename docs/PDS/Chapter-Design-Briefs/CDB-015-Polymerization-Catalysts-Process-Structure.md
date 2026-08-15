@@ -2,8 +2,9 @@
 
 **PDS Baseline:** 1.0  
 **Working Chapter:** 015  
-**Status:** Draft — Author Review Required  
+**Status:** Approved — Engineering Development Authorized after Definition-of-Ready verification  
 **Date:** 2026-08-15  
+**Author approval:** 2026-08-15  
 **Architecture source:** `BOOK_STRUCTURE.md`  
 **Upstream prerequisite:** Chapter 014 — Atomic Structure, Chemical Bonding and Carbon Chemistry for Polymer Engineers
 
@@ -92,7 +93,7 @@ The initial authoritative path shall include:
 2. **IUPAC Purple Book — Compendium of Polymer Terminology and Nomenclature, Recommendations 2008, 2nd ed. published 2009** — polymer terminology/nomenclature framework.
 3. **Glossary of Basic Terms in Polymer Science, IUPAC Recommendations 1996, Pure and Applied Chemistry 68, 2287–2311** — source for the classical controlled terms including polymerization, chain polymerization, polyaddition and polycondensation.
 4. **Glossary of terms related to kinetics, thermodynamics, and mechanisms of polymerization, IUPAC Recommendations 2008, Pure and Applied Chemistry 80, 2163–2193** — mechanism/kinetics terminology where required.
-5. **Terminology for chain polymerization, IUPAC Recommendations 2021, published in Pure and Applied Chemistry 94 (2022), 1093 onward** — current terminology path for coordination polymerization, catalyst precursor/activator language, heterogeneous/homogeneous coordination polymerization and metallocene polymerization.
+5. **Terminology for chain polymerization, IUPAC Recommendations 2021, published in Pure and Applied Chemistry 94 (2022), 1093–1147** — current terminology path for coordination polymerization, catalyst precursor/activator language, heterogeneous/homogeneous coordination polymerization and metallocene polymerization.
 6. **ISO 472 and ISO 1043-1** only where plastics terminology or polymer abbreviations need controlled cross-reference; neither is to be treated as polymerization-design authority.
 7. **Directly reviewed primary literature** for every retained claim that links a named catalyst/process route to a real material-specific architecture/property tendency.
 
@@ -149,19 +150,14 @@ Develop original figures for:
 
 1. **FIG-015-001 — Polymerization classification map**  
    Controlled map of polymerization → chain polymerization / polyaddition / polycondensation, with a warning showing why the historical `addition vs condensation` split is incomplete.
-
 2. **FIG-015-002 — Chain-polymerization lifecycle**  
    `initiation → propagation → termination / chain transfer`, clearly showing that not every chain polymerization contains every possible event in the same way.
-
 3. **FIG-015-003 — Radical polymerization mechanism at engineering-use depth**  
    Active radical, monomer addition, chain growth, termination / transfer concepts without unnecessary reaction-detail overload.
-
 4. **FIG-015-004 — Coordination-polymerization catalyst environment map**  
    Heterogeneous coordination catalysis / commonly termed Ziegler–Natta versus homogeneous coordination catalysis / metallocene route, with terminology warnings.
-
 5. **FIG-015-005 — Same monomer, different chain-building histories**  
    Conceptual ethene/propene example showing how catalyst/process history can lead to different architecture hypotheses without claiming final grade properties.
-
 6. **FIG-015-006 — Process provenance to engineering evidence chain**  
    `feed + catalyst/mechanism + process history → chain-building outcome → characterization → compound/product qualification → piping decision`.
 
@@ -202,76 +198,45 @@ One checklist titled:
 
 ## 9. Investigation roadmap
 
-The exact headings may be refined during Technical Outline, but the chapter should progress through approximately ten Investigations.
-
 ### Investigation 1 — Why should a piping engineer care how the polymer was made?
-
 Establish polymerization history as material provenance and connect Chapter 014 chemistry to Chapter 016 architecture.
 
 ### Investigation 2 — What does “polymerization” actually mean, and how should the reactions be classified?
-
 Control monomer/polymerization terminology, chain polymerization, polyaddition, polycondensation and the limits of `addition/condensation` classroom language.
 
 ### Investigation 3 — How does chain polymerization build a macromolecule?
-
 Initiation, propagation, termination and chain transfer at engineering-use depth. Distinguish kinetic chain from polymer chain where required.
 
 ### Investigation 4 — How does radical polymerization work, and what process variables matter?
-
 Radical active species, initiator context, propagation, termination/transfer and process-variable hypotheses. No commercial-grade property claims without direct evidence.
 
 ### Investigation 5 — How does growth by reactions between molecules of different chain lengths differ from chain polymerization?
-
 Polyaddition/polycondensation concepts, functional-group conversion, stoichiometric sensitivity where relevant, and the bridge to material architecture without turning the chapter into a polymer-synthesis textbook.
 
 ### Investigation 6 — What is coordination polymerization?
-
 Monomer coordination, chain carrier, catalyst precursor/activator concepts and the minimum organometallic context needed for polyolefins.
 
 ### Investigation 7 — What does “Ziegler–Natta” mean in modern engineering language?
-
 Heterogeneous coordination catalysis, multi-site/heterogeneous environment as a bounded architecture hypothesis, industrial terminology versus controlled IUPAC terminology, and evidence limits.
 
 ### Investigation 8 — What changes with homogeneous / metallocene coordination polymerization?
-
 Single-/defined-site concepts only where scientifically justified, stereoregularity/comonomer-placement hypotheses, and direct comparison with heterogeneous catalyst environments without creating a superiority ranking.
 
 ### Investigation 9 — How do process variables become molecular-architecture hypotheses?
-
 Temperature, monomer/comonomer feed, pressure/concentration context, chain transfer, hydrogen where appropriate, residence/reaction history and process configuration. Every named-material/process claim requires direct evidence and confounder control.
 
 ### Investigation 10 — What may the engineer infer from polymerization provenance, and where must the inference stop?
-
 Formalize the process-provenance evidence workflow, transferability limits, supplier-data questions, downstream chapter routing and the Chapter 016 handoff.
 
 ## 10. Primary-evidence gate policy
 
-Chapter 015 will contain stable mechanism science and material/process-specific examples. These must be separated.
-
 ### Stable mechanism layer
-
-May use authoritative IUPAC recommendations and established academic references for:
-
-- definitions/classification;
-- general reaction-mechanism concepts;
-- initiation/propagation/termination/transfer vocabulary;
-- coordination-polymerization terminology;
-- general catalyst/active-species concepts.
+May use authoritative IUPAC recommendations and established academic references for definitions/classification, general reaction-mechanism concepts, initiation/propagation/termination/transfer vocabulary, coordination-polymerization terminology and general catalyst/active-species concepts.
 
 ### Material/process-specific layer
-
 Requires directly reviewed primary evidence whenever a retained claim asserts that a named material, catalyst family or process variable produced a specific architecture/property trend.
 
-Each retained case shall record:
-
-- exact feed/material/catalyst system;
-- process variable or catalyst distinction;
-- measured molecular/structural output;
-- measured engineering property if one is discussed;
-- confounders;
-- supported conclusion;
-- unsupported conclusion;
-- transferability to piping compounds/products.
+Each retained case shall record exact feed/material/catalyst system, process variable or catalyst distinction, measured molecular/structural output, measured engineering property if discussed, confounders, supported conclusion, unsupported conclusion and transferability to piping compounds/products.
 
 No commercial catalyst/grade ranking is authorized by default.
 
@@ -325,7 +290,7 @@ Chapter 014 remains the molecular-chemistry prerequisite. Chapter 015 shall not 
 
 ## 14. Success / acceptance criteria
 
-The CDB is ready for author approval when:
+The CDB is approved because:
 
 - the monomer→polymer engineering purpose is clear;
 - current polymerization terminology is controlled;
@@ -352,8 +317,8 @@ The completed chapter will satisfy its Definition of Done only when:
 
 ## 15. Definition-of-Ready disposition
 
-**Current disposition: DRAFT — AUTHOR REVIEW REQUIRED.**
+**Current disposition: CDB APPROVED — detailed Technical Outline and active Standards/Evidence Plan required before Engineering Development starts.**
 
 This CDB defines the chapter purpose, scope, audience, inputs, standards/evidence path, investigation roadmap, engineering assets, exclusions and acceptance criteria required by `governance/Definition-of-Ready.md`.
 
-Engineering Development is **not yet authorized**. After author approval, the next controlled step is to produce the detailed Technical Outline and active Standards/Evidence Plan, verify that the Definition of Ready is complete, and only then begin sequential Investigation authoring.
+Author approval was recorded on 2026-08-15. The next controlled step is to produce the detailed Technical Outline and active Standards/Evidence Plan, verify the Definition of Ready is complete, and only then begin sequential Investigation authoring.
