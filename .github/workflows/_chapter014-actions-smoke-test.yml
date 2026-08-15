@@ -1,0 +1,12 @@
+name: Chapter 014 Actions smoke test
+
+on:
+  push:
+    branches:
+      - chapter-014-engineering-development
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "actions-ok"
