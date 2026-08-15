@@ -2,9 +2,9 @@
 
 **Chapter:** From Monomer to Polymer: Polymerization, Catalysts and Process–Structure Relationships  
 **PDS baseline:** 1.0  
-**Current stage:** Definition of Ready complete — Engineering Development authorized  
+**Current stage:** Engineering Development active — Investigation 1 authoring PASS  
 **CDB author approval:** 2026-08-15  
-**Development checkpoint:** CDB, Technical Outline and Standards/Evidence Plan complete
+**Development checkpoint:** CDB, Technical Outline and Standards/Evidence Plan complete; Investigation 2 authorized
 
 ## 1. Definition-of-Ready audit
 
@@ -24,7 +24,7 @@
 
 **Definition-of-Ready disposition: PASS.**
 
-Engineering Development is authorized beginning with Investigation 1.
+Engineering Development is authorized.
 
 ## 2. CDB approval controls retained
 
@@ -61,7 +61,7 @@ Investigations 4, 7, 8 and especially 9 retain local primary-evidence gates befo
 
 ## 4. Quantitative readiness
 
-No equation is mandatory for Investigation 1.
+No equation is mandatory for Investigation 1 or 2.
 
 Potential quantitative relations remain controlled candidates rather than assumed content:
 
@@ -71,21 +71,42 @@ Potential quantitative relations remain controlled candidates rather than assume
 
 Each must pass an explicit usefulness, assumptions, source, symbol/unit and ownership review before inclusion.
 
-## 5. Current authoring authorization
+## 5. Investigation 1 authoring checkpoint
 
-**AUTHORIZED:** Investigation 1 — Why should a piping engineer care how the polymer was made?
+**PASS — Investigation 2 authoring authorized.**
 
-Investigation 1 may establish:
+Dedicated record:
+
+`reviews/chapter-015/INVESTIGATION-001-AUTHORING-REVIEW-2026-08-15.md`
+
+Investigation 1 successfully establishes:
 
 - polymerization history as material provenance;
-- distinction between chemical identity and manufacturing/chain-building history;
-- mechanism/provenance as a guide to what should be characterized;
-- evidence boundary from mechanism hypothesis to material/product qualification;
-- the Chapter 014 → 015 → 016 handoff.
+- distinction between chemical identity and chain-building/manufacturing history;
+- process/catalyst information as an architecture-hypothesis input rather than measured architecture;
+- architecture versus morphology boundary;
+- resin/compound versus product/application qualification boundary;
+- procurement, change-control and failure-analysis use cases;
+- preliminary process-provenance evidence chain;
+- clean handoff to formal polymerization classification in Investigation 2.
 
-Investigation 1 may not introduce a named catalyst/process/property trend that would bypass the primary-evidence gate.
+No named catalyst/process/property trend was introduced and no primary-evidence gate was bypassed.
 
-## 6. Current gate state
+## 6. Current authoring authorization
+
+**AUTHORIZED:** Investigation 2 — What Does “Polymerization” Actually Mean, and How Should the Reactions Be Classified?
+
+Mandatory controls:
+
+- chain polymerization / polyaddition / polycondensation distinction;
+- historical `addition polymerization` warning;
+- condensative chain polymerization counterexample where useful;
+- `step-growth` explanatory mapping rather than uncontrolled taxonomy;
+- `TAB-015-001`;
+- `FIG-015-001` scientific specification;
+- no commercial material/property ranking.
+
+## 7. Current gate state
 
 | Gate | Status |
 |---|---|
@@ -93,8 +114,9 @@ Investigation 1 may not introduce a named catalyst/process/property trend that w
 | Technical Outline | PASS |
 | Standards/Evidence Plan | PASS |
 | Definition of Ready | PASS |
-| Engineering Development | AUTHORIZED |
-| Investigation 1 authoring | AUTHORIZED |
+| Engineering Development | ACTIVE |
+| Investigation 1 authoring | PASS |
+| Investigation 2 authoring | AUTHORIZED |
 | Investigation 2 terminology review | pending after authoring |
 | Named process/catalyst primary-evidence gates | pending when triggered |
 | Final Technical Review | pending |
@@ -103,7 +125,7 @@ Investigation 1 may not introduce a named catalyst/process/property trend that w
 | Desk Test | pending |
 | Human Approval / merge | pending |
 
-## 7. Configuration-control rule
+## 8. Configuration-control rule
 
 The canonical Chapter 015 manuscript is developed under:
 
