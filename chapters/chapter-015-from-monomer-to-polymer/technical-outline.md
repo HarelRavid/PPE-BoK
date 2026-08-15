@@ -26,10 +26,10 @@ The chapter owns the first six blocks only to the depth needed to explain how ar
 1. Use **polymerization** as the broad process term.
 2. Use **chain polymerization** only for the IUPAC chain-reaction concept in which propagation occurs by reaction of monomer with reactive site(s) on the growing chain and the active site is regenerated.
 3. Explicitly state that the adjective `chain` refers to the chain reaction, not simply to the existence of a polymer chain.
-4. Use **polyaddition** for growth by addition reactions between molecules of all degrees of polymerization.
-5. Use **polycondensation** for growth by condensation reactions between molecules of all degrees of polymerization.
-6. Treat the older expression **addition polymerization** as historical classroom terminology; explain that IUPAC notes that it previously covered both present-day polyaddition and chain polymerization.
-7. Use `step-growth` only as explanatory language when useful; do not present it as the controlling formal IUPAC classification unless mapped to the actual chemistry.
+4. Use **step polymerization** as the current IUPAC top-level class for growth by reactions between monomer, oligomer or polymer molecules of any length.
+5. Within step polymerization, use **additive step polymerization (polyaddition)** and **condensative step polymerization (polycondensation)**.
+6. Within chain polymerization, retain the current **additive chain polymerization** / **condensative chain polymerization** distinction where it matters to classification.
+7. Treat the older expression **addition polymerization** as historical/ambiguous classroom terminology; do not use `addition polymerization / condensation polymerization` as the controlling top-level taxonomy.
 8. Use **radical polymerization** as a chain polymerization whose kinetic-chain carriers are radicals.
 9. Use **coordination polymerization** as a chain polymerization involving preliminary coordination of monomer with a chain carrier.
 10. Use **heterogeneous catalysis coordination polymerization** / **heterogeneous coordination polymerization** as the controlled term; note that polyolefin routes of this type are sometimes called Ziegler–Natta polymerization and that current IUPAC terminology deprecates named reactions as the technical definition.
@@ -98,11 +98,11 @@ Exit capability:
 
 Required content:
 - monomer, polymerization;
-- chain polymerization;
-- polyaddition;
-- polycondensation;
-- condensative chain polymerization as the key counterexample to the simplistic classroom split;
-- explanatory `step-growth` mapping;
+- current `step polymerization` / `chain polymerization` top-level hierarchy;
+- additive step polymerization = polyaddition;
+- condensative step polymerization = polycondensation;
+- additive and condensative chain-polymerization qualifiers where applicable;
+- condensative chain polymerization as the key counterexample to the simplistic historical split;
 - `TAB-015-001`;
 - `FIG-015-001`;
 - `EX-015-002`.
@@ -143,17 +143,18 @@ Required content:
 Quantitative candidate:
 - only bounded rate-law concepts if they materially improve understanding; otherwise omit.
 
-### Investigation 5 — How does growth by reactions between molecules of different chain lengths differ from chain polymerization?
+### Investigation 5 — How does step polymerization build macromolecules, and what distinguishes additive from condensative step growth?
 
 **Purpose:** Explain polyaddition/polycondensation without creating a synthesis textbook.
 
 Required content:
-- all-degrees-of-polymerization growth concept;
-- condensation versus addition reaction distinction;
-- functional-group conversion;
-- stoichiometric balance as a qualitative engineering concern;
-- Carothers-type ideal relationship only if assumptions are explicit and evidence review approves its teaching value;
-- transfer ownership of molar-mass consequences to Chapter 016.
+- formal step-polymerization growth among monomer/oligomer/polymer molecules of different lengths;
+- additive step polymerization = polyaddition;
+- condensative step polymerization = polycondensation;
+- monomer functionality and possible connectivity;
+- stoichiometric balance / reaction extent as qualitative provenance concerns;
+- no Carothers-type equation retained in Chapter 015;
+- transfer detailed molar-mass/topology consequences to Chapter 016.
 
 ### Investigation 6 — What is coordination polymerization?
 

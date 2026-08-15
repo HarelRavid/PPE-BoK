@@ -2,139 +2,82 @@
 
 **Chapter:** From Monomer to Polymer: Polymerization, Catalysts and Process–Structure Relationships  
 **PDS baseline:** 1.0  
-**Current stage:** Engineering Development active — Investigation 1 authoring PASS  
+**Current stage:** Canonical integration complete — final integrated-manuscript review pending  
 **CDB author approval:** 2026-08-15  
-**Development checkpoint:** CDB, Technical Outline and Standards/Evidence Plan complete; Investigation 2 authorized
+**Development checkpoint:** Investigations 1–10 integrated; pre-integration Technical / Standards-Evidence / Editorial-Desk reviews passed with bounded integration findings applied
 
-## 1. Definition-of-Ready audit
+## 1. Gate status
 
-`governance/Definition-of-Ready.md` requires all of the following before Engineering Development.
-
-| Required item | Status | Controlled disposition |
+| Gate | Status | Current disposition |
 |---|---|---|
-| Chapter Design Brief | PASS | CDB-015 approved by author on 2026-08-15 and merged to `main` |
-| Chapter purpose and scope | PASS | Defined in CDB §§1, 3, 12 |
-| Primary reader outcomes | PASS | Defined in CDB §4 |
-| Design Basis variables | PASS FOR CHAPTER TYPE | Controlled scientific/process inputs defined in CDB §5; this is a mechanism/provenance chapter, not a project pressure-design calculation chapter |
-| Applicable standards list / standards path | PASS | Active `references.md` identifies IUPAC/ISO terminology path and lifecycle holds |
-| Investigation structure / technical outline | PASS | 10-Investigation sequence defined in `technical-outline.md` |
-| Required engineering assets | PASS | FIG-015-001..006, TAB-015-001..005, EX-015-001..003, WF-015-001, CL-015-001 assigned |
-| Known exclusions and cross-references | PASS | Chapter 016–020 and later design/testing ownership explicitly controlled |
-| Success / acceptance criteria | PASS | Defined in approved CDB §14 and review gates in Technical Outline |
+| CDB / Definition of Ready | PASS | CDB-015 author-approved and DoR passed |
+| Technical Outline | PASS / UPDATED | 2026 IUPAC step/chain classification update integrated |
+| Standards / Evidence Plan | PASS / UPDATED | S015-008 through S015-016 integrated with evidence limits |
+| Engineering Development | COMPLETE | Investigations 1–10 canonically integrated |
+| Investigation authoring reviews | PASS | Investigation 1–10 authoring gates closed |
+| Named primary-evidence gates | PASS | Controlled cases for Investigations 7–9 only |
+| Pre-integration Technical Review | CONDITIONAL PASS → FINDINGS APPLIED | TR015-01 through TR015-07 applied during canonical integration |
+| Pre-integration Standards/Evidence Validation | PASS | Publication lifecycle holds retained |
+| Pre-integration Editorial / Desk Review | CONDITIONAL PASS → FINDINGS APPLIED | ED015-01 through ED015-06 applied during integration |
+| Final full-file Technical Review | PENDING | must review continuous canonical manuscript |
+| Final claim-level Standards/Evidence Review | PENDING | must validate final integrated wording/source placement |
+| Final Editorial / Style / Desk Test | PENDING | continuous manuscript required |
+| Human Approval / merge | PENDING | explicit author approval required after final reviews |
+| Publishing / Design Freeze | BLOCKED | final figures + publication-time source/lifecycle checks remain |
 
-**Definition-of-Ready disposition: PASS.**
+## 2. Definition-of-Ready record
 
-Engineering Development is authorized.
+Definition of Ready passed before Engineering Development. The approved planning package defined chapter purpose/scope, reader outcomes, scientific/process inputs, evidence path, ten-Investigation structure, engineering assets, exclusions/cross-references and acceptance criteria.
 
-## 2. CDB approval controls retained
+## 3. Controlled terminology update
 
-The following are binding authoring controls:
+A new final IUPAC Recommendation published in 2026 was identified during Investigation 2 and superseded one planning-era classification assumption without changing chapter scope.
 
-1. Do not use `addition polymerization / condensation polymerization` as a complete formal classification.
-2. Keep chain polymerization, polyaddition and polycondensation distinct under current IUPAC terminology.
-3. Use `step-growth` as explanatory language only when mapped to the underlying controlled classification.
-4. Use `Ziegler–Natta` as industrial/historical terminology with the controlled heterogeneous coordination-polymerization meaning made explicit.
-5. Do not equate every homogeneous coordination route with metallocene polymerization.
-6. Do not infer final material properties from catalyst family or process route alone.
-7. Do not duplicate Chapter 016 detailed architecture or Chapter 017 morphology.
-8. No named material/process trend enters canonical authoring without its required evidence gate.
+Canonical Chapter 015 now uses:
 
-## 3. Evidence-readiness review
+- `step polymerization`;
+  - additive step polymerization = polyaddition;
+  - condensative step polymerization = polycondensation;
+- `chain polymerization`;
+  - additive chain polymerization;
+  - condensative chain polymerization.
 
-### Authoritative terminology
+The change record remains in `reviews/chapter-015/TERMINOLOGY-CLASSIFICATION-UPDATE-2026-08-15.md`.
 
-PASS for current development scope.
+## 4. Primary-evidence boundaries
 
-Current official-source checks performed 2026-08-15 support:
+Named catalyst/process outcome claims are limited to the directly reviewed systems recorded as S015-009 through S015-016. No source is treated as a universal catalyst-family rule or as piping-design authority.
 
-- IUPAC Gold Book current entries for chain polymerization, polyaddition, polycondensation, radical polymerization, coordination polymerization, heterogeneous/homogeneous coordination polymerization, metallocene polymerization and chain propagation;
-- IUPAC Recommendations 2008 for polymerization kinetics/mechanisms;
-- IUPAC Recommendations 2021, published 2022, for modern chain-polymerization terminology;
-- ISO 472:2013 current publication status with `90.92 — to be revised` lifecycle hold;
-- ISO 1043-1:2011 current `90.93 — confirmed` status.
+## 5. Quantitative disposition
 
-### Primary-literature readiness
+No Chapter 015 design equation is retained.
 
-PASS for Investigation 1–3 entry because no named catalyst/material property claim is required to establish the foundational framework.
+- `P_x + P_y` notation is mechanistic.
+- `k_p` / `k_t` are terminology only.
+- a Carothers-type equation was evaluated and intentionally excluded to preserve the Chapter 016 boundary.
 
-Investigations 4, 7, 8 and especially 9 retain local primary-evidence gates before named process/material outcome claims are authorized.
+## 6. Canonical manuscript / configuration state
 
-## 4. Quantitative readiness
-
-No equation is mandatory for Investigation 1 or 2.
-
-Potential quantitative relations remain controlled candidates rather than assumed content:
-
-- rate notation / propagation coefficients;
-- ideal Carothers-type relation;
-- chain-transfer relations.
-
-Each must pass an explicit usefulness, assumptions, source, symbol/unit and ownership review before inclusion.
-
-## 5. Investigation 1 authoring checkpoint
-
-**PASS — Investigation 2 authoring authorized.**
-
-Dedicated record:
-
-`reviews/chapter-015/INVESTIGATION-001-AUTHORING-REVIEW-2026-08-15.md`
-
-Investigation 1 successfully establishes:
-
-- polymerization history as material provenance;
-- distinction between chemical identity and chain-building/manufacturing history;
-- process/catalyst information as an architecture-hypothesis input rather than measured architecture;
-- architecture versus morphology boundary;
-- resin/compound versus product/application qualification boundary;
-- procurement, change-control and failure-analysis use cases;
-- preliminary process-provenance evidence chain;
-- clean handoff to formal polymerization classification in Investigation 2.
-
-No named catalyst/process/property trend was introduced and no primary-evidence gate was bypassed.
-
-## 6. Current authoring authorization
-
-**AUTHORIZED:** Investigation 2 — What Does “Polymerization” Actually Mean, and How Should the Reactions Be Classified?
-
-Mandatory controls:
-
-- chain polymerization / polyaddition / polycondensation distinction;
-- historical `addition polymerization` warning;
-- condensative chain polymerization counterexample where useful;
-- `step-growth` explanatory mapping rather than uncontrolled taxonomy;
-- `TAB-015-001`;
-- `FIG-015-001` scientific specification;
-- no commercial material/property ranking.
-
-## 7. Current gate state
-
-| Gate | Status |
-|---|---|
-| CDB | PASS / APPROVED |
-| Technical Outline | PASS |
-| Standards/Evidence Plan | PASS |
-| Definition of Ready | PASS |
-| Engineering Development | ACTIVE |
-| Investigation 1 authoring | PASS |
-| Investigation 2 authoring | AUTHORIZED |
-| Investigation 2 terminology review | pending after authoring |
-| Named process/catalyst primary-evidence gates | pending when triggered |
-| Final Technical Review | pending |
-| Final Standards/Evidence Validation | pending |
-| Editorial / Style | pending |
-| Desk Test | pending |
-| Human Approval / merge | pending |
-
-## 8. Configuration-control rule
-
-The canonical Chapter 015 manuscript is developed under:
+Canonical manuscript:
 
 `chapters/chapter-015-from-monomer-to-polymer/chapter.md`
 
-Supporting chapter-local files are:
+Supporting canonical files:
 
-- `technical-outline.md`;
 - `references.md`;
+- `technical-outline.md`;
 - `review.md`.
 
-The final manuscript must remain in the canonical `chapters/` directory before Chapter 015 can be merged to `main`.
+Temporary Investigation 2–10 authoring candidates and the temporary references addendum are removed by the canonical integration.
+
+## 7. Next controlled action
+
+Perform the final integrated-manuscript review cycle:
+
+1. full-file Technical Review;
+2. final claim-level Standards/Evidence Validation;
+3. final Editorial / Style Review + continuous Desk Test;
+4. branch synchronization with current `main` if needed;
+5. Human Approval Gate.
+
+Do not merge PR #15 or start Chapter 016 before those gates close.
