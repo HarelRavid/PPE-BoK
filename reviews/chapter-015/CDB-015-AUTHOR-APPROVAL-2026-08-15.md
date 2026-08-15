@@ -32,3 +32,7 @@ Approval does not waive the CDB evidence rules. In particular:
 ## Source-status note at approval
 
 The planning terminology path was rechecked against official IUPAC/ISO records on 2026-08-15. IUPAC's 2021 Recommendations on chain-polymerization terminology were published in *Pure and Applied Chemistry* 94 (2022), 1093–1147. ISO 472:2013 remains published at stage 90.92 (`to be revised`) with Amendment 1:2018, while ISO 1043-1:2011 remains published/confirmed at stage 90.93. These ISO documents are terminology/abbreviation sources only, not polymerization-design authority.
+
+## CDB status synchronization
+
+The controlled CDB file was updated after approval to record its approved status. No engineering scope expansion was introduced by this status synchronization.
