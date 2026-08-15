@@ -35,4 +35,4 @@ The planning terminology path was rechecked against official IUPAC/ISO records o
 
 ## CDB status synchronization
 
-The controlled CDB file was updated after approval to record its approved status. No engineering scope expansion was introduced by this status synchronization.
+The controlled CDB file records its approved status and the requirement to complete the detailed Technical Outline and Standards/Evidence Plan before Engineering Development begins. No engineering scope expansion was introduced by the status synchronization.
