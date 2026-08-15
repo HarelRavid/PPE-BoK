@@ -2,28 +2,28 @@
 
 **Chapter:** Atomic Structure, Chemical Bonding and Carbon Chemistry for Polymer Engineers  
 **PDS baseline:** 1.0  
-**Current stage:** Engineering Development  
+**Current stage:** Final integrated-manuscript review complete — Human Approval pending  
 **CDB author approval:** 2026-08-14  
-**Development checkpoint:** Investigations 1–8 authored; Investigation 9 primary-literature gate passed for controlled Cases A–C
+**Development checkpoint:** Investigations 1–10 canonically integrated; final Technical, Standards/Evidence, Editorial/Style and Desk reviews PASS
 
 ## 1. Gate status
 
 | Gate | Status | Current disposition |
 |---|---|---|
 | CDB / Definition of Ready | PASS | Author explicitly approved CDB-014 on 2026-08-14 |
-| Technical Outline | ACTIVE | 10-Investigation implementation path defined |
-| Evidence Plan | ACTIVE | Terminology/evidence checkpoints complete through Investigation 8; Investigation 9 Evidence Matrix complete |
-| Engineering Development | IN PROGRESS | Investigations 1–8 authored; Investigation 9 now authorized for Cases A–C only; Investigation 10 not yet developed |
-| Physics / scientific correctness review | PENDING | Formal review after broader development checkpoint |
-| Standards / terminology validation | PARTIAL | Current ISO lifecycle recorded; IUPAC terminology/recommendations checked through Investigation 8; final validation later |
-| Academic / primary evidence review | PASS FOR INV9 ENTRY | Four primary studies directly reviewed; Cases A–C have explicit transferability limits |
-| Equations | N/A CURRENT SCOPE | No design/calculation equation introduced through Investigation 8 |
-| Units | N/A CURRENT SCOPE | No quantitative engineering calculation introduced through Investigation 8 |
-| Examples | PARTIAL | `EX-014-001` integrated; `EX-014-002` now authorized for evidence-bounded development using Cases A–C only |
-| Editorial / Style | PENDING | Formal pass after substantive development |
-| Desk Test | PENDING | Required before chapter closure |
-| Final Author Approval | BLOCKED | Requires completion of all chapter gates |
-| Design Freeze / publication | BLOCKED | Chapter remains in development |
+| Technical Outline | PASS | 10-Investigation implementation path completed without scope expansion |
+| Evidence Plan | PASS | Terminology/evidence path and Investigation 9 primary-literature matrix completed |
+| Engineering Development | COMPLETE | Investigations 1–10 canonically integrated in the controlled manuscript |
+| Physics / scientific correctness review | PASS | Final full-file Technical Review passed on 2026-08-15 |
+| Standards / terminology validation | PASS WITH PUBLICATION HOLDS | Final claim-level wording review passed; ISO/IUPAC lifecycle recheck remains a publication hold |
+| Academic / primary evidence review | PASS | S014-009 through S014-012 remain bounded to the retained Cases A–C |
+| Equations | N/A CURRENT SCOPE | No design/calculation equation introduced in Chapter 014 |
+| Units | N/A CURRENT SCOPE | No quantitative engineering calculation introduced in Chapter 014 |
+| Examples | PASS | `EX-014-001` and `EX-014-002` passed continuous-manuscript review |
+| Editorial / Style | PASS | Final integrated-manuscript Editorial/Style review passed on 2026-08-15 |
+| Desk Test | PASS | Continuous-manuscript evidence-boundary Desk Test passed on 2026-08-15 |
+| Final Author Approval | PENDING | Human Approval Gate required before merge |
+| Design Freeze / publication | BLOCKED | Final figure production, publication lifecycle recheck and Human Approval remain open |
 
 ## 2. Investigations 1–5 authoring disposition
 
@@ -185,3 +185,15 @@ Investigations 1–8 remain controlled authoring candidates; the Investigation 9
 Investigations 9–10 were integrated into `chapter.md` only after their controlled authoring reviews, the pre-integration Technical Review, the logical-manuscript Technical/Evidence Review and the logical-manuscript Editorial/Desk Review. The integration applied TR-014-01 through TR-014-04, including claim-class/evidence-level disambiguation, noncovalent-interaction terminology for FIG-014-002, explicit non-normative labeling of the PPE-BoK evidence ladder, and Investigation 9 transferability wording controls.
 
 **Current disposition:** Engineering Development arc integrated; final full-file Technical Review is the next gate. Final claim-level Standards/Evidence publication pass, final Editorial/Style Review, final Desk Test, Human Approval and merge remain open.
+
+## 12. Final integrated-manuscript review checkpoint — 2026-08-15
+
+The canonical integrated manuscript was reviewed against root tree `dcf0031609ee0226de9877fcb4f953a6b24ff89b`. This tree is byte-identical to the previously validated exported integration tree from commit `bc135371bfcf45733ee0ae2bf465811483e859e1`; the remote canonical reproduction commit is `c8d790e59ded63dae1b2730c2032193850cd8212`.
+
+Final review records:
+
+- `reviews/chapter-014/FINAL-FULL-FILE-TECHNICAL-REVIEW-2026-08-15.md` — **PASS**.
+- `reviews/chapter-014/FINAL-CLAIM-LEVEL-STANDARDS-EVIDENCE-REVIEW-2026-08-15.md` — **PASS FOR FINAL WORDING; PUBLICATION LIFECYCLE HOLDS REMAIN**.
+- `reviews/chapter-014/FINAL-EDITORIAL-STYLE-DESK-REVIEW-2026-08-15.md` — **PASS**.
+
+No new scientific, engineering or editorial rewrite was required by the final reviews. Figure production remains a Publishing hold and does not reopen the chapter's approved technical content. Final Human Approval and controlled merge remain required.
