@@ -1,0 +1,505 @@
+# Investigation 9 — How Do Process Variables Become Molecular-Architecture Hypotheses?
+
+**Authoring status:** controlled candidate  
+**Primary-evidence gate:** PASS — S015-014, S015-015, S015-016 and reused S015-012 only  
+**Scope:** process provenance → measured molecular/material evidence; no piping-performance transfer  
+**Canonical integration:** deferred to end-of-chapter integration
+
+The preceding Investigations established the mechanism vocabulary:
+
+- step versus chain polymerization;
+- radical chain carriers;
+- coordination / coordination-insertion polymerization;
+- heterogeneous and homogeneous catalyst environments;
+- Ziegler–Natta and metallocene terminology with evidence limits.
+
+Investigation 9 now asks the most practical process–structure question in the chapter:
+
+> **When a polymerization-process variable changes, what may an engineer legitimately infer before the actual resin is characterized?**
+
+The answer is deliberately limited:
+
+> **A process variable can support a molecular-architecture hypothesis. It does not establish the architecture, and it never establishes piping performance by itself.**
+
+The controlled reasoning chain is:
+
+`documented process variable`
+
+→ `mechanism/pathway that could plausibly be affected`
+
+→ `specific architecture or composition hypothesis`
+
+→ `measurement that can test the hypothesis`
+
+→ `compound/product qualification`
+
+→ `engineering decision`.
+
+Investigation 9 uses four primary cases to show how this works. Each case is bounded to its own catalyst, feed, reactor/process and characterization framework.
+
+## 9.1 Process history is part of causal provenance, not a hidden pipe-design equation
+
+Several process variables can affect polymerization chemistry or the competition among chain-building events:
+
+- temperature;
+- pressure and monomer concentration;
+- monomer/comonomer feed composition;
+- hydrogen or another transfer environment;
+- initiator/catalyst/activator concentration and state;
+- support / immobilization environment;
+- residence or reaction time;
+- conversion history;
+- mixing / mass-transfer environment where relevant;
+- reactor configuration;
+- sequential versus simultaneous reaction history.
+
+The fact that these variables can matter does **not** mean the piping engineer should calculate pressure rating from them.
+
+Their engineering role is different:
+
+1. **provenance** — identify how two resin lots or grades may differ upstream;
+2. **hypothesis generation** — identify which molecular variables should be checked;
+3. **change control** — decide whether a process change may require equivalence evidence;
+4. **failure analysis** — include polymerization history as one candidate causal branch when actual material differences are found.
+
+## 9.2 The same process-variable name can act through different mechanisms
+
+`Hydrogen`, `temperature` or `comonomer feed` are not mechanisms by themselves.
+
+For example, hydrogen may participate in chain-transfer chemistry in one coordination-polymerization system, but the observed activity response can depend strongly on catalyst state and other reactions.
+
+Likewise, temperature can influence:
+
+- rate coefficients;
+- transfer/termination probabilities;
+- catalyst activation/deactivation;
+- monomer concentration/solubility;
+- mass transfer;
+- side reactions;
+- macromonomer formation/reinsertion;
+- residence-history effects.
+
+Therefore the chapter prohibits single-variable universal rules unless the mechanism and system are explicitly defined.
+
+The correct question is:
+
+> **What reaction or transport pathway is changed in this system, and what was actually measured in the polymer?**
+
+## 9.3 Controlled Case A — hydrogen changed molecular weight and activity in three studied supported catalyst systems
+
+S015-014 investigated ethylene copolymerization with 1-hexene or 1-octene in the presence of hydrogen using three MgCl2(THF)2-supported V/Ti catalyst systems.
+
+Within those **three studied systems**, the authors reported that adding hydrogen to the copolymerization feed:
+
+- reduced the molecular weight of the produced copolymers; and
+- reduced catalyst activity. [S015-014]
+
+The copolymer microstructure was also investigated using 13C NMR. [S015-014]
+
+### Supported engineering interpretation
+
+Hydrogen is a legitimate process-provenance variable in these coordination-polymerization systems because a controlled change in hydrogen feed was associated with measured polymer molecular-weight and catalytic-activity changes.
+
+### What the case does not establish
+
+It does not justify the unqualified rule:
+
+`more hydrogen → lower molecular weight for every polyolefin catalyst`.
+
+It also does not establish:
+
+- one universal hydrogen-transfer mechanism;
+- one universal sensitivity;
+- the same activity response for metallocenes or other catalysts;
+- a direct change in pipe pressure rating, SCG resistance or weldability.
+
+### Evidence request generated by the case
+
+If a commercial resin process changes hydrogen conditions, useful evidence can include:
+
+- actual molar-mass / MWD data;
+- chain-end or transfer evidence where relevant;
+- catalyst/process equivalence evidence;
+- rheology and downstream qualification where the architecture change is material.
+
+The hydrogen number itself is not the acceptance criterion.
+
+## 9.4 Controlled Case B — comonomer feed ratio changed active-center / copolymer-fraction behavior in one supported Ziegler–Natta system
+
+S015-015 studied ethylene–propylene copolymerization using a specified `TiCl4/Di/MgCl2–TEA/De` Ziegler–Natta catalyst at different E/P feed ratios.
+
+The authors used quench labeling, polymer fractionation and analysis of labeled groups to study active-center distributions among different copolymer fractions. They reported changes in the active-center/fraction behavior as the E/P feed ratio changed and differentiated active-center categories with different stereoselectivities in the defined system. [S015-015]
+
+### Supported engineering interpretation
+
+Comonomer feed ratio is not merely a recipe line. In a defined heterogeneous coordination catalyst system, it can change how different catalytic populations contribute to the resulting copolymer fractions and microstructure.
+
+### What the case does not establish
+
+It does not justify:
+
+- one universal feed-ratio → comonomer-distribution rule;
+- direct transfer from ethylene–propylene to ethylene–1-hexene pipe resin;
+- a fixed relationship between feed ratio and branching, density, crystallinity or mechanical performance across catalyst families.
+
+### Evidence request generated by the case
+
+For a claimed feed-strategy change, ask for the measured outputs relevant to the actual resin:
+
+- total composition;
+- sequence/composition distribution;
+- molecular-weight distribution;
+- fractionation data where useful;
+- architecture/rheology evidence;
+- applicable compound/product qualification.
+
+## 9.5 Controlled Case C — temperature, residence time and ethylene feed concentration participated in LCB history in a continuous metallocene system
+
+S015-016 studied continuous solution ethylene polymerization using a constrained-geometry catalyst system in a high-temperature/high-pressure CSTR.
+
+The reported process variables included:
+
+- polymerization temperature;
+- mean residence time; and
+- ethylene feed concentration. [S015-016]
+
+The authors measured polyethylene long-chain-branching behavior, reported active-center decay with mean residence time, and estimated kinetic parameters for propagation, long-chain branching and chain-transfer reactions in the defined system. They also reported methyl-side-chain evidence in samples made at elevated temperatures and interpreted it within the studied catalyst/mechanism. [S015-016]
+
+### Supported engineering interpretation
+
+A continuous polymerization does not have only a catalyst identity; it has a **time-and-condition history**.
+
+Temperature, mean residence time and feed concentration can belong to the causal chain that determines which molecular events occur and what polymer population leaves the reactor.
+
+### What the case does not establish
+
+It does not justify:
+
+`higher temperature → more LCB in every polyethylene process`
+
+or:
+
+`longer residence → one universal architecture change`.
+
+The reported catalyst, solvent, pressure, CSTR configuration and reaction network are part of the applicability boundary.
+
+### Evidence request generated by the case
+
+When a continuous process changes residence-time or temperature operating windows, an equivalence review may need to ask whether relevant resin outputs changed, for example:
+
+- LCB-sensitive rheology or direct branching measurements;
+- molar-mass/MWD;
+- catalyst activity / conversion history;
+- composition and downstream property/qualification data.
+
+## 9.6 Controlled Case D — support / immobilization environment changed MWD response for one supported metallocene system
+
+S015-012 was already used in Investigation 8 to falsify the simplistic rule `metallocene = narrow monomodal MWD`.
+
+Investigation 9 reuses the same paper for a different lesson: **support composition and reaction environment are process/catalyst provenance variables**.
+
+The study immobilized `(EBI)ZrCl2` on tunable Ni-containing layered-double-hydroxide-derived supports for ethylene polymerization. In the defined system, support composition and reaction conditions changed the molecular-weight-distribution response, and a single immobilized metallocene precursor/support system could produce bimodal polyethylene under reported conditions. [S015-012]
+
+### Supported engineering interpretation
+
+The name of the molecular catalyst precursor does not necessarily define the full active environment after immobilization.
+
+Support chemistry, activation and reaction conditions can become part of the chain-building history.
+
+### What the case does not establish
+
+- every support change changes MWD;
+- every supported metallocene becomes multi-site in the same manner;
+- a supported metallocene is equivalent to a Ziegler–Natta catalyst;
+- the reported MWD shape implies a particular pipe property.
+
+## 9.7 TAB-015-003 — Process Variable → Architecture Hypothesis → Required Characterization
+
+| Process/provenance variable | Plausible mechanism question | Architecture/material hypothesis | Evidence required before conclusion |
+|---|---|---|---|
+| Hydrogen / transfer environment | Did transfer/deactivation/activation competition change? | molar-mass / chain-end population may change | SEC/GPC or equivalent molar-mass evidence; mechanism-specific chain-end/kinetic evidence where needed |
+| Monomer/comonomer feed ratio | Did relative incorporation/site utilization change? | composition/sequence distribution may change | composition, fractionation, NMR / distribution measurement appropriate to system |
+| Temperature | Which propagation/transfer/deactivation/side-reaction rates changed? | chain length, branching or composition history may change | actual molecular/rheological characterization + validated process/kinetic evidence |
+| Pressure / monomer concentration | Did local monomer availability / reaction rates change? | propagation competition / chain population may change | process record + molecular characterization |
+| Mean residence / reaction time | Did active-site survival and reaction history change? | population leaving reactor may differ | conversion/activity history + architecture/rheology evidence |
+| Support / immobilization environment | Did active-state/site environment change? | MWD/composition distribution may change | catalyst evidence + measured resin distribution |
+| Catalyst/activator ratio or activation state | Did active population change? | chain-building population may change | catalyst/kinetic + polymer architecture evidence |
+| Reactor/process configuration | Did concentration/time/mixing histories change? | distribution of chain histories may change | process equivalence + measured resin outputs |
+
+**Interpretation rule:** every entry is a hypothesis route. None is a universal directional law.
+
+## 9.8 TAB-015-004 — Controlled Primary Process Cases and Transferability
+
+| Source | Polymerization system | Controlled variable(s) | Directly reported output relevant here | Transferability |
+|---|---|---|---|---|
+| S015-014 | ethylene/1-hexene or 1-octene; three MgCl2(THF)2-supported V/Ti catalyst systems | hydrogen in feed | lower polymer MW and lower activity in all three studied systems | system-specific hydrogen response only |
+| S015-015 | E/P copolymerization; TiCl4/Di/MgCl2–TEA/De | E/P feed ratio | changed active-center / polymer-fraction behavior and microstructure in defined system | not universal comonomer rule |
+| S015-016 | continuous solution ethylene; CGC-Ti catalyst system | temperature, residence time, ethylene feed concentration | LCB/kinetic/activity history measured/modelled in defined CSTR system | not universal temperature/residence rule |
+| S015-012 | ethylene; supported `(EBI)ZrCl2` | support composition + reaction conditions | MWD response including bimodality in defined supported system | not universal supported-metallocene rule |
+
+**Table rule:** these cases demonstrate how to build evidence, not how to rank processes.
+
+## 9.9 FIG-015-005 — Same Monomer, Different Chain-Building Histories
+
+The figure shall deliberately use **ethene** as a common starting monomer while avoiding an invalid cross-study performance comparison.
+
+```text
+                         ETHENE
+                           │
+          ┌────────────────┼─────────────────┐
+          │                │                 │
+          ▼                ▼                 ▼
+  catalyst environment   transfer/feed     time/temperature
+  + support/activation     environment       history
+          │                │                 │
+          └────────────────┼─────────────────┘
+                           ▼
+                CHAIN-BUILDING HISTORY
+                           │
+                           ▼
+              ARCHITECTURE HYPOTHESES
+         ┌───────────┬────────────┬───────────┐
+         ▼           ▼            ▼
+       MWD       branching /    composition /
+                 chain ends      sequence
+         └───────────┴────────────┴───────────┘
+                           ▼
+                  DIRECT MEASUREMENT
+                           ▼
+                 QUALIFIED MATERIAL /
+                      PRODUCT DATA
+```
+
+The figure must include a red-line logic barrier:
+
+`same monomer + different process history ≠ automatically better/worse polymer`.
+
+It should cite S015-012/S015-016 only as examples demonstrating that ethylene polymerization can generate different measured chain populations under defined catalyst/process histories. It must **not** compare the absolute polymer outputs across those two unrelated experiments as though they were a controlled head-to-head study.
+
+## 9.10 A process change is not automatically a material change — but it is not automatically irrelevant either
+
+Configuration control requires avoiding two opposite mistakes.
+
+### Error A — every process change invalidates the product
+
+This is too strong.
+
+A process can change while controlled resin/product characteristics remain within an already qualified manufacturing envelope.
+
+### Error B — process changes do not matter if the grade name is unchanged
+
+This is also too strong.
+
+A process change can alter the material state even when the family name or commercial grade label remains the same.
+
+The correct review asks:
+
+1. what changed upstream?
+2. which molecular/material attributes could plausibly move?
+3. what actual characterization demonstrates equivalence or change?
+4. what does the applicable qualification framework require?
+
+## 9.11 The process variable must be paired with a measurement
+
+Chapter 015 uses a strict pairing rule:
+
+`process variable` ↔ `measurable consequence that could falsify the hypothesis`.
+
+Examples:
+
+- hydrogen change ↔ measured molar-mass / chain-end evidence;
+- comonomer feed change ↔ measured composition/sequence distribution;
+- residence-time change ↔ measured activity/conversion + chain architecture;
+- support change ↔ catalyst characterization + MWD/composition evidence;
+- temperature change ↔ measured molecular/rheological output and validated kinetic context.
+
+If no meaningful measurement can be named, the process explanation is not yet engineering evidence. It is only speculation.
+
+## 9.12 Confounders: why one-variable stories often fail
+
+Even a well-designed primary paper can isolate only a defined set of variables.
+
+Industrial changes frequently couple several factors at once.
+
+Important confounders can include:
+
+- catalyst precursor lot/state;
+- support morphology/chemistry;
+- activator/cocatalyst concentration;
+- donor system;
+- hydrogen or transfer-agent concentration;
+- monomer/comonomer concentration;
+- solvent/medium;
+- temperature;
+- pressure;
+- conversion;
+- residence time;
+- catalyst deactivation history;
+- particle growth / diffusion limitations;
+- downstream pelletization/compounding;
+- sampling and test method.
+
+Therefore a causal process explanation should state what was controlled and what remained coupled.
+
+## 9.13 Do not confuse polymerization process history with downstream processing history
+
+Chapter 015 is about **polymer formation**.
+
+After polymerization, additional history can change the material:
+
+- stabilization/additive incorporation;
+- pelletization;
+- blending;
+- extrusion/molding;
+- cooling;
+- orientation;
+- storage/ageing.
+
+Those later operations may alter morphology, rheology, residual stress or product condition without changing the polymerization mechanism.
+
+A failure analysis must therefore keep two provenance blocks distinct:
+
+`polymerization provenance`
+
+versus
+
+`post-polymerization compound/product processing provenance`.
+
+Both can matter. They are not interchangeable.
+
+## 9.14 Why process variables should not appear as direct piping-design inputs
+
+The process variables in this Investigation are upstream causal variables.
+
+They do not belong in a pipe pressure equation such as:
+
+- design stress;
+- SDR/pressure relation;
+- temperature derating;
+- fatigue/SCG calculation;
+- permeation allowance;
+- fusion procedure.
+
+A polymerization variable affects a piping decision only through established material/product evidence.
+
+The evidence chain remains:
+
+`process history`
+
+→ `measured resin architecture`
+
+→ `measured morphology/rheology/properties`
+
+→ `compound/product qualification`
+
+→ `application/system design`.
+
+## 9.15 Supplier evidence request for a process-change claim
+
+When a supplier says:
+
+> “The polymerization process changed, but the resin is equivalent,”
+
+or:
+
+> “The new catalyst technology improves the material,”
+
+a disciplined evidence request can ask for:
+
+### A. Change definition
+
+- what process/catalyst/feed variable changed?
+- is the change inside an approved manufacturing envelope?
+- which lots/date ranges are affected?
+
+### B. Molecular/compound equivalence
+
+- molar mass / MWD;
+- comonomer/branch distribution where relevant;
+- density/composition where relevant;
+- rheology;
+- thermal/morphological data where relevant;
+- additive/formulation equivalence.
+
+### C. Product qualification
+
+- which product tests demonstrate continued compliance?
+- was requalification required by the applicable product/compound framework?
+- are long-term / fracture / joining properties covered by existing qualification?
+
+### D. Traceability
+
+- can pre-change and post-change material be identified?
+- is the change documented in manufacturing control records?
+
+The goal is evidence of equivalence or controlled improvement — not disclosure of proprietary catalyst synthesis.
+
+## 9.16 Common mistakes / Failure Lens
+
+### Mistake 1 — `hydrogen lowers molecular weight`
+
+Why it fails: S015-014 supports that observation only for the three studied catalyst/copoylmerization systems. The magnitude/mechanism is not universal.
+
+### Mistake 2 — `more comonomer means more uniform branching`
+
+Why it fails: feed ratio, catalyst-site response and incorporation behavior are system-specific; S015-015 demonstrates complex active-center/fraction responses.
+
+### Mistake 3 — `higher temperature means more/less branching`
+
+Why it fails: S015-016 is a defined CGC-Ti/CSTR system with coupled kinetic pathways. Temperature direction cannot be universalized.
+
+### Mistake 4 — `same catalyst molecule means same resin`
+
+Why it fails: S015-012 demonstrates that support composition/reaction environment can change MWD in a defined supported-metallocene system.
+
+### Mistake 5 — `different process means nonconforming product`
+
+Why it fails: qualification depends on the controlled material/product state and applicable change-control rules, not the existence of any process change alone.
+
+### Mistake 6 — `same commercial grade name means process change is irrelevant`
+
+Why it fails: equivalence should be demonstrated through the controlled attributes and qualification envelope.
+
+### Mistake 7 — use polymerization conditions as pipe-design parameters
+
+Why it fails: they are causal provenance inputs, not direct material design allowables.
+
+## 9.17 Verification method
+
+Before accepting a process→architecture statement, ask:
+
+1. What exact process variable changed?
+2. What catalyst/feed/reactor system was studied?
+3. Was the variable deliberately controlled or coupled with others?
+4. What molecular/material output was directly measured?
+5. Is the claimed direction actually reported by the source?
+6. What confounders remain?
+7. Is the conclusion bounded to the source system?
+8. What measurement would test the same hypothesis in the actual commercial resin?
+9. Has post-polymerization processing been confused with polymerization history?
+10. Has the process variable been converted directly into a property or piping-acceptance rule?
+11. Does the applicable qualification framework cover the post-change material state?
+12. Is traceability sufficient to distinguish the relevant lots/process histories?
+
+## 9.18 Engineering decision from Investigation 9
+
+> **Polymerization temperature, pressure/concentration context, monomer/comonomer feed, hydrogen/transfer environment, support/activation state and residence/reaction history can all be legitimate causal provenance variables. Their engineering use is to generate testable architecture hypotheses and define characterization/equivalence evidence. Primary studies show real system-specific effects, but no process variable carries a universal architecture direction or piping-performance meaning across polymerization systems. Measure the resin, then qualify the product.**
+
+Investigation 9 completes the material/process evidence layer.
+
+The final Investigation must now formalize the stop rule:
+
+> **What may a piping engineer infer from polymerization provenance, what evidence must come next, and where must Chapter 015 stop before Chapter 016 takes over?**
+
+That is Investigation 10.
+
+---
+
+## Investigation 9 controlled asset disposition
+
+- `TAB-015-003` — process variable → hypothesis → characterization candidate established.
+- `TAB-015-004` — controlled primary process-case matrix established.
+- `FIG-015-005` — same-monomer / different-chain-building-history scientific specification established.
+- supplier process-change evidence-request framework drafted for reuse in Investigation 10 / EX-015-003.
+- S015-014 through S015-016 plus reused S015-012 are the only named process cases authorized here.
+- no universal process-direction or piping-performance rule retained.
