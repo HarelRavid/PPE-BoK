@@ -4,7 +4,7 @@
 **PDS baseline:** 1.0  
 **CDB:** `docs/PDS/Chapter-Design-Briefs/CDB-015-Polymerization-Catalysts-Process-Structure.md`  
 **CDB status:** Approved  
-**Outline status:** Approved implementation path for Definition-of-Ready verification  
+**Outline status:** Implemented — Engineering Development complete; final integrated review cycle active  
 **Date:** 2026-08-15
 
 ## 1. Chapter engineering question
@@ -235,10 +235,10 @@ The chapter is not equation-driven. Include a quantitative relationship only if 
 4. symbols and units can be controlled;
 5. the result is not presented as a commercial-grade property prediction.
 
-Potential candidates:
-- chain-polymerization rate notation / propagation coefficient only where needed;
-- idealized Carothers relationship for balanced difunctional polycondensation/polyaddition teaching, subject to review;
-- chain-transfer relationship only if an authoritative/primary source and a clear engineering use justify it.
+Final disposition:
+- chain-polymerization rate notation / `k_p` / `k_t` retained only as bounded mechanism terminology, not as a design equation;
+- Carothers-type relationship evaluated and **excluded** from Chapter 015 to preserve the Chapter 016 molar-mass/architecture boundary;
+- no chain-transfer design equation retained; transfer remains a mechanism/provenance concept unless a later defined case justifies quantitative treatment.
 
 ## 7. Required assets register
 

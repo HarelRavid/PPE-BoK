@@ -2,7 +2,7 @@
 
 **Working chapter:** 015 — From Monomer to Polymer: Polymerization, Catalysts and Process–Structure Relationships  
 **PDS baseline:** 1.0  
-**Status:** Active Engineering-Development Evidence Plan  
+**Status:** Final integrated evidence register — final claim-level validation active  
 **Research checkpoint:** 2026-08-15
 
 ## 1. Evidence objective
@@ -96,9 +96,10 @@ Initial controlled entries:
 | Topic | Controlled source | Chapter rule |
 |---|---|---|
 | polymerization | S015-001/S015-002 | Broad process term; do not infer route from family name alone |
-| chain polymerization | S015-001/S015-004 | `chain` refers to chain reaction, not merely polymer-chain formation |
-| polyaddition | S015-001/S015-002 | Growth by addition reactions among molecules of all degrees of polymerization |
-| polycondensation | S015-001/S015-002 | Growth by condensation reactions among molecules of all degrees of polymerization |
+| step polymerization | S015-008 | Current top-level class for growth through reactions among monomer/oligomer/polymer molecules of any length |
+| additive step polymerization / polyaddition | S015-008/S015-001/S015-002 | Additive subclass of step polymerization |
+| condensative step polymerization / polycondensation | S015-008/S015-001/S015-002 | Condensative subclass of step polymerization |
+| chain polymerization | S015-008/S015-001/S015-004 | `chain` refers to chain reaction, not merely polymer-chain formation |
 | addition polymerization | S015-001/S015-002 | Historical/teaching term only; formally ambiguous |
 | radical polymerization | S015-001 | Chain carrier is radical |
 | coordination polymerization | S015-001/S015-004 | Preliminary coordination of monomer with chain carrier |
@@ -124,7 +125,8 @@ No named catalyst/property example is authorized here.
 Evidence level: A/B.
 
 Mandatory source check:
-- S015-001, S015-002, S015-003, S015-004.
+- S015-008 as the controlling current top-level classification source;
+- S015-001, S015-002, S015-003 and S015-004 for legacy/current term continuity and chain-mechanism detail.
 
 Critical wording controls:
 - historical `addition polymerization` warning;
@@ -152,9 +154,9 @@ Primary-evidence gate triggers if manuscript claims a specific effect of tempera
 
 ### Investigation 5
 
-Evidence level: A/B for polyaddition/polycondensation classification; D/B for idealized step-growth teaching equation if retained.
+Evidence level: A/B for current step-polymerization / additive-step / condensative-step classification and functionality concepts.
 
-Any Carothers-type relationship must state assumptions including functionality/stoichiometry/idealization and must not become a commercial-grade prediction.
+Carothers-type quantitative treatment was evaluated during Engineering Development and intentionally excluded from Chapter 015; detailed molar-mass consequences remain owned by Chapter 016.
 
 ### Investigation 6
 
@@ -241,9 +243,9 @@ Candidate equation status at Definition of Ready:
 
 | Candidate | Status |
 |---|---|
-| chain propagation/rate notation | HOLD — include only if it improves mechanism understanding |
-| ideal Carothers relationship | HOLD — include only with explicit ideal assumptions and ownership boundary |
-| chain-transfer relationship | HOLD — requires clear engineering use and evidence |
+| chain propagation/rate notation | RETAINED AS TERMINOLOGY ONLY — `k_p` / `k_t` are not used for a design calculation |
+| ideal Carothers relationship | EXCLUDED — evaluated and deferred to Chapter 016 context |
+| chain-transfer relationship | EXCLUDED AS EQUATION — mechanism/provenance treatment only |
 
 ## 8. Evidence-boundary rules
 

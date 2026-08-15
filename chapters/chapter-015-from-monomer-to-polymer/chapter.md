@@ -52,7 +52,7 @@ The key discipline is the same one established in Chapter 014:
 
 After completing the chapter, the reader should be able to:
 
-1. distinguish polymerization, chain polymerization, polyaddition and polycondensation using controlled terminology;
+1. distinguish polymerization, step polymerization, chain polymerization, additive step polymerization/polyaddition and condensative step polymerization/polycondensation using current controlled terminology;
 2. explain why `addition polymerization versus condensation polymerization` is an incomplete formal classification;
 3. explain initiation, propagation, termination and chain transfer at engineering-use depth;
 4. describe radical polymerization as one chain-polymerization route;
@@ -70,7 +70,7 @@ After completing the chapter, the reader should be able to:
 - polymerization terminology and classification;
 - chain-polymerization lifecycle concepts;
 - radical polymerization;
-- polyaddition/polycondensation at engineering-use depth;
+- step polymerization, including additive step/polyaddition and condensative step/polycondensation, at engineering-use depth;
 - coordination polymerization;
 - heterogeneous coordination / industrial Ziegler–Natta terminology;
 - homogeneous coordination / metallocene terminology;
@@ -79,7 +79,7 @@ After completing the chapter, the reader should be able to:
 
 ### Out of scope
 
-- detailed molecular weight, MWD, branching and crosslinking treatment — Chapter 016;
+- detailed molar mass, molar-mass distribution (molecular-weight distribution, MWD, in common/source usage), branching and crosslinking treatment — Chapter 016;
 - detailed crystallinity/morphology — Chapter 017;
 - thermal transitions — Chapter 018;
 - viscoelasticity and creep — Chapter 019;
@@ -95,7 +95,7 @@ After completing the chapter, the reader should be able to:
 
 | Engineering question | Evidence path | Current rule |
 |---|---|---|
-| What does polymerization / chain polymerization / polyaddition / polycondensation mean? | IUPAC Gold Book + polymer Recommendations | Authoritative terminology layer |
+| What do polymerization / step polymerization / chain polymerization and their additive/condensative subclasses mean? | IUPAC Gold Book + current polymer Recommendations | Authoritative terminology layer |
 | How should chain-polymerization events be named? | IUPAC Recommendations 2008 and 2021/2022 | Controlled mechanism terminology |
 | What does coordination / heterogeneous / homogeneous / metallocene polymerization mean? | Current IUPAC chain-polymerization terminology | Controlled terminology; no property inference |
 | Which polymer abbreviations are controlled? | ISO 1043-1 | Abbreviation discipline only |
@@ -386,9 +386,9 @@ That decision belongs to the applicable material/product/application framework, 
 
 **Interpretation rule:** this table does not rank polymerization technologies. It identifies the next evidence question.
 
-## 1.10 FIG-015-006 precursor — process provenance to engineering evidence chain
+## 1.10 Process-provenance to engineering-evidence precursor
 
-The final chapter figure belongs to Investigation 10, but Investigation 1 establishes its logic.
+The final `FIG-015-006` specification belongs to Investigation 10; Investigation 1 establishes its precursor logic.
 
 The figure will contain two tracks.
 
@@ -498,8 +498,6 @@ The next question is therefore not yet which catalyst is “better.” It is mor
 > **What does polymerization actually mean, and how should polymer-forming reactions be classified without relying on misleading classroom shortcuts?**
 
 That is Investigation 2.
-
----
 
 ---
 
@@ -1757,9 +1755,9 @@ reactive monomers
 
 The available reactions are constrained by functional groups and the actual chemistry, not by one universal sequence.
 
-## 5.7 FIG-015-001 extension — mechanism class versus reaction character
+## 5.7 Step-polymerization detail panel for the classification figure
 
-Investigation 2 established the top-level classification figure. Investigation 5 supplies the step-polymerization detail panel.
+Investigation 2 established the final `FIG-015-001` classification map. Investigation 5 supplies the step-polymerization detail panel that feeds that single formal figure specification.
 
 The figure shall show:
 
@@ -2136,9 +2134,9 @@ Investigation 7 will examine the heterogeneous branch and industrial `Ziegler–
 
 **Table rule:** mechanism terminology routes the evidence question; it never ranks piping materials.
 
-## 6.11 FIG-015-004 precursor — Coordination Catalyst Environment Map
+## 6.11 Coordination-catalyst environment map — common-trunk precursor
 
-The final FIG-015-004 will be completed after Investigations 7 and 8. Investigation 6 establishes the common trunk:
+The final `FIG-015-004` specification is owned by Investigation 8. Investigation 6 establishes the common-trunk precursor:
 
 ```text
 COORDINATION POLYMERIZATION
@@ -2448,9 +2446,9 @@ This wording:
 - preserves current terminology;
 - prevents overclaiming.
 
-## 7.10 FIG-015-004 — heterogeneous branch
+## 7.10 Heterogeneous branch for the coordination-catalyst environment map
 
-Investigation 6 established the common coordination-polymerization trunk. Investigation 7 adds the heterogeneous branch:
+Investigation 6 established the common coordination-polymerization trunk. Investigation 7 adds the heterogeneous branch that feeds the single final `FIG-015-004` specification in Investigation 8:
 
 ```text
 COORDINATION POLYMERIZATION
@@ -3363,7 +3361,7 @@ The goal is evidence of equivalence or controlled improvement — not disclosure
 
 ### Mistake 1 — `hydrogen lowers molecular weight`
 
-Why it fails: S015-014 supports that observation only for the three studied catalyst/copoylmerization systems. The magnitude/mechanism is not universal.
+Why it fails: S015-014 supports that observation only for the three studied catalyst/copolymerization systems. The magnitude/mechanism is not universal.
 
 ### Mistake 2 — `more comonomer means more uniform branching`
 
@@ -3436,9 +3434,9 @@ But the chapter has also established an equally important limit:
 
 Investigation 10 turns that boundary into a repeatable engineering workflow.
 
-## 10.1 The complete Chapter 015 reasoning chain
+## 10.1 FIG-015-006 — Process Provenance to Engineering Evidence Chain
 
-The controlled chain is:
+The final figure shall render the controlled chain:
 
 `monomer / feed`
 
