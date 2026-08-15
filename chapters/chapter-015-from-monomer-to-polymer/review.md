@@ -2,9 +2,9 @@
 
 **Chapter:** From Monomer to Polymer: Polymerization, Catalysts and Process–Structure Relationships  
 **PDS baseline:** 1.0  
-**Current stage:** Canonical integration complete — final integrated-manuscript review pending  
+**Current stage:** **HUMAN APPROVAL PENDING**  
 **CDB author approval:** 2026-08-15  
-**Development checkpoint:** Investigations 1–10 integrated; pre-integration Technical / Standards-Evidence / Editorial-Desk reviews passed with bounded integration findings applied
+**Development checkpoint:** Engineering Development complete; canonical integration complete; final integrated Technical / Standards-Evidence / Editorial-Desk reviews PASS
 
 ## 1. Gate status
 
@@ -19,21 +19,34 @@
 | Pre-integration Technical Review | CONDITIONAL PASS → FINDINGS APPLIED | TR015-01 through TR015-07 applied during canonical integration |
 | Pre-integration Standards/Evidence Validation | PASS | Publication lifecycle holds retained |
 | Pre-integration Editorial / Desk Review | CONDITIONAL PASS → FINDINGS APPLIED | ED015-01 through ED015-06 applied during integration |
-| Final full-file Technical Review | PENDING | must review continuous canonical manuscript |
-| Final claim-level Standards/Evidence Review | PENDING | must validate final integrated wording/source placement |
-| Final Editorial / Style / Desk Test | PENDING | continuous manuscript required |
-| Human Approval / merge | PENDING | explicit author approval required after final reviews |
+| Final-review normalization findings | CLOSED | FR015-01 through FR015-05 corrected in `a9f364fdf92073157b12bcc7a59ab4f18acff805` |
+| Final full-file Technical Review | **PASS** | `FINAL-FULL-FILE-TECHNICAL-REVIEW-2026-08-15.md` |
+| Final claim-level Standards/Evidence Review | **PASS WITH PUBLICATION LIFECYCLE HOLDS** | `FINAL-CLAIM-LEVEL-STANDARDS-EVIDENCE-REVIEW-2026-08-15.md` |
+| Final Editorial / Style / Desk Test | **PASS** | continuous Desk Test 10/10; `FINAL-EDITORIAL-STYLE-DESK-REVIEW-2026-08-15.md` |
+| Human Approval / merge | **PENDING** | explicit author approval required before merge |
 | Publishing / Design Freeze | BLOCKED | final figures + publication-time source/lifecycle checks remain |
 
 ## 2. Definition-of-Ready record
 
 Definition of Ready passed before Engineering Development. The approved planning package defined chapter purpose/scope, reader outcomes, scientific/process inputs, evidence path, ten-Investigation structure, engineering assets, exclusions/cross-references and acceptance criteria.
 
-## 3. Controlled terminology update
+## 3. Canonical integration provenance
 
-A new final IUPAC Recommendation published in 2026 was identified during Investigation 2 and superseded one planning-era classification assumption without changing chapter scope.
+End-of-chapter integration was mechanically executed and validated before final review.
 
-Canonical Chapter 015 now uses:
+- pre-integration parent: `34e9a1060c91f969a374bd442c8a07d5c94acb2b`;
+- validated Claude integration commit: `92aab9820d7f60195b85762b4ffde3a3f778a39d`;
+- validated integration tree: `e2900d6957297edc22bc897a3e2501bd0180d749`;
+- GitHub canonical transport commit: `ee37b0cce00112d38b7b2bb8ac1b32abb777edc5` with the same tree;
+- final-review normalization commit: `a9f364fdf92073157b12bcc7a59ab4f18acff805`.
+
+No scientific/editorial decision was delegated to the mechanical integration step.
+
+## 4. Controlled terminology update
+
+The final published 2026 IUPAC Recommendation identified during Investigation 2 superseded one planning-era classification assumption without changing chapter scope.
+
+Canonical Chapter 015 uses:
 
 - `step polymerization`;
   - additive step polymerization = polyaddition;
@@ -42,21 +55,29 @@ Canonical Chapter 015 now uses:
   - additive chain polymerization;
   - condensative chain polymerization.
 
-The change record remains in `reviews/chapter-015/TERMINOLOGY-CLASSIFICATION-UPDATE-2026-08-15.md`.
+The historical pair `addition polymerization / condensation polymerization` is retained only as legacy/ambiguous language.
 
-## 4. Primary-evidence boundaries
+## 5. Primary-evidence boundaries
 
 Named catalyst/process outcome claims are limited to the directly reviewed systems recorded as S015-009 through S015-016. No source is treated as a universal catalyst-family rule or as piping-design authority.
 
-## 5. Quantitative disposition
+The final chapter explicitly blocks direct transfers such as:
 
-No Chapter 015 design equation is retained.
+- `Ziegler–Natta → fixed multi-site distribution / broad MWD`;
+- `metallocene → guaranteed narrow MWD / uniform comonomer distribution`;
+- `hydrogen / temperature / residence time → universal architecture direction`;
+- polymerization provenance → pressure rating, lifetime, SCG, fusion or service acceptance.
+
+## 6. Quantitative disposition
+
+No Chapter 015 pressure-piping design equation is retained.
 
 - `P_x + P_y` notation is mechanistic.
 - `k_p` / `k_t` are terminology only.
 - a Carothers-type equation was evaluated and intentionally excluded to preserve the Chapter 016 boundary.
+- no chain-transfer design equation is retained.
 
-## 6. Canonical manuscript / configuration state
+## 7. Canonical manuscript / configuration state
 
 Canonical manuscript:
 
@@ -68,16 +89,29 @@ Supporting canonical files:
 - `technical-outline.md`;
 - `review.md`.
 
-Temporary Investigation 2–10 authoring candidates and the temporary references addendum are removed by the canonical integration.
+Temporary Investigation 2–10 authoring candidates, the temporary references addendum and the one-shot integration script are removed.
 
-## 7. Next controlled action
+The final formal asset register contains one controlled specification for each FIG-015-001..006, TAB-015-001..005, EX-015-001..003, WF-015-001 and CL-015-001.
 
-Perform the final integrated-manuscript review cycle:
+## 8. Final review records
 
-1. full-file Technical Review;
-2. final claim-level Standards/Evidence Validation;
-3. final Editorial / Style Review + continuous Desk Test;
-4. branch synchronization with current `main` if needed;
-5. Human Approval Gate.
+- `reviews/chapter-015/FINAL-FULL-FILE-TECHNICAL-REVIEW-2026-08-15.md` — **PASS**.
+- `reviews/chapter-015/FINAL-CLAIM-LEVEL-STANDARDS-EVIDENCE-REVIEW-2026-08-15.md` — **PASS FOR FINAL WORDING; PUBLICATION LIFECYCLE HOLDS REMAIN**.
+- `reviews/chapter-015/FINAL-EDITORIAL-STYLE-DESK-REVIEW-2026-08-15.md` — **PASS; continuous Desk Test 10/10**.
 
-Do not merge PR #15 or start Chapter 016 before those gates close.
+## 9. Publication lifecycle holds
+
+These are not technical-authoring blockers, but remain before publication/design freeze:
+
+1. final production/rendering of FIG-015-001..006;
+2. final figure-caption/source verification;
+3. publication-time ISO 472 / ISO 1043-1 lifecycle recheck;
+4. publication-time current IUPAC Gold Book version/term recheck;
+5. final rendered citation/DOI audit;
+6. re-review if technical wording changes after Human Approval.
+
+## 10. Current controlled action
+
+**Chapter 015 is ready for the Human Approval Gate.**
+
+Do not merge PR #15 or begin Chapter 016 Engineering Development until explicit author approval is recorded.
