@@ -2,7 +2,8 @@
 
 **PDS Baseline:** 1.0  
 **Working Chapter:** 014  
-**Status:** Draft — Author Review Required  
+**Status:** Approved — Engineering Development Authorized  
+**Author approval:** 2026-08-14  
 **Architecture source:** `BOOK_STRUCTURE.md`  
 
 ## 1. Chapter purpose
@@ -114,7 +115,7 @@ Develop original figures for:
 1. **FIG-014-001 — Atom-to-material hierarchy**  
    `atom → bond → molecule / repeat unit → chain → morphology → material → pipe system`.
 
-2. **FIG-014-002 — Primary and secondary bonding map**  
+2. **FIG-014-002 — Primary Bonding and Noncovalent Interaction Map**  
    Ionic / covalent / metallic versus hydrogen bonding / dipole / London interactions, with controlled engineering consequences.
 
 3. **FIG-014-003 — Carbon hybridization and geometry**  
@@ -270,6 +271,6 @@ The completed chapter will satisfy its Definition of Done only when:
 
 ## 14. Definition-of-Ready disposition
 
-**Current disposition: NOT YET APPROVED FOR ENGINEERING DEVELOPMENT.**
+**Current disposition: APPROVED FOR ENGINEERING DEVELOPMENT.**
 
-This draft defines the required CDB elements from `governance/Definition-of-Ready.md`, but Engineering Development shall not begin until the author reviews and explicitly approves this CDB or approves a revised version.
+The CDB defines the required elements from `governance/Definition-of-Ready.md`. The author explicitly approved CDB-014 on 2026-08-14. Engineering Development may proceed sequentially under this scope; any material scope change requires controlled review rather than silent expansion.
