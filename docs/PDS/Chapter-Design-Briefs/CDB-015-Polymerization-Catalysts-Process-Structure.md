@@ -148,18 +148,12 @@ No equation may be used to infer a commercial piping-grade property directly fro
 
 Develop original figures for:
 
-1. **FIG-015-001 — Polymerization classification map**  
-   Controlled map of polymerization → chain polymerization / polyaddition / polycondensation, with a warning showing why the historical `addition vs condensation` split is incomplete.
-2. **FIG-015-002 — Chain-polymerization lifecycle**  
-   `initiation → propagation → termination / chain transfer`, clearly showing that not every chain polymerization contains every possible event in the same way.
-3. **FIG-015-003 — Radical polymerization mechanism at engineering-use depth**  
-   Active radical, monomer addition, chain growth, termination / transfer concepts without unnecessary reaction-detail overload.
-4. **FIG-015-004 — Coordination-polymerization catalyst environment map**  
-   Heterogeneous coordination catalysis / commonly termed Ziegler–Natta versus homogeneous coordination catalysis / metallocene route, with terminology warnings.
-5. **FIG-015-005 — Same monomer, different chain-building histories**  
-   Conceptual ethene/propene example showing how catalyst/process history can lead to different architecture hypotheses without claiming final grade properties.
-6. **FIG-015-006 — Process provenance to engineering evidence chain**  
-   `feed + catalyst/mechanism + process history → chain-building outcome → characterization → compound/product qualification → piping decision`.
+1. **FIG-015-001 — Polymerization classification map** — controlled map of polymerization → chain polymerization / polyaddition / polycondensation, with a warning showing why the historical `addition vs condensation` split is incomplete.
+2. **FIG-015-002 — Chain-polymerization lifecycle** — `initiation → propagation → termination / chain transfer`, clearly showing that not every chain polymerization contains every possible event in the same way.
+3. **FIG-015-003 — Radical polymerization mechanism at engineering-use depth** — active radical, monomer addition, chain growth, termination / transfer concepts without unnecessary reaction-detail overload.
+4. **FIG-015-004 — Coordination-polymerization catalyst environment map** — heterogeneous coordination catalysis / commonly termed Ziegler–Natta versus homogeneous coordination catalysis / metallocene route, with terminology warnings.
+5. **FIG-015-005 — Same monomer, different chain-building histories** — conceptual ethene/propene example showing how catalyst/process history can lead to different architecture hypotheses without claiming final grade properties.
+6. **FIG-015-006 — Process provenance to engineering evidence chain** — `feed + catalyst/mechanism + process history → chain-building outcome → characterization → compound/product qualification → piping decision`.
 
 ### 8.2 Tables
 
@@ -175,26 +169,19 @@ At minimum develop:
 
 Use mechanism/evidence interpretation examples rather than plant operating calculations.
 
-**EX-015-001 — Ethene is the same monomer; why can the resulting polyethylene differ?**  
-Compare two controlled catalyst/process histories and identify what can be hypothesized versus what must be measured.
+**EX-015-001 — Ethene is the same monomer; why can the resulting polyethylene differ?** Compare two controlled catalyst/process histories and identify what can be hypothesized versus what must be measured.
 
-**EX-015-002 — Why “addition polymer” is not enough information**  
-Classify several simplified polymerization descriptions using current controlled terminology and show which engineering questions remain unanswered.
+**EX-015-002 — Why “addition polymer” is not enough information** Classify several simplified polymerization descriptions using current controlled terminology and show which engineering questions remain unanswered.
 
-**EX-015-003 — Process-history evidence request**  
-Given a supplier claim that a catalyst/process route produces “better” pipe performance, build the minimum characterization/qualification evidence request rather than accepting the mechanism claim directly.
+**EX-015-003 — Process-history evidence request** Given a supplier claim that a catalyst/process route produces “better” pipe performance, build the minimum characterization/qualification evidence request rather than accepting the mechanism claim directly.
 
 ### 8.4 Workflow
-
-One chapter-level workflow:
 
 `Monomer/feed → classify polymerization mechanism → identify active species/catalyst environment → identify process variables → state architecture hypothesis → define characterization → verify grade/product qualification → engineering decision boundary`
 
 ### 8.5 Checklist
 
-One checklist titled:
-
-**“Before inferring material behaviour from polymerization route or catalyst history”**.
+**Before inferring material behaviour from polymerization route or catalyst history**.
 
 ## 9. Investigation roadmap
 
