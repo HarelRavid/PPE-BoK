@@ -115,7 +115,7 @@ Develop original figures for:
 1. **FIG-014-001 — Atom-to-material hierarchy**  
    `atom → bond → molecule / repeat unit → chain → morphology → material → pipe system`.
 
-2. **FIG-014-002 — Primary and secondary bonding map**  
+2. **FIG-014-002 — Primary Bonding and Noncovalent Interaction Map**  
    Ionic / covalent / metallic versus hydrogen bonding / dipole / London interactions, with controlled engineering consequences.
 
 3. **FIG-014-003 — Carbon hybridization and geometry**  

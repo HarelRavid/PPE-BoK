@@ -179,3 +179,9 @@ Investigation 10 shall not be authored until Investigation 9 is complete and its
 **AUTHORIZE INVESTIGATION 9 CONTROLLED AUTHORING FOR CASES A–C ONLY.**
 
 Investigations 1–8 remain controlled authoring candidates; the Investigation 9 primary-literature entry gate is now passed. The chapter is still not ready for technical closure, Ready-for-Review transition, merge to `main`, or publication.
+
+## 11. Canonical-integration checkpoint — 2026-08-15
+
+Investigations 9–10 were integrated into `chapter.md` only after their controlled authoring reviews, the pre-integration Technical Review, the logical-manuscript Technical/Evidence Review and the logical-manuscript Editorial/Desk Review. The integration applied TR-014-01 through TR-014-04, including claim-class/evidence-level disambiguation, noncovalent-interaction terminology for FIG-014-002, explicit non-normative labeling of the PPE-BoK evidence ladder, and Investigation 9 transferability wording controls.
+
+**Current disposition:** Engineering Development arc integrated; final full-file Technical Review is the next gate. Final claim-level Standards/Evidence publication pass, final Editorial/Style Review, final Desk Test, Human Approval and merge remain open.

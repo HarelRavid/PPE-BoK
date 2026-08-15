@@ -145,7 +145,7 @@ Distinguish ionic, covalent and metallic bonding and understand why different bo
 ### Required assets
 
 - `TAB-014-001 — Bonding types and engineering relevance`;
-- first half of `FIG-014-002 — Primary and secondary bonding map`.
+- first half of `FIG-014-002 — Primary Bonding and Noncovalent Interaction Map`.
 
 ### Common error to prevent
 
@@ -336,7 +336,7 @@ A competent engineer should be able to use chemistry to form and test hypotheses
 | ID | Asset | Outline state |
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Defined; introduce in Investigation 1, develop in Investigation 2 |
-| FIG-014-002 | Primary and secondary bonding map | Defined; Investigations 4–5 |
+| FIG-014-002 | Primary Bonding and Noncovalent Interaction Map | Defined; Investigations 4–5 |
 | FIG-014-003 | Carbon hybridization and geometry | Defined; Investigation 7 |
 | FIG-014-004 | Sigma and pi bonding in ethylene | Defined; Investigations 7–8 |
 | FIG-014-005 | Ethylene to polyethylene bridge | Defined; Investigation 8 |
@@ -376,4 +376,16 @@ Desk-test the evidence boundary: a reader must not be able to interpret the chap
 
 **APPROVED CDB IMPLEMENTATION PATH — Engineering Development may proceed sequentially.**
 
-Investigation 1 may be authored now under the current evidence plan. Later Investigations shall not be authored ahead of their required evidence research merely to accelerate chapter completion.
+Investigations 1–10 have now been authored through their required evidence checkpoints. Canonical integration has been completed; final full-chapter Technical Review and downstream validation gates remain required before Ready-for-Review.
+
+## 8. Engineering Development completion checkpoint — 2026-08-15
+
+- Investigations 1–8: authored controlled candidates.
+- Investigation 9: primary-literature gate PASS; authoring review PASS; canonical integration complete.
+- Investigation 10 / chapter closure: authoring review PASS; canonical integration complete.
+- Pre-integration Technical Review: CONDITIONAL PASS; TR-014-01 through TR-014-04 applied during integration.
+- Logical-manuscript Technical/Evidence Review: PASS FOR CANONICAL INTEGRATION.
+- Logical-manuscript Editorial/Desk Review: CONDITIONAL PASS.
+- Next gate: final full-file Technical Review of the integrated manuscript.
+
+This checkpoint does not imply final Standards/Evidence publication validation, final Editorial/Style Review, Human Approval or publication readiness.

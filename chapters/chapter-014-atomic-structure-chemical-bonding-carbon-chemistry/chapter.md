@@ -389,25 +389,25 @@ This sequence becomes the formal `WF-014-001` later in the chapter.
 
 > Atomic and molecular structure are engineering-relevant because they explain possible mechanisms and help select the right evidence. They are not substitutes for measured material properties, qualification data, product standards or system-level design checks.
 
-After Investigation 1, the engineer should be able to classify a statement into one of three levels:
+After Investigation 1, the engineer should be able to classify a statement into one of three claim classes:
 
-### Level 1 — Chemistry fact
+### Claim Class A — Chemistry fact
 
 Example: a bond is polar; a molecular interaction is possible; a carbon atom is in a particular bonding geometry.
 
-### Level 2 — Mechanism hypothesis
+### Claim Class B — Mechanism hypothesis
 
 Example: that structural feature may alter molecular interaction, mobility, packing or diffusion behaviour.
 
-### Level 3 — Engineering conclusion
+### Claim Class C — Engineering conclusion
 
 Example: a particular material is acceptable for a defined pressure/temperature/fluid/lifetime service.
 
 The rule for the rest of Chapter 014 is simple:
 
-> **Never jump directly from Level 1 to Level 3.**
+> **Never jump directly from Claim Class A to Claim Class C.**
 
-The investigations that follow build the chemistry needed to make Level 1 accurate and Level 2 useful. The rest of PPE-BoK provides the evidence systems needed to reach Level 3.
+The investigations that follow build the chemistry needed to make Claim Class A accurate and Claim Class B useful. The rest of PPE-BoK provides the evidence systems needed to reach Claim Class C.
 
 ---
 
@@ -904,7 +904,7 @@ A covalent bond can be polar. A bond can have partial ionic character. Therefore
 | Ionic character / ionic bonding | Electrostatic attraction between charged species; real bonds may contain varying ionic character | Helps interpret ions, salts and mixed bond character | A fixed mechanical-property set or universal chemical-compatibility rule |
 | Extended electron delocalization typical of metals | Electrons occupy states/orbitals extended over many atoms or the lattice | Distinguishes metallic electronic/bonding structure from localized molecular bonding | Ductility, strength, corrosion resistance or interface suitability without material evidence |
 
-## 4.7 FIG-014-002 — Primary and secondary bonding map — partial placeholder
+## 4.7 FIG-014-002 — Primary Bonding and Noncovalent Interaction Map — partial placeholder
 
 The final figure separates:
 
@@ -1010,7 +1010,7 @@ A better question than “which force holds this polymer together?” is:
 | London / dispersion | Mutual polarizability/fluctuating electron distributions | Attraction in apolar and polar systems | Assuming dispersion only in nonpolar systems |
 | Hydrogen bonding | Specific H-centered attractive interaction with evidence criteria | Potentially important directional noncovalent interaction | Automatic H-bond assignment or design value |
 
-## 5.9 FIG-014-002 — Primary and secondary bonding map — conceptual specification complete
+## 5.9 FIG-014-002 — Primary Bonding and Noncovalent Interaction Map — conceptual specification complete
 
 Level A shows primary/extended bonding; Level B shows van der Waals family with its dipolar/dispersion children and hydrogen bonding separately. Warnings: mechanisms coexist; dispersion occurs in polar systems; the map is not a bulk-property ranking.
 
@@ -1085,7 +1085,7 @@ Use them to identify connectivity, branches, rings, multiple bonds, heteroatoms 
 
 `carbon structural feature → molecular mechanism hypothesis → measured property → qualification → engineering decision`
 
-## 6.9 TAB-014-002 — Carbon feature → mechanism → evidence boundary
+## 6.9 Carbon feature → mechanism → evidence boundary — preliminary teaching table
 
 | Feature | Immediate question | Plausible mechanism | What cannot be concluded directly |
 |---|---|---|---|
@@ -1479,13 +1479,937 @@ That is Investigation 9 — and unlike Investigations 1–8, it requires direct 
 
 # Investigation 9 — How Do Molecular Features Become Engineering-Property Hypotheses?
 
-**Authoring state:** BLOCKED pending direct primary-literature research for every retained material-specific structure→property claim.
+## 9.1 The useful question is not “what property does this structure have?”
+
+A chemical structure is valuable to an engineer because it helps formulate **mechanism hypotheses**.
+
+It is dangerous when it is treated as though it already contains the answer to a bulk engineering-property question.
+
+The disciplined question is therefore not:
+
+> “What pressure capability, permeability, compatibility or modulus does this chemical structure have?”
+
+It is:
+
+> “Which molecular feature suggests a physically plausible mechanism, which measurable property would reveal whether that mechanism matters, and what additional evidence is required before the result can influence an engineering decision?”
+
+That distinction is the central engineering capability of this Investigation.
+
+A molecular drawing can show features such as:
+
+- polar or strongly polarizable groups;
+- potential hydrogen-bond donor/acceptor sites;
+- fluorination or other substitution;
+- side groups;
+- local rotational constraints;
+- heteroatoms;
+- backbone connectivity;
+- potential symmetry or packing differences.
+
+Those observations may suggest changes in:
+
+- interaction with penetrant molecules;
+- segmental mobility;
+- intermolecular association;
+- packing or free-volume tendencies;
+- crystallization behaviour;
+- diffusion or sorption pathways.
+
+But the drawing does not specify the magnitude of the final response in a real polymer product.
+
+Between chemical structure and engineering performance sit additional levels that may dominate the result:
+
+`molecular structure → chain architecture → morphology → processing history → conditioning / environment → specimen or product geometry → measured property → qualification → engineering decision`
+
+This is why the same repeat-unit chemistry can produce materially different measured behaviour when molecular architecture, crystallinity, processing, additives or conditioning differ.
+
+---
+
+## 9.2 A controlled structure-to-property reasoning chain
+
+PPE-BoK uses the following seven-step reasoning chain for a structure-derived hypothesis.
+
+### Step 1 — Observe the molecular or structural feature
+
+State only what is actually visible or otherwise established.
+
+Examples:
+
+- an amide group is present;
+- a polymer is highly fluorinated;
+- an ether-containing comonomer is present;
+- two specimens were processed using different cooling histories.
+
+Do not convert the observation into a property claim yet.
+
+### Step 2 — State a mechanism hypothesis
+
+Describe the mechanism as a hypothesis, not a conclusion.
+
+Examples:
+
+- water may interact strongly with polar amide-containing regions;
+- penetrant transport may depend on polarity as well as available free volume and morphology;
+- cooling history may change crystallinity and therefore change gas transport.
+
+### Step 3 — Identify the property that must be measured
+
+A mechanism becomes useful only when it points to an observable quantity.
+
+Possible quantities include:
+
+- mass uptake / sorption;
+- dimensional swelling;
+- diffusion coefficient;
+- permeability or transmission;
+- modulus;
+- glass-transition response;
+- crystallinity;
+- spectroscopic change;
+- fracture or joining response.
+
+The correct property depends on the engineering question.
+
+### Step 4 — Obtain direct evidence
+
+The evidence must actually measure or otherwise directly support the proposed bridge.
+
+A plausible mechanism without measurement remains a hypothesis.
+
+### Step 5 — Identify confounders
+
+Ask what else changed or could control the measured response.
+
+Common confounders include:
+
+- molecular weight and molecular-weight distribution;
+- branching / comonomer content;
+- crystallinity;
+- orientation;
+- additives and fillers;
+- thermal history;
+- specimen thickness;
+- geometry / surface-to-volume ratio;
+- conditioning history;
+- penetrant concentration;
+- temperature;
+- time;
+- test configuration.
+
+### Step 6 — Set the transferability boundary
+
+State how far the evidence can legitimately travel.
+
+A thin membrane result is not automatically a pressure-pipe-wall result.
+
+A molded PA6 specimen is not automatically a reinforced PA piping component.
+
+A compression-molded PFA coupon is not automatically a qualified PFA pipe or fitting.
+
+### Step 7 — Route the result to qualification
+
+If the hypothesis matters to a real project, the engineer must move to the owning evidence layer:
+
+- material-specific characterization;
+- product qualification;
+- application standard;
+- manufacturer data under controlled conditions;
+- project testing;
+- specialist analysis.
+
+Only then may the evidence enter a design decision.
+
+---
+
+## 9.3 TAB-014-002 — Molecular feature, mechanism hypothesis and invalid direct conclusion
+
+| Molecular / structural observation | Plausible mechanism question | Property or evidence that should be measured | Invalid direct conclusion |
+|---|---|---|---|
+| Polar functional group | Does the service molecule interact preferentially with this region? | Sorption, swelling, diffusion, spectroscopy, mechanical change under conditioning | “Polar polymer = chemically compatible/incompatible” |
+| Potential hydrogen-bonding sites | Does exposure alter the intermolecular H-bond network or segmental mobility? | Spectroscopy plus sorption / mechanical / thermal response | “Hydrogen bonding gives a fixed modulus or service limit” |
+| High fluorination | How do polarity, polarizability, packing and morphology affect penetrant transport? | Permeability / diffusion / solubility for the actual penetrant and morphology | “More fluorine always means lower permeability” |
+| Ether-containing comonomer / heteroatom | Does local chemistry alter penetrant interaction or chain packing? | Material-specific transport / sorption measurements | “Ether group alone determines gas selectivity” |
+| Local single-bond rotational freedom | Does chain-level architecture permit greater segmental mobility under the relevant state? | DMA / relaxation / thermal / mechanical characterization | “More single bonds = flexible pipe” |
+| Different cooling history | Did processing change crystallinity or other morphology? | DSC / density / morphology characterization plus target property | “The repeat unit determines the property independently of processing” |
+| Different crystallinity | Does the amorphous/crystalline balance alter transport or mechanical response? | Crystallinity plus property measurement under matched conditions | “Higher crystallinity is universally better” |
+
+**Interpretation rule:** this table is a question generator, not a material-selection table.
+
+---
+
+## 9.4 Case A — PA6 + water: when chemistry gives a useful mechanism, but not a design value
+
+Polyamide 6 provides a useful example because the chain contains polar amide groups and the material is known experimentally to respond to water conditioning.
+
+The chemical observation is straightforward:
+
+- the polymer contains amide functionality;
+- water is a small polar molecule;
+- intermolecular hydrogen-bonding interactions are scientifically plausible.
+
+That is enough to formulate a hypothesis:
+
+> Water uptake may alter intermolecular association and segmental mobility in PA6, producing measurable sorption, swelling and mechanical changes.
+
+It is **not** enough to specify the magnitude of those changes.
+
+### 9.4.1 What the direct evidence shows
+
+Shinzawa and Mizukado studied dry- and wet-treated PA6 using near-infrared correlation spectroscopy together with mechanical comparison. Their reported observations include a substantial decrease in Young's modulus after wet treatment and spectroscopic interpretation consistent with absorbed water disrupting H-bonded bridges particularly in amorphous regions and increasing chain mobility. They also reported a change in the crystalline/amorphous population, which immediately prevents a simplistic one-variable explanation. [S014-009]
+
+Sambale et al. experimentally characterized water sorption and moisture-induced swelling of PA6 specimens under controlled conditioning and different geometry conditions. Their work required concentration-dependent diffusion behaviour and explicitly treated geometry, concentration and swelling rather than reducing the phenomenon to the presence of an amide group. [S014-010]
+
+Together these studies support the mechanism-level statement:
+
+> **Amide/H-bond chemistry is a defensible starting hypothesis for PA6–water interaction, and water exposure produced measurable sorption, swelling and mechanical/molecular changes in the studied PA6 systems.**
+
+### 9.4.2 What the evidence does not establish
+
+The papers do not establish one universal value for:
+
+- PA6 water absorption;
+- allowable swelling;
+- modulus reduction;
+- pressure derating;
+- allowable temperature;
+- chemical-service acceptance;
+- dimensional tolerance for every product;
+- reinforced or compounded PA performance.
+
+The measured behaviour depends on specimen form, conditioning, concentration, temperature, morphology and geometry.
+
+The correct engineering response is therefore not “PA6 absorbs X, so apply X to the design.”
+
+It is:
+
+`amide-containing PA structure → water-interaction hypothesis → characterize actual material/conditioning → quantify relevant property change → apply product/application qualification`
+
+### 9.4.3 Engineering lesson from Case A
+
+A chemistry hypothesis can be **scientifically correct and experimentally supported** while still being **insufficient for direct design use**.
+
+That is not a weakness of chemistry. It is the correct separation between mechanism and qualification.
+
+---
+
+## 9.5 Case B — Fluoropolymer membranes: when a simple chemistry ranking fails
+
+Fluoropolymers are tempting targets for shortcut reasoning.
+
+An engineer may look at fluorine substitution, polarity and symmetry and try to create a simple ranking such as:
+
+> “more fluorination → more/less polarity → lower gas permeability.”
+
+The problem is that penetrant transport in a polymer is not controlled by one descriptor alone.
+
+Graunke et al. experimentally compared multiple fluoropolymer membranes chosen to vary fluorination and structural features including ether-containing monomers. Their measurements showed strong influences from polymer-specific structure and crystallinity, and the paper includes cases where an expected simple relation between density/crystallinity/polarity and permeability did not hold generally. [S014-011]
+
+The controlled conclusion is therefore:
+
+> **Fluorination, polarity and functional-group chemistry can generate useful transport hypotheses, but they do not provide a universal permeability or selectivity ranking across fluoropolymers.**
+
+### 9.5.1 Why this is an important engineering failure mode
+
+A repeat-unit comparison hides variables such as:
+
+- crystalline fraction;
+- packing / morphology-related free-volume effects;
+- chain packing;
+- copolymer architecture;
+- membrane thickness;
+- processing history;
+- penetrant identity;
+- penetrant concentration;
+- test geometry.
+
+A chemically elegant ranking can therefore be physically incomplete.
+
+### 9.5.2 What may be transferred to piping engineering
+
+The transferable lesson is **methodological**, not quantitative:
+
+1. use chemistry to propose which interactions may matter;
+2. identify morphology/processing variables that may alter the transport pathway;
+3. measure the actual penetrant/material system;
+4. do not use thin-film sensor-membrane transmission as a pipe-wall permeability allowance.
+
+No ranking of piping-grade PVDF, PTFE, PFA, ECTFE, ETFE or other fluoropolymers is authorized from this case.
+
+---
+
+## 9.6 Case C — PFA cooling history: when processing changes the result without changing the family name
+
+The third case attacks a different shortcut:
+
+> “If the polymer family and nominal grade are known, the transport property should be essentially fixed.”
+
+Monson, Moon and Extrand tested several PFA/PTFE-copolymer grades using specimens prepared with different cooling techniques. They measured permeability, diffusion and solubility coefficients for hydrogen, nitrogen and oxygen. Slow-cooled specimens showed markedly greater permeation resistance than rapidly cooled specimens, and the authors attributed the differences to crystallinity arising from molecular architecture and processing. They concluded that processing can be as important as polymer grade for the measured permeation response. [S014-012]
+
+This is a high-value teaching case because the chemical family label remained insufficient.
+
+### 9.6.1 The engineering chain
+
+The defensible reasoning chain is:
+
+`PFA family / architecture + cooling history → different morphology / crystallinity hypothesis → measured H2/N2/O2 transport → bounded specimen-level conclusion`
+
+not:
+
+`PFA repeat unit → universal gas permeability`
+
+### 9.6.2 What this case proves at Chapter 014 level
+
+It supports the general mechanism statement that **processing-induced morphology can materially influence a measured property that an engineer might otherwise try to infer from chemistry or grade name alone**.
+
+It does not establish:
+
+- a universal slow-cooling manufacturing prescription;
+- an allowable H2 permeation rate for PFA pipe;
+- a service-life value;
+- a pipe-wall design rule;
+- superiority of one commercial grade.
+
+Those require product-specific evidence and the later materials/design framework.
+
+---
+
+## 9.7 TAB-014-003 — Controlled structure–property teaching cases
+
+| Case | Starting feature / hypothesis | Direct evidence | Confounders made visible by the evidence | Defensible conclusion | Design conclusion explicitly prohibited |
+|---|---|---|---|---|---|
+| A — PA6 + water | amide functionality / H-bond interaction with water | sorption, swelling, modulus and spectroscopic/morphology response in studied PA6 systems [S014-009][S014-010] | conditioning, concentration, geometry, amorphous/crystalline balance | chemistry correctly identifies a relevant interaction mechanism, but magnitude requires measurement | universal PA modulus derating, swelling allowance or compatibility limit |
+| B — fluoropolymer membranes | fluorination / polarity / ether groups may influence penetrant transport | measured gas/water-vapour transport across selected membranes [S014-011] | crystallinity, density/packing/free-volume interpretation, copolymer structure, film/test configuration | simple chemical descriptors are insufficient as a universal transport ranking | piping-grade fluoropolymer permeability ranking or service qualification |
+| C — PFA process/morphology | grade chemistry alone may not control permeation if processing changes morphology | H2/N2/O2 permeability, diffusion and solubility under different cooling histories [S014-012] | cooling history, crystallinity, comonomer/filler, specimen preparation | processing/morphology can rival grade chemistry in measured transport | universal cooling prescription or pipe-wall permeability value |
+
+The table deliberately contains no ranking column.
+
+---
+
+## 9.8 EX-014-002 — Comparing two apparently “simple” polymer hypotheses
+
+### Problem
+
+An engineer is asked to predict service behaviour from two observations:
+
+1. **Polymer A** contains a polar functional group capable of strong intermolecular interaction with water.
+2. **Polymer B** is highly fluorinated and appears chemically inert from its repeat-unit drawing.
+
+The engineer is asked to decide which material has lower moisture uptake, lower gas permeability and higher stiffness in service.
+
+### Step 1 — Refuse the requested ranking
+
+The structural information is insufficient for the requested engineering ranking.
+
+It can support hypotheses, not final values.
+
+### Step 2 — Form the Polymer A hypothesis
+
+A polar / hydrogen-bond-capable structure suggests that water interaction and sorption may be important.
+
+Required evidence could include:
+
+- equilibrium uptake;
+- sorption kinetics;
+- swelling;
+- modulus versus conditioning;
+- thermal response;
+- morphology/conditioning state.
+
+The PA6 evidence demonstrates why this is a legitimate research path, but not why all polar polymers behave identically. [S014-009][S014-010]
+
+### Step 3 — Form the Polymer B hypothesis
+
+A highly fluorinated structure may suggest low interaction with some penetrants, but gas transport still depends on morphology, packing/free-volume effects, crystallinity, copolymer structure and processing.
+
+The fluoropolymer and PFA cases show why chemistry-only ranking can fail. [S014-011][S014-012]
+
+### Step 4 — Define the engineering tests instead of guessing the answer
+
+For a real project, specify evidence for the actual:
+
+- polymer grade / compound;
+- product form;
+- temperature;
+- penetrant or process fluid;
+- exposure concentration / pressure;
+- conditioning history;
+- geometry;
+- property of interest.
+
+### Step 5 — State the engineering decision
+
+> The chemical structures are sufficient to identify different **questions to test**. They are not sufficient to decide the requested service ranking.
+
+### What this example does **not** prove
+
+It does not prove that PA6 is more permeable than a fluoropolymer, that fluoropolymers are universally non-polar, that one family is more chemically resistant, or that either material is appropriate for piping service.
+
+---
+
+## 9.9 Evidence-chain design requirements for FIG-014-006
+
+The figure shall show a gated sequence rather than a simple causal arrow.
+
+### Gate 1 — Molecular observation
+
+Examples: functional group, substitution, local bond type, repeat-unit feature.
+
+**Question:** what is actually known from the structure?
+
+### Gate 2 — Mechanism hypothesis
+
+Examples: preferential interaction, altered mobility, packing/free-volume effect, crystallization tendency.
+
+**Question:** what physical mechanism is proposed?
+
+### Gate 3 — Direct measurement
+
+Examples: sorption, diffusion, permeability, modulus, DSC, spectroscopy.
+
+**Question:** was the predicted response measured?
+
+### Gate 4 — Confounder review
+
+Examples: morphology, processing, additives, conditioning, geometry, temperature.
+
+**Question:** what else could control the result?
+
+### Gate 5 — Transferability
+
+**Question:** does the evidence apply to this material grade, product form and service state?
+
+### Gate 6 — Qualification / governing evidence
+
+**Question:** what product/application standard, qualified manufacturer data or project test converts the observation into usable engineering evidence?
+
+### Gate 7 — Engineering decision
+
+Only after the previous gates may a design decision be made.
+
+The visual shall include a red stop marker between **mechanism hypothesis** and **design decision** with the caption:
+
+**NO DIRECT JUMP**
+
+---
+
+## 9.10 Workflow checkpoint before the final chapter decision tool
+
+Cases A–C have now validated the reasoning sequence used throughout this Investigation:
+
+`observe structure → state mechanism hypothesis → define measurable property → obtain direct evidence → identify confounders → set transferability boundary → qualify → decide`
+
+The final controlled `WF-014-001` is intentionally placed in Investigation 10, where the scientific reasoning track is joined to product/application qualification and the chapter stop-rule.
+
+---
+
+## 9.11 Verification — how to audit a structure→property statement
+
+Before retaining any material-specific statement, ask:
+
+1. What exact molecular/structural feature is being observed?
+2. Is the proposed mechanism stated as a mechanism rather than a design fact?
+3. Which property was actually measured?
+4. Is the cited source direct primary evidence for that property?
+5. Were morphology, processing, additives, conditioning and geometry considered?
+6. Does the specimen/product form match the intended engineering use?
+7. Is the conclusion qualitative or quantitative?
+8. If quantitative, is transfer of the numerical value explicitly justified?
+9. Is a product/application standard or qualification route still required?
+10. Could the sentence be misread as a material ranking or acceptance criterion?
+
+If item 10 is yes, rewrite it.
+
+---
+
+## 9.12 Common mistakes / Failure Lens
+
+### Mistake 1 — plausible mechanism = proven property
+
+A mechanism can be physically reasonable and still have negligible engineering effect under the actual service condition.
+
+### Mistake 2 — one primary paper = universal material rule
+
+A paper establishes what occurred in its tested system. Transfer to another grade, geometry, morphology or service requires justification.
+
+### Mistake 3 — repeat unit = complete material state
+
+The repeat unit does not encode molecular-weight distribution, crystallinity, orientation, additives, residual stress or processing history.
+
+### Mistake 4 — polarity = chemical compatibility database
+
+Polarity can guide a question. It does not replace service-specific compatibility evidence.
+
+### Mistake 5 — permeability result = pipe-wall allowance
+
+Permeability depends on penetrant, temperature, pressure/concentration, morphology and geometry. A membrane or coupon result is not automatically a pressure-pipe design value.
+
+### Mistake 6 — processing is “manufacturing detail” rather than material state
+
+Case C shows why processing can change morphology enough to change a measured transport property materially.
+
+### Mistake 7 — adding a numerical value because a paper reports one
+
+Chapter 014 uses these studies to teach evidence discipline. Numeric results are not imported unless a later chapter has a justified engineering use and transferability basis.
+
+---
+
+## 9.13 Engineering decision from Investigation 9
+
+> A chemical structure is an efficient generator of **engineering hypotheses**, not engineering acceptance values. The correct path is `feature → mechanism hypothesis → measurement → confounder review → transferability → qualification → decision`. Cases A–C demonstrate three complementary outcomes: a plausible mechanism can be supported but remain non-transferable as a design value; a simple chemical ranking can fail; and processing/morphology can change a property even within the same polymer family.
+
+Investigation 9 therefore closes the chapter's final scientific bridge.
+
+The remaining question is governance of the boundary itself:
+
+> **When is chemistry sufficient to guide engineering judgement, and when must the engineer stop and hand the question to characterization, qualification, standards or a downstream PPE-BoK chapter?**
+
+That is the purpose of Investigation 10.
 
 ---
 
 # Investigation 10 — What Can Chemistry Tell Us, and Where Must the Engineer Stop?
 
-**Authoring state:** planned after Investigation 9 evidence development.
+## 10.1 Chemistry is a powerful filter, not a product certificate
+
+A practicing engineer should leave this chapter with more confidence in molecular reasoning — and less willingness to misuse it.
+
+Chemistry can help the engineer:
+
+- recognize important molecular features;
+- reject chemically impossible explanations;
+- formulate plausible mechanisms;
+- identify which property should be measured;
+- anticipate which environmental interactions deserve attention;
+- select useful characterization methods;
+- detect when a simple material-family label is hiding important uncertainty;
+- ask better questions of suppliers, laboratories and specialists.
+
+Chemistry cannot, by itself, establish:
+
+- pressure rating;
+- allowable stress;
+- maximum service temperature;
+- long-term lifetime;
+- chemical compatibility for a specific service;
+- permeation allowance;
+- fusion parameters;
+- slow-crack-growth resistance;
+- product conformity;
+- installation acceptance;
+- system qualification.
+
+Those decisions belong to higher evidence levels.
+
+The final engineering discipline of Chapter 014 is therefore knowing **where to stop**.
+
+---
+
+## 10.2 The evidence ladder: from chemical identity to an engineering decision
+
+A useful way to prevent overclaiming is to separate evidence into levels.
+
+> **PPE-BoK framework:** The following levels are a PPE-BoK reasoning framework for controlling evidence transfer; they are not a normative classification defined by ISO, IUPAC or another single standards body.
+
+### Level 1 — Chemical identity / structural description
+
+Typical evidence:
+
+- molecular formula;
+- repeat-unit representation;
+- functional groups;
+- local bonding / hybridization model;
+- elemental substitution;
+- qualitative polarity / intermolecular-interaction features.
+
+This level answers:
+
+> **What structure are we talking about?**
+
+It does not answer whether a commercial piping product is acceptable.
+
+### Level 2 — Mechanism hypothesis
+
+Typical statements:
+
+- a penetrant may interact with a polar group;
+- segmental mobility may change with conditioning;
+- morphology may influence transport;
+- a local structural feature may alter packing or crystallization behaviour.
+
+This level answers:
+
+> **What physical mechanism should be tested?**
+
+A mechanism hypothesis is still not a property value.
+
+### Level 3 — Material characterization
+
+Typical evidence:
+
+- DSC / thermal analysis;
+- spectroscopy;
+- density / crystallinity indicators;
+- sorption / swelling;
+- permeability / diffusion;
+- modulus / tensile / impact response;
+- molecular-weight or rheological characterization;
+- microscopy.
+
+This level answers:
+
+> **What did this material state actually do under defined test conditions?**
+
+The result is bounded by specimen, method and conditions.
+
+### Level 4 — Compound / grade qualification
+
+A real engineering polymer is not only a repeating chemical skeleton.
+
+The compound or grade may include controlled:
+
+- molecular architecture;
+- comonomer distribution;
+- additives / stabilizers;
+- pigments / fillers;
+- processing requirements;
+- quality-control limits;
+- traceability / certification requirements.
+
+This level answers:
+
+> **Is the defined material formulation / grade qualified for the intended evidence framework?**
+
+### Level 5 — Product qualification
+
+Pipe, fitting, valve or sheet form introduces additional variables:
+
+- geometry;
+- manufacturing process;
+- residual stress;
+- wall-thickness control;
+- surface condition;
+- joining interface;
+- product testing;
+- dimensional / marking / conformity requirements.
+
+This level answers:
+
+> **Does the finished product meet the applicable product requirements?**
+
+### Level 6 — Application / system qualification
+
+The engineering environment finally adds:
+
+- process fluid;
+- pressure;
+- temperature;
+- time;
+- cycling / transients;
+- external loading;
+- installation;
+- joining;
+- inspection;
+- supports / restraints;
+- environment;
+- maintenance philosophy;
+- jurisdiction / project requirements.
+
+This level answers:
+
+> **Is this product/system suitable for this actual application?**
+
+A correct molecular explanation can exist at Level 2 while the system still fails at Level 6.
+
+---
+
+## 10.3 The stop-rule
+
+The Chapter 014 stop-rule is intentionally simple:
+
+> **Stop molecular inference at the first point where the engineering conclusion requires a magnitude, acceptance threshold, lifetime, product state or service-specific performance that the available evidence has not directly established.**
+
+When the stop-rule triggers, do not “fill the gap” with intuition.
+
+Route the question to:
+
+- direct characterization;
+- the applicable material chapter;
+- the applicable test standard;
+- product qualification;
+- manufacturer data under controlled conditions;
+- project-specific testing;
+- specialist analysis;
+- the governing design/application framework.
+
+The absence of evidence is an engineering input, not permission to invent one.
+
+---
+
+## 10.4 Final FIG-014-006 — Molecular feature to engineering evidence chain
+
+The final scientific figure shall show **two parallel tracks**.
+
+### Track A — Scientific reasoning
+
+`Chemical / structural observation`
+
+→ `Mechanism hypothesis`
+
+→ `Predicted measurable response`
+
+→ `Characterization / experiment`
+
+→ `Mechanism interpretation`
+
+This track develops understanding.
+
+### Track B — Engineering qualification
+
+`Defined compound / grade`
+
+→ `Qualified material evidence`
+
+→ `Finished product qualification`
+
+→ `Application / system requirements`
+
+→ `Engineering decision`
+
+This track develops acceptance.
+
+### Mandatory connection between tracks
+
+The tracks may connect only through verified evidence.
+
+A prominent prohibition shall be shown:
+
+`molecular feature  ✕→  direct design acceptance`
+
+Caption:
+
+> **Chemistry explains why a property may exist. Qualification establishes whether the property is sufficient for the engineering application.**
+
+### Required callouts
+
+- processing / morphology can modify the measured result;
+- service state can modify the measured result;
+- a material-family name is not a product qualification;
+- numerical transfer requires a transferability basis.
+
+---
+
+## 10.5 WF-014-001 — Chemical structure to engineering decision boundary — final chapter version
+
+### Phase 1 — Identify
+
+1. Define the actual material / product identity as far as known.
+2. Read the chemical / repeat-unit structure only at the level justified by evidence.
+3. Identify functional groups, substitution, bonding and intermolecular-interaction features relevant to the engineering question.
+
+### Phase 2 — Hypothesize
+
+4. State the proposed mechanism.
+5. State the expected measurable response.
+6. Identify alternative mechanisms and likely confounders.
+
+### Phase 3 — Verify
+
+7. Obtain direct material-specific evidence.
+8. Verify specimen, conditioning, temperature, time and test configuration.
+9. Separate measured result from interpretation.
+10. Check morphology / processing / additive effects where relevant.
+
+### Phase 4 — Transfer
+
+11. Define what product/material states the evidence actually represents.
+12. Identify whether transfer to the intended product form is justified.
+13. Reject unsupported transfer of numerical values.
+
+### Phase 5 — Qualify
+
+14. Identify the applicable material / product / application qualification framework.
+15. Confirm conformity and traceability of the actual product.
+16. Add project Design Basis conditions that may invalidate nominal qualification.
+
+### Phase 6 — Decide
+
+17. Make the engineering decision only from the complete evidence chain.
+18. Record assumptions, exclusions and residual uncertainty.
+19. Route unresolved issues to the owning specialist / chapter / test program.
+
+### Stop condition
+
+At any step:
+
+> **If the next conclusion depends on evidence that has not been established, stop. Record the hypothesis and define the missing evidence.**
+
+---
+
+## 10.6 CL-014-001 — Before inferring engineering behaviour from a chemical structure
+
+| ID | Review question | Required evidence / disposition |
+|---|---|---|
+| CL-014-01 | Have I separated the chemical structure from the commercial material/compound identity? | Identify known resin/compound/product information and unknowns |
+| CL-014-02 | Is the molecular feature actually established, or am I assuming it from a family name? | Structural / composition source |
+| CL-014-03 | Have I stated a mechanism hypothesis rather than a property fact? | Explicit hypothesis wording |
+| CL-014-04 | Which measurable property would test the hypothesis? | Defined characterization / test output |
+| CL-014-05 | Do I have direct evidence for that property in the actual or transferable material state? | Primary / qualified material evidence |
+| CL-014-06 | Have I considered morphology, crystallinity and processing history? | Characterization or justified disposition |
+| CL-014-07 | Have I considered additives, fillers, pigments, stabilizers or reinforcement? | Compound / supplier / qualification data |
+| CL-014-08 | Have I considered conditioning, temperature, time and concentration/pressure? | Test / service-condition match |
+| CL-014-09 | Does specimen geometry / product form affect transferability? | Geometry / product-form justification |
+| CL-014-10 | Am I using a membrane/coupon/resin result as though it were a pipe/fitting result? | Explicit transferability check |
+| CL-014-11 | Am I converting a qualitative trend into a numerical design value? | Source and validated numerical transfer basis |
+| CL-014-12 | Does a product or application standard govern the actual decision? | Applicable standards path |
+| CL-014-13 | Has the actual material grade / product been qualified and traced? | Conformity / traceability evidence |
+| CL-014-14 | Does the project Design Basis introduce service conditions outside the qualification envelope? | Design Basis comparison |
+| CL-014-15 | Have I documented what chemistry cannot establish? | Explicit limitation statement |
+| CL-014-16 | If evidence is missing, have I stopped rather than guessed? | Hold / test / specialist action |
+
+A checked item means the evidence has been reviewed and found acceptable. `N/A` requires a written justification.
+
+---
+
+## 10.7 TAB-014-004 — Downstream chapter ownership crosswalk
+
+| Engineering question after Chapter 014 | Owning PPE-BoK chapter / block | What moves beyond Chapter 014 |
+|---|---|---|
+| How does ethene actually become polyethylene? | Working Chapter 015 — Polymerization, Catalysts and Process–Structure Relationships | initiation / propagation concepts, catalysts, reactor/process history |
+| How do molecular weight, branching and crosslinking change behaviour? | Working Chapter 016 — Polymer Chain Architecture | chain length, MWD, branching, connectivity, crosslinking |
+| How do crystalline and amorphous regions form and interact? | Working Chapter 017 — Crystallinity and Morphology | lamellae, spherulites, tie molecules, morphology development |
+| How do temperature and thermal transitions change response? | Working Chapter 018 — Thermal Transitions and Thermophysical Behaviour | Tg, Tm, thermal expansion, conductivity, temperature-dependent state |
+| Why do polymers creep and relax with time? | Working Chapter 019 — Viscoelasticity, Creep and Time–Temperature Behaviour | constitutive/time-dependent response, TTS, Arrhenius/WLF concepts |
+| Why and how do polymers crack, fatigue or age? | Working Chapter 020 — Fracture, Crack Growth, Fatigue, ESC and Ageing | SCG/RCP/fatigue/ESC/oxidation/UV/degradation |
+| Which material family should be selected? | Part IV — Engineering Material Families | family-specific properties, limits and application evidence |
+| What does a laboratory test actually measure? | Part V — Material Characterization and Testing | test methods, specimen control, uncertainty, interpretation |
+| How is long-term performance qualified? | Part VI — Long-Term Performance and Engineering Evidence | qualification, validation, certification, technical files |
+| How should joining be selected and controlled? | Part VII — Joining and Connection Engineering | fusion/welding/mechanical joint procedure, qualification and inspection |
+| How are pressure, thermal, support and other loads designed? | Part VIII — Pipe and System Mechanical Design | stress/load/system calculations and design decisions |
+| How is chemical/service suitability established? | material-selection, material-family and application chapters | fluid-specific compatibility evidence and project Design Basis |
+| How is a real failure investigated? | Part XIII — Failure Analysis and Root-Cause Investigation | evidence preservation, fractography, lab methods, hypothesis testing |
+
+This table is a routing tool, not a final Table of Contents freeze. Working chapter numbers remain controlled by `BOOK_STRUCTURE.md`.
+
+---
+
+## 10.8 What “first principles” should mean in engineering practice
+
+First-principles thinking is sometimes misused as permission to ignore empirical qualification.
+
+That is the opposite of the intended method.
+
+For PPE-BoK, first-principles reasoning means:
+
+1. start from mechanisms that are physically and chemically defensible;
+2. use those mechanisms to identify the right variables and failure hypotheses;
+3. test the variables that matter;
+4. reject explanations that conflict with evidence;
+5. preserve uncertainty when evidence is incomplete;
+6. apply qualified standards / product evidence at the correct decision level.
+
+A first-principles explanation and a standards-based qualification are complementary.
+
+One explains **why**.
+
+The other controls **whether the evidence is sufficient for use**.
+
+---
+
+## 10.9 Common mistakes / Failure Lens
+
+### Mistake 1 — “I understand the chemistry, therefore I can calculate the service limit.”
+
+Why it fails: service limits depend on qualified material/product/system evidence, not chemical identity alone.
+
+### Mistake 2 — treating a material family as a material specification
+
+Why it fails: `PE`, `PA`, `PVDF`, `PFA` or another family name does not define molecular architecture, formulation, product manufacture or qualification.
+
+### Mistake 3 — using one test result outside its state
+
+Why it fails: temperature, time, conditioning, morphology and specimen geometry can alter the response.
+
+### Mistake 4 — hiding uncertainty behind a qualitative phrase
+
+Statements such as `excellent resistance`, `low permeability` or `high strength` require a defined comparison, condition and evidence source when used for engineering decisions.
+
+### Mistake 5 — assuming a standard replaces mechanism understanding
+
+Why it fails: a standard can define qualification or acceptance while not explaining every physical reason behind the requirement.
+
+### Mistake 6 — assuming mechanism understanding replaces a standard
+
+Why it fails: understanding why a material might perform well does not prove conformity with the governing product/application requirements.
+
+### Mistake 7 — continuing after the evidence chain breaks
+
+Why it fails: once transferability is unsupported, every downstream conclusion inherits the unsupported assumption.
+
+---
+
+## 10.10 Verification — the chapter desk test
+
+A reader should be able to answer the following without ambiguity:
+
+1. Can I infer a mechanism from a chemical structure? **Yes, if stated and bounded appropriately.**
+2. Can I infer an exact engineering property value from the structure alone? **No.**
+3. Can a primary research paper support a mechanism? **Yes.**
+4. Does one paper automatically qualify another grade/product/application? **No.**
+5. Can processing and morphology change behaviour even within one family? **Yes; this chapter demonstrates why the possibility must be checked.**
+6. Does a repeat unit identify a piping grade? **No.**
+7. Is chemistry useful for material selection? **Yes, as part of the evidence chain.**
+8. Does chemistry replace material/product/application qualification? **No.**
+9. What should I do when the next inference is unsupported? **Stop, define the missing evidence and route the question.**
+10. Where do I go next? **Use `TAB-014-004` and the applicable later PPE-BoK chapter.**
+
+If a reader can interpret Chapter 014 as authorizing a material, pressure, temperature, chemical service or lifetime from molecular structure alone, the chapter has failed its Desk Test.
+
+---
+
+## 10.11 Engineering decision from Investigation 10
+
+> **Use chemistry to identify mechanisms, variables, evidence needs and plausible failure hypotheses. Do not promote molecular reasoning into engineering acceptance until the relevant property has been measured, transferability has been justified, the actual material/product state is qualified and the application Design Basis has been checked.**
+
+This closes the first-principles scope of Chapter 014.
+
+The reader now has the bridge:
+
+`atom → electron structure → bonding → intermolecular interactions → carbon chemistry → local geometry / σπ → ethene → idealized PE backbone → structure-property hypothesis → measured evidence → qualification boundary`
+
+The next chapter begins where this one intentionally stops:
+
+> **How does polymerization transform monomers into real macromolecular architectures, and how do catalysts and process history shape the material that the engineer ultimately receives?**
+
+That question belongs to Working Chapter 015.
+
+---
+
+# Chapter engineering closure
+
+Chapter 014 has established three distinctions that shall remain visible throughout PPE-BoK:
+
+1. **Chemical structure is not material state.** Molecular identity is only the lowest level of the engineering evidence hierarchy.
+2. **Mechanism is not qualification.** A scientifically defensible explanation can guide testing without establishing a design value.
+3. **Material qualification is not system suitability.** Product and application conditions must still be checked against the project Design Basis.
+
+The practical use of first-principles chemistry is therefore not to replace standards, testing or qualification. It is to make those activities more intelligent: to identify the right variables, challenge weak explanations, detect hidden confounders and know when an engineering claim has exceeded its evidence.
+
+## Residual project-specific engineering
+
+Chapter 014 does not close:
+
+- polymerization/process chemistry;
+- real chain architecture;
+- morphology;
+- temperature/time-dependent constitutive behaviour;
+- fracture/degradation;
+- family-specific compatibility;
+- material/product qualification;
+- joining qualification;
+- pressure/mechanical design;
+- service-specific acceptance.
+
+Those questions are deliberately routed to the downstream PPE-BoK architecture.
 
 ---
 
@@ -1494,38 +2418,38 @@ That is Investigation 9 — and unlike Investigations 1–8, it requires direct 
 | ID | Asset | Status |
 |---|---|---|
 | FIG-014-001 | Atom-to-material hierarchy | Placeholder integrated; graphic production pending |
-| FIG-014-002 | Primary and secondary bonding map | Scientific specification complete; graphic production pending |
+| FIG-014-002 | Primary Bonding and Noncovalent Interaction Map | Scientific specification complete; graphic production pending |
 | FIG-014-003 | Carbon hybridization and geometry | Scientific specification complete; graphic production pending |
-| FIG-014-004 | Sigma and pi bonding in ethene | Scientific specification complete in Investigation 8; graphic production pending |
-| FIG-014-005 | Ethene to polyethylene bridge | Scientific specification complete in Investigation 8; graphic production pending |
-| FIG-014-006 | Molecular feature to engineering evidence chain | Concept introduced; formal development planned in Investigation 9/10 |
-| TAB-014-001 | Bonding types and engineering relevance | Integrated through Investigation 5 |
-| TAB-014-002 | Molecular feature / mechanism / invalid direct conclusion | Initial table integrated in Investigation 6; extend in Investigation 9 |
-| TAB-014-003 | Controlled polymer-structure examples | Planned for Investigation 9 after primary-literature gate |
-| TAB-014-004 | Downstream chapter ownership crosswalk | Planned for Investigation 10 |
-| EX-014-001 | Reading ethene and PE repeat unit | Integrated in Investigation 8; independent scientific/editorial check pending |
-| EX-014-002 | Comparing two simple polymer structures | BLOCKED with Investigation 9 primary-literature gate |
-| WF-014-001 | Chemical structure → evidence → decision boundary | Logic introduced; formalize in Investigation 9/10 |
-| CL-014-001 | Before inferring engineering behaviour from chemical structure | Planned for Investigation 10 |
+| FIG-014-004 | Sigma and pi bonding in ethene | Scientific specification complete; graphic production pending |
+| FIG-014-005 | Ethene to polyethylene bridge | Scientific specification complete; graphic production pending |
+| FIG-014-006 | Molecular feature to engineering evidence chain | Final scientific specification integrated; graphic production pending |
+| TAB-014-001 | Bonding types and engineering relevance | Integrated |
+| TAB-014-002 | Molecular feature / likely mechanism / invalid direct conclusion | Integrated in Investigation 9 |
+| TAB-014-003 | Controlled structure–property teaching cases | Integrated; Investigation 9 authoring review PASS |
+| TAB-014-004 | Downstream chapter ownership crosswalk | Integrated in Investigation 10 |
+| EX-014-001 | Reading ethene and PE repeat unit | Integrated; final full-chapter review pending |
+| EX-014-002 | Comparing two simple polymer hypotheses | Integrated; Investigation 9 authoring review PASS |
+| WF-014-001 | Chemical structure → evidence → engineering decision boundary | Final chapter version integrated |
+| CL-014-001 | Before inferring engineering behaviour from chemical structure | Integrated |
 
 ---
 
 # Publication hold points
 
-Chapter 014 is in Engineering Development. Publication closure is not implied by completion of an Investigation.
+Chapter 014 has completed its approved Engineering Development arc, but publication closure is not implied.
 
-Before publication the chapter requires, as applicable:
+Before publication, the chapter still requires:
 
-- completion of all approved Investigations;
-- direct evidence review for material-specific structure–property claims;
-- scientific review of molecular drawings and terminology;
-- current ISO/IUPAC terminology recheck;
-- Technical Review;
-- Standards/Evidence Validation;
-- Editorial/Style Review;
-- Desk Test;
-- final author approval and merge.
+- final full-file Technical Review after canonical integration;
+- final claim-level Standards/Evidence publication pass;
+- final Editorial / Style Review;
+- continuous-manuscript Desk Test;
+- final figure production where required for Publishing;
+- explicit author review / Human Approval Gate;
+- synchronization with current `main` and controlled merge.
+
+No chemistry, vocabulary source or primary-study result in this chapter independently authorizes a piping material, pressure, temperature, chemical service, permeability allowance, lifetime or joining condition.
 
 # References
 
-See `references.md` for the controlled Chapter 014 source and evidence plan.
+See `references.md` for the controlled Chapter 014 source and evidence register.
