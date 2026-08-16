@@ -3,8 +3,8 @@
 **Working title:** Polymer Chain Architecture: Molar Mass, Distribution, Branching and Crosslinking  
 **PDS baseline:** 1.0  
 **CDB:** `docs/PDS/Chapter-Design-Briefs/CDB-016-Polymer-Chain-Architecture.md`  
-**CDB gate:** Approved by author on 2026-08-16; approval record controls pending frontmatter metadata sync  
-**Outline status:** Definition-of-Ready implementation path  
+**CDB gate:** Approved by author on 2026-08-16; metadata synchronized on `main`  
+**Outline status:** Engineering Development complete at controlled-authoring level — canonical integration pending  
 **Date:** 2026-08-16
 
 ## 1. Chapter engineering question
@@ -21,27 +21,27 @@ Chapter 016 owns architecture descriptors and measurement logic. Chapter 017 own
 
 1. Prefer **molar mass** for the dimensional quantity.
 2. Retain `molecular weight` only in standard/source titles or clearly identified common usage.
-3. Use `M_n` for number-average molar mass.
-4. Use `M_m` as the preferred mass-average symbol while recognizing `M_w` as an IUPAC-accepted synonym and common industry symbol.
-5. Use molar-mass dispersity `Đ_M = M_m/M_n`; explain that `polydispersity index` is discouraged by IUPAC.
-6. Distinguish an average from the full molar-mass distribution.
-7. Distinguish branch count, branch length, branch placement and branch distribution.
-8. Distinguish short-chain branching from long-chain branching.
-9. Distinguish branch point, crosslink, covalent network, physical network and entanglement.
-10. Do not describe gel content as a complete crosslink-density or topology measurement.
-11. Do not describe MFR/MVR as a direct MWD measurement.
+3. Do not use unqualified `chain length` as the formal molecular-size quantity when DP, molar mass/distribution or a defined geometric quantity is intended.
+4. Use `M_n` for number-average molar mass.
+5. Use `M_m` as the preferred mass-average symbol while recognizing `M_w` as an IUPAC-accepted synonym and common industry symbol.
+6. Use molar-mass dispersity `Đ_M = M_m/M_n`; explain that `polydispersity index` is discouraged by IUPAC.
+7. Distinguish an average from the full molar-mass distribution.
+8. Distinguish branch count, branch length, branch placement and branch distribution.
+9. Distinguish short-chain branching from long-chain branching.
+10. Distinguish branch point, covalent crosslink, physical network and entanglement when permanence/connectivity matters.
+11. Do not describe gel content as a complete crosslink-density or topology measurement.
+12. Do not describe MFR/MVR as a direct MWD measurement.
 
 ## 4. Quantitative treatment
 
-### 4.1 Required definitions/equations
+### 4.1 Retained definitions/equations after Investigation gates
 
-The following are authorized for development, subject to source verification and units/assumptions review:
-
+- bounded individual-chain bookkeeping relation `M_chain = x M_0 + M_end`, with explicit composition/end-group assumptions;
 - number-average molar mass, `M_n`;
 - mass-average molar mass, `M_m ≡ M_w`;
 - molar-mass dispersity, `Đ_M = M_m/M_n`;
-- number-average degree of polymerization where useful;
-- bounded repeat-unit relation between degree of polymerization and molar mass only when composition/end-group assumptions are explicit.
+- degree-of-polymerization dispersity `Đ_X = X_m/X_n` when that quantity is explicitly intended;
+- no architecture→pipe-performance equation.
 
 ### 4.2 Equation control
 
@@ -60,74 +60,74 @@ No equation may convert architecture quantities directly into pressure rating, S
 
 ### 5.1 SEC/GPC
 
-Engineering-development treatment shall explain:
+Engineering-development treatment establishes:
 
 - separation by hydrodynamic size;
-- relative calibration using polymer standards;
-- universal-calibration context where applicable;
-- SEC-light-scattering route using absolute molar-mass information;
-- high-temperature SEC relevance for difficult-to-dissolve polyolefin systems;
-- composition, branching, dissolution and calibration as interpretation controls.
+- conventional relative calibration using polymer standards;
+- universal-calibration context as a relative ISO 16014-2 route;
+- SEC-light-scattering route using absolute molar-mass information within ISO 16014-5 method scope;
+- low-temperature and high-temperature ISO 16014 routes;
+- composition, branching, dissolution, detector and calibration as interpretation controls.
 
 Detailed apparatus, specimen preparation and operating procedure belong to Part V.
 
 ### 5.2 Branching
 
-Architecture claims shall distinguish:
+Architecture claims distinguish:
 
 - direct branch chemistry/sequence characterization;
 - indirect thermal/rheological inference;
 - method scope and calibration;
 - material-system limits.
 
-ISO 18177:2025 may be used only for its stated semicrystalline ethylene/1-olefin scope.
+ISO 18177:2025 is used only for its stated semicrystalline ethylene/1-olefin SCB-distribution scope.
 
 ### 5.3 Crosslinking / network
 
-ISO 10147:2011 may establish the PE-X gel-content method and its intended assessment context. `Gel content` is not to be equated with complete network topology or a universal crosslink-density value.
+ISO 10147:2011 establishes the PE-X gel-content method and assessment context. `Gel content` is not equated with complete network topology or a universal crosslink-density value.
 
 ### 5.4 Melt flow
 
-ISO 1133-1/-2 may establish what MFR/MVR measure under specified temperature/load/history controls and why those results are useful for QC. The chapter shall explicitly block `MFR → unique M_n/M_m/MWD` inference.
+ISO 1133-1/-2 establish MFR/MVR under specified method conditions and QC context. The chapter explicitly blocks `MFR → unique M_n/M_m/MWD/branch topology` inference.
 
-## 6. Investigation sequence
+## 6. Investigation sequence and gate status
 
 ### Investigation 1 — Why does chain architecture matter after polymerization is finished?
-Purpose: bridge Chapter 015 provenance to architecture as a measurable material state. No named architecture→property trend yet.
+**PASS / canonical.** Bridge Chapter 015 provenance to architecture as a measurable material state.
 
 ### Investigation 2 — What are chain length, degree of polymerization and molar mass?
-Purpose: control dimensional and population terminology; distinguish molar mass from relative molecular mass/molecular-weight language.
+**PASS / controlled candidate.** IUPAC terminology/units gate passed.
 
 ### Investigation 3 — Why does a polymer have multiple molar-mass averages?
-Purpose: develop `M_n`, `M_m/M_w`, distribution shape and dispersity.
+**PASS / controlled candidate.** Quantitative gate passed; EX-016-001 independently verified.
 Assets: FIG-016-001, FIG-016-002, TAB-016-001, EX-016-001.
 
 ### Investigation 4 — What does SEC/GPC actually measure, and what are its limits?
-Purpose: explain measurement logic and calibration without becoming a lab SOP.
+**PASS / controlled candidate.** ISO 16014 method-scope gate passed.
 Asset: TAB-016-002.
 
 ### Investigation 5 — What is branching, and why is “more branching” incomplete?
-Purpose: branch point, count, length, placement and topology.
+**PASS / controlled candidate.** Branch terminology/topology review passed.
 
 ### Investigation 6 — How do short-chain and long-chain branching differ?
-Purpose: separate branching classes and measurement/evidence limits; introduce ISO 18177 only within scope.
+**PASS / controlled candidate.** ISO 18177 scope gate passed.
 Assets: FIG-016-003, FIG-016-004, TAB-016-003.
 
 ### Investigation 7 — What are crosslinks and polymer networks?
-Purpose: crosslink, network, gel fraction and PE-X evidence limits.
+**PASS / controlled candidate.** IUPAC network/crosslink + ISO 10147 gate passed.
 
 ### Investigation 8 — Where do entanglements fit, and why are they not crosslinks?
-Purpose: establish temporary/topological connectivity without taking Chapter 019 rheology ownership.
+**PASS / controlled candidate.** Entanglement/physical-connectivity review passed.
 Asset: FIG-016-005.
 
 ### Investigation 9 — How can architecture influence engineering behaviour without becoming a design rule?
-Purpose: primary-literature evidence gate for bounded architecture→behaviour cases. Candidate domains: morphology, rheology, diffusion/permeation, creep, SCG and fusion/interdiffusion.
+**PASS / controlled candidate.** Primary-evidence gate passed for S016-013..016 only.
 
-Every retained case must record:
+Every retained case records:
 `system | architecture variable | measurement | downstream measurement | confounders | supported conclusion | unsupported conclusion | transferability`.
 
 ### Investigation 10 — What architecture information should the engineer request, and where must inference stop?
-Purpose: close workflow, supplier evidence request, checklist, failure lens and Chapter 017 handoff.
+**PASS / controlled candidate.** Chapter closure authoring review passed.
 Assets: TAB-016-004, TAB-016-005, FIG-016-006, WF-016-001, CL-016-001, EX-016-002, EX-016-003.
 
 ## 7. Required asset register
@@ -137,8 +137,8 @@ Assets: TAB-016-004, TAB-016-005, FIG-016-006, WF-016-001, CL-016-001, EX-016-00
 | FIG-016-001 | Why one molar-mass number is not enough | 3 | conceptual population/distribution |
 | FIG-016-002 | Molar-mass averages on one distribution | 3 | no universal distribution shape |
 | FIG-016-003 | Linear / SCB / LCB / network topology | 6 | topology only |
-| FIG-016-004 | Branch count / length / distribution | 6 | prevent scalar “more branching” shortcut |
-| FIG-016-005 | Branch point / crosslink / entanglement / network | 8 | permanence/connectivity map |
+| FIG-016-004 | Branch amount / placement / distribution | 6 | prevent scalar “more branching” shortcut |
+| FIG-016-005 | Branch point / covalent crosslink / entanglement / physical network | 8 | permanence/connectivity map |
 | FIG-016-006 | Architecture evidence chain | 10 | final decision-boundary figure |
 | TAB-016-001 | Quantities / symbols / units / misuse | 3 | IUPAC-controlled |
 | TAB-016-002 | Measurement route / quantity / limitation | 4 | no method equivalence claims |
@@ -153,17 +153,24 @@ Assets: TAB-016-004, TAB-016-005, FIG-016-006, WF-016-001, CL-016-001, EX-016-00
 
 ## 8. Evidence gates
 
-1. Investigation 2 terminology gate — IUPAC molar-mass/relative-mass language.
-2. Investigation 3 quantitative gate — equations/symbols/units verified.
-3. Investigation 4 method-scope gate — ISO 16014 series verified.
-4. Investigation 6 branching gate — ISO 18177 scope and any named PE/PP branching claim verified.
-5. Investigation 7 network gate — IUPAC network/crosslink terminology + ISO 10147 scope verified.
-6. Investigation 9 primary-literature gate — each architecture→behaviour case independently reviewed.
-7. Pre-integration Technical Review.
-8. Final full-file Technical Review.
-9. Final claim-level Standards/Evidence Review.
-10. Editorial/Style + continuous Desk Test.
-11. Human Approval before merge.
+Completed:
+
+1. Investigation 2 terminology gate — PASS.
+2. Investigation 3 quantitative/equation/units gate — PASS.
+3. Investigation 4 ISO 16014 method-scope gate — PASS.
+4. Investigation 6 ISO 18177 branching gate — PASS.
+5. Investigation 7 IUPAC network/crosslink + ISO 10147 gate — PASS.
+6. Investigation 9 primary-literature gate — PASS FOR S016-013..016 ONLY.
+7. Pre-integration Technical Review — CONDITIONAL PASS, bounded integration findings only.
+8. Pre-integration Standards/Evidence Validation — PASS.
+9. Pre-integration Editorial/Style + Desk Review — CONDITIONAL PASS, no structural rewrite.
+
+Pending after canonical integration:
+
+10. Final full-file Technical Review.
+11. Final claim-level Standards/Evidence Review.
+12. Final Editorial/Style + continuous Desk Test.
+13. Human Approval before merge.
 
 ## 9. Explicit exclusions
 
@@ -177,6 +184,8 @@ Chapter 016 shall not become:
 - a fracture/SCG chapter;
 - a pipe-design or joining-qualification chapter.
 
-## 10. Definition-of-Ready disposition
+## 10. Current disposition
 
-Together with the approved CDB, active Evidence Plan, canonical scaffold and DoR audit, this outline provides the sequential engineering-development path required to begin Investigation 1 once the DoR audit passes.
+**ENGINEERING DEVELOPMENT COMPLETE AT CONTROLLED-AUTHORING LEVEL — CANONICAL INTEGRATION AUTHORIZED.**
+
+The one-shot integration shall combine Investigations 2–10 with canonical Investigation 1, absorb S016-013..016 into the evidence register, apply bounded metadata/editorial normalization, validate controlled assets/source IDs, remove temporary authoring artifacts and stop before final integrated-manuscript review.
