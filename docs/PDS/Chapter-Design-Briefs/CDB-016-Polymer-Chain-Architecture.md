@@ -2,8 +2,9 @@
 
 **PDS Baseline:** 1.0  
 **Working Chapter:** 016  
-**Status:** Draft — Author Approval Required  
+**Status:** Approved — Engineering Development Authorized after Definition-of-Ready verification  
 **Date:** 2026-08-16  
+**Author approval:** 2026-08-16  
 **Architecture source:** `BOOK_STRUCTURE.md`  
 **Upstream prerequisites:** Chapter 014 — Atomic Structure, Chemical Bonding and Carbon Chemistry; Chapter 015 — From Monomer to Polymer
 
@@ -356,7 +357,7 @@ Chapter 015 remains the provenance/mechanism prerequisite and shall not be retau
 
 ## 15. Success / acceptance criteria
 
-The CDB is ready for author approval when:
+The CDB is approved because:
 
 - chain architecture is clearly separated from polymerization provenance;
 - molar-mass terminology is controlled;
@@ -382,6 +383,6 @@ The completed chapter will satisfy its Definition of Done only when:
 
 ## 16. Definition-of-Ready disposition
 
-**Current disposition: DRAFT CDB — AUTHOR APPROVAL REQUIRED.**
+**Current disposition: CDB APPROVED — detailed Technical Outline and active Standards/Evidence Plan required before Engineering Development starts.**
 
-After author approval, produce the detailed Technical Outline and active Standards/Evidence Plan, perform Definition-of-Ready verification, and only then begin sequential Engineering Development.
+Author approval was recorded on 2026-08-16. The next controlled step is to produce the detailed Technical Outline and active Standards/Evidence Plan, verify the Definition of Ready is complete, and only then begin sequential Engineering Development.
