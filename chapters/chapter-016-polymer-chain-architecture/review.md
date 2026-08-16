@@ -30,7 +30,7 @@
 | Investigation 10 / chapter closure authoring | **PASS** | workflow, checklist, supplier request and handoff complete |
 | Pre-integration Technical Review | **CONDITIONAL PASS** | TR016-01..08 bounded integration findings only |
 | Pre-integration Standards/Evidence Validation | **PASS** | publication lifecycle holds retained |
-| Pre-integration Editorial / Desk Review | **CONDITIONAL PASS** | ED016-01..07; no structural rewrite required |
+| Pre-integration Editorial / Desk Review | **CONDITIONAL PASS** | ED016-01..07; no structural rewrite required; acronym seam check deferred to final continuous review |
 | Canonical integration | **PENDING / AUTHORIZED** | one-shot mechanical integration next |
 | Final full-file Technical Review | PENDING | continuous canonical manuscript required |
 | Final claim-level Standards/Evidence Review | PENDING | after integration |
@@ -94,7 +94,7 @@ Publication lifecycle holds remain for source/version status and final claim-lev
 
 **CONDITIONAL PASS — no structural rewrite required.**
 
-Apply ED016-01 through ED016-07 during/around integration.
+Apply ED016-01 through ED016-07. ED016-03 acronym clarity is explicitly reserved for the post-integration continuous-file review and is not a mechanical rewrite instruction.
 
 ## 7. Canonical configuration state
 
@@ -105,7 +105,7 @@ Canonical directory:
 Current canonical files:
 
 - `chapter.md` — Investigation 1 + chapter scaffold;
-- `references.md` — active S016-001..012 evidence plan;
+- `references.md` — active S016-001..012 evidence plan with final pre-integration status metadata;
 - `technical-outline.md`;
 - `review.md`.
 
