@@ -253,7 +253,7 @@ If a named polymer/system is claimed to have a specified entanglement density or
 
 Evidence level: C mandatory for every retained named architecture→behaviour case.
 
-The dedicated gate approved **S016-013 through S016-016 only**. The temporary evidence addendum contains the canonical-entry text pending one-shot integration.
+The dedicated gate disposition is **PASS FOR S016-013 THROUGH S016-016 ONLY**. The temporary evidence addendum contains the canonical-entry text pending one-shot integration.
 
 Each case records:
 
@@ -267,7 +267,7 @@ Evidence level: synthesis of already validated evidence. No new named technical 
 
 No architecture→property case is approved merely because it is common in polymer engineering.
 
-The Investigation 9 gate is **PASS FOR S016-013 THROUGH S016-016 ONLY**.
+The Investigation 9 gate disposition is **PASS FOR S016-013 THROUGH S016-016 ONLY**.
 
 Any additional named case requires a new direct-primary-evidence review.
 
