@@ -68,7 +68,7 @@ Apply/preserve ED016-01 through ED016-07:
 
 - current-state metadata;
 - `molar mass / MMD / M_m ≡ M_w / Đ_M` convention;
-- first-use acronym clarity;
+- acronym clarity is a **post-integration continuous-file review check**, not authorization for mechanical prose rewriting;
 - one final formal asset label per ID;
 - evidence limitations adjacent to S016-013..016 cases;
 - no duplicated generic warnings caused only by file seams;
@@ -142,7 +142,11 @@ The integration implementation shall:
 - push normally if credentials are available;
 - otherwise export the exact single commit as Git bundle + format-patch and stop.
 
-## 9. Post-integration gates
+## 9. Precondition control
+
+The exact expected remote branch SHA is **not hard-coded in this brief**. The Lead Engineer shall supply the fresh SHA in the Claude execution prompt immediately before execution. If the remote branch has moved from that supplied SHA, STOP rather than integrating on an unreviewed state.
+
+## 10. Post-integration gates
 
 Mechanical integration does not close the chapter.
 
