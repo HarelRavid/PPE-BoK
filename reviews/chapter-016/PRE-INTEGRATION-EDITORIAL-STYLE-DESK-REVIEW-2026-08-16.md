@@ -41,7 +41,7 @@ A final continuous-file Desk Test remains mandatory after integration.
 
 ### ED016-01 — normalize current-state metadata
 
-Canonical `review.md` and Technical Outline still contain planning-era text indicating that CDB metadata sync is open. Current canonical development files shall reflect the completed CDB approval/metadata sync.
+Canonical `review.md` and Technical Outline have now been synchronized to the approved CDB / completed-authoring state. Mechanical integration shall preserve that state and move only the integration/final-review gates forward.
 
 Historical review records may retain their time-correct wording.
 
@@ -56,9 +56,11 @@ Reader-facing explanatory prose shall consistently prefer:
 
 Source titles must retain original `molecular weight` wording.
 
-### ED016-03 — protect acronym clarity
+### ED016-03 — acronym clarity is a continuous-file check
 
-Define at first reader-facing use in the integrated chapter:
+Because Investigations 2–10 remain separate approved candidates until integration, the mechanical implementation shall **not rewrite technical prose solely to force acronym expansion at file seams**.
+
+The final continuous Editorial/Desk Review shall verify first reader-facing use and make bounded corrections if needed for:
 
 - MMD;
 - SEC/GPC;
@@ -66,9 +68,9 @@ Define at first reader-facing use in the integrated chapter:
 - LCB;
 - MFR/MVR;
 - PE-X;
-- SH / CRB / NPT where used in the evidence case.
+- SH / CRB / NPT in the evidence case.
 
-Do not assume an engineer arrives from the previous chapter with every acronym loaded.
+This condition is intentionally assigned to the post-integration review rather than Claude's mechanical task.
 
 ### ED016-04 — one final formal asset label per asset
 
@@ -80,7 +82,7 @@ For S016-013 through S016-016, keep `supported / confounders / unsupported / tra
 
 ### ED016-06 — avoid disclaimer saturation
 
-The chapter intentionally repeats evidence boundaries, but integration should not create duplicated generic warnings at candidate seams. Retain mechanism-specific cautions; remove only literal repetition caused by file concatenation.
+The chapter intentionally repeats evidence boundaries, but integration should not create duplicated generic warnings at candidate seams. Mechanical integration shall not paraphrase the approved candidates to remove repetition; any literal seam issue is dispositioned during final continuous-file review.
 
 ### ED016-07 — preserve chapter handoff
 
@@ -109,4 +111,4 @@ Avoid converting the final chapter into either a lab manual or a repetitive comp
 
 **CONDITIONAL PASS — CANONICAL INTEGRATION AUTHORIZED.**
 
-Conditions ED016-01 through ED016-07 require only bounded normalization and no scientific scope expansion.
+Conditions ED016-01 through ED016-07 require no scientific scope expansion. ED016-03 is explicitly a post-integration continuous-file editorial check, not a mechanical rewrite instruction.
