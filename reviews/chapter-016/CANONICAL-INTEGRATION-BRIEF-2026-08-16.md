@@ -146,6 +146,8 @@ The integration implementation shall:
 
 The exact expected remote branch SHA is **not hard-coded in this brief**. The Lead Engineer shall supply the fresh SHA in the Claude execution prompt immediately before execution. If the remote branch has moved from that supplied SHA, STOP rather than integrating on an unreviewed state.
 
+No further pre-integration technical/content edits are authorized after the fresh SHA is supplied. If the branch moves, the integration must be re-authorized against the new head.
+
 ## 10. Post-integration gates
 
 Mechanical integration does not close the chapter.
