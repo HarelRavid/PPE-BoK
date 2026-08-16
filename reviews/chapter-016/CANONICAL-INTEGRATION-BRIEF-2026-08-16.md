@@ -8,31 +8,21 @@
 
 Integrate the reviewed Investigation 2–10 authoring candidates into the canonical Chapter 016 manuscript and evidence register in one controlled mechanical step.
 
-This brief is the authoritative integration contract.
-
-The implementation engineer shall not research, rewrite, improve or expand the scientific content.
+This brief is the authoritative integration contract. The implementation engineer shall not research, rewrite, improve or expand the scientific content.
 
 ## 2. Authoritative inputs
 
 Canonical files:
 
 - `chapters/chapter-016-polymer-chain-architecture/chapter.md` — canonical Investigation 1;
-- `chapters/chapter-016-polymer-chain-architecture/references.md` — S016-001..012;
+- `chapters/chapter-016-polymer-chain-architecture/references.md` — S016-001..012 plus final pre-integration gate/status metadata;
 - `chapters/chapter-016-polymer-chain-architecture/technical-outline.md`;
 - `chapters/chapter-016-polymer-chain-architecture/review.md`.
 
 Controlled candidates:
 
-- `investigation-002-authoring.md`;
-- `investigation-003-authoring.md`;
-- `investigation-004-authoring.md`;
-- `investigation-005-authoring.md`;
-- `investigation-006-authoring.md`;
-- `investigation-007-authoring.md`;
-- `investigation-008-authoring.md`;
-- `investigation-009-authoring.md`;
-- `investigation-010-authoring.md`;
-- `references-addendum-2026-08-16.md`.
+- `investigation-002-authoring.md` through `investigation-010-authoring.md`;
+- `references-addendum-2026-08-16.md` containing S016-013 through S016-016 canonical source-entry candidates.
 
 Review controls:
 
@@ -51,21 +41,13 @@ One-shot tool:
 2. Insert Investigations 2–10 in numerical order, exactly once each.
 3. Preserve candidate technical wording and evidence boundaries.
 4. Insert S016-013 through S016-016 into canonical `references.md` before the Investigation-specific evidence plan.
-5. Update the canonical primary-evidence register to state that only S016-013..016 passed the Investigation 9 gate; new named cases remain gated.
-6. Normalize canonical manuscript frontmatter:
-   - equations: PASS;
-   - units: PASS;
-   - examples: PASS;
-   - leave final terminology/standards/editorial review as active/pending until post-integration review.
-7. Update `review.md` to:
-   - Engineering Development COMPLETE;
-   - canonical integration COMPLETE;
-   - final integrated-manuscript Technical / Standards-Evidence / Editorial-Desk reviews PENDING;
-   - Human Approval PENDING.
-8. Retain `technical-outline.md` as the current synchronized development outline; no scientific rewrite is needed.
-9. Delete temporary Investigation 2–10 candidate files after successful validation.
-10. Delete `references-addendum-2026-08-16.md` after successful validation.
-11. Delete the one-shot integration script after validation and before the atomic integration commit.
+5. Preserve the canonical primary-evidence register stating **PASS FOR S016-013 THROUGH S016-016 ONLY**; new named cases remain gated.
+6. Change the evidence-register disposition from `S016-013..016 PENDING MECHANICAL ABSORPTION` to `S016-013..016 INTEGRATED; FINAL CLAIM-LEVEL REVIEW PENDING`.
+7. Normalize canonical manuscript frontmatter: equations PASS, units PASS, examples PASS; final terminology/standards/editorial review remains pending/active until post-integration review.
+8. Update `review.md` to Engineering Development COMPLETE, canonical integration COMPLETE, final integrated reviews PENDING and Human Approval PENDING.
+9. Retain `technical-outline.md` as the synchronized development outline; no scientific rewrite is needed.
+10. Delete temporary Investigation 2–10 candidates and the evidence addendum only after successful validation.
+11. Delete `tools/chapter016_canonical_integrate.py` after validation and before the atomic integration commit.
 
 ## 4. Technical findings that must remain closed
 
@@ -102,31 +84,15 @@ Canonical `chapter.md` must contain exactly one top-level heading for each Inves
 
 ### 6.2 Source register
 
-Canonical `references.md` must contain exactly one source heading each for:
-
-- S016-013;
-- S016-014;
-- S016-015;
-- S016-016.
+Canonical `references.md` must contain exactly one source heading each for S016-013, S016-014, S016-015 and S016-016 and must retain the bounded Investigation 9 gate.
 
 ### 6.3 Formal assets
 
 Canonical `chapter.md` must contain exactly one formal heading/specification for:
 
-Figures:
-
-- FIG-016-001 through FIG-016-006.
-
-Tables:
-
-- TAB-016-001 through TAB-016-005.
-
-Examples:
-
-- EX-016-001 through EX-016-003.
-
-Workflow/checklist:
-
+- FIG-016-001 through FIG-016-006;
+- TAB-016-001 through TAB-016-005;
+- EX-016-001 through EX-016-003;
 - WF-016-001;
 - CL-016-001.
 
@@ -147,16 +113,7 @@ The integrated manuscript must retain:
 
 ### 6.5 No downstream shortcut
 
-No integration change may create a direct acceptance rule from:
-
-- molar mass/MMD/dispersity;
-- SCB/LCB;
-- gel content;
-- entanglement;
-- MFR/MVR;
-- density;
-
-to pressure rating, lifetime, SCG qualification, permeability acceptance, fusion qualification or service suitability.
+No integration change may create a direct acceptance rule from molar mass/MMD/dispersity, SCB/LCB, gel content, entanglement, MFR/MVR or density to pressure rating, lifetime, SCG qualification, permeability acceptance, fusion qualification or service suitability.
 
 ### 6.6 Configuration scope
 
@@ -169,17 +126,9 @@ to pressure rating, lifetime, SCG qualification, permeability acceptance, fusion
 
 Only after successful integration validation:
 
-- `chapters/chapter-016-polymer-chain-architecture/investigation-002-authoring.md`
-- `.../investigation-003-authoring.md`
-- `.../investigation-004-authoring.md`
-- `.../investigation-005-authoring.md`
-- `.../investigation-006-authoring.md`
-- `.../investigation-007-authoring.md`
-- `.../investigation-008-authoring.md`
-- `.../investigation-009-authoring.md`
-- `.../investigation-010-authoring.md`
-- `chapters/chapter-016-polymer-chain-architecture/references-addendum-2026-08-16.md`
-- `tools/chapter016_canonical_integrate.py`
+- `chapters/chapter-016-polymer-chain-architecture/investigation-002-authoring.md` through `investigation-010-authoring.md`;
+- `chapters/chapter-016-polymer-chain-architecture/references-addendum-2026-08-16.md`;
+- `tools/chapter016_canonical_integrate.py`.
 
 Review/provenance records remain in `reviews/chapter-016/`.
 
