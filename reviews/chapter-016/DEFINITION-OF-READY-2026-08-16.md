@@ -25,7 +25,7 @@ PASS items:
 
 - full primary-literature matrix for Investigation 9 is intentionally deferred to its gate;
 - publication-time ISO/IUPAC lifecycle rechecks remain open;
-- CDB pre-approval frontmatter status requires later metadata synchronization, but the author approval record is authoritative and this is non-blocking.
+- the CDB approval metadata and author-approval record are synchronized on the current baseline.
 
 ## Authorization
 
