@@ -117,7 +117,7 @@ Temporary controlled authoring artifacts pending integration:
 
 ## 8. Configuration-freeze rule
 
-The branch state used in the Claude execution prompt is the frozen pre-integration state. After the prompt is issued, no further pre-integration content/metadata changes are authorized. If the remote branch SHA moves, Claude must STOP and the Lead Engineer must re-authorize a new exact head.
+The exact branch SHA supplied in the Claude execution prompt is the controlling frozen pre-integration state. No additional content or metadata changes are authorized after that SHA is issued. If the remote branch SHA differs, Claude must STOP and report the discrepancy.
 
 ## 9. Next controlled action
 
