@@ -6,6 +6,7 @@
 **CDB author approval:** 2026-08-16  
 **CDB metadata synchronization:** COMPLETE  
 **Definition-of-Ready audit:** PASS  
+**Pre-integration state:** **FROZEN FOR MECHANICAL INTEGRATION**  
 **Date:** 2026-08-16
 
 ## 1. Gate status
@@ -114,7 +115,11 @@ Temporary controlled authoring artifacts pending integration:
 - `investigation-002-authoring.md` through `investigation-010-authoring.md`;
 - `references-addendum-2026-08-16.md`.
 
-## 8. Next controlled action
+## 8. Configuration-freeze rule
+
+The branch state used in the Claude execution prompt is the frozen pre-integration state. After the prompt is issued, no further pre-integration content/metadata changes are authorized. If the remote branch SHA moves, Claude must STOP and the Lead Engineer must re-authorize a new exact head.
+
+## 9. Next controlled action
 
 Perform the one-shot canonical integration under `CANONICAL-INTEGRATION-BRIEF-2026-08-16.md` and its validation script.
 
