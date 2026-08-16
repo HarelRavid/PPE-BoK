@@ -33,17 +33,22 @@ No architecture descriptor is a piping acceptance criterion by itself.
 
 ### S016-001 — IUPAC Gold Book, 5th ed., online v5.0.0
 
-Role: current controlled terminology source. Terms to verify at authoring/final validation include:
+Role: current controlled terminology source. Terms verified during Engineering Development include:
 
+- degree of polymerization;
+- average degree of polymerization;
 - molar mass — Gold Book 12214;
 - molar-mass average — 12215;
 - number-average molar mass — 12216;
 - mass-average molar mass — 12217;
 - molar-mass dispersity — 12224;
+- degree-of-polymerization dispersity — 12225;
 - dispersity — 12226;
+- relative molecular mass;
 - branch / branched polymer / branch point;
 - crosslink / crosslinking;
-- network / network polymer / physical network.
+- network / network polymer / physical network;
+- entanglement / chain entanglement.
 
 Controlled quantitative convention:
 
@@ -81,7 +86,15 @@ Role: network/physical-network/crosslinking terminology where applicable.
 
 ### S016-006 — ISO 472:2013 + Amd 1:2018
 
-Role: plastics vocabulary cross-check only. Publication-time lifecycle recheck required because the current ISO lifecycle remains under revision/replacement activity.
+Role: plastics vocabulary cross-check only.
+
+Status recheck 2026-08-16:
+
+- ISO 472:2013 remains Published at stage 90.92 — International Standard to be revised;
+- Amendment 1:2018 remains Published;
+- replacement-series work is under development.
+
+Publication-time lifecycle recheck remains mandatory.
 
 ### S016-007 — ISO 16014-1:2019
 
@@ -97,7 +110,16 @@ Scope use:
 
 ### S016-008 — ISO 16014-2:2019 through ISO 16014-5:2019
 
-Role: controlled SEC family supporting universal-calibration, low/high-temperature and light-scattering contexts. Exact part scope shall be checked before each authoring claim; detailed procedure is deferred to Part V.
+Status checkpoint 2026-08-16: Published / Confirmed family.
+
+Controlled method distinctions:
+
+- Part 2 — universal calibration, relative method;
+- Part 3 — low-temperature organic-eluent SEC below 60 °C, relative;
+- Part 4 — high-temperature organic-eluent SEC from 60 °C to 220 °C, relative;
+- Part 5 — SEC coupled with light scattering, absolute-molecular-weight route within stated scope.
+
+Detailed procedure remains deferred to Part V.
 
 ### S016-009 — ISO 18177:2025
 
@@ -126,17 +148,19 @@ Controlled use:
 
 **Plastics — Determination of the melt mass-flow rate (MFR) and melt volume-flow rate (MVR) of thermoplastics — Part 1: Standard method.**
 
-Status checkpoint: Published, stage 60.60.
+Status checkpoint 2026-08-16: Published, stage 60.60.
 
 Controlled use:
 
 - MFR/MVR are determined under specified temperature/load conditions;
-- ISO notes these methods are used primarily in quality control and may not correlate directly with normal processing behaviour;
+- ISO notes the methods are used primarily in quality control and may not correlate directly with normal processing behaviour;
 - MFR/MVR are not direct measurements of `M_n`, `M_m`, full MMD or branching topology.
 
 ### S016-012 — ISO 1133-2:2011
 
-Role: MFR/MVR route for materials sensitive to time-temperature history and/or moisture. Current ISO page states the version remains current after review; lifecycle should be rechecked at final validation.
+Role: MFR/MVR route for materials sensitive to time-temperature history and/or moisture.
+
+Status recheck 2026-08-16: ISO identifies the publication as current after review activity; exact publication-time lifecycle shall be rechecked before Design Freeze.
 
 ## 5. Investigation-specific evidence plan
 
@@ -229,16 +253,9 @@ If a named polymer/system is claimed to have a specified entanglement density or
 
 Evidence level: C mandatory for every retained named architecture→behaviour case.
 
-Candidate case domains:
+The dedicated gate approved **S016-013 through S016-016 only**. The temporary evidence addendum contains the canonical-entry text pending one-shot integration.
 
-- architecture → morphology/crystallization;
-- architecture → melt/rheology;
-- architecture → diffusion/permeation;
-- architecture → creep;
-- architecture → SCG;
-- architecture → fusion/interdiffusion.
-
-Each case must record:
+Each case records:
 
 `system | architecture variable | measurement | downstream measurement | confounders | supported conclusion | unsupported conclusion | transferability`.
 
@@ -248,17 +265,21 @@ Evidence level: synthesis of already validated evidence. No new named technical 
 
 ## 6. Primary-literature gate register
 
-No architecture→property case is pre-approved merely because it is common in polymer engineering.
+No architecture→property case is approved merely because it is common in polymer engineering.
 
-Before Investigation 9 authoring, each candidate is marked:
+The Investigation 9 gate is **PASS FOR S016-013 THROUGH S016-016 ONLY**.
 
-- `CANDIDATE`;
+Any additional named case requires a new direct-primary-evidence review.
+
+Gate checklist:
+
 - `DIRECT SOURCE LOCATED`;
 - `DIRECT SOURCE REVIEWED`;
-- `ARCHITECTURE VARIABLE ACTUALLY MEASURED`;
+- `ARCHITECTURE VARIABLE ACTUALLY MEASURED / INDEPENDENTLY CHARACTERIZED`;
 - `DOWNSTREAM OUTPUT ACTUALLY MEASURED`;
 - `CONFOUNDERS DISPOSITIONED`;
 - `SUPPORTED CLAIM BOUNDED`;
+- `UNSUPPORTED CLAIM EXPLICIT`;
 - `TRANSFERABILITY DISPOSITIONED`;
 - `APPROVED FOR AUTHORING`.
 
@@ -289,15 +310,17 @@ Do not author any of the following as universal rules:
 
 ## 9. Current source-status checkpoint — 2026-08-16
 
+- IUPAC current Gold Book terminology remains the active controlled source layer.
 - IUPAC 2014/2015 macromolecule terminology remains the direct source behind current Gold Book molar-mass entries.
 - IUPAC 2009 dispersity Recommendation remains the terminology source replacing `polydispersity index` with dispersity language.
-- ISO 16014-1:2019 is current and confirmed at stage 90.93; the 2019 SEC family is the active method path.
+- ISO 472:2013 remains published but at 90.92 and requires publication-time replacement-series review.
+- ISO 16014-1..5:2019 remain the active confirmed SEC method family at the current checkpoint.
 - ISO 18177:2025 is published at stage 60.60.
 - ISO 10147:2011 is current/confirmed at stage 90.93.
-- ISO 1133-1:2022 is published; ISO 1133-2:2011 remains current on the ISO catalogue and carries a lifecycle recheck hold for final publication validation.
+- ISO 1133-1:2022 is published; ISO 1133-2:2011 remains the active time-temperature/moisture-sensitive route at the current checkpoint with final lifecycle recheck retained.
 
-## 10. Definition-of-Ready evidence disposition
+## 10. Engineering-development evidence disposition
 
-**PASS for entering Engineering Development.**
+**PASS FOR CANONICAL INTEGRATION — S016-013..016 PENDING MECHANICAL ABSORPTION INTO THIS REGISTER.**
 
-The terminology path, method-scope path, quantitative controls and primary-literature gates are sufficiently defined to begin Investigation 1. Investigations that require named architecture/property claims remain independently gated until the required primary evidence is reviewed.
+Terminology, quantitative and method-scope gates are closed for the authored content. Investigation 9 is PASS for the four controlled primary cases only. Final claim-level citation placement and publication-time lifecycle validation remain mandatory after canonical integration.
