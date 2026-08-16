@@ -51,8 +51,21 @@ def asset_heading_count(text: str, asset_id: str) -> int:
 def build_chapter() -> str:
     chapter = read(CHAPTER)
     require(inv_count(chapter, 1) == 1, "Canonical chapter must contain exactly one Investigation 1")
-    for n in range(2, 11):
+
+    # The current pre-integration canonical manuscript may contain one provisional
+    # Investigation 2 section. The reviewed investigation-002-authoring.md candidate
+    # is authoritative for final integration and must REPLACE, never append to, that
+    # provisional section. Investigations 3-10 must not already be canonical.
+    require(inv_count(chapter, 2) in (0, 1), "Canonical chapter may contain at most one provisional Investigation 2")
+    for n in range(3, 11):
         require(inv_count(chapter, n) == 0, f"Canonical chapter already contains Investigation {n}")
+
+    if inv_count(chapter, 2) == 1:
+        match = re.search(r"(?m)^# Investigation 2\s+—", chapter)
+        require(match is not None, "Could not locate provisional Investigation 2 heading")
+        chapter = chapter[: match.start()].rstrip()
+        require(inv_count(chapter, 1) == 1, "Removing provisional Investigation 2 damaged Investigation 1")
+        require(inv_count(chapter, 2) == 0, "Provisional Investigation 2 was not removed cleanly")
 
     parts = [chapter.rstrip()]
     for n, path in enumerate(CANDIDATES, start=2):
@@ -122,7 +135,7 @@ def build_review() -> str:
         review = review.replace(old, new, 1)
 
     s7 = "## 7. Canonical configuration state"
-    s8 = "## 8. Next controlled action"
+    s8 = "## 8. Configuration-freeze rule"
     require(s7 in review and s8 in review, "review.md section markers missing")
     start = review.index(s7)
     end = review.index(s8)
@@ -168,6 +181,11 @@ After integration:
 def validate(chapter: str, refs: str, review: str) -> None:
     for n in range(1, 11):
         require(inv_count(chapter, n) == 1, f"Integrated chapter must contain exactly one Investigation {n}")
+
+    # Assert that the final Investigation 2 is the reviewed candidate, not the
+    # shorter provisional section that existed in canonical chapter.md.
+    require("kinetic-chain length" in chapter, "Final Investigation 2 does not appear to be the reviewed candidate")
+    require("M_chain = x M_0 + M_end" in chapter, "Reviewed Investigation 2 bookkeeping relation missing")
 
     for sid in SOURCE_IDS:
         require(len(re.findall(rf"(?m)^###\s+{sid}\b", refs)) == 1, f"Integrated references must contain exactly one {sid} heading")
