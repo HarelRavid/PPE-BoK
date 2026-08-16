@@ -5,6 +5,7 @@
 **Status:** Approved — Engineering Development Authorized after Definition-of-Ready verification  
 **Date:** 2026-08-15  
 **Author approval:** 2026-08-15  
+**Post-approval authoritative-source update:** 2026-08-15 — S015-008 published 2026 IUPAC step/chain classification incorporated without scope change  
 **Architecture source:** `BOOK_STRUCTURE.md`  
 **Upstream prerequisite:** Chapter 014 — Atomic Structure, Chemical Bonding and Carbon Chemistry for Polymer Engineers
 
@@ -45,9 +46,9 @@ The chapter must prevent two opposite errors:
 
 After completing the chapter, the reader should be able to:
 
-1. Distinguish monomer, polymerization, chain polymerization, polyaddition and polycondensation using controlled modern terminology.
+1. Distinguish monomer, polymerization, step polymerization, chain polymerization, additive step polymerization/polyaddition and condensative step polymerization/polycondensation using the current controlled terminology.
 2. Explain why the older classroom split `addition polymerization versus condensation polymerization` is insufficient as a formal classification and can hide different growth mechanisms.
-3. Explain the difference between chain-growth-style behaviour and growth by reactions between molecules of multiple degrees of polymerization without oversimplifying IUPAC terminology.
+3. Explain the difference between chain polymerization and step polymerization, including additive/condensative qualifiers, without reducing classification to the historical addition/condensation split.
 4. Describe initiation, propagation, termination and chain transfer at the minimum depth needed to understand chain polymerization.
 5. Explain radical polymerization as one chain-polymerization route and identify which process variables can alter the chain-building history.
 6. Explain coordination polymerization at engineering-use depth, including the distinction between heterogeneous coordination catalysis and homogeneous/metallocene systems.
@@ -94,14 +95,15 @@ The initial authoritative path shall include:
 3. **Glossary of Basic Terms in Polymer Science, IUPAC Recommendations 1996, Pure and Applied Chemistry 68, 2287–2311** — source for the classical controlled terms including polymerization, chain polymerization, polyaddition and polycondensation.
 4. **Glossary of terms related to kinetics, thermodynamics, and mechanisms of polymerization, IUPAC Recommendations 2008, Pure and Applied Chemistry 80, 2163–2193** — mechanism/kinetics terminology where required.
 5. **Terminology for chain polymerization, IUPAC Recommendations 2021, published in Pure and Applied Chemistry 94 (2022), 1093–1147** — current terminology path for coordination polymerization, catalyst precursor/activator language, heterogeneous/homogeneous coordination polymerization and metallocene polymerization.
-6. **ISO 472 and ISO 1043-1** only where plastics terminology or polymer abbreviations need controlled cross-reference; neither is to be treated as polymerization-design authority.
-7. **Directly reviewed primary literature** for every retained claim that links a named catalyst/process route to a real material-specific architecture/property tendency.
+6. **Basic classification and definitions of polymerization reactions (IUPAC Recommendations 2025), published in Pure and Applied Chemistry 98(7) (2026), 1105–1117, DOI `10.1515/pac-2025-0490`** — controlling current top-level `step polymerization / chain polymerization` classification.
+7. **ISO 472 and ISO 1043-1** only where plastics terminology or polymer abbreviations need controlled cross-reference; neither is to be treated as polymerization-design authority.
+8. **Directly reviewed primary literature** for every retained claim that links a named catalyst/process route to a real material-specific architecture/property tendency.
 
 ### 6.1 Terminology-control rule
 
-Formal chapter language shall prefer the mechanism-based IUPAC categories rather than the oversimplified historical pair `addition polymerization / condensation polymerization`.
+Formal chapter language shall use the current IUPAC top-level hierarchy: **step polymerization** and **chain polymerization**.
 
-The chapter may introduce **step-growth** as a widely used explanatory concept, but when formal classification is required it shall map the actual process to the appropriate controlled terminology such as `polyaddition` or `polycondensation` rather than silently treating `step-growth polymerization` as a universal normative category.
+Within step polymerization, use **additive step polymerization (polyaddition)** and **condensative step polymerization (polycondensation)**. Within chain polymerization, use additive/condensative qualifiers where they are needed to avoid the historical `addition polymerization / condensation polymerization` ambiguity. `Step-growth` may remain as explanatory legacy/common language, but the reader-facing controlled taxonomy shall use the published IUPAC `step polymerization` term.
 
 `Ziegler–Natta` may be retained as established industrial/historical language, but the chapter shall explain that current IUPAC coordination-polymerization terminology distinguishes the underlying heterogeneous coordination-catalysis concept and deprecates reliance on named-reaction terminology as the technical definition.
 
@@ -134,7 +136,7 @@ Chapter 015 is mechanism-led but may include bounded quantitative relationships 
 Candidates for Technical Outline evaluation include:
 
 1. Basic rate concepts for chain polymerization only if they help explain why reaction conditions affect chain-building history.
-2. Simple degree-of-polymerization / conversion relationships for idealized step-growth systems only if assumptions and limitations are explicit and Chapter 016 ownership is preserved.
+2. Carothers-type degree-of-polymerization relationships were evaluated during Engineering Development and are intentionally not retained; functionality, stoichiometric balance and reaction extent remain qualitative provenance concepts, with detailed molar-mass treatment owned by Chapter 016.
 3. Qualitative or bounded kinetic-chain relationships for radical polymerization only if symbols, assumptions and validity limits are controlled.
 4. Process-variable relationships such as chain-transfer effects only when supported by authoritative mechanism sources and material-specific evidence.
 
@@ -148,7 +150,7 @@ No equation may be used to infer a commercial piping-grade property directly fro
 
 Develop original figures for:
 
-1. **FIG-015-001 — Polymerization classification map** — controlled map of polymerization → chain polymerization / polyaddition / polycondensation, with a warning showing why the historical `addition vs condensation` split is incomplete.
+1. **FIG-015-001 — Polymerization classification map** — controlled map of polymerization → step polymerization / chain polymerization, with additive/condensative subclasses and a warning showing why the historical `addition vs condensation` split is incomplete.
 2. **FIG-015-002 — Chain-polymerization lifecycle** — `initiation → propagation → termination / chain transfer`, clearly showing that not every chain polymerization contains every possible event in the same way.
 3. **FIG-015-003 — Radical polymerization mechanism at engineering-use depth** — active radical, monomer addition, chain growth, termination / transfer concepts without unnecessary reaction-detail overload.
 4. **FIG-015-004 — Coordination-polymerization catalyst environment map** — heterogeneous coordination catalysis / commonly termed Ziegler–Natta versus homogeneous coordination catalysis / metallocene route, with terminology warnings.
@@ -197,8 +199,8 @@ Initiation, propagation, termination and chain transfer at engineering-use depth
 ### Investigation 4 — How does radical polymerization work, and what process variables matter?
 Radical active species, initiator context, propagation, termination/transfer and process-variable hypotheses. No commercial-grade property claims without direct evidence.
 
-### Investigation 5 — How does growth by reactions between molecules of different chain lengths differ from chain polymerization?
-Polyaddition/polycondensation concepts, functional-group conversion, stoichiometric sensitivity where relevant, and the bridge to material architecture without turning the chapter into a polymer-synthesis textbook.
+### Investigation 5 — How does step polymerization build macromolecules, and what distinguishes additive from condensative step growth?
+Formal step-polymerization growth, additive step/polyaddition, condensative step/polycondensation, functionality and stoichiometric/reaction-extent provenance, with detailed molar-mass/topology consequences deferred to Chapter 016.
 
 ### Investigation 6 — What is coordination polymerization?
 Monomer coordination, chain carrier, catalyst precursor/activator concepts and the minimum organometallic context needed for polyolefins.
