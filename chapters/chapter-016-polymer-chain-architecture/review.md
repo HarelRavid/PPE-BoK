@@ -2,12 +2,12 @@
 
 **Chapter:** Polymer Chain Architecture: Molar Mass, Distribution, Branching and Crosslinking  
 **PDS baseline:** 1.0  
-**Current stage:** Canonical integration complete — final integrated-manuscript review pending  
+**Current stage:** Final integrated reviews complete — Human Approval pending  
 **CDB author approval:** 2026-08-16  
 **CDB metadata synchronization:** COMPLETE  
 **Definition-of-Ready audit:** PASS  
 **Pre-integration state:** **FROZEN FOR MECHANICAL INTEGRATION**  
-**Date:** 2026-08-16
+**Date:** 2026-08-17
 
 ## 1. Gate status
 
@@ -15,8 +15,8 @@
 |---|---|---|
 | CDB author approval | PASS | recorded in `reviews/chapter-016/CDB-AUTHOR-APPROVAL-2026-08-16.md` |
 | CDB metadata sync | COMPLETE | approved status synchronized on `main` before active development continued |
-| Technical Outline | PASS / ACTIVE | sequential development path and controlled assets defined |
-| Standards / Evidence Plan | PASS / UPDATED | S016-001..012 canonical; S016-013..016 controlled addendum pending integration |
+| Technical Outline | PASS / IMPLEMENTED | synchronized development path; final integrated review cycle complete |
+| Standards / Evidence Plan | **PASS** | S016-001..016 canonical; final claim-level review PASS; publication holds remain |
 | Definition of Ready | **PASS** | Engineering Development authorized |
 | Investigation 1 authoring | **PASS** | canonical manuscript |
 | Investigation 2 terminology / units gate | **PASS** | DP / molar mass / relative-mass distinctions verified |
@@ -33,9 +33,9 @@
 | Pre-integration Standards/Evidence Validation | **PASS** | publication lifecycle holds retained |
 | Pre-integration Editorial / Desk Review | **CONDITIONAL PASS** | ED016-01..07; no structural rewrite required; acronym seam check deferred to final continuous review |
 | Canonical integration | **COMPLETE** | Investigations 1–10 integrated; temporary candidates/addendum removed |
-| Final full-file Technical Review | PENDING | continuous canonical manuscript required |
-| Final claim-level Standards/Evidence Review | PENDING | after integration |
-| Final Editorial / Style / Desk Test | PENDING | after integration |
+| Final full-file Technical Review | **PASS** | continuous integrated manuscript reviewed; no scientific rewrite required |
+| Final claim-level Standards/Evidence Review | **PASS** | final wording supported; publication lifecycle holds retained |
+| Final Editorial / Style / Desk Test | **PASS** | first-use acronyms/seam normalized; continuous Desk Test PASS |
 | Human Approval / merge | PENDING | explicit author approval required after final reviews |
 | Publishing / Design Freeze | BLOCKED | final figures + publication-time source/lifecycle checks |
 
@@ -118,12 +118,8 @@ The exact branch SHA supplied in the Claude execution prompt is the controlling 
 
 ## 9. Next controlled action
 
-Perform the final integrated-manuscript review cycle:
+**Human Approval Gate.**
 
-1. Final full-file Technical Review;
-2. final claim-level Standards/Evidence Validation;
-3. final Editorial / Style Review + continuous Desk Test;
-4. synchronize with current `main` if needed;
-5. Human Approval Gate.
+Final full-file Technical Review, final claim-level Standards/Evidence Review and final Editorial / Style + continuous Desk Test are complete and PASS. The current `main` head remains the PR base, so no synchronization action is required before Human Approval.
 
-Do not merge PR #17 or start Chapter 017 before those gates close.
+Do not merge PR #17 or start Chapter 017 until explicit Human Approval is recorded.

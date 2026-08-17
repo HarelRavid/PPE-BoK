@@ -19,7 +19,7 @@ review:
   units: pass
   examples: pass
   editorial: active
-last_updated: 2026-08-16
+last_updated: 2026-08-17
 pds_baseline: "1.0"
 cdb: "docs/PDS/Chapter-Design-Briefs/CDB-016-Polymer-Chain-Architecture.md"
 cdb_approval_record: "reviews/chapter-016/CDB-AUTHOR-APPROVAL-2026-08-16.md"
@@ -35,14 +35,14 @@ The governing chain is:
 
 `polymerization provenance → chain architecture → characterization → downstream hypothesis → verification → product qualification`
 
-This chapter owns chain architecture and the logic needed to characterize it. It does not own crystallinity/morphology, detailed rheology, fracture mechanics, SCG, diffusion/permeation design, joining qualification or pipe design.
+This chapter owns chain architecture and the logic needed to characterize it. It does not own crystallinity/morphology, detailed rheology, fracture mechanics, slow crack growth (SCG), diffusion/permeation design, joining qualification or pipe design.
 
 ## Quick navigation
 
 1. Why does chain architecture matter after polymerization is finished?
 2. What are chain length, degree of polymerization and molar mass?
 3. Why does a polymer have multiple molar-mass averages?
-4. What does SEC/GPC actually measure, and what are its limits?
+4. What does size-exclusion chromatography (SEC), often called gel permeation chromatography (GPC), actually measure, and what are its limits?
 5. What is branching, and why is “more branching” incomplete?
 6. How do short-chain and long-chain branching differ?
 7. What are crosslinks and polymer networks?
@@ -56,7 +56,7 @@ This chapter owns chain architecture and the logic needed to characterize it. It
 
 ## 1. Engineering question
 
-A supplier may tell the engineer that a material is polyethylene, polypropylene, PE-X, metallocene-produced, bimodal, high molecular weight or low-MFR. Which of those statements actually describes the architecture of the polymer chains, and which statements only describe provenance, family or a correlated test result?
+A supplier may tell the engineer that a material is polyethylene, polypropylene, crosslinked polyethylene (PE-X), metallocene-produced, bimodal, high molecular weight or low melt mass-flow rate (MFR). Which of those statements actually describes the architecture of the polymer chains, and which statements only describe provenance, family or a correlated test result?
 
 The engineering problem is not merely vocabulary. If an architecture label is mistaken for a measured material state, the engineer can skip the very characterization needed to explain processing, morphology and long-term behaviour.
 
@@ -86,7 +86,7 @@ Engineers routinely receive statements that belong to different evidence layers.
 |---|---|---|
 | Chemical family | `PE`, `PP`, `PVDF` | repeat-unit/family context; not complete architecture |
 | Process provenance | `metallocene`, `Ziegler–Natta`, `bimodal reactor route` | mechanism/process history that may motivate an architecture hypothesis |
-| Architecture descriptor | `M_n`, `M_m`, dispersity, SCB/LCB, gel fraction | measured or derived description of chain population/connectivity, subject to method limits |
+| Architecture descriptor | `M_n`, `M_m`, dispersity, short-chain branching (SCB) / long-chain branching (LCB), gel fraction | measured or derived description of chain population/connectivity, subject to method limits |
 | Downstream property/qualification | density, rheology, SCG result, hydrostatic strength, fusion test | behaviour or qualification evidence under the relevant method and scope |
 
 The categories interact, but they are not interchangeable.
@@ -122,7 +122,7 @@ Chapter 017 owns the morphology step.
 
 ## 6. Architecture is not rheology
 
-MFR, MVR and more advanced rheological measurements can be sensitive to molecular architecture, but they do not make architecture and rheology synonymous.
+MFR, melt volume-flow rate (MVR) and more advanced rheological measurements can be sensitive to molecular architecture, but they do not make architecture and rheology synonymous.
 
 A low MFR result, for example, is a flow result obtained under specified test conditions. It is not by itself a unique measurement of `M_n`, `M_m`, full molar-mass distribution or branch topology.
 
@@ -141,7 +141,7 @@ Even a well-characterized resin architecture does not directly establish:
 - pressure rating;
 - minimum required strength;
 - SCG lifetime;
-- RCP resistance;
+- rapid crack propagation (RCP) resistance;
 - chemical compatibility;
 - permeability acceptance;
 - butt-fusion or electrofusion qualification;
@@ -185,10 +185,10 @@ This audit is the working habit the rest of Chapter 016 develops.
 | polymer family only | insufficient | insufficient |
 | catalyst/process label only | hypothesis only | insufficient |
 | one average molar mass | partial population description | insufficient |
-| full validated MMD measurement | stronger chain-population description | still requires downstream verification |
+| full validated molar-mass distribution (MMD) measurement | stronger chain-population description | still requires downstream verification |
 | measured branching descriptor | branch-specific architecture evidence within method scope | morphology/property implication remains a hypothesis until measured |
 | PE-X gel-content result | gel/network-fraction evidence in method context | does not alone define full network topology or final pipe performance |
-| MFR/MVR | melt-flow/QC evidence under specified conditions | not a direct MMD or branch-topology measurement |
+| MFR/MVR | melt-flow / quality-control (QC) evidence under specified conditions | not a direct MMD or branch-topology measurement |
 
 ## 10. Failure lens
 
@@ -240,8 +240,6 @@ Investigation 2 establishes those quantities before the chapter introduces `M_n`
 
 ---
 
----
-
 # Investigation 2 — What Are Chain Length, Degree of Polymerization and Molar Mass?
 
 ## 1. Engineering question
@@ -262,7 +260,7 @@ The controlling evidence sources for this Investigation are S016-001, S016-002 a
 
 Engineers often use **chain length** informally to mean “how large the polymer molecule is.” That wording is understandable, but it is not precise enough for a controlled technical argument.
 
-The current IUPAC Gold Book already uses the term `chain length` in chemical kinetics for a quantity associated with repetition of the propagation cycle in a chain reaction. In polymerization terminology, `kinetic-chain length` is likewise a kinetic quantity based on propagation and termination rates.
+The current International Union of Pure and Applied Chemistry (IUPAC) Gold Book already uses the term `chain length` in chemical kinetics for a quantity associated with repetition of the propagation cycle in a chain reaction. In polymerization terminology, `kinetic-chain length` is likewise a kinetic quantity based on propagation and termination rates.
 
 Those kinetic quantities are not automatically the same thing as the final size of a polymer molecule.
 
@@ -792,7 +790,7 @@ For a non-uniform population:
 
 within the normal positive-mass population definitions used here.
 
-### 5.1 Do not use “PDI” as the controlled term
+### 5.1 Do not use “polydispersity index (PDI)” as the controlled term
 
 The expression **polydispersity index (PDI)** is common in industry and historical literature, but IUPAC strongly discourages using `polydispersity index` for `M_m/M_n`.
 
@@ -1195,7 +1193,7 @@ Its public scope distinguishes two broad routes:
 
 For Chapter 016, this distinction becomes a mandatory report-reading question:
 
-> **Is the reported distribution relative/calibration-based, or is it derived from SEC-LS within that method's applicability?**
+> **Is the reported distribution relative/calibration-based, or is it derived from SEC coupled with light-scattering detection (SEC-LS) within that method's applicability?**
 
 ---
 
@@ -2929,7 +2927,7 @@ The work included:
 
 - molecular weight/MWD characterization;
 - solution-property-based quantification of low LCB levels;
-- assessment of ^13C NMR for LCB measurement;
+- assessment of ^13C nuclear magnetic resonance (NMR) for LCB measurement;
 - SCB/comonomer context.
 
 This matters because the study did not rely only on the label `branched`.
@@ -2978,7 +2976,7 @@ The direction/magnitude observed in the tested systems must not be generalized w
 
 ---
 
-## 5. Case C — UHMWPE molecular weight and interface healing/reentanglement
+## 5. Case C — ultrahigh molecular weight polyethylene (UHMWPE) molecular weight and interface healing/reentanglement
 
 **Source:** S016-015 — Deplancke et al. (2015).
 
@@ -3045,7 +3043,7 @@ The study strongly supports the architecture/interdiffusion/entanglement logic, 
 
 ### 6.1 System
 
-Four MDPE/HDPE materials were studied using complementary NMR methods under hydrogen/xenon pressurization.
+Four medium-density polyethylene (MDPE) / high-density polyethylene (HDPE) materials were studied using complementary NMR methods under hydrogen/xenon pressurization.
 
 The material set included measurable differences in short-chain branching content/branch character.
 
@@ -3574,7 +3572,7 @@ Do not make one test answer a different question simply because the value is con
 | How did branching change crystallinity, lamellae or tie-molecule state? | Chapter 017 | morphology must be measured; architecture is not morphology |
 | How do architecture and morphology interact with `T_g`, `T_m`, thermal expansion or thermal mobility? | Chapter 018 | thermal transitions/thermophysical response need their own measurements/models |
 | How do MMD/LCB/entanglements change creep, relaxation or melt rheology? | Chapter 019 | time-dependent constitutive behaviour exceeds architecture-definition scope |
-| How does architecture affect SCG/RCP/fatigue/ESC/fracture? | Chapter 020 | fracture/failure metrics and lifetime evidence are downstream |
+| How does architecture affect SCG/RCP/fatigue/environmental stress cracking (ESC)/fracture? | Chapter 020 | fracture/failure metrics and lifetime evidence are downstream |
 | How should a particular resin/compound be qualified? | Chapters 021 onward / product standards | family/compound requirements are material-specific |
 | How should SEC/DSC/other methods be executed and validated? | Part V | detailed laboratory procedure/uncertainty/instrument control |
 | How does architecture influence butt/electrofusion interdiffusion and weld qualification? | Part VII | joining process physics and acceptance require process-specific evidence |
@@ -3620,7 +3618,7 @@ No material ranking or acceptance value shall be drawn into the figure.
 
 **Final checklist.**
 
-Before an architecture statement enters a calculation, specification, RCA conclusion, material-selection decision or supplier acceptance, confirm:
+Before an architecture statement enters a calculation, specification, root-cause analysis (RCA) conclusion, material-selection decision or supplier acceptance, confirm:
 
 - [ ] The material/grade/lot/product state is identified.
 - [ ] The statement is classified as provenance, architecture, property or qualification evidence.

@@ -160,7 +160,7 @@ Controlled use:
 
 Role: MFR/MVR route for materials sensitive to time-temperature history and/or moisture.
 
-Status recheck 2026-08-16: ISO identifies the publication as current after review activity; exact publication-time lifecycle shall be rechecked before Design Freeze.
+Status recheck 2026-08-17: ISO identifies the publication as Published at stage 90.60 — Close of review. The method remains the active Part 2 route for materials sensitive to time-temperature history and/or moisture; publication-time lifecycle recheck remains mandatory before Design Freeze.
 
 
 ### S016-013 — Deveci and Fang, 2017 — PE pipe molecular parameters versus SCG test performance
@@ -461,7 +461,7 @@ Do not author any of the following as universal rules:
 - `low MFR uniquely means high molecular weight`;
 - `architecture metric = SCG/lifetime/fusion acceptance`.
 
-## 9. Current source-status checkpoint — 2026-08-16
+## 9. Current source-status checkpoint — 2026-08-17
 
 - IUPAC current Gold Book terminology remains the active controlled source layer.
 - IUPAC 2014/2015 macromolecule terminology remains the direct source behind current Gold Book molar-mass entries.
@@ -470,10 +470,10 @@ Do not author any of the following as universal rules:
 - ISO 16014-1..5:2019 remain the active confirmed SEC method family at the current checkpoint.
 - ISO 18177:2025 is published at stage 60.60.
 - ISO 10147:2011 is current/confirmed at stage 90.93.
-- ISO 1133-1:2022 is published; ISO 1133-2:2011 remains the active time-temperature/moisture-sensitive route at the current checkpoint with final lifecycle recheck retained.
+- ISO 1133-1:2022 is published; ISO 1133-2:2011 is Published at stage 90.60 — Close of review and remains the active time-temperature/moisture-sensitive Part 2 route at this checkpoint; publication-time lifecycle recheck is retained.
 
 ## 10. Engineering-development evidence disposition
 
-**PASS FOR CANONICAL INTEGRATION — S016-013..016 INTEGRATED; FINAL CLAIM-LEVEL REVIEW PENDING.**
+**PASS FOR FINAL CHAPTER WORDING — PUBLICATION LIFECYCLE HOLDS REMAIN.**
 
-Terminology, quantitative and method-scope gates are closed for the authored content. Investigation 9 is PASS for the four controlled primary cases only. Final claim-level citation placement and publication-time lifecycle validation remain mandatory after canonical integration.
+Terminology, quantitative, method-scope and final claim-level evidence gates are closed for the current chapter wording. Investigation 9 remains PASS for the four controlled primary cases only. Publication-time lifecycle validation and final rendered citation/source-note checks remain mandatory before Design Freeze.

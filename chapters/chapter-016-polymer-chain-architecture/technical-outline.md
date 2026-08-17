@@ -4,8 +4,8 @@
 **PDS baseline:** 1.0  
 **CDB:** `docs/PDS/Chapter-Design-Briefs/CDB-016-Polymer-Chain-Architecture.md`  
 **CDB gate:** Approved by author on 2026-08-16; metadata synchronized on `main`  
-**Outline status:** Engineering Development complete at controlled-authoring level — canonical integration pending  
-**Date:** 2026-08-16
+**Outline status:** Implemented — Engineering Development and final integrated review cycle complete; Human Approval pending  
+**Date:** 2026-08-17
 
 ## 1. Chapter engineering question
 
@@ -96,38 +96,38 @@ ISO 1133-1/-2 establish MFR/MVR under specified method conditions and QC context
 **PASS / canonical.** Bridge Chapter 015 provenance to architecture as a measurable material state.
 
 ### Investigation 2 — What are chain length, degree of polymerization and molar mass?
-**PASS / controlled candidate.** IUPAC terminology/units gate passed.
+**PASS / canonical.** IUPAC terminology/units gate passed.
 
 ### Investigation 3 — Why does a polymer have multiple molar-mass averages?
-**PASS / controlled candidate.** Quantitative gate passed; EX-016-001 independently verified.
+**PASS / canonical.** Quantitative gate passed; EX-016-001 independently verified.
 Assets: FIG-016-001, FIG-016-002, TAB-016-001, EX-016-001.
 
 ### Investigation 4 — What does SEC/GPC actually measure, and what are its limits?
-**PASS / controlled candidate.** ISO 16014 method-scope gate passed.
+**PASS / canonical.** ISO 16014 method-scope gate passed.
 Asset: TAB-016-002.
 
 ### Investigation 5 — What is branching, and why is “more branching” incomplete?
-**PASS / controlled candidate.** Branch terminology/topology review passed.
+**PASS / canonical.** Branch terminology/topology review passed.
 
 ### Investigation 6 — How do short-chain and long-chain branching differ?
-**PASS / controlled candidate.** ISO 18177 scope gate passed.
+**PASS / canonical.** ISO 18177 scope gate passed.
 Assets: FIG-016-003, FIG-016-004, TAB-016-003.
 
 ### Investigation 7 — What are crosslinks and polymer networks?
-**PASS / controlled candidate.** IUPAC network/crosslink + ISO 10147 gate passed.
+**PASS / canonical.** IUPAC network/crosslink + ISO 10147 gate passed.
 
 ### Investigation 8 — Where do entanglements fit, and why are they not crosslinks?
-**PASS / controlled candidate.** Entanglement/physical-connectivity review passed.
+**PASS / canonical.** Entanglement/physical-connectivity review passed.
 Asset: FIG-016-005.
 
 ### Investigation 9 — How can architecture influence engineering behaviour without becoming a design rule?
-**PASS / controlled candidate.** Primary-evidence gate passed for S016-013..016 only.
+**PASS / canonical.** Primary-evidence gate passed for S016-013..016 only.
 
 Every retained case records:
 `system | architecture variable | measurement | downstream measurement | confounders | supported conclusion | unsupported conclusion | transferability`.
 
 ### Investigation 10 — What architecture information should the engineer request, and where must inference stop?
-**PASS / controlled candidate.** Chapter closure authoring review passed.
+**PASS / canonical.** Chapter closure authoring review passed.
 Assets: TAB-016-004, TAB-016-005, FIG-016-006, WF-016-001, CL-016-001, EX-016-002, EX-016-003.
 
 ## 7. Required asset register
@@ -165,11 +165,14 @@ Completed:
 8. Pre-integration Standards/Evidence Validation — PASS.
 9. Pre-integration Editorial/Style + Desk Review — CONDITIONAL PASS, no structural rewrite.
 
-Pending after canonical integration:
+Completed after canonical integration:
 
-10. Final full-file Technical Review.
-11. Final claim-level Standards/Evidence Review.
-12. Final Editorial/Style + continuous Desk Test.
+10. Final full-file Technical Review — PASS.
+11. Final claim-level Standards/Evidence Review — PASS; publication lifecycle holds remain.
+12. Final Editorial/Style + continuous Desk Test — PASS.
+
+Pending:
+
 13. Human Approval before merge.
 
 ## 9. Explicit exclusions
@@ -186,6 +189,6 @@ Chapter 016 shall not become:
 
 ## 10. Current disposition
 
-**ENGINEERING DEVELOPMENT COMPLETE AT CONTROLLED-AUTHORING LEVEL — CANONICAL INTEGRATION AUTHORIZED.**
+**ENGINEERING DEVELOPMENT AND FINAL INTEGRATED REVIEW CYCLE COMPLETE — HUMAN APPROVAL PENDING.**
 
-The one-shot integration shall combine Investigations 2–10 with canonical Investigation 1, absorb S016-013..016 into the evidence register, apply bounded metadata/editorial normalization, validate controlled assets/source IDs, remove temporary authoring artifacts and stop before final integrated-manuscript review.
+Investigations 1–10 are canonical; S016-013..016 are integrated into the evidence register; final technical, claim-level evidence and editorial/Desk reviews are PASS. Publication lifecycle holds and final figure/rendering work remain outside the Human Approval gate.
