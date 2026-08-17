@@ -2,7 +2,7 @@
 
 **Chapter:** Polymer Chain Architecture: Molar Mass, Distribution, Branching and Crosslinking  
 **PDS baseline:** 1.0  
-**Current stage:** Engineering Development complete — canonical integration pending  
+**Current stage:** Canonical integration complete — final integrated-manuscript review pending  
 **CDB author approval:** 2026-08-16  
 **CDB metadata synchronization:** COMPLETE  
 **Definition-of-Ready audit:** PASS  
@@ -32,7 +32,7 @@
 | Pre-integration Technical Review | **CONDITIONAL PASS** | TR016-01..08 bounded integration findings only |
 | Pre-integration Standards/Evidence Validation | **PASS** | publication lifecycle holds retained |
 | Pre-integration Editorial / Desk Review | **CONDITIONAL PASS** | ED016-01..07; no structural rewrite required; acronym seam check deferred to final continuous review |
-| Canonical integration | **PENDING / AUTHORIZED** | one-shot mechanical integration next |
+| Canonical integration | **COMPLETE** | Investigations 1–10 integrated; temporary candidates/addendum removed |
 | Final full-file Technical Review | PENDING | continuous canonical manuscript required |
 | Final claim-level Standards/Evidence Review | PENDING | after integration |
 | Final Editorial / Style / Desk Test | PENDING | after integration |
@@ -47,8 +47,8 @@ Definition of Ready passed before Engineering Development. The approved planning
 
 Investigations 1–10 are complete at controlled authoring level.
 
-- Investigation 1 is canonical in `chapter.md`.
-- Investigations 2–10 remain controlled temporary authoring candidates until the one-shot canonical integration.
+- Investigations 1–10 are canonically integrated in `chapter.md`.
+- Temporary Investigation 2–10 authoring candidates and the evidence addendum are removed after validation.
 - All investigation-specific terminology, quantitative, method-scope and primary-evidence gates required by the Technical Outline have passed.
 - No Chapter 017 Engineering Development has started.
 
@@ -103,17 +103,14 @@ Canonical directory:
 
 `chapters/chapter-016-polymer-chain-architecture/`
 
-Current canonical files:
+Canonical files after integration:
 
-- `chapter.md` — Investigation 1 + chapter scaffold;
-- `references.md` — active S016-001..012 evidence plan with final pre-integration status metadata;
+- `chapter.md` — continuous Investigations 1–10;
+- `references.md` — S016-001..016 evidence register;
 - `technical-outline.md`;
 - `review.md`.
 
-Temporary controlled authoring artifacts pending integration:
-
-- `investigation-002-authoring.md` through `investigation-010-authoring.md`;
-- `references-addendum-2026-08-16.md`.
+Temporary Investigation 2–10 authoring candidates and `references-addendum-2026-08-16.md` are removed after validation.
 
 ## 8. Configuration-freeze rule
 
@@ -121,9 +118,7 @@ The exact branch SHA supplied in the Claude execution prompt is the controlling 
 
 ## 9. Next controlled action
 
-Perform the one-shot canonical integration under `CANONICAL-INTEGRATION-BRIEF-2026-08-16.md` and its validation script.
-
-After integration:
+Perform the final integrated-manuscript review cycle:
 
 1. Final full-file Technical Review;
 2. final claim-level Standards/Evidence Validation;
